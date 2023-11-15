@@ -16,6 +16,7 @@ import styles from './styles/navlist.module.css';
 
 function NavList({ closeMenu }) {
   const ref = useOutsideClick(closeMenu);
+  if (!closeMenu) return;
   return (
     <motion.ul
       className={styles.menu}
