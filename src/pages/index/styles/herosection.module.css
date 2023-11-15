@@ -1,0 +1,125 @@
+.main {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+}
+
+.mainContent {
+  display: grid;
+  grid-auto-rows: max-content;
+  row-gap: 3rem;
+  justify-items: center;
+}
+
+.linkMask {
+  overflow: hidden;
+}
+
+.linkMask h1 {
+  margin: 0px;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.heading {
+  max-width: 80rem;
+  font-size: 8rem;
+  text-align: center;
+
+  font-weight: 500;
+  line-height: 1;
+}
+
+.heading span {
+  color: var(--color-orange);
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+}
+
+.linkParagraph a {
+  color: var(--color-black);
+  font-size: 2.8rem;
+
+  transition: all 0.3s;
+}
+
+.linkParagraph a:hover {
+  color: var(--color-orange);
+}
+
+.button {
+  margin: 20px auto;
+  border: none;
+  padding: 1rem 4rem;
+  position: relative;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 2rem;
+
+  border-radius: 50px;
+}
+
+.button::before {
+  transition: width 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    background-color 0.2s ease-in;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+}
+
+.button:hover::before {
+  background: var(--color-orange);
+  width: 100%;
+}
+
+.buttonText {
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.button:hover .buttonText {
+  color: var(--color-black);
+  mix-blend-mode: hard-light;
+  filter: invert(1);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .heading {
+    font-size: 6rem;
+
+    line-height: 1;
+  }
+}
+
+@media only screen and (max-width: 34.375em) {
+  .heading {
+    font-size: 4rem;
+
+    line-height: 1;
+  }
+
+  .button {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 23em) {
+  .heading {
+    font-size: 3rem;
+
+    line-height: 1;
+  }
+}
