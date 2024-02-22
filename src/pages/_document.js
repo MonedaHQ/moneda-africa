@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
         <Head>
-            <script>
+            <script
                 dangerouslySetInnerHTML={{
                 __html: `
                     (function(c,l,a,r,i,t,y){
@@ -14,7 +14,7 @@ export default function Document() {
             })(window,document,"clarity","script","l4p2ziyohu");
            `,
             }}
-            </script>
+            />
         </Head>
         <body>
         <Main/>
