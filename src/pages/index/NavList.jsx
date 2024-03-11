@@ -47,7 +47,7 @@ function NavList({ closeMenu }) {
             initial="initial"
             custom={index}
           >
-            <a href={nav.path} className={styles.navLink}>
+            <a href={nav.path} className={styles.navLink} target="blank">
               {nav.label}
             </a>
           </motion.li>
