@@ -1,0 +1,125 @@
+.button {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: transparent;
+  border-radius: 0.8rem;
+  transition: all 0.35s cubic-bezier(0.25, 0.65, 0.76, 0.96);
+  position: relative;
+  z-index: 1;
+
+  cursor: pointer;
+}
+
+.button svg {
+  font: inherit;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.primary {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.secondary {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+}
+
+.primary:hover {
+  scale: 1.04;
+}
+
+.secondary:hover {
+  scale: 1.04;
+}
+
+.primary:hover::after,
+.secondary:hover::after {
+  opacity: 1;
+  transform: scaleX(1) scaleY(1);
+}
+
+.primary::after {
+  background-color: var(--color-orange);
+}
+
+.secondary::after {
+  background-color: var(--color-light-grey);
+}
+
+.primary::after,
+.secondary::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.8rem;
+  z-index: -1;
+  opacity: 0;
+  transform: scaleX(0) scaleY(0);
+  transition: all 0.35s cubic-bezier(0.25, 0.65, 0.76, 0.96);
+  transform-origin: center;
+}
+
+.link-light,
+.link-dark,
+.link-light-small {
+  border-radius: var(--border-radius-reg);
+  padding: 1rem 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: all 0.35s cubic-bezier(0.25, 0.65, 0.76, 0.96);
+}
+
+.link-light:hover,
+.link-dark:hover,
+.link-light-small:hover {
+  scale: 1.04;
+  color: var(--color-orange);
+}
+
+.link-light:hover::after {
+  opacity: 1;
+  transform: scaleX(1) scaleY(1);
+}
+
+.link-light::after {
+  background-color: var(--color-light-grey);
+}
+
+.link-light::after,
+.link-dark::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.8rem;
+  z-index: -1;
+  opacity: 0;
+  transform: scaleX(0) scaleY(0);
+  transition: all 0.35s cubic-bezier(0.25, 0.65, 0.76, 0.96);
+  transform-origin: center;
+}
+
+.link-light-small {
+  font-size: 1.4rem;
+}

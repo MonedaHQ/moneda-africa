@@ -1,5 +1,5 @@
 {
-  "name": "moneda-africa",
+  "name": "moneda-capital",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^10.16.5",
-    "next": "14.0.2",
+    "framer-motion": "^11.3.24",
+    "lottie-react": "^2.4.0",
+    "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.11.0"
+    "react-icons": "^5.2.1",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.0.2"
+    "eslint-config-next": "14.2.5"
   }
 }

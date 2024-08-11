@@ -1,0 +1,85 @@
+.teamContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  padding: 4rem 0;
+}
+
+.imageContainer {
+  width: 100%;
+  height: auto;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  color: var(--color-white);
+  padding-top: 6rem;
+
+  display: grid;
+  row-gap: 1.6rem;
+  height: max-content;
+}
+
+.content p {
+  max-width: 90%;
+  margin-left: auto;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.4rem;
+}
+
+.metric {
+  display: grid;
+  row-gap: 0.3rem;
+}
+
+.metricHeading {
+  display: flex;
+  justify-content: center;
+  color: var(--color-white);
+}
+
+.metric p {
+  color: var(--color-white);
+  text-align: center;
+  font-size: var(--font-size-caption);
+}
+
+@media (max-width: 68.75em) {
+  .content h2 {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 65.625em) {
+  .teamContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .imageContainer {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .imageContainer img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 53.125em) {
+  .metrics {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .metric p {
+    max-width: 300px;
+    margin: auto;
+  }
+}

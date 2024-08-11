@@ -1,4 +1,4 @@
-import { MenuTogglerProvider } from '@/context/MenuToggler';
+import { MenuTogglerProvider } from '@/context/MenuToggleContext';
 import '@/styles/globals.css';
 
 export default function App({ Component, pageProps }) {

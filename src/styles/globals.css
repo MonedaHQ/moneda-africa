@@ -1,35 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --color-brown: #140800;
-  --color-black: #0a0400;
-  --color-white: #ffffff;
+  --color-bright-orange: #ff5100;
   --color-orange: #cc5500;
+  --color-primary-hover: #994000;
+  --color-brown: #342b1c;
+  --color-white: #fff;
+  --color-light-grey: #f5f4f3;
+  --color-black: #292929;
+  --color-dark-brown: #140800;
+  --color-brown-linear: linear-gradient(180deg, #210d00 0%, #140800 100%);
+
+  --font-size-h1: 4.8rem;
+  --font-size-h2: 3.8rem;
+
+  --font-size-paragraph-big: 1.8rem;
+  --font-size-paragraph-regular: 1.6rem;
+  --font-size-paragraph-small: 1.4rem;
+  --font-size-caption: 1.2rem;
 }
 
-*,
-*::before,
-*::after {
+::selection {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-html {
+html,
+body {
   font-size: 62.5%;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: var(--color-text);
-  background-color: var(--color-bg);
-  min-height: 100vh;
   line-height: 1.5;
-  font-size: 1.4rem;
-  transition: color 0.2s, background-color 0.3s;
+  font-size: var(--font-size-paragraph-regular);
+  font-weight: 200;
+
+  min-height: 100vh;
+  color: var(--color-black);
 }
 
-::selection {
-  background-color: var(--color-orange);
-  color: var(--color-black);
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+p {
+  font-weight: 200;
+}
+
+p strong {
+  font-weight: 400;
+}
+
+@media (max-width: 87.5em) {
+  :root {
+    --font-size-h1: 4.2rem;
+    --font-size-h2: 3.2rem;
+
+    --font-size-paragraph-big: 1.6rem;
+    --font-size-paragraph-regular: 1.4rem;
+    --font-size-paragraph-small: 1.2rem;
+    --font-size-caption: 1rem;
+  }
+}
+
+@media (max-width: 48.75em) {
+  :root {
+    --font-size-h1: 3.4rem;
+    --font-size-h2: 3rem;
+  }
+}
+
+@media (max-width: 31.25em) {
+  :root {
+    --font-size-h1: 3.2rem;
+    --font-size-h2: 2.8rem;
+  }
+}
+@media (max-width: 27.375em) {
+  :root {
+    --font-size-h1: 2.8rem;
+    --font-size-h2: 2.2rem;
+  }
 }

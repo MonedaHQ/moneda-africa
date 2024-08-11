@@ -1,0 +1,11 @@
+.iconContainer {
+  width: 50px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 31.25em) {
+  .iconContainer {
+    width: 34px;
+  }
+}

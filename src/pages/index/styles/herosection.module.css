@@ -1,125 +1,114 @@
 .main {
-  display: grid;
-  grid-template-rows: 4fr 1fr;
-  align-items: center;
-  justify-items: center;
-  height: 100vh;
-}
-
-.mainContent {
-  display: grid;
-  grid-auto-rows: max-content;
-  row-gap: 3rem;
-  justify-items: center;
-}
-
-.linkMask {
+  position: relative;
+  max-height: 100vh;
   overflow: hidden;
 }
 
-.linkMask h1 {
-  margin: 0px;
-  padding: 1rem;
-  font-weight: 500;
-}
-
-.heading {
-  max-width: 80rem;
-  font-size: 8rem;
-  text-align: center;
-
-  font-weight: 500;
-  line-height: 1;
-}
-
-.heading span {
-  color: var(--color-orange);
-}
-
-.socials {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 3rem;
-}
-
-.linkParagraph a {
-  color: var(--color-black);
-  font-size: 2.8rem;
-
-  transition: all 0.3s;
-}
-
-.linkParagraph a:hover {
-  color: var(--color-orange);
-}
-
-.button {
-  margin: 20px auto;
-  border: none;
-  padding: 1rem 4rem;
-  position: relative;
-  font: inherit;
-  border: none;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 2rem;
-
-  border-radius: 50px;
-}
-
-.button::before {
-  transition: width 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55),
-    background-color 0.2s ease-in;
-  content: '';
-  width: 50%;
-  height: 100%;
-  background: black;
+.backgroundSlider {
   position: absolute;
+  /* z-index: -1; */
+  width: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
-  border-radius: 50px;
 }
 
-.button:hover::before {
-  background: var(--color-orange);
+.backgroundSlider img {
   width: 100%;
+  height: 100vh;
+  object-fit: cover;
+
+  animation: zoomInOut 20s infinite;
 }
 
-.buttonText {
-  color: white;
-  mix-blend-mode: difference;
+.heroContent {
+  height: 100vh;
+  width: 58%;
+  background: rgba(1, 1, 1, 0.69);
+  position: relative;
+
+  display: grid;
+
+  align-items: center;
 }
 
-.button:hover .buttonText {
-  color: var(--color-black);
-  mix-blend-mode: hard-light;
-  filter: invert(1);
+.container {
+  display: grid;
+  row-gap: 1.8rem;
 }
 
-@media only screen and (max-width: 56.25em) {
-  .heading {
-    font-size: 6rem;
+.headingContainer {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.headingContainer h1 {
+  color: var(--color-white);
+}
 
-    line-height: 1;
+.heroParagraph {
+  color: var(--color-white);
+  max-width: 60%;
+  margin: auto;
+  font-size: var(--font-size-paragraph-big);
+}
+
+.lottieIcon {
+  position: absolute;
+  bottom: -8rem;
+  left: 3%;
+}
+
+.mobileLogo {
+  display: none;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
-@media only screen and (max-width: 34.375em) {
-  .heading {
-    font-size: 4rem;
-
-    line-height: 1;
-  }
-
-  .button {
-    font-size: 1.4rem;
+@media (max-width: 83.125em) {
+  .heroContent {
+    width: 76%;
   }
 }
 
-@media only screen and (max-width: 23em) {
-  .heading {
-    font-size: 3rem;
+@media (max-width: 75em) {
+  .mobileLogo {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 
-    line-height: 1;
+  .mobileLogo img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 58.75em) {
+  .heroContent {
+    width: 100%;
+  }
+}
+
+@media (max-width: 38.125em) {
+  .heroParagraph {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .lottieIcon {
+    bottom: -3rem;
   }
 }

@@ -1,0 +1,20 @@
+.heroMain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.imageContainer {
+  width: 750px;
+  height: 750px;
+  overflow: hidden;
+
+  position: absolute;
+  right: 0;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
