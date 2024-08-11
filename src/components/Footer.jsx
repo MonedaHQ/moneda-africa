@@ -3,6 +3,8 @@ import { footer } from '@/data/footer';
 import styles from './styles/footer.module.css';
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <div className={styles.container}>
       <ul className={styles.linkList}>
@@ -12,7 +14,7 @@ function Footer() {
           </a>
         ))}
       </ul>
-      <p>&copy; 2024 Moneda Africa</p>
+      <p>&copy; {year} Moneda Africa</p>
     </div>
   );
 }
