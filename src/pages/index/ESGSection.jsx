@@ -7,7 +7,7 @@ function ESGSection() {
   return (
     <Section>
       <div className={styles.container}>
-        <div>
+        <div className={styles.contentContainer}>
           <WordAnimator text="Driving Value Across the ESG Spectrum" as="h2" />
           <p>
             Investors increasingly recognize the significance of Environmental,

@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   column-gap: 3rem;
+  grid-template-areas: 'content image';
 }
 
 .imageContainer {
@@ -12,6 +13,11 @@
 
   display: grid;
   align-items: center;
+  grid-area: image;
+}
+
+.contentContainer {
+  grid-area: content;
 }
 
 .imageContainer img {
@@ -23,8 +29,10 @@
 
 @media (max-width: 65.625em) {
   .container {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 3rem;
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    grid-template-areas:
+      'image'
+      'content';
   }
 }
