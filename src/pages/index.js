@@ -15,8 +15,8 @@ function Home() {
   return (
     <>
       <MetaTags
-        title="Home - Moneda Capital | Shaping the Future of Energy: Expert Guidance and Solutions"
-        description="At Moneda Capital, we leverage our deep-rooted expertise in the physical and financial energy and commodities markets to identify and capitalize on emerging opportunities. We empower our clients to enter new markets confidently by navigating complexities and maximizing returns while minimizing risk."
+        title="Home - Moneda | Shaping the Future: Expert Guidance and Solutions"
+        description="At Moneda, we leverage our deep-rooted expertise in the finance and commodities markets to identify and capitalize on emerging opportunities. We empower our clients to enter new markets confidently by navigating complexities and maximizing returns while minimizing risk."
       />
       <Navigation />
       <MobileNavigationHeader />
