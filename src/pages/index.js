@@ -8,6 +8,7 @@ import WhyWeExist from './index/WhyWeExist';
 import TeamSection from './index/TeamSection';
 import ESGSection from './index/ESGSection';
 import WhatWeDo from './index/WhatWeDo';
+import Footer from '@/components/Footer';
 
 function Home() {
   const scrollPosition = useScrollPosition(scrollOffset);
@@ -24,6 +25,7 @@ function Home() {
       <TeamSection />
       <ESGSection />
       <WhatWeDo />
+      <Footer />
     </>
   );
 }
