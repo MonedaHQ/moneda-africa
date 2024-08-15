@@ -30,8 +30,8 @@ function WhyWeExist() {
             <br />
             <br />
             Moneda was born to fix such anomalies - providing alternative credit
-            and execution expertise to oil contractors abandoned by traditional
-            credit. This is why we exist.
+            and execution expertise to underserved SMEs (natural resource value
+            chains) abandoned by traditional credit.. This is why we exist.
           </p>
           <div className={styles.signatureContainer}>
             <Image

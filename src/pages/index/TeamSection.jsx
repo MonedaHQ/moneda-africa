@@ -15,14 +15,17 @@ function TeamSection() {
 
   const metrics = [
     {
-      metric: '2023',
-      description: 'Moneda Capital Launch (Cape Town, South Africa)',
+      metric: '8+',
+      description: 'years investing in Africa',
     },
-    { metric: '$500m', description: 'Target Fund Size' },
+    { metric: '$350m+', description: 'value of funding requests' },
     {
-      metric: 'June 2024',
-      description:
-        'Obtained license to operate as a global business and Collective Investment Scheme (CIS)  Management ',
+      metric: '$150m+',
+      description: 'value of funded requests',
+    },
+    {
+      metric: '130+',
+      description: 'onboarded African SMEs',
     },
   ];
 

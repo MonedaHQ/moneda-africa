@@ -57,6 +57,7 @@ function HeaderSecondary() {
 
 function HeaderInitial({ darkHero }) {
   const router = useRouter();
+  const route = router.route;
 
   const headerIntro = {
     initial: { opacity: 0, y: -50 },
@@ -92,6 +93,7 @@ function HeaderInitial({ darkHero }) {
               link={link}
               motion={motion}
               darkHero={darkHero}
+              isActive={route === link.path}
             />
           ))}
         </ul>

@@ -15,7 +15,7 @@ function Home() {
   return (
     <>
       <MetaTags
-        title="Home - Moneda | Shaping the Future: Expert Guidance and Solutions"
+        title="Home - Moneda | We are attracted to Gaps: African Credit Gaps"
         description="At Moneda, we leverage our deep-rooted expertise in the finance and commodities markets to identify and capitalize on emerging opportunities. We empower our clients to enter new markets confidently by navigating complexities and maximizing returns while minimizing risk."
       />
       <Navigation />

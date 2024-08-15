@@ -6,7 +6,7 @@ import DropDown from './DropDown';
 import styles from './styles/navlink.module.css';
 import { useRouter } from 'next/router';
 
-function NavLink({ link, motion, darkHero }) {
+function NavLink({ link, motion, darkHero, isActive }) {
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter();
 
@@ -23,6 +23,7 @@ function NavLink({ link, motion, darkHero }) {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           onClick={() => (link.path ? router.push(link.path) : '')}
+          active={isActive}
         >
           {link.label} {icon}
         </Button>

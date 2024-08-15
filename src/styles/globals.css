@@ -10,6 +10,8 @@
   --color-black: #292929;
   --color-dark-brown: #140800;
   --color-brown-linear: linear-gradient(180deg, #210d00 0%, #140800 100%);
+  --color-faded-orange: rgba(204, 85, 0, 0.05);
+  --border-radius-reg: 0.8rem;
 
   --font-size-h1: 4.8rem;
   --font-size-h2: 3.8rem;

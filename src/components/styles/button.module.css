@@ -5,7 +5,7 @@
   padding: 1rem 2rem;
   border: none;
   background-color: transparent;
-  border-radius: 0.8rem;
+  border-radius: var(--border-radius-reg);
   transition: all 0.35s cubic-bezier(0.25, 0.65, 0.76, 0.96);
   position: relative;
   z-index: 1;
@@ -26,13 +26,11 @@
 }
 
 .primary {
-  background-color: var(--color-blue);
   color: var(--color-white);
 }
 
 .secondary {
   background-color: var(--color-white);
-  color: var(--color-blue);
 }
 
 .primary:hover {
@@ -122,4 +120,12 @@
 
 .link-light-small {
   font-size: 1.4rem;
+}
+
+/*ACITVE CLASSES*/
+
+.active-link-light {
+  background-color: var(--color-light-grey);
+  color: var(--color-orange);
+  border-radius: var(--border-radius-reg);
 }

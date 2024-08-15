@@ -1,5 +1,6 @@
 .section {
   padding: 8rem 0;
+  position: relative;
 }
 
 .noTopPad {
@@ -27,7 +28,7 @@
 }
 
 .margin {
-  max-width: 74%;
+  max-width: 86%;
   margin: auto;
 }
 
@@ -50,6 +51,6 @@
 }
 @media (max-width: 32.5em) {
   .margin {
-    max-width: 84%;
+    max-width: 86%;
   }
 }

@@ -1,0 +1,41 @@
+.quote {
+  position: relative;
+  padding: 4rem;
+  min-height: 38vh;
+}
+
+.kwaAfrika {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.kwaAfrika img {
+  width: 400px;
+  height: 400px;
+  opacity: 0.1;
+}
+
+.quoteContainer {
+  text-align: center;
+  max-width: 60%;
+  margin: auto;
+}
+
+@media (max-width: 60em) {
+  .quoteContainer {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 41.25em) {
+  .quoteContainer {
+    max-width: 96%;
+  }
+
+  .kwaAfrika img {
+    width: 200px;
+    height: 200px;
+  }
+}

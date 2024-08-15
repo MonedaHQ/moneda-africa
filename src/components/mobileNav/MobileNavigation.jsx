@@ -13,14 +13,14 @@ function MobileNavigation() {
   let menuData = homeMenuLinks;
   if (!isHome) {
     menuData = [
-      {
-        path: '/',
-        label: 'Home',
-        action: 'onMouseEnter',
-        icon: <HiMiniChevronDown />,
-        icon2: <HiMiniChevronUp />,
-        dropdown: null,
-      },
+      // {
+      //   path: '/',
+      //   label: 'Home',
+      //   action: 'onMouseEnter',
+      //   icon: <HiMiniChevronDown />,
+      //   icon2: <HiMiniChevronUp />,
+      //   dropdown: null,
+      // },
       ...homeMenuLinks,
     ];
   }

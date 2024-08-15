@@ -2,7 +2,7 @@ import { HiMiniChevronDown, HiMiniChevronUp } from 'react-icons/hi2';
 
 export const homeMenuLinks = [
   {
-    path: '/home',
+    path: '/',
     label: 'Home',
     icon: null,
     icon2: null,

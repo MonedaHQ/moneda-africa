@@ -15,15 +15,15 @@ function HeroSection() {
   }, []);
 
   const images = [
-    '/assets/financial-district.jpg',
+    '/assets/cms.jpg',
     '/assets/cornfield-farmer.jpg',
     '/assets/badger.jpg',
   ];
 
   const heroWords = {
-    heading: 'Shaping the Future: Expert Guidance and Solutions',
+    heading: 'We are attracted to Gaps: African Credit Gaps',
     paragraph:
-      '<strong>The world is constantly evolving</strong>. <br/> <br/>At Moneda, we leverage our deep-rooted expertise in the finance and commodities markets to identify and capitalize on emerging opportunities. We empower our clients to enter new markets confidently by navigating complexities and maximizing returns while minimizing risk.',
+      '<strong>African markets are constantly evolving</strong>. <br/> <br/>At Moneda, we leverage our deep-rooted expertise in the finance and commodities markets to identify and capitalize on emerging opportunities. We empower our clients to enter new markets confidently by navigating complexities and maximizing returns while minimizing risk.',
   };
 
   const paragraphVariant = {

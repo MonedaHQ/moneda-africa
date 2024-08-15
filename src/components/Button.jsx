@@ -9,13 +9,17 @@ function Button({
   onMouseEnter = null,
   onMouseLeave = null,
   type = 'button',
+  active = false,
 }) {
   const commonProps = {
-    className: `${styles.button} ${styles[variant]}`,
+    className: `${styles.button} ${styles[variant]} ${
+      active ? styles[`active-${variant}`] : ''
+    }`,
     onClick,
     onMouseEnter,
     onMouseLeave,
   };
+
   if (href) {
     return (
       <Link {...commonProps} href={href}>
