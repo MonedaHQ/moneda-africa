@@ -37,8 +37,8 @@ function WhoWeAre() {
   return (
     <>
       <MetaTags
-        title="Home - Moneda | We are attracted to Gaps: African Credit Gaps"
-        description="At Moneda, we leverage our deep-rooted expertise in the finance and commodities markets to identify and capitalize on emerging opportunities. We empower our clients to enter new markets confidently by navigating complexities and maximizing returns while minimizing risk."
+        title="What We Do - Moneda | We are attracted to Gaps: African Credit Gaps"
+        description="A global leader in finance and commodities, renowned for our unwavering integrity. "
       />
       <Navigation />
       <MobileNavigationHeader />
