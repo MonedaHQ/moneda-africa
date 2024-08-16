@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  color: var(--color-white);
+  padding: 8rem 0;
+}
+
+.container p span {
+  color: var(--color-orange);
+  font-weight: 400;
+}
+
+@media (max-width: 60em) {
+  .container {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+}
+
+@media (max-width: 21.875em) {
+  .imageContainer img {
+    width: 100px;
+    height: auto;
+  }
+}

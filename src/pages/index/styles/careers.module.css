@@ -1,0 +1,66 @@
+.container {
+  padding: 18rem;
+
+  color: var(--color-white);
+  position: relative;
+}
+
+.container h3 {
+  font-size: 6rem;
+  max-width: 100%;
+  margin: auto;
+  font-weight: 300;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/assets/colleagues.jpg');
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.4);
+  z-index: -1;
+}
+
+@media (max-width: 75em) {
+  .container h3 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 68.75em) {
+  .container {
+    padding: 10rem;
+  }
+}
+
+@media (max-width: 53.125em) {
+  .container {
+    padding: 8rem;
+  }
+
+  .container h3 {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .container {
+    padding: 4rem;
+  }
+  .container h3 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 26.875em) {
+  .container {
+    padding: 4rem 2rem;
+  }
+  .container h3 {
+    font-size: 2.4rem;
+  }
+}

@@ -13,6 +13,7 @@ function Quote({ quote, caption }) {
             width={860}
             height={860}
             alt="Kwa Afrika coin"
+            draggable={false}
           />
         </div>
         <div className={styles.quoteContainer}>

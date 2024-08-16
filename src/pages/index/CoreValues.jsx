@@ -1,11 +1,9 @@
 import Section from '@/components/Section';
 import Image from 'next/image';
 
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
-
 import styles from './styles/corevalues.module.css';
 import WordAnimator from '@/components/WordAnimator';
+import AnimatedLineHorizontal from '@/components/AnimatedLineHorizontal';
 
 function CoreValues() {
   const corevalues = [
@@ -77,25 +75,10 @@ function CoreValues() {
 
 function CoreValue({ coreValue, index }) {
   const { heading, value } = coreValue;
-  const ref = useRef();
-  const inView = useInView(ref, { once: true });
-
-  const lineVariants = {
-    initial: { width: 0 },
-    animate: {
-      width: '80%',
-      transition: { delay: 0.3 * index, duration: 0.34 },
-    },
-  };
 
   return (
-    <div className={styles.coreValueContainer} ref={ref}>
-      <motion.div
-        className={styles.line}
-        variants={lineVariants}
-        initial="initial"
-        animate={inView ? 'animate' : 'initial'}
-      />
+    <div className={styles.coreValueContainer}>
+      <AnimatedLineHorizontal width={80} index={index} />
       <div className={styles.valueHeading}>
         <p>We are</p>
         <h3>{heading}</h3>
