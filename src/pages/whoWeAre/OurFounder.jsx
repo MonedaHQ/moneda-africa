@@ -7,7 +7,7 @@ function OurFounder() {
     heading: 'Ejike Egbuagu',
     caption: 'Group Chief Executive',
     paragraph:
-      "Ejike Egbuagu is the CEO of Moneda Invest Africa, a leading investment firm in Africa. Born in Lagos, Nigeria, Ejike developed a passion for finance early on, influenced by the late Herbert Wigwe of Access Holdings. <br/> <br/> He earned a Bachelor's degree in Law and Business Administration from the University of Kent and later completed an MBA at Geneva Business School and Harvard Business School.",
+      "Ejike Egbuagu is the CEO of Moneda Invest Africa, a leading investment firm in Africa. Born in Lagos, Nigeria, Ejike developed a passion for finance early on, influenced by the late Herbert Wigwe of Access Holdings. <br/> <br/> He earned a Bachelor's degree in Law and Business Administration from the University of Kent and later completed an MBA at Geneva Business School and Harvard Business Schoolr.",
     imageUrl: '/assets/ejike-2.jpg',
   };
 

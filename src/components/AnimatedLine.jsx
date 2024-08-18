@@ -2,7 +2,7 @@ import { animate, motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import styles from './styles/animatedline.module.css';
 
-function AnimatedLine() {
+function AnimatedLine({ visible = true }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
 
@@ -14,7 +14,7 @@ function AnimatedLine() {
   return (
     <motion.div
       ref={ref}
-      className={styles.line}
+      className={`${styles.line} ${!visible ? styles.transparent : ''}`}
       variants={lineVariants}
       initial="initial"
       animate={inView ? 'animate' : 'initial'}

@@ -1,0 +1,20 @@
+.container {
+  max-width: 56%;
+
+  display: grid;
+  row-gap: 3rem;
+  justify-content: start;
+  justify-items: start;
+}
+
+@media (max-width: 50em) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 35em) {
+  .container {
+    max-width: 100%;
+  }
+}

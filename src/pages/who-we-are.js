@@ -3,12 +3,12 @@ import Navigation from '@/components/mainNav/Navigation';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
 import Quote from '@/components/Quote';
 import TypicalHero from '@/components/TypicalHero';
-import CoreValues from './index/CoreValues';
+import CoreValues from './whoWeAre/CoreValues';
 import Footer from '@/components/Footer';
 import TextAndImageSection from '@/components/TextAndImageSection';
-import TrackRecord from './index/TrackRecord';
-import OurFounder from './index/OurFounder';
-import Careers from './index/Careers';
+import TrackRecord from './whoWeAre/TrackRecord';
+import OurFounder from './whoWeAre/OurFounder';
+import Careers from './whoWeAre/Careers';
 
 function WhoWeAre() {
   const heroContent = {

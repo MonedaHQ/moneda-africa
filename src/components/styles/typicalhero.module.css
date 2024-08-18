@@ -70,7 +70,13 @@
   }
 
   .scrollDown {
-    bottom: -6rem;
+    bottom: -5.8rem;
+  }
+}
+
+@media (max-width: 71.0625em) {
+  .scrollDown {
+    bottom: -8rem;
   }
 }
 
@@ -89,6 +95,16 @@
 
   .content {
     position: static;
+  }
+
+  .scrollDown {
+    bottom: 1.4rem;
+  }
+}
+
+@media (max-width: 51.875em) {
+  .scrollDown {
+    bottom: 2.8rem;
   }
 }
 

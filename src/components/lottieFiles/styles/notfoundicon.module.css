@@ -1,0 +1,9 @@
+.iconContainer {
+  width: 40rem;
+}
+
+@media (max-width: 31.65em) {
+  .iconContainer {
+    width: 100%;
+  }
+}

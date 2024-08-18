@@ -5,11 +5,14 @@ import WordAnimator from '@/components/WordAnimator';
 
 function WhatWeDo() {
   const list = [
-    { label: 'Trading', path: '' },
-    { label: 'Assets', path: '' },
-    { label: 'Risk solutions', path: '' },
-    { label: 'Capital Management', path: '' },
-    { label: 'Consulting', path: '' },
+    { label: 'Trading', path: '/what-we-do?venture=trading' },
+    { label: 'Assets', path: '/what-we-do?venture=assets' },
+    { label: 'Risk solutions', path: '/what-we-do?venture=risk-solutions' },
+    {
+      label: 'Capital Management',
+      path: '/what-we-do?venture=capital-management',
+    },
+    { label: 'Consulting', path: '/what-we-do?venture=consulting' },
   ];
   return (
     <div className={styles.container}>

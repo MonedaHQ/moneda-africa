@@ -2,6 +2,9 @@ import MetaTags from '@/components/head';
 import Navigation from '@/components/mainNav/Navigation';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
 import TypicalHero from '@/components/TypicalHero';
+import QueryNavigator from './whatWeDo/QueryNavigator';
+import Footer from '@/components/Footer';
+import WhatWeDoHero from './whatWeDo/WhatWeDoHero';
 
 function WhatWeDo() {
   const heroContent = {
@@ -21,6 +24,11 @@ function WhatWeDo() {
       <Navigation />
       <MobileNavigationHeader />
       <TypicalHero content={heroContent} />
+      <div style={{ position: 'relative', height: '100%' }}>
+        <QueryNavigator />
+        <WhatWeDoHero />
+      </div>
+      <Footer />
     </>
   );
 }

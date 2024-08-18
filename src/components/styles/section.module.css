@@ -26,6 +26,9 @@
 .orange {
   background-color: var(--color-orange);
 }
+.dullOrange {
+  background-color: var(--color-faded-orange);
+}
 
 .margin {
   max-width: 86%;

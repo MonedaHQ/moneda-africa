@@ -2,3 +2,7 @@
   background-color: var(--color-orange);
   width: 2px;
 }
+
+.transparent {
+  background-color: transparent;
+}
