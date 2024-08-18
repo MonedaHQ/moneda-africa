@@ -10,8 +10,8 @@ export default function Custom404() {
         <NotFoundIcon />
         <div className={styles.paragraph}>
           <p>
-            Oops! It seems this link is broken. Don't worry! Our engineers will
-            fix this soon
+            Oops! It seems this link is broken. Don&lsquo;t worry! Our engineers
+            will fix this soon
           </p>
           <Button variant="primary" href="/">
             Go home

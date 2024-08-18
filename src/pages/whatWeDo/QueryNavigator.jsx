@@ -33,13 +33,15 @@ function QueryNavigator() {
       rootMargin: `-${window.innerHeight * 0.08}px 0px 0px 0px`,
     });
 
-    if (menuRef.current) {
-      observer.observe(menuRef.current);
+    const currentMenuRef = menuRef.current;
+
+    if (currentMenuRef) {
+      observer.observe(currentMenuRef);
     }
 
     return () => {
-      if (observer && menuRef.current) {
-        observer.unobserve(menuRef.current);
+      if (observer && currentMenuRef) {
+        observer.unobserve(currentMenuRef);
       }
     };
   }, []);
