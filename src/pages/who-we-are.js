@@ -14,9 +14,9 @@ function WhoWeAre() {
   const heroContent = {
     pageTitle: 'Who we are',
     heading:
-      'A global leader in finance and commodities, renowned for our unwavering integrity.',
+      'A global team of dedicated professionals renowned for responsible innovation.',
     paragraph:
-      'Built on a foundation of integrity, Moneda is a global investment firm with a far-reaching presence across asset classes. <br/> <br/> We leverage a network of 5 global offices and a team of  traders with extensive industry experience  across 20 diverse business lines. <br/> <br/>This collective expertise empowers us to deliver unparalleled insights and solutions to enterprise, multinational, and government clients worldwide.',
+      'Built on a foundation of integrity, Moneda is a global energy and commodities firm with a far-reaching presence across asset classes. <br/> <br/> We leverage a network of 5 global offices and a team of  traders with over  extensive industry experience  across 20 diverse business lines. <br/> <br/>This collective expertise empowers us to deliver unparalleled insights and solutions to enterprise, multinational, and government clients worldwide.',
     imageUrl: '/assets/site.jpg',
   };
 
@@ -28,9 +28,9 @@ function WhoWeAre() {
 
   const imageAndTextContent = {
     imageUrl: '/assets/cms-2.jpg',
-    heading: 'Leading the Charge towards a sustainable Energy Transition',
+    heading: 'Shaping a Sustainable Future Through Diversified Investments',
     paragraph:
-      'We view sustainability as both a strategic imperative and an extraordinary opportunity. <br/> <br/>Moneda Capital is at the forefront of developing innovative investment solutions, consulting services, and sustainable strategies for the energy transition. <br/> <br/> By harnessing the power of technology, we are creating commercially viable pathways to a renewable energy future.',
+      'We are dedicated to driving positive change through our diversified investment portfolio. We believe that by investing across multiple sectors, including energy, mining, construction, and commodities, we can contribute to a more sustainable and prosperous future. <br/> <br/>Our focus is on identifying and supporting innovative businesses that are making a meaningful impact. By leveraging our expertise and resources, we aim to foster growth, create value, and drive positive social and environmental outcomes. Through our investments, we are committed to shaping a sustainable future for generations to come.',
     contentFirst: false,
   };
 
@@ -52,7 +52,6 @@ function WhoWeAre() {
         contentFirst={imageAndTextContent.contentFirst}
       />
       <TrackRecord />
-      <OurFounder />
       <Careers />
       <Footer />
     </>
