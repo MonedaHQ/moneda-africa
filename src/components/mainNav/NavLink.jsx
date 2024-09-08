@@ -19,7 +19,7 @@ function NavLink({ link, motion, darkHero, isActive }) {
     <li key={link.label}>
       <div className={styles.navLink}>
         <Button
-          variant={`${darkHero ? 'link-dark' : 'link-light'}`}
+          variant={`${darkHero ? 'primary-dark' : 'primary'}`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           onClick={() => (link.path ? router.push(link.path) : '')}

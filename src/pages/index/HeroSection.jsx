@@ -6,6 +6,7 @@ import { motion, AnimatePresence, animate } from 'framer-motion';
 import ImageSlider from '@/components/ImageSlider';
 import WordAnimator from '@/components/WordAnimator';
 import ScrollDownIcon from '@/components/lottieFiles/ScrollDownIcon';
+import LineAndContent from '@/components/LineAndContent';
 
 function HeroSection() {
   const [isClient, setIsClient] = useState(false);
@@ -15,44 +16,32 @@ function HeroSection() {
   }, []);
 
   const images = [
-    '/assets/cms.jpg',
-    '/assets/cornfield-farmer.jpg',
-    '/assets/badger.jpg',
+    '/assets/heroImages/oil-rig.jpg',
+    '/assets/heroImages/cbc.jpg',
+    '/assets/heroImages/link-bridge.jpg',
+    '/assets/heroImages/agriculture.jpg',
+    '/assets/heroImages/oil-rig-2.jpg',
   ];
 
-  const heroWords = {
-    heading: 'We are attracted to Gaps: African Credit Gaps',
+  const heroContent = {
+    heading: "Bridging Africa's Credit Gap",
     paragraph:
-      '<strong>African markets are constantly evolving</strong>. <br/> <br/>At Moneda, we leverage our deep-rooted expertise in the finance and commodities markets to identify and capitalize on emerging opportunities. We empower our clients to enter new markets confidently by navigating complexities and maximizing returns while minimizing risk.',
-  };
-
-  const paragraphVariant = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1, transition: { delay: 1.4, duration: 0.35 } },
+      "<strong>Africa's markets are dynamic and ever evolving</strong>. <br/> <br/>At Moneda, we've cultivated a profound understanding of African finance and commodities sectors. Our expertise across various sectors allows us to spot and seize emerging opportunities. We partner with our clients to navigate African markets confidently. By leveraging the insights we collect, you can maximise returns while mitigating risks.",
   };
 
   return (
     <main className={styles.main}>
-      <ImageComponent images={images} />
-      <div className={styles.heroContent}>
-        <div className={styles.container}>
-          <div className={styles.headingContainer}>
-            <MobileLogo />
-            <WordAnimator text={heroWords.heading} as="h1" />
-          </div>
-          {isClient && (
-            <motion.p
-              dangerouslySetInnerHTML={{ __html: heroWords.paragraph }}
-              className={styles.heroParagraph}
-              variants={paragraphVariant}
-              initial="initial"
-              animate="animate"
-            />
-          )}
+      <div className={styles.heroSection}>
+        <ImageComponent images={images} />
+        <div className={styles.content}>
+          <MobileLogo />
+          <LineAndContent
+            content={heroContent}
+            textColor="white"
+            scrollDown={false}
+            as="h1"
+          />
         </div>
-      </div>
-      <div className={styles.lottieIcon}>
-        <ScrollDownIcon />
       </div>
     </main>
   );

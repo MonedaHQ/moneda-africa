@@ -8,20 +8,25 @@
   --color-dark-brown: #210d00;
   --color-white: #fff;
   --color-light-grey: #f5f4f3;
+  --color-mid-grey: #efefef;
+  --color-dark-blue: #3e3e59;
   --color-black: #292929;
   --color-dark-brown: #140800;
   --color-brown-linear: linear-gradient(180deg, #210d00 0%, #140800 100%);
   --color-faded-orange: rgba(204, 85, 0, 0.05);
   --border-radius-reg: 0.8rem;
 
-  --font-size-h1: 4.8rem;
-  --font-size-h2: 3.4rem;
-  --font-size-h3: 3.2rem;
+  --font-size-h1: 4rem;
+  --font-size-h2: 3.2rem;
+  --font-size-h3: 3rem;
+  --font-size-h4: 2rem;
+  --font-size-h5: 1.6rem;
+  --font-size-h6: 1.4rem;
 
-  --font-size-paragraph-big: 1.8rem;
-  --font-size-paragraph-regular: 1.6rem;
-  --font-size-paragraph-small: 1.4rem;
-  --font-size-caption: 1.2rem;
+  --font-size-paragraph-big: 1.6rem;
+  --font-size-paragraph-regular: 1.4rem;
+  --font-size-paragraph-small: 1.2rem;
+  --font-size-caption: 1rem;
 }
 
 ::selection {
@@ -72,6 +77,18 @@ h2 {
   font-size: var(--font-size-h2);
 }
 
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+}
+
+h5 {
+  font-size: var(--font-size-h5);
+}
+
 p {
   font-weight: 200;
 }
@@ -82,35 +99,44 @@ p strong {
 
 @media (max-width: 87.5em) {
   :root {
-    --font-size-h1: 4.2rem;
-    --font-size-h2: 3.2rem;
-    --font-size-h3: 2.8rem;
+    --font-size-h1: 3.8rem;
+    --font-size-h2: 3rem;
+    --font-size-h3: 2.6rem;
+    --font-size-h4: 1.8rem;
+    --font-size-h5: 1.4rem;
+    --font-size-h6: 1.2rem;
 
-    --font-size-paragraph-big: 1.6rem;
-    --font-size-paragraph-regular: 1.4rem;
-    --font-size-paragraph-small: 1.2rem;
+    --font-size-paragraph-big: 1.4rem;
+    --font-size-paragraph-regular: 1.2rem;
+    --font-size-paragraph-small: 1rem;
     --font-size-caption: 1rem;
   }
 }
 
 @media (max-width: 48.75em) {
   :root {
-    --font-size-h1: 3.4rem;
-    --font-size-h2: 3rem;
+    --font-size-h1: 3.6rem;
+    --font-size-h2: 2.4rem;
+    --font-size-h3: 2.2rem;
+    --font-size-h4: 1.6rem;
   }
 }
 
 @media (max-width: 31.25em) {
   :root {
-    --font-size-h1: 3.2rem;
-    --font-size-h2: 2.8rem;
+    --font-size-h1: 3.4rem;
+    --font-size-h2: 2.4rem;
     --font-size-h3: 2rem;
+    --font-size-h4: 1.8rem;
+    --font-size-h5: 1.6rem;
   }
 }
 @media (max-width: 27.375em) {
   :root {
     --font-size-h1: 2.8rem;
-    --font-size-h2: 2.2rem;
+    --font-size-h2: 2rem;
     --font-size-h3: 1.8rem;
+    --font-size-h4: 1.6rem;
+    --font-size-h5: 1.4rem;
   }
 }

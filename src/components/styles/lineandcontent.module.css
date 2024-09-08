@@ -1,0 +1,67 @@
+.paragraphBlock {
+  margin-top: 1rem;
+
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 3rem;
+}
+
+.content {
+  position: relative;
+}
+
+.caption {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--color-orange);
+}
+
+.scrollDown {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: -9rem;
+}
+
+.scrollDown p {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.white {
+  color: var(--color-white);
+}
+
+@media (max-width: 75em) {
+  .scrollDown {
+    bottom: -5.8rem;
+  }
+}
+
+@media (max-width: 71.0625em) {
+  .scrollDown {
+    bottom: -8rem;
+  }
+}
+
+@media (max-width: 68.75em) {
+  .content {
+    position: static;
+  }
+
+  .scrollDown {
+    bottom: 1.4rem;
+  }
+}
+
+@media (max-width: 51.875em) {
+  .scrollDown {
+    bottom: 2.8rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .scrollDown {
+    bottom: 3rem;
+  }
+}

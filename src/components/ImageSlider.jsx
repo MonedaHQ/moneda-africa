@@ -10,16 +10,16 @@ function ImageSlider({ imageArray }) {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 3500,
+    speed: 2500, // Slightly slower transition to delay the next image
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 300,
-    fade: true,
-    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+    autoplaySpeed: 10000, // Slower autoplay interval
+    cssEase: 'ease-in-out', // Smoother and more gradual easing
     pauseOnHover: false,
     pauseOnFocus: false,
   };
+
   return (
     <Slider {...settings}>
       {imageArray.map((image, index) => (

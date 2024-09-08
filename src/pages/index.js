@@ -6,9 +6,10 @@ import HeroSection from './index/HeroSection';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
 import WhyWeExist from './index/WhyWeExist';
 import TeamSection from './index/TeamSection';
-import ESGSection from './index/ESGSection';
-import WhatWeDo from './index/WhatWeDo';
+import WWDSection from './index/WWDSection';
+import WhatWeDo from './index/OurFocusAreas';
 import Footer from '@/components/Footer';
+import OurTeam from './index/OurTeam';
 
 function Home() {
   const scrollPosition = useScrollPosition(scrollOffset);
@@ -23,8 +24,9 @@ function Home() {
       <HeroSection />
       <WhyWeExist />
       <TeamSection />
-      <ESGSection />
+      <WWDSection />
       <WhatWeDo />
+      <OurTeam />
       <Footer />
     </>
   );

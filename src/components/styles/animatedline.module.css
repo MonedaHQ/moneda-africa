@@ -1,6 +1,13 @@
 .line {
-  background-color: var(--color-orange);
   width: 2px;
+}
+
+.orange {
+  background-color: var(--color-orange);
+}
+
+.white {
+  background-color: var(--color-white);
 }
 
 .transparent {

@@ -12,7 +12,7 @@
   align-items: center;
   z-index: 1000;
 
-  padding: 2rem 3%;
+  padding: 2rem 4rem;
   background-color: var(--color-white);
 
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
@@ -26,11 +26,10 @@
 }
 
 .navigation {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  column-gap: 8rem;
-  width: 100%;
+  width: 90%;
   margin: auto;
 }
 
@@ -55,16 +54,12 @@
   display: grid;
   grid-auto-flow: column;
   align-items: center;
-  column-gap: 3rem;
+  column-gap: 1.2rem;
   width: max-content;
 }
 
-/* .logoContainer {
-    width: 100%;
-  } */
-
 .logo {
-  width: 160px;
+  width: 140px;
   height: auto;
   cursor: pointer;
 }
@@ -81,6 +76,10 @@
   .navContainerSecondary {
     justify-items: center;
     top: 4rem;
+  }
+
+  .navigation {
+    width: 100%;
   }
 }
 

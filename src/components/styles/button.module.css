@@ -2,7 +2,7 @@
   font: inherit;
   color: inherit;
   text-decoration: none;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   border: none;
   background-color: transparent;
   border-radius: var(--border-radius-reg);
@@ -15,8 +15,8 @@
 
 .button svg {
   font: inherit;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .icon {
@@ -26,38 +26,31 @@
 }
 
 .primary {
-  background-color: var(--color-orange);
-  color: var(--color-white);
-}
+  padding: 1rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 
-.secondary {
-  background-color: var(--color-white);
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
 }
 
 .primary:hover {
   scale: 1.04;
+  color: var(--color-orange);
 }
 
-.secondary:hover {
-  scale: 1.04;
-}
-
-.primary:hover::after,
-.secondary:hover::after {
+.primary:hover::after {
   opacity: 1;
   transform: scaleX(1) scaleY(1);
 }
 
 .primary::after {
-  background-color: var(--color-brown);
-}
-
-.secondary::after {
   background-color: var(--color-light-grey);
 }
 
-.primary::after,
-.secondary::after {
+.primary::after {
   position: absolute;
   content: '';
   width: 100%;
@@ -72,25 +65,19 @@
   transform-origin: center;
 }
 
-.link-light,
-.link-dark,
-.link-light-small {
-  border-radius: var(--border-radius-reg);
-  padding: 1rem 2.4rem;
+.link-light {
   display: flex;
   align-items: center;
-  gap: 1rem;
-
-  background-size: 100% 2px, 0 2px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: all 0.35s cubic-bezier(0.25, 0.65, 0.76, 0.96);
+  gap: 1.8rem;
+  padding: 0;
+  padding-bottom: 1.2rem;
 }
 
-.link-light:hover,
-.link-dark:hover,
-.link-light-small:hover {
-  scale: 1.04;
+.link-light svg {
+  fill: var(--color-orange);
+}
+
+.link-light:hover {
   color: var(--color-orange);
 }
 
@@ -100,16 +87,15 @@
 }
 
 .link-light::after {
-  background-color: var(--color-light-grey);
+  background-color: var(--color-orange);
 }
 
-.link-light::after,
-.link-dark::after {
+.link-light::after {
   position: absolute;
   content: '';
   width: 100%;
-  height: 100%;
-  top: 0;
+  height: 1px;
+  bottom: 0;
   left: 0;
   border-radius: 0.8rem;
   z-index: -1;
@@ -117,10 +103,6 @@
   transform: scaleX(0) scaleY(0);
   transition: all 0.35s cubic-bezier(0.25, 0.65, 0.76, 0.96);
   transform-origin: center;
-}
-
-.link-light-small {
-  font-size: 1.4rem;
 }
 
 .link-underline {
@@ -136,7 +118,7 @@
 
 /*ACITVE CLASSES*/
 
-.active-link-light {
+.active-primary {
   background-color: var(--color-light-grey);
   color: var(--color-orange);
   border-radius: var(--border-radius-reg);

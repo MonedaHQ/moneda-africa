@@ -36,7 +36,7 @@ function DropDown({ dropdownList, setIsHovered, isHovered }) {
             {dropdownList.map((link) => (
               <li key={link.label}>
                 <Button
-                  variant="link-light"
+                  variant="primary"
                   action={link.action}
                   onClick={() => (link.path ? router.push(link.path) : '')}
                 >

@@ -1,0 +1,67 @@
+import Section from '@/components/Section';
+import WordAnimator from '@/components/WordAnimator';
+
+import styles from './styles/ourteam.module.css';
+import Image from 'next/image';
+import { managementTeam } from '@/data/team';
+import { truncateString } from '@/utils/helpers';
+
+import { PiLinkedinLogo } from 'react-icons/pi';
+import { ImWikipedia } from 'react-icons/im';
+import Button from '@/components/Button';
+
+import { GoArrowRight } from 'react-icons/go';
+
+function OurTeam() {
+  return (
+    <Section>
+      <div className={styles.main}>
+        <WordAnimator text="Our Team" as="h3" />
+        <div className={styles.teamContainer}>
+          {managementTeam.map((member) => (
+            <TeamCard member={member} key={member.name} />
+          ))}
+        </div>
+        <div className={styles.cta}>
+          <h4>Meet the Team</h4>
+          <Button variant="link-light">
+            View All Members <GoArrowRight />
+          </Button>
+        </div>
+      </div>
+    </Section>
+  );
+}
+
+function TeamCard({ member }) {
+  const paragraph = truncateString(member.paragraph, 14);
+  return (
+    <div className={styles.teamCard}>
+      <div className={styles.imageContainer}>
+        <Image
+          width={343.65}
+          height={254.96}
+          src={member.imageData.src}
+          alt={member.imageData.alt}
+        />
+      </div>
+      <div className={styles.content}>
+        <h4>{member.name}</h4>
+        <h5>{member.position}</h5>
+        <p>{paragraph}</p>
+        <div className={styles.icons}>
+          <a href={member.linkedIn} target="blank" className={styles.icon}>
+            <PiLinkedinLogo />
+          </a>
+          {member.wikipedia && (
+            <a href={member.wikipedia} target="blank" className={styles.icon}>
+              <ImWikipedia />
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default OurTeam;
