@@ -17,7 +17,7 @@ function WWDSection() {
             dynamic finance and investment landscape. Since our founding in
             2015, we have rapidly expanded our reach and expertise, establishing
             ourselves as a trusted partner for businesses and investors seeking
-            to capitalize on the continent's vast potential.
+            to capitalize on the continent&lsquo;s vast potential.
           </p>
           <Button variant="link-light">
             Explore What We Do <SlArrowRightCircle />
