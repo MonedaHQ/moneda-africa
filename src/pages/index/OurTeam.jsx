@@ -43,6 +43,7 @@ function TeamCard({ member }) {
           height={254.96}
           src={member.imageData.src}
           alt={member.imageData.alt}
+          draggable={false}
         />
       </div>
       <div className={styles.content}>

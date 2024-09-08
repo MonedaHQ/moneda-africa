@@ -13,9 +13,9 @@ function WWDSection() {
         <div className={styles.contentContainer}>
           <WordAnimator text="What We Do" as="h2" />
           <p>
-            Moneda Africa has emerged as a dominant force in Africa's dynamic
-            finance and investment landscape. Since our founding in 2015, we
-            have rapidly expanded our reach and expertise, establishing
+            Moneda Africa has emerged as a dominant force in Africa&lsquo;s
+            dynamic finance and investment landscape. Since our founding in
+            2015, we have rapidly expanded our reach and expertise, establishing
             ourselves as a trusted partner for businesses and investors seeking
             to capitalize on the continent's vast potential.
           </p>

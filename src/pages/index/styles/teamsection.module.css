@@ -26,11 +26,6 @@
   background-color: var(--color-faded-orange);
 }
 
-.content p {
-  max-width: 90%;
-  margin-left: auto;
-}
-
 .metrics {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -76,7 +71,7 @@
 
 @media (max-width: 53.125em) {
   .metrics {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 3rem;
   }
 
@@ -96,5 +91,11 @@
   .imageContainer img {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media (max-width: 23.75em) {
+  .metrics {
+    grid-template-columns: 1fr;
   }
 }
