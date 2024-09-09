@@ -46,7 +46,7 @@
 .metric p {
   color: var(--color-white);
   text-align: center;
-  font-size: var(--font-size-caption);
+  /* font-size: var(--font-size-caption); */
 }
 
 @media (max-width: 68.75em) {
