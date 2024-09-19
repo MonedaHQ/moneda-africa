@@ -10,6 +10,7 @@ function ImageSlider({ imageArray }) {
   const settings = {
     dots: false,
     infinite: true,
+    fade: true,
     speed: 2500, // Slightly slower transition to delay the next image
     slidesToShow: 1,
     slidesToScroll: 1,

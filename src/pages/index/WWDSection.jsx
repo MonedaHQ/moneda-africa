@@ -8,32 +8,41 @@ import { SlArrowRightCircle } from 'react-icons/sl';
 
 function WWDSection() {
   return (
-    <Section>
-      <div className={styles.container}>
-        <div className={styles.contentContainer}>
-          <WordAnimator text="What We Do" as="h2" />
-          <p>
-            Moneda Africa has emerged as a dominant force in Africa&lsquo;s
-            dynamic finance and investment landscape. Since our founding in
-            2015, we have rapidly expanded our reach and expertise, establishing
-            ourselves as a trusted partner for businesses and investors seeking
-            to capitalize on the continent&lsquo;s vast potential.
-          </p>
-          <Button variant="link-light">
+    // <Section color="brown" paddingTop={false} paddingBottom={false}>
+    <div className={styles.container}>
+      <div className={styles.contentContainer}>
+        <WordAnimator text="What We Do" as="h2" />
+        <p>
+          Moneda Africa has emerged as a dominant force in Africa&lsquo;s
+          dynamic finance and investment landscape. Since our founding in 2015,
+          we have rapidly expanded our reach and expertise, establishing
+          ourselves as a trusted partner for businesses and investors seeking to
+          capitalize on the continent&lsquo;s vast potential.
+          <br />
+          <br />
+          We leverage a network of 5 global offices and a team of traders with
+          over extensive industry experience across 20 diverse business lines.
+          <br />
+          <br />
+          This collective expertise empowers us to deliver unparalleled insights
+          and solutions to enterprise, multinational, and government clients
+          worldwide.
+        </p>
+        {/* <Button variant="link-light">
             Explore What We Do <SlArrowRightCircle />
-          </Button>
-        </div>
-        <div className={styles.imageContainer}>
-          <Image
-            src="/assets/futuristic-photo.jpg"
-            width={734}
-            height={507}
-            alt="Futuristic Investor"
-            draggable={false}
-          />
-        </div>
+          </Button> */}
       </div>
-    </Section>
+      <div className={styles.imageContainer}>
+        <Image
+          src="/assets/heroImages/oil-rig.jpg"
+          width={734}
+          height={507}
+          alt="Futuristic Investor"
+          draggable={false}
+        />
+      </div>
+    </div>
+    // </Section>
   );
 }
 

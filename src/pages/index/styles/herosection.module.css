@@ -5,9 +5,13 @@
   place-items: center;
 }
 
+.main p {
+  text-align: start;
+}
+
 .heroSection {
-  height: 70vh;
-  width: 86%;
+  height: 100%;
+  width: 100%;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -39,7 +43,7 @@
   display: grid;
   align-content: center;
   grid-auto-rows: max-content;
-  padding: 0 6rem;
+  padding: 0 10rem;
 }
 
 .lottieIcon {

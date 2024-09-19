@@ -2,6 +2,9 @@ import { motion } from 'framer-motion';
 import styles from './styles/specialmenubutton.module.css';
 import { useMenuToggler } from '@/context/MenuToggleContext';
 
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { IoMdClose } from 'react-icons/io';
+
 function SpecialMenuButton({ isActive }) {
   const { toggleMenu } = useMenuToggler();
 
@@ -12,8 +15,8 @@ function SpecialMenuButton({ isActive }) {
         animate={{ top: isActive ? '-100%' : '0%' }}
         transition={{ duration: 0.5, type: 'tween', ease: [0.76, 0, 0.24, 1] }}
       >
-        <ButtonActual label="Menu" toggleMenu={toggleMenu} />
-        <ButtonActual label="Close" toggleMenu={toggleMenu} />
+        <ButtonActual label={<RxHamburgerMenu />} toggleMenu={toggleMenu} />
+        <ButtonActual label={<IoMdClose />} toggleMenu={toggleMenu} />
       </motion.div>
     </div>
   );

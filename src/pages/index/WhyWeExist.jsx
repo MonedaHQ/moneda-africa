@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function WhyWeExist() {
   return (
-    <Section paddingBottom={false} paddingTop={false}>
+    <Section>
       <div className={styles.mainContainer}>
         <div className={styles.videoContainer}>
           <iframe

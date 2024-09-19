@@ -4,6 +4,9 @@
   align-items: center;
   column-gap: 3rem;
   grid-template-areas: 'content image';
+
+  color: var(--color-white);
+  background-color: var(--color-dark-brown);
 }
 
 .imageContainer {
@@ -23,13 +26,21 @@
   justify-items: start;
   row-gap: 2rem;
 
-  padding-left: 8rem;
+  max-width: 70%;
+  margin: auto;
+
+  /* padding-left: 8rem; */
+}
+
+.contentContainer p {
+  text-align: justify;
 }
 
 .imageContainer img {
   width: 100%;
   height: auto;
   min-height: 250px;
+  aspect-ratio: 4/5;
 }
 
 @media (max-width: 65.625em) {
@@ -43,5 +54,6 @@
 
   .contentContainer {
     padding-left: 0;
+    max-width: 86%;
   }
 }

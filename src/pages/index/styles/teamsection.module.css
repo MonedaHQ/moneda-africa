@@ -1,10 +1,11 @@
 .teamContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* column-gap: 3rem; */
+  column-gap: 3rem;
   padding: 4rem 0;
 
   align-items: center;
+  color: var(--color-white);
 }
 
 .imageContainer {
@@ -18,12 +19,9 @@
 }
 
 .content {
-  padding: 6rem;
-
   display: grid;
   row-gap: 1.6rem;
   height: max-content;
-  background-color: var(--color-faded-orange);
 }
 
 .metrics {
@@ -46,7 +44,7 @@
 .metric p {
   color: var(--color-white);
   text-align: center;
-  /* font-size: var(--font-size-caption); */
+  font-size: var(--font-size-caption);
 }
 
 @media (max-width: 68.75em) {
@@ -57,6 +55,7 @@
 @media (max-width: 65.625em) {
   .teamContainer {
     grid-template-columns: 1fr;
+    row-gap: 3rem;
   }
 
   .imageContainer {
@@ -83,7 +82,7 @@
 
 @media (max-width: 48em) {
   .content {
-    padding: 4rem;
+    /* padding: 4rem; */
   }
 }
 

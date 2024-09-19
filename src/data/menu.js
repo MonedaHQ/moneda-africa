@@ -15,11 +15,9 @@ export const homeMenuLinks = [
     icon: <HiMiniChevronDown />,
     icon2: <HiMiniChevronUp />,
     dropdown: [
-      { path: '/about', label: 'About us' },
-      { path: '/what-we-do', label: 'What we do' },
+      { path: '/who-we-are', label: 'About us' },
       { path: '/monedas-history', label: "Moneda's History" },
       { path: '/our-impact', label: 'Our Impact' },
-      { path: '/our-strategies', label: 'Our Strategies' },
       { path: '/our-people', label: 'Our People' },
     ],
   },

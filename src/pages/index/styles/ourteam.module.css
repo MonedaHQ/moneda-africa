@@ -3,6 +3,10 @@
   row-gap: 3rem;
 }
 
+.main p {
+  text-align: start;
+}
+
 .main h3 {
   text-align: center;
 }

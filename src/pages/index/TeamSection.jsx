@@ -8,19 +8,31 @@ import { useRef } from 'react';
 
 import styles from './styles/teamsection.module.css';
 import CharacterAnimator from '@/components/CharacterAnimator';
+import { useCountIncrement } from '@/hooks/useCountIncrement';
 
 const metrics = [
   {
-    metric: '8+',
+    metric: 8,
+    prefix: null,
+    suffix: '+',
     description: 'years investing in Africa',
   },
-  { metric: '$350m+', description: 'value of funding requests' },
   {
-    metric: '$150m+',
+    metric: 350,
+    prefix: '$',
+    suffix: 'm+',
+    description: 'value of funding requests',
+  },
+  {
+    metric: 150,
+    prefix: '$',
+    suffix: 'm+',
     description: 'value of funded requests',
   },
   {
-    metric: '130+',
+    metric: 130,
+    prefix: null,
+    suffix: '+',
     description: 'onboarded African SMEs',
   },
 ];
@@ -36,7 +48,7 @@ function TeamSection() {
 
   return (
     <>
-      <Section paddingBottom={false}>
+      <Section paddingBottom={false} color="brown">
         <div className={styles.teamContainer}>
           <div className={styles.imageContainer}>
             <Image
@@ -49,7 +61,7 @@ function TeamSection() {
           </div>
           <div className={styles.content}>
             <WordAnimator
-              text=" A global team of dedicated professionals renowned for responsible
+              text="A global team of dedicated professionals renowned for responsible
             innovation."
               as="h3"
             />
@@ -78,7 +90,7 @@ function TeamSection() {
           </div>
         </div>
       </Section>
-      <Section color="brown">
+      <Section color="brown" paddingTop={false}>
         <Metrics />
       </Section>
     </>
@@ -89,13 +101,24 @@ function Metrics() {
   return (
     <div className={styles.metrics}>
       {metrics.map((metric) => (
-        <div className={styles.metric} key={metric.metric}>
-          <div className={styles.metricHeading}>
-            <CharacterAnimator text={metric.metric} as="h2" />
-          </div>
-          <p>{metric.description}</p>
-        </div>
+        <Metric key={metric.metric} metric={metric} />
       ))}
+    </div>
+  );
+}
+
+function Metric({ metric }) {
+  const [metricDigit, metricRef] = useCountIncrement(0, metric.metric);
+  return (
+    <div className={styles.metric} key={metric.metric}>
+      <div className={styles.metricHeading} ref={metricRef}>
+        <h2>
+          {metric.prefix}
+          {metricDigit}
+          {metric.suffix}
+        </h2>
+      </div>
+      <p>{metric.description}</p>
     </div>
   );
 }
