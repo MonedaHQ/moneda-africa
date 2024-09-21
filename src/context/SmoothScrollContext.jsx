@@ -3,11 +3,11 @@ import { createContext, useContext } from 'react';
 const SmoothScrollContext = createContext(undefined);
 
 function SmoothScrollProvider({ children }) {
-  function handleScrollTo(id) {
+  function handleScrollTo(id, offset = 0) {
     const element = document.getElementById(id);
     if (!element) return;
     window.scrollTo({
-      top: element.offsetTop,
+      top: element.offsetTop - offset,
       behavior: 'smooth',
     });
   }

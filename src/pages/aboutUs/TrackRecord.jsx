@@ -5,7 +5,7 @@ import WordAnimator from '@/components/WordAnimator';
 
 function TrackRecord() {
   return (
-    <Section color="brown">
+    <Section color="darkBrown">
       <div className={styles.container}>
         <div className={styles.leftside}>
           <div className={styles.imageContainer}>

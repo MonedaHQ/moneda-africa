@@ -16,7 +16,7 @@ function OurFocusAreas() {
     { label: 'Consulting', path: '/what-we-do?venture=consulting' },
   ];
   return (
-    <Section color="brown">
+    <Section color="darkBrown">
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <Image

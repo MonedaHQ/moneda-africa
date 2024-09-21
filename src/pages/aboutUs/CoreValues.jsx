@@ -45,18 +45,18 @@ function CoreValues() {
       </div>
       <div className={styles.content}>
         <div className={styles.heading}>
-          <WordAnimator
-            text=" Our success is driven by our exceptional people and our unwavering
-            commitment to our core values."
-            as="h2"
-          />
+          <WordAnimator text=" A Driving Force in African Investment" as="h3" />
 
           <p>
-            Our people are our most valuable asset. We are a global team of
-            dedicated professionals committed to fostering an inclusive
-            environment where diverse perspectives thrive. Through
-            collaboration, integrity, and mutual respect, we build meaningful
-            relationships that drive our success.
+            We are a leading investment firm shaping the future of finance and
+            commodities. Since our establishment in 2015, we have solidified our
+            position as a key player in the market, leveraging our deep
+            expertise in physical and financial commodities to deliver
+            exceptional value. Our comprehensive suite of services spans across
+            various sectors, including energy, renewables, and solid minerals.
+            Through strategic investments and partnerships, we are actively
+            driving Africa&lsquo;s economic transformation and creating
+            sustainable opportunities for growth.
           </p>
         </div>
         <div className={styles.coreValuesContainer}>

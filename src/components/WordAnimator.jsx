@@ -46,7 +46,7 @@ const WordAnimator = ({
               visibility: 'hidden',
             }}
           >
-            <Tag>{word} </Tag>
+            <Tag>{`${word}  `} </Tag>
           </div>
         ))}
       </div>
@@ -70,7 +70,7 @@ const WordAnimator = ({
           variants={wordVariants}
           style={{ display: 'inline-block', marginRight: '0.5rem' }}
         >
-          <Tag>{word}</Tag>
+          <Tag>{`${word}  `} </Tag>
         </motion.div>
       ))}
     </div>

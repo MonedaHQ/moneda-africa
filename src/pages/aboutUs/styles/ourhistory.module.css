@@ -1,0 +1,91 @@
+.lineBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+}
+
+.line {
+  background-color: var(--color-orange);
+  width: 60%;
+  height: 2px;
+  margin: auto;
+
+  /* transform: translateX(-50%); */
+}
+
+.parentContainer {
+  color: var(--color-white);
+  display: grid;
+  row-gap: 6rem;
+
+  width: 78%;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+
+  display: grid;
+  place-items: center;
+  row-gap: 1.8rem;
+}
+
+.heading p {
+  text-align: center;
+}
+
+.historyParent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  column-gap: 6rem;
+
+  position: relative;
+}
+
+.orange {
+  color: var(--color-orange);
+}
+
+.historyLine {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: var(--color-orange);
+}
+
+@media (max-width: 75em) {
+  .parentContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 51.875em) {
+  .historyParent {
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+}
+
+@media (max-width: 48.125em) {
+  .historyParent {
+    grid-template-columns: 1fr;
+  }
+
+  .historyLine {
+    display: none;
+  }
+}
+
+@media (max-width: 27.8125em) {
+  .historyParent {
+    row-gap: 1.8rem;
+  }
+}

@@ -48,7 +48,7 @@ function TeamSection() {
 
   return (
     <>
-      <Section paddingBottom={false} color="brown">
+      <Section paddingBottom={false} color="darkBrown">
         <div className={styles.teamContainer}>
           <div className={styles.imageContainer}>
             <Image
@@ -90,7 +90,7 @@ function TeamSection() {
           </div>
         </div>
       </Section>
-      <Section color="brown" paddingTop={false}>
+      <Section color="darkBrown" paddingTop={false}>
         <Metrics />
       </Section>
     </>

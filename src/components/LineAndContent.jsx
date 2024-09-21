@@ -5,9 +5,10 @@ import WordAnimator from './WordAnimator';
 
 function LineAndContent({
   content,
-  textColor = 'black',
+  textColor = 'orange',
   scrollDown = true,
   as = 'h2',
+  whiteText = false,
 }) {
   let { pageTitle, heading, paragraph } = content;
 
@@ -16,7 +17,9 @@ function LineAndContent({
   }
 
   return (
-    <div className={`${styles.content} ${styles[textColor]}`}>
+    <div
+      className={`${styles.content} ${whiteText ? styles.white : styles.dark}`}
+    >
       {pageTitle && <p className={styles.caption}>{pageTitle}</p>}
       <WordAnimator text={heading} as={as} />
       <div className={styles.paragraphBlock}>
@@ -26,12 +29,12 @@ function LineAndContent({
           className={styles.paragraph}
         />
       </div>
-      {scrollDown && (
+      {/* {scrollDown && (
         <div className={`${styles.scrollDown} ${styles[textColor]}`}>
           <ArrowDownIcon />
           <p>Scroll Down</p>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

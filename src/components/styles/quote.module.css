@@ -1,7 +1,11 @@
 .quote {
   position: relative;
+
   padding: 4rem;
   min-height: 38vh;
+
+  display: grid;
+  place-items: center;
 }
 
 .kwaAfrika {
@@ -21,6 +25,13 @@
   text-align: center;
   max-width: 60%;
   margin: auto;
+
+  display: grid;
+  row-gap: 2.6rem;
+}
+
+.quoteContainer p {
+  text-align: center;
 }
 
 @media (max-width: 60em) {

@@ -1,5 +1,6 @@
 import WordAnimator from '@/components/WordAnimator';
 import styles from './styles/careers.module.css';
+import Button from '@/components/Button';
 
 function Careers() {
   return (
@@ -10,6 +11,7 @@ function Careers() {
         a relentless pursuit of excellence, collaborative team players who can
         thrive in a dynamic environment.
       </h3>
+      <Button variant="secondary">Discover our team members</Button>
     </section>
   );
 }

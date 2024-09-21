@@ -4,6 +4,7 @@ import styles from './styles/mobiledropdown.module.css';
 import { useRouter } from 'next/router';
 import { useMenuToggler } from '@/context/MenuToggleContext';
 import { grow, perspectiveFast } from '@/data/anim';
+import { useSmoothScroll } from '@/context/SmoothScrollContext';
 
 function MobileDropDown({ dropdown }) {
   return (
@@ -25,8 +26,24 @@ function MobileDropDown({ dropdown }) {
 
 function DropLink({ link, index }) {
   const { closeMenu } = useMenuToggler();
+  const { handleScrollTo } = useSmoothScroll();
 
   const router = useRouter();
+
+  // function handleClick(path) {
+  //   if (path.includes('#')) {
+  //     const mainPath = path.split('#').at(0);
+  //     const scrollTo = path.split('#').at(1);
+  //     router.push(mainPath).then(() => {
+  //       handleScrollTo(scrollTo, 0);
+  //       // closeMenu();
+  //     });
+  //   } else {
+  //     router.push(path);
+  //     closeMenu();
+  //   }
+  // }
+
   return (
     <motion.li
       onClick={() => {

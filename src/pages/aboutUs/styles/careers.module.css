@@ -3,6 +3,10 @@
 
   color: var(--color-white);
   position: relative;
+
+  display: grid;
+  justify-items: center;
+  row-gap: 3rem;
 }
 
 .container h3 {

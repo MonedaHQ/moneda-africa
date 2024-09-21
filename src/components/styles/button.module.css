@@ -25,7 +25,8 @@
   gap: 1.4rem;
 }
 
-.primary {
+.primary,
+.secondary {
   padding: 1rem 1.4rem;
   display: flex;
   align-items: center;
@@ -36,12 +37,22 @@
   background-repeat: no-repeat;
 }
 
-.primary:hover {
+.secondary {
+  background-color: var(--color-orange);
+}
+
+.primary:hover,
+.secondary:hover {
   scale: 1.04;
+}
+
+.primary:hover,
+.secondary:hover {
   color: var(--color-orange);
 }
 
-.primary:hover::after {
+.primary:hover::after,
+.secondary:hover::after {
   opacity: 1;
   transform: scaleX(1) scaleY(1);
 }
@@ -50,7 +61,12 @@
   background-color: var(--color-light-grey);
 }
 
-.primary::after {
+.secondary::after {
+  background-color: var(--color-light-grey);
+}
+
+.primary::after,
+.secondary::after {
   position: absolute;
   content: '';
   width: 100%;

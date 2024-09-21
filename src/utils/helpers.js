@@ -7,3 +7,7 @@ export function truncateString(str, num = 10) {
 
   return words.slice(0, num).join(' ') + '...';
 }
+
+export function isEven(num) {
+  return num % 2 === 0;
+}

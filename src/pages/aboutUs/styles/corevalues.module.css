@@ -13,6 +13,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  filter: brightness(0.7) saturate(2);
 }
 
 .content {
@@ -26,7 +27,13 @@
 }
 
 .heading {
-  width: 52%;
+  width: 64%;
+  margin: auto;
+  text-align: center;
+}
+
+.heading p {
+  text-align: center;
 }
 
 .coreValuesContainer {
@@ -64,6 +71,10 @@
 @media (max-width: 43.75em) {
   .heading {
     width: 100%;
+  }
+
+  .heading p {
+    text-align: justify;
   }
   .coreValuesContainer {
     grid-template-columns: 1fr;

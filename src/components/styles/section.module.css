@@ -16,6 +16,10 @@
 }
 
 .brown {
+  background-color: var(--color-brown);
+}
+
+.darkBrown {
   background-color: var(--color-dark-brown);
 }
 

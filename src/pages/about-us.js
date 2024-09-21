@@ -3,12 +3,13 @@ import Navigation from '@/components/mainNav/Navigation';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
 import Quote from '@/components/Quote';
 import TypicalHero from '@/components/TypicalHero';
-import CoreValues from './whoWeAre/CoreValues';
+import CoreValues from './aboutUs/CoreValues';
 import Footer from '@/components/Footer';
 import TextAndImageSection from '@/components/TextAndImageSection';
-import TrackRecord from './whoWeAre/TrackRecord';
-import OurFounder from './whoWeAre/OurFounder';
-import Careers from './whoWeAre/Careers';
+import TrackRecord from './aboutUs/TrackRecord';
+import OurFounder from './aboutUs/OurFounder';
+import Careers from './aboutUs/Careers';
+import OurHistory from './aboutUs/OurHistory';
 
 function WhoWeAre() {
   const heroContent = {
@@ -27,7 +28,7 @@ function WhoWeAre() {
   };
 
   const imageAndTextContent = {
-    imageUrl: '/assets/cms-2.jpg',
+    imageUrl: '/assets/heroImages/oil-rig-2.jpg',
     heading: 'Shaping a Sustainable Future Through Diversified Investments',
     paragraph:
       'We are dedicated to driving positive change through our diversified investment portfolio. We believe that by investing across multiple sectors, including energy, mining, construction, and commodities, we can contribute to a more sustainable and prosperous future. <br/> <br/>Our focus is on identifying and supporting innovative businesses that are making a meaningful impact. By leveraging our expertise and resources, we aim to foster growth, create value, and drive positive social and environmental outcomes. Through our investments, we are committed to shaping a sustainable future for generations to come.',
@@ -42,7 +43,7 @@ function WhoWeAre() {
       />
       <Navigation />
       <MobileNavigationHeader />
-      <TypicalHero content={heroContent} />
+      <TypicalHero content={heroContent} color="darkBrown" whiteText={true} />
       <Quote quote={quote.quote} caption={quote.caption} />
       <CoreValues />
       <TextAndImageSection
@@ -52,6 +53,7 @@ function WhoWeAre() {
         contentFirst={imageAndTextContent.contentFirst}
       />
       <TrackRecord />
+      <OurHistory />
       <Careers />
       <Footer />
     </>

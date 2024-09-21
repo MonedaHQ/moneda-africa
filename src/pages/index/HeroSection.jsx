@@ -40,6 +40,7 @@ function HeroSection() {
             textColor="white"
             scrollDown={false}
             as="h1"
+            whiteText={true}
           />
         </div>
       </div>
