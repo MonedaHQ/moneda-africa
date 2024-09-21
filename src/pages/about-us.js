@@ -38,8 +38,8 @@ function WhoWeAre() {
   return (
     <>
       <MetaTags
-        title="What We Do - Moneda | We are attracted to Gaps: African Credit Gaps"
-        description="A global leader in finance and commodities, renowned for our unwavering integrity. "
+        title="What We Do - Moneda | Bridging Africa's Credit Gap"
+        description="We are dedicated to driving positive change through our diversified investment portfolio. We believe that by investing across multiple sectors, including energy, mining, construction, and commodities, we can contribute to a more sustainable and prosperous future."
       />
       <Navigation />
       <MobileNavigationHeader />

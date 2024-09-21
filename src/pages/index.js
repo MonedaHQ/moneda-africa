@@ -16,8 +16,8 @@ function Home() {
   return (
     <>
       <MetaTags
-        title="Home - Moneda | We are attracted to Gaps: African Credit Gaps"
-        description="At Moneda, we leverage our deep-rooted expertise in the finance and commodities markets to identify and capitalize on emerging opportunities. We empower our clients to enter new markets confidently by navigating complexities and maximizing returns while minimizing risk."
+        title="Home - Moneda | Bridging Africa's Credit Gap"
+        description="At Moneda, we've cultivated a profound understanding of African finance and commodities sectors. Our expertise across various sectors allows us to spot and seize emerging opportunities. We partner with our clients to navigate African markets confidently. By leveraging the insights we collect, you can maximise returns while mitigating risks."
       />
       <Navigation />
       <MobileNavigationHeader />

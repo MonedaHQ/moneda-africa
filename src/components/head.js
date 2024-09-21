@@ -11,7 +11,7 @@ function MetaTags({ title, description }) {
         sizes="180x180"
         href="/apple-touch-icon.png"
       ></link>
-      <link rel="mask-icon" href="/safari-pinned-tab.svg"></link>
+      <link rel="mask-icon" href="/favicon.png"></link>
     </Head>
   );
 }
