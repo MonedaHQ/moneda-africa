@@ -63,7 +63,7 @@ const ourHistory = [
   {
     year: '2024',
     paragraph:
-      'Moneda received its Global Business License (GBL), allowing us to operate and receive funds worldwide, marking a significant milestone in our global expansion efforts. (Write about ino capital and moneda Capital)',
+      'Moneda received its Global Business License (GBL), allowing us to operate and receive funds worldwide, marking a significant milestone in our global expansion efforts.',
     left: false,
   },
 ];
