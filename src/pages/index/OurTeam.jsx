@@ -47,8 +47,8 @@ function TeamCard({ member }) {
         />
       </div>
       <div className={styles.content}>
-        <h4>{member.name}</h4>
-        <h5>{member.position}</h5>
+        <h5>{member.name}</h5>
+        <h6>{member.position}</h6>
         <p>{paragraph}</p>
         <div className={styles.icons}>
           <a href={member.linkedIn} target="blank" className={styles.icon}>

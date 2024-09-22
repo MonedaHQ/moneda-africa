@@ -6,14 +6,14 @@ import Section from '@/components/Section';
 
 function OurFocusAreas() {
   const list = [
-    { label: 'Trading', path: '/what-we-do?venture=trading' },
-    { label: 'Assets', path: '/what-we-do?venture=assets' },
-    { label: 'Risk solutions', path: '/what-we-do?venture=risk-solutions' },
+    { label: 'Trading', path: '/focus-areas?venture=trading' },
+    { label: 'Assets', path: '/focus-areas?venture=assets' },
+    { label: 'Risk solutions', path: '/focus-areas?venture=risk-solutions' },
     {
       label: 'Capital Management',
-      path: '/what-we-do?venture=capital-management',
+      path: '/focus-areas?venture=capital-management',
     },
-    { label: 'Consulting', path: '/what-we-do?venture=consulting' },
+    { label: 'Consulting', path: '/focus-areas?venture=consulting' },
   ];
   return (
     <Section color="darkBrown">

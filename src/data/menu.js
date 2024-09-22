@@ -36,10 +36,9 @@ export const homeMenuLinks = [
     icon: <HiMiniChevronDown />,
     icon2: <HiMiniChevronUp />,
     dropdown: [
-      { path: '/domena', label: 'Domena' },
-      { path: '/1952Africa', label: '1952 Africa' },
-      { path: '/moneda-invest', label: 'Moneda Invest' },
-      { path: '/moneda-capital', label: 'Moneda Capital' },
+      { path: 'https://www.domenaafrica.com/', label: 'Domena' },
+      { path: 'https://www.1952africa.art/', label: '1952 Africa' },
+      { path: 'https://www.monedainvest.com/', label: 'Moneda Invest' },
     ],
   },
   {

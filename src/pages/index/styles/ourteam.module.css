@@ -54,6 +54,7 @@
 
 .content p {
   align-self: self-start;
+  font-size: var(--font-size-caption);
 }
 
 .icons {
@@ -66,6 +67,11 @@
 .icon svg {
   width: 2.4rem;
   height: 2.4rem;
+  transition: all 0.25s cubic-bezier(0.84, 0.25, 0.5, 0.99);
+}
+
+.icon:hover > svg {
+  transform: scale(1.2);
 }
 
 .cta {

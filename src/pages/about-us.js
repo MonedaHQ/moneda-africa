@@ -13,7 +13,7 @@ import OurHistory from './aboutUs/OurHistory';
 
 function WhoWeAre() {
   const heroContent = {
-    pageTitle: 'Who we are',
+    pageTitle: 'About us',
     heading:
       'A global team of dedicated professionals renowned for responsible innovation.',
     paragraph:

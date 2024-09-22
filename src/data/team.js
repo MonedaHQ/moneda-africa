@@ -37,7 +37,7 @@ export const managementTeam = [
   },
   {
     name: 'Peter Aloga',
-    position: 'Chief Audit & Compliance Officer',
+    position: 'Group Financial Controller',
     paragraph:
       'From banking, through asset management to real estate, Energy and Consulting, Peter has spent over 12 years providing world class solutions in financial reporting and management accounting. A trusted professional, chartered accountant and senior fellow of the institure of chartered accountants of Nigeria (ICAN). University of Lags (MSC Accounting)',
     imageData: {
