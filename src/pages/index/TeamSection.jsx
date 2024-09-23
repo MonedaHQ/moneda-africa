@@ -52,10 +52,10 @@ function TeamSection() {
         <div className={styles.teamContainer}>
           <div className={styles.imageContainer}>
             <Image
-              src="/assets/ejike-in-namibia.jpg"
+              src="/assets/ejike-and-declan.jpg"
               width={725}
               height={865}
-              alt="Moneda Capital Launch"
+              alt="Team Moneda at the AEW"
               draggable={false}
             />
           </div>
@@ -72,16 +72,11 @@ function TeamSection() {
               initial="initial"
               animate={inView ? 'animate' : 'initial'}
             >
-              Leveraging Decades of Global Expertise in Energy and Commodities
-              to Deliver Innovative Solutions and Maximize Returns for Our
-              Clients.
-              <br />
-              <br />
-              Since our inception in 2023, Moneda Capital has rapidly
-              established itself as a global leader in the energy and
-              commodities markets. Operating at the forefront of the wholesale
-              energy sector, we have amassed unparalleled expertise across a
-              diverse range of physical and financial commodities.
+              Since our inception in 2023, Moneda has rapidly established itself
+              as a global leader in the energy and commodities markets.
+              Operating at the forefront of the wholesale energy sector, we have
+              amassed unparalleled expertise across a diverse range of physical
+              and financial commodities.
               <br />
               <br />
               This deep-rooted knowledge empowers us to deliver exceptional

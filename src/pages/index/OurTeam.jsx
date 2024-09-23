@@ -16,14 +16,14 @@ function OurTeam() {
   return (
     <Section>
       <div className={styles.main}>
-        <WordAnimator text="Our Team" as="h3" />
+        <WordAnimator text="Our People" as="h3" />
         <div className={styles.teamContainer}>
           {managementTeam.map((member) => (
             <TeamCard member={member} key={member.name} />
           ))}
         </div>
         <div className={styles.cta}>
-          <h4>Meet the Team</h4>
+          <h4></h4>
           <Button variant="link-light">
             View All Members <GoArrowRight />
           </Button>

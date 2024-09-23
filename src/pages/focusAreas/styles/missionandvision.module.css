@@ -1,0 +1,18 @@
+.main {
+  min-height: 40vh;
+
+  display: grid;
+  align-content: center;
+  row-gap: 3rem;
+}
+
+.contentBox {
+  padding: 1.4rem 2rem;
+
+  display: grid;
+  row-gap: 1.4rem;
+}
+
+.contentBox h3 {
+  color: var(--color-orange);
+}

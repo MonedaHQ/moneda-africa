@@ -12,7 +12,7 @@ function WhatWeDo() {
     heading:
       'Global Experts in Finance and Commodities Delivering Innovative Solutions and Maximizing Returns for Our Clients.',
     paragraph:
-      'Since our inception in 2023, Moneda Capital has rapidly established itself as a global leader in the finance and commodities markets. Operating at the forefront of the wholesale energy sector, we have amassed unparalleled expertise across a diverse range of physical and financial commodities. This deep-rooted knowledge empowers us to deliver exceptional value to our clients through a comprehensive suite of services.',
+      'Since our inception in 2015, Moneda  has rapidly established itself as a global leader in the finance and commodities markets. Operating at the forefront of the wholesale energy sector, we have amassed unparalleled expertise across a diverse range of physical and financial commodities. This deep-rooted knowledge empowers us to deliver exceptional value to our clients through a comprehensive suite of services.',
     imageUrl: '/assets/business-man.jpg',
   };
   return (

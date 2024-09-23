@@ -1,9 +1,11 @@
 import Section from '@/components/Section';
 import { useRef } from 'react';
-import { useInView, motion, animate } from 'framer-motion';
+import { useInView, motion, animate, delay } from 'framer-motion';
 
 import styles from './styles/ourhistory.module.css';
 import { isEven } from '@/utils/helpers';
+import WordAnimator from '@/components/WordAnimator';
+import CharacterAnimator from '@/components/CharacterAnimator';
 
 const ourHistory = [
   {
@@ -144,6 +146,11 @@ function HistoryBox({ history, index }) {
     },
   };
 
+  const paragraphVariants = {
+    initial: { transfrom: 'translateY(-30px)' },
+    animate: { transfrom: 'translateY(0)', transition: { delay: index * 0.3 } },
+  };
+
   const ref = useRef();
   const inView = useInView(ref, { once: true });
 
@@ -157,8 +164,16 @@ function HistoryBox({ history, index }) {
         animate={inView ? 'animate' : 'initial'}
         ref={ref}
       >
-        <h3 className={`${!isBoxEven ? styles.orange : ''}`}>{history.year}</h3>
-        <p>{history.paragraph}</p>
+        <h3 className={`${!isBoxEven ? styles.orange : ''}`}>
+          <CharacterAnimator as="h3" text={history.year} />
+        </h3>
+        <motion.p
+          variants={paragraphVariants}
+          initial="initial"
+          animate={inView ? 'animate' : 'initial'}
+        >
+          {history.paragraph}
+        </motion.p>
       </motion.div>
       <div />
       <div />

@@ -9,7 +9,7 @@ export const managementTeam = [
       alt: 'A photo of Ejike Egbuagu, GCEO Moneda',
     },
     linkedIn: 'https://www.linkedin.com/in/ejike-egbuagu-28410960/',
-    wikipedia: 'https://africanbusinessstories.com/ejike/',
+    wikipedia: null,
   },
   {
     name: 'Habibah Waziri',

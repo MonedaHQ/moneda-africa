@@ -10,12 +10,13 @@ import TrackRecord from './aboutUs/TrackRecord';
 import OurFounder from './aboutUs/OurFounder';
 import Careers from './aboutUs/Careers';
 import OurHistory from './aboutUs/OurHistory';
+import MissionAndVsion from './focusAreas/MissionAndVsion';
 
 function WhoWeAre() {
   const heroContent = {
     pageTitle: 'About us',
     heading:
-      'A global team of dedicated professionals renowned for responsible innovation.',
+      'Our mission is to trigger unconventional growth in Natural Resource value chains in Africa using alternative credit and world-class execution',
     paragraph:
       'Built on a foundation of integrity, Moneda is a global energy and commodities firm with a far-reaching presence across asset classes. <br/> <br/> We leverage a network of 5 global offices and a team of  traders with over  extensive industry experience  across 20 diverse business lines. <br/> <br/>This collective expertise empowers us to deliver unparalleled insights and solutions to enterprise, multinational, and government clients worldwide.',
     imageUrl: '/assets/site.jpg',
@@ -43,8 +44,9 @@ function WhoWeAre() {
       />
       <Navigation />
       <MobileNavigationHeader />
-      <TypicalHero content={heroContent} color="darkBrown" whiteText={true} />
-      <Quote quote={quote.quote} caption={quote.caption} />
+      {/* <TypicalHero content={heroContent} color="darkBrown" whiteText={true} /> */}
+      {/* <Quote quote={quote.quote} caption={quote.caption} /> */}
+      <MissionAndVsion />
       <CoreValues />
       <TextAndImageSection
         imageUrl={imageAndTextContent.imageUrl}

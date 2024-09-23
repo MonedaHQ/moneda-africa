@@ -16,6 +16,7 @@
 .imageContainer img {
   width: 100%;
   height: auto;
+  filter: saturate(0.8);
 }
 
 .content {

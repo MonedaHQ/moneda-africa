@@ -16,9 +16,9 @@ function HeroSection() {
   }, []);
 
   const images = [
-    '/assets/heroImages/badge.jpg',
     '/assets/heroImages/cbc.jpg',
     '/assets/heroImages/link-bridge.jpg',
+    '/assets/heroImages/badge.jpg',
     '/assets/heroImages/agriculture.jpg',
     '/assets/heroImages/oil-rig-2.jpg',
   ];

@@ -15,22 +15,24 @@ function TypicalHero({
   const { imageUrl } = content;
 
   return (
-    <Section paddingBottom={false} paddingTop={false} color={color}>
-      <main className={styles.main}>
-        <div className={styles.contentContainer}>
+    // <Section paddingBottom={false} paddingTop={false} color={color}>
+    <main className={`${styles.main} ${styles[color]}`}>
+      <div className={styles.contentContainer}>
+        <Section paddingBottom={false} paddingTop={false} color={color}>
           <LineAndContent content={content} whiteText={whiteText} as={as} />
-          <div className={styles.imageContainer}>
-            <Image
-              src={imageUrl}
-              width={719}
-              height={757}
-              alt="Constuction site"
-              draggable={false}
-            />
-          </div>
+        </Section>
+        <div className={styles.imageContainer}>
+          <Image
+            src={imageUrl}
+            width={719}
+            height={757}
+            alt="Constuction site"
+            draggable={false}
+          />
         </div>
-      </main>
-    </Section>
+      </div>
+    </main>
+    // </Section>
   );
 }
 

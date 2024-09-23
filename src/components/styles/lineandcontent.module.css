@@ -10,6 +10,14 @@
   position: relative;
 }
 
+.content h4 {
+  font-weight: 200;
+}
+
+.content h4 strong {
+  font-weight: 300;
+}
+
 .caption {
   text-transform: uppercase;
   font-weight: 400;
@@ -34,6 +42,12 @@
 
 .dark {
   color: var(--color-darker-brown);
+}
+
+@media (max-width: 87.5em) {
+  .content h4 {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 75em) {
