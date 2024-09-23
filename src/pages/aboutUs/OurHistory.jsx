@@ -11,43 +11,43 @@ const ourHistory = [
   {
     year: '2015',
     paragraph:
-      'Founded in 2015, Moneda Invest emerged with a clear vision: to become a leading financial services firm specializing in the energy and commodities sectors. The company laid the groundwork for its future success by establishing a robust financial framework and defining its core values.',
+      'Founded in 2015, Moneda Invest aimed to be a leading financial services firm in the energy and commodities sectors. We built our foundation on a strong financial framework and core values.',
     left: true,
   },
   {
     year: '2016',
     paragraph:
-      "A pivotal moment arrived in 2016 when Moneda Invest secured its first exclusive financial advisory mandate from a Nigerian client. This marked the beginning of a transformative journey as the company embarked on a comprehensive restructuring of the client's business operations, focusing on enhancing efficiency, profitability, and overall performance.",
+      "Moneda Invest secured its first exclusive financial advisory mandate from a Nigerian client, marking a transformative journey. We restructured the client's business to improve efficiency, profitability, and performance.",
     left: false,
   },
   {
     year: '2017',
     paragraph:
-      "Proved to be a year of significant growth and achievement. Moneda Invest successfully raised $5 million in capital from a Geneva Trading House, fueling its expansion plans. The company's expertise was instrumental in supporting a major client with the financing and execution of over 20,000 metric tonnes of gasoil supplies to Chevron Nigeria's offshore oil production fields. This accomplishment solidified Moneda's position as a reliable partner in the energy sector.",
+      'Moneda Invest experienced significant growth by raising $5 million in capital from a Geneva Trading House, supporting its expansion. It played a key role in financing and executing 20,000 metric tonnes of gasoil supplies to Chevron Nigeria, solidifying its reputation in the energy sector.',
     left: true,
   },
   {
     year: '2018',
     paragraph:
-      "Building on this momentum, in 2018, Moneda expanded its capital base to $25 million through strategic partnerships with London-based trading houses and an Africa-focused bank. This financial injection propelled the company into new opportunities, enabling it to support its clients on an even larger scale. A testament to this growth was the successful execution of over 100,000 metric tonnes of gasoil supplies to Total Upstream Nigeria's offshore production facilities, solidifying the client's position as the largest single supplier.",
+      'Expansion of our capital base to $25 million through strategic partnerships with London-based trading houses and an Africa-focused bank. This enabled the company to execute over 100,000 metric tonnes of gasoil supplies to Total Upstream Nigeria, reinforcing its position as a key player in the energy sector.',
     left: false,
   },
   {
     year: '2019',
     paragraph:
-      "A strategic shift occurred in 2019 as Moneda Invest transitioned to a multi-client model. By terminating exclusive contracts, the company gained greater flexibility to operate across the industry. This strategic move coincided with the redesign of fee structures aligned with the NiPEX platform. Furthermore, Moneda secured the necessary regulatory approvals to operate as both a financier and operator in the oil and gas contracting and execution space. This pivotal year marked a significant milestone in the company's evolution, positioning it for further growth and expansion.",
+      'The company transitioned to a multi-client model, gaining industry flexibility and aligning fee structures with the NiPEX platform. The company also secured regulatory approvals to operate as both a financier and operator in the oil and gas sector, marking a key milestone in its growth.',
     left: true,
   },
   {
     year: '2020',
     paragraph:
-      'Moneda Invest intensified its focus on the African market. The company entered into non-exclusive joint venture agreements with International Oil Companies (IOCs) to support the financing and execution of their equipment and petroleum supply contracts. These strategic partnerships enabled Moneda to expand its reach and execute significant transactions, including a 30,000 metric tonne gasoil supply contract for Duke Oil and a one-million-barrel Amenam crude contract. To facilitate seamless operations across the continent, Moneda Invest established a presence in Mauritius, enhancing its capital flexibility and market reach.',
+      'Moneda Invest strengthened its focus on Africa by forming non-exclusive joint ventures with International Oil Companies (IOCs) to finance and execute supply contracts. Notable deals included a 30,000 metric tonne gasoil supply for Duke Oil and a one-million-barrel crude contract. The company also expanded into Mauritius to enhance capital flexibility and market reach.',
     left: false,
   },
   {
     year: '2021',
     paragraph:
-      'Moneda fully transitioned into a new operating model, shifting from advisory fees to profit-sharing, raised $10 million from a US-based hedge fund (expandable to $50 million), and deployed its first on-balance sheet capital to support an indigenous SME supplying tug boats to the Otakikpo field.',
+      'Moneda transitioned to a profit-sharing model, raising $10 million from a US-based hedge fund, expandable to $50 million. It also deployed its first on-balance sheet capital to support a local SME supplying tugboats to the Otakikpo field.',
     left: true,
   },
   {

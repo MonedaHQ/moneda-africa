@@ -45,7 +45,7 @@ function CoreValues() {
       </div>
       <div className={styles.content}>
         <div className={styles.heading}>
-          <WordAnimator text=" A Driving Force in African Investment" as="h3" />
+          <WordAnimator text=" A Driving Force in African Investment" as="h4" />
 
           <p>
             We are a leading investment firm shaping the future of finance and
@@ -81,7 +81,7 @@ function CoreValue({ coreValue, index }) {
       <AnimatedLineHorizontal width={80} index={index} />
       <div className={styles.valueHeading}>
         <p>We are</p>
-        <h3>{heading}</h3>
+        <h4>{heading}</h4>
       </div>
       <p>{value}</p>
     </div>

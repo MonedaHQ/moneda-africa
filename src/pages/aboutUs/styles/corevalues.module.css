@@ -27,13 +27,13 @@
 }
 
 .heading {
-  width: 64%;
-  margin: auto;
-  text-align: center;
+  width: 100%;
+  /* margin: auto; */
+  /* text-align: center; */
 }
 
 .heading p {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .coreValuesContainer {
