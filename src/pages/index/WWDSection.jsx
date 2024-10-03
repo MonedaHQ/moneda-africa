@@ -20,10 +20,6 @@ function WWDSection() {
           capitalize on the continent&lsquo;s vast potential.
           <br />
           <br />
-          We leverage a network of 5 global offices and a team of traders with
-          over extensive industry experience across 20 diverse business lines.
-          <br />
-          <br />
           This collective expertise empowers us to deliver unparalleled insights
           and solutions to enterprise, multinational, and government clients
           worldwide.

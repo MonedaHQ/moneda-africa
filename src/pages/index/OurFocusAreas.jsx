@@ -6,14 +6,13 @@ import Section from '@/components/Section';
 
 function OurFocusAreas() {
   const list = [
-    { label: 'Trading', path: '/focus-areas?venture=trading' },
-    { label: 'Assets', path: '/focus-areas?venture=assets' },
-    { label: 'Risk solutions', path: '/focus-areas?venture=risk-solutions' },
+    { label: 'Trading', path: '/verticals?venture=trading' },
+    { label: 'Assets', path: '/verticals?venture=assets' },
+    { label: 'Risk Advisory', path: '/verticals?venture=risk-advisory' },
     {
       label: 'Capital Management',
-      path: '/focus-areas?venture=capital-management',
+      path: '/verticals?venture=capital-management',
     },
-    { label: 'Consulting', path: '/focus-areas?venture=consulting' },
   ];
   return (
     <Section color="darkBrown">
@@ -39,7 +38,7 @@ function OurFocusAreas() {
           />
         </div>
         <div className={styles.linkList}>
-          <WordAnimator text="Our Focus Areas" as="h2" />
+          <WordAnimator text="Our Verticals" as="h2" />
           <ul className={styles.list}>
             {list.map((item) => (
               <a key={item.label} className={styles.item} href={item.path}>

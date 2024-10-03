@@ -2,9 +2,9 @@ import MetaTags from '@/components/head';
 import Navigation from '@/components/mainNav/Navigation';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
 import TypicalHero from '@/components/TypicalHero';
-import QueryNavigator from './focusAreas/QueryNavigator';
+import QueryNavigator from './verticals/QueryNavigator';
 import Footer from '@/components/Footer';
-import WhatWeDoHero from './focusAreas/WhatWeDoHero';
+import WhatWeDoHero from './verticals/WhatWeDoHero';
 
 function WhatWeDo() {
   const heroContent = {

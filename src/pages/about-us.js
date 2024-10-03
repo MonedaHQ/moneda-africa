@@ -10,7 +10,7 @@ import TrackRecord from './aboutUs/TrackRecord';
 import OurFounder from './aboutUs/OurFounder';
 import Careers from './aboutUs/Careers';
 import OurHistory from './aboutUs/OurHistory';
-import MissionAndVsion from './focusAreas/MissionAndVsion';
+import MissionAndVsion from './verticals/MissionAndVsion';
 
 function WhoWeAre() {
   const heroContent = {

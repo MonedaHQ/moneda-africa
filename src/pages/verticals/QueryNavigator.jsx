@@ -8,9 +8,8 @@ function QueryNavigator() {
   const menuList = [
     { label: 'Trading', path: 'trading' },
     { label: 'Assets', path: 'assets' },
-    { label: 'Risk Solutions', path: 'risk-solutions' },
+    { label: 'Risk Advisory', path: 'risk-advisory' },
     { label: 'Capital Management', path: 'capital-management' },
-    { label: 'Consulting', path: 'consulting' },
   ];
 
   useEffect(() => {
