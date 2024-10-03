@@ -24,9 +24,9 @@ function HeroSection() {
   ];
 
   const heroContent = {
-    heading: "Bridging Africa's Credit Gap",
+    heading: 'We are attracted to Gaps - African Gaps',
     paragraph:
-      "<strong>Africa's markets are dynamic and ever evolving</strong>. <br/> <br/>At Moneda, we've cultivated a profound understanding of African finance and commodities sectors. Our expertise across various sectors allows us to spot and seize emerging opportunities. We partner with our clients to navigate African markets confidently. By leveraging the insights we collect, you can maximise returns while mitigating risks.",
+      'At Moneda, we understand African finance and commodities deeply. Our sector expertise helps us identify and capitalize on emerging opportunities. Partner with us to navigate these markets confidently, maximize returns, and manage risks effectively.',
   };
 
   return (

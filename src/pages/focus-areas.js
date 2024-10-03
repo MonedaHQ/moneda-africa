@@ -9,10 +9,9 @@ import WhatWeDoHero from './focusAreas/WhatWeDoHero';
 function WhatWeDo() {
   const heroContent = {
     pageTitle: 'Focus areas',
-    heading:
-      'Global Experts in Finance and Commodities Delivering Innovative Solutions and Maximizing Returns for Our Clients.',
+    heading: 'Global Experts in Finance and Commodities',
     paragraph:
-      'Since our inception in 2015, Moneda  has rapidly established itself as a global leader in the finance and commodities markets. Operating at the forefront of the wholesale energy sector, we have amassed unparalleled expertise across a diverse range of physical and financial commodities. This deep-rooted knowledge empowers us to deliver exceptional value to our clients through a comprehensive suite of services.',
+      'Moneda has been delivering innovative solutions and maximizing client returns since 2015. <br/> With leading expertise in the wholesale energy sector and commodities, we provide exceptional value through a comprehensive range of services.',
     imageUrl: '/assets/business-man.jpg',
   };
   return (
