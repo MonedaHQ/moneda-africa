@@ -10,11 +10,11 @@
   position: relative;
 }
 
-.content h4 {
+.content h5 {
   font-weight: 200;
 }
 
-.content h4 strong {
+.content h5 strong {
   font-weight: 300;
 }
 

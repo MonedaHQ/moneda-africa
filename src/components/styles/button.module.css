@@ -26,7 +26,8 @@
 }
 
 .primary,
-.secondary {
+.secondary,
+.submit {
   padding: 1rem 1.4rem;
   display: flex;
   align-items: center;
@@ -37,13 +38,19 @@
   background-repeat: no-repeat;
 }
 
-.secondary {
+.secondary,
+.submit {
   background-color: var(--color-orange);
 }
 
 .primary:hover,
-.secondary:hover {
+.secondary:hover,
+.submit:hover {
   scale: 1.04;
+}
+
+.submit {
+  color: var(--color-white);
 }
 
 .primary:hover,
@@ -52,7 +59,8 @@
 }
 
 .primary:hover::after,
-.secondary:hover::after {
+.secondary:hover::after,
+.submit:hover::after {
   opacity: 1;
   transform: scaleX(1) scaleY(1);
 }
@@ -65,8 +73,13 @@
   background-color: var(--color-light-grey);
 }
 
+.submit::after {
+  background-color: var(--color-brown);
+}
+
 .primary::after,
-.secondary::after {
+.secondary::after,
+.submit::after {
   position: absolute;
   content: '';
   width: 100%;

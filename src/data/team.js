@@ -49,3 +49,59 @@ export const managementTeam = [
     wikipedia: null,
   },
 ];
+
+export const advisoryBoard = [
+  {
+    name: 'Uche Wigwe',
+    position: 'Advisory Board (Chairman)',
+    occupation: 'Managing Partner, Wigwe & Partners',
+    paragraph:
+      'Legal Practioner and Managing Partner at Wigwe & Partners with over 15 years of experience. He possesses strong expertise advising on Construction, Infrastructure Law, Energy and Natural Resources',
+    imageData: {
+      src: '/assets/team/advisory/wigwe.jpg',
+      alt: 'A photo of Uche Wigwe',
+    },
+    linkedIn: 'https://www.linkedin.com/in/uche-wigwe-93377483/',
+    wikipedia: null,
+  },
+  {
+    name: 'Ekinadese Osayande',
+    position: 'Advisory Board Member',
+    occupation: 'Consultant, Dese Advisory Limited',
+    paragraph:
+      'An Education Consultant with over 6 years of experience on advisory and mentorship in the education sector. She is currently putting her passion for education at work at Dese Advisory, where she focuses on advising and supporting career aspirants through their educational journey. Ekinadese holds a degree in Political Science, Economics, International Relations, African and American Studies from Stanford University, USA',
+    imageData: {
+      src: '/assets/team/advisory/ekinadese.jpg',
+      alt: 'A photo of Ekinadese Osayande',
+    },
+    linkedIn: null,
+    wikipedia: null,
+  },
+  {
+    name: 'Idakwo Shuaibu',
+    position: 'Advisory Board Member',
+    occupation: null,
+    paragraph:
+      "An economist and Certified Trade Finance/Treasury Specialist (London Institure of Banking and Finance) with over 14 years experience spanning across the Banking, Energy and Telecommunications industries. Subject expert in Trade Finance practice and consultancy, letters of credit executions, Standby LC's and Guarantees, settlements and remittances and cross border trade transactions, including treasury management, and corporate finance",
+    imageData: {
+      src: '/assets/team/advisory/idakwo.jpg',
+      alt: 'A photo of Idakwo Shuaibu',
+    },
+    linkedIn: null,
+    wikipedia: null,
+  },
+  {
+    name: 'Adesuwa Tope Imasekha',
+    position: 'Advisory Board Member',
+    occupation:
+      'Corporate Finance and Development Economics Expert, Founder - Women Impacting Nigeria (WIN)',
+    paragraph:
+      'Tope Imasekha is a Corporate Finance and Development Economics Specialist. She is a highly motivated and competent corporate finance and investment professional with over 15 years experience in transaction advisory, transacion/deal structuring, corporate finance, M & A advisory, project finance, valuation, and due diligence. She is a specialist in corporate finance with a background in Economics and Accounting. She has managed various energy transactions in excess of 4 Billion USD in Nigeria and other Sub-Saharan Africa countries',
+    imageData: {
+      src: '/assets/team/advisory/imasheka.png',
+      alt: 'A photo of Adesuwa Tope',
+    },
+    linkedIn: 'https://www.linkedin.com/in/topeimasekha/',
+    wikipedia: null,
+  },
+];

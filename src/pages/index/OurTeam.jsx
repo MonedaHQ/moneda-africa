@@ -24,7 +24,7 @@ function OurTeam() {
         </div>
         <div className={styles.cta}>
           <h4></h4>
-          <Button variant="link-light">
+          <Button variant="link-light" href="/our-people">
             View All Members <GoArrowRight />
           </Button>
         </div>

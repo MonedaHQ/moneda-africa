@@ -106,7 +106,7 @@ p strong {
     --font-size-h1: 4rem;
     --font-size-h2: 3.4rem;
     --font-size-h3: 3.2rem;
-    --font-size-h4: 2.24em;
+    --font-size-h4: 1.4em;
     --font-size-h5: 1.8rem;
     --font-size-h6: 1.6rem;
 
@@ -122,7 +122,7 @@ p strong {
     --font-size-h1: 3.8rem;
     --font-size-h2: 3.2rem;
     --font-size-h3: 3rem;
-    --font-size-h4: 2rem;
+    --font-size-h4: 1.4rem;
     --font-size-h5: 1.8rem;
     --font-size-h6: 1.6rem;
   }
@@ -133,7 +133,7 @@ p strong {
     --font-size-h1: 3.6rem;
     --font-size-h2: 3rem;
     --font-size-h3: 2.8rem;
-    --font-size-h4: 1.8rem;
+    --font-size-h4: 1.4rem;
   }
 }
 @media (max-width: 27.375em) {

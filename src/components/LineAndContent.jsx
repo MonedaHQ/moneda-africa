@@ -24,7 +24,7 @@ function LineAndContent({
       <WordAnimator text={heading} as={as} />
       <div className={styles.paragraphBlock}>
         <AnimatedLine color={textColor} />
-        <h4
+        <h5
           dangerouslySetInnerHTML={{ __html: paragraph }}
           className={styles.paragraph}
         />

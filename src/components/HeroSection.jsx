@@ -8,26 +8,12 @@ import WordAnimator from '@/components/WordAnimator';
 import ScrollDownIcon from '@/components/lottieFiles/ScrollDownIcon';
 import LineAndContent from '@/components/LineAndContent';
 
-function HeroSection() {
+function HeroSection({ images, content }) {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
   }, []);
-
-  const images = [
-    '/assets/heroImages/cbc.jpg',
-    '/assets/heroImages/link-bridge.jpg',
-    '/assets/heroImages/badge.jpg',
-    '/assets/heroImages/agriculture.jpg',
-    '/assets/heroImages/oil-rig-2.jpg',
-  ];
-
-  const heroContent = {
-    heading: 'We are attracted to Gaps - African Gaps',
-    paragraph:
-      'At Moneda, we understand African finance and commodities deeply. Our sector expertise helps us identify and capitalize on emerging opportunities. Partner with us to navigate these markets confidently, maximize returns, and manage risks effectively.',
-  };
 
   return (
     <main className={styles.main}>
@@ -36,7 +22,7 @@ function HeroSection() {
         <div className={styles.content}>
           <MobileLogo />
           <LineAndContent
-            content={heroContent}
+            content={content}
             textColor="white"
             scrollDown={false}
             as="h1"

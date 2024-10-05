@@ -94,7 +94,7 @@
 
 @media (max-width: 60.75em) {
   .heroSection {
-    height: 80%;
+    height: 100vh;
   }
 }
 
