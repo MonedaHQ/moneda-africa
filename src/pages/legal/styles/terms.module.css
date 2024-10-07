@@ -1,0 +1,16 @@
+.parent ul {
+  padding-left: 2.4rem;
+
+  display: grid;
+  row-gap: 1.4rem;
+}
+
+.parent h5 {
+  margin-bottom: 2rem;
+  text-align: start;
+}
+
+.parent a {
+  text-decoration: underline;
+  color: var(--color-orange);
+}

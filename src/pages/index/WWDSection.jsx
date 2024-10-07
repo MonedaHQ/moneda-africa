@@ -30,10 +30,10 @@ function WWDSection() {
       </div>
       <div className={styles.imageContainer}>
         <Image
-          src="/assets/heroImages/oil-rig.jpg"
+          src="/assets/map.png"
           width={734}
           height={507}
-          alt="Futuristic Investor"
+          alt="Map of the world"
           draggable={false}
         />
       </div>
