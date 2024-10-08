@@ -86,7 +86,7 @@ export const managementTeam = [
   },
   {
     name: 'Eyimofe Olabaju',
-    position: 'VP, Joint Ventures',
+    position: 'Director, Trading & Operations',
     paragraph:
       'Mofe’s career spans over 15 years, starting at Linetrale Oil Supply & Trading Limited (now Linetrale Energy Trading Ltd) in Lagos, where he rose to Senior Trader in the Gasoline Department. He then became Director of Operations at Tycon Minerals Limited in Kumasi, overseeing gold and precious minerals extraction. In 2020, he joined Optima Energy Resources Limited in Lagos as Head of Trading and Operations, managing energy product trading, shipping, and field operations. Mofe holds a degree in Business Management from Kingston University and a certification in Energy Trading from CITAC UK.',
     imageData: {
