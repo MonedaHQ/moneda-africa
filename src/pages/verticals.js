@@ -8,7 +8,7 @@ import WhatWeDoHero from './verticals/WhatWeDoHero';
 
 function WhatWeDo() {
   const heroContent = {
-    pageTitle: 'Focus areas',
+    pageTitle: 'Our verticals',
     heading: 'Global Experts in Finance and Commodities',
     paragraph:
       'Moneda has been delivering innovative solutions and maximizing client returns since 2015. <br/> With leading expertise in the wholesale energy sector and commodities, we provide exceptional value through a comprehensive range of services.',
@@ -17,7 +17,7 @@ function WhatWeDo() {
   return (
     <>
       <MetaTags
-        title="Our Focus Areas - Moneda | Bridging Africa's Credit Gap"
+        title="Our Verticals - Moneda | Bridging Africa's Credit Gap"
         description="At Moneda, we leverage our deep-rooted expertise in the finance and commodities markets to identify and capitalize on emerging opportunities. We empower our clients to enter new markets confidently by navigating complexities and maximizing returns while minimizing risk."
       />
       <Navigation />

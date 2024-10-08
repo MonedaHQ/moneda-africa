@@ -13,12 +13,13 @@ import Button from '@/components/Button';
 import { GoArrowRight } from 'react-icons/go';
 
 function OurTeam() {
+  const teamPreview = managementTeam.slice(0, 4);
   return (
     <Section>
       <div className={styles.main}>
         <WordAnimator text="Our People" as="h3" />
         <div className={styles.teamContainer}>
-          {managementTeam.map((member) => (
+          {teamPreview.map((member) => (
             <TeamCard member={member} key={member.name} />
           ))}
         </div>

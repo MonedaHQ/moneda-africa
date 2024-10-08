@@ -42,10 +42,58 @@ export const managementTeam = [
       'From banking, through asset management to real estate, Energy and Consulting, Peter has spent over 12 years providing world class solutions in financial reporting and management accounting. A trusted professional, chartered accountant and senior fellow of the institure of chartered accountants of Nigeria (ICAN). University of Lags (MSC Accounting)',
     imageData: {
       src: '/assets/team/peter.jpg',
-      alt: 'A photo of Peter Aloga, CFO Moneda',
+      alt: 'A photo of Peter Aloga, GFC Moneda',
     },
     linkedIn:
       'https://www.linkedin.com/in/peter-kelvin-aloga-bsc-msc-aca-303b0217/',
+    wikipedia: null,
+  },
+  {
+    name: 'Nkechukwuaga Amangbo',
+    position: 'VP Liquidity, Commodities, Global Markets',
+    paragraph:
+      'She has over 10 years in Banking, with experience spanning across Customer Service, Correspondent Banking and Treasury Operations, giving her a broad range of perspectives and contributes to her ability to effectively deliver in record time. At Moneda, she supervises all aspects of our treasury operations including management of long-term and short-term funds, and money market investments. She has a degree in Economics and Development Studies and a certificate from the international Finance Corporation.',
+    imageData: {
+      src: '/assets/team/nkechi.jpg',
+      alt: 'A photo of Nkechi Amangbo, VP Liquidity, Commodities, Global Markets',
+    },
+    linkedIn: 'https://www.linkedin.com/in/nkechukwuaga-amangbo-a2427a53/',
+    wikipedia: null,
+  },
+  {
+    name: 'Moshood Quadri',
+    position: 'VP, Corporate Finance',
+    paragraph:
+      'Moshood has over 7 years experience across legal, tax, consulting, and finance. He was Formerly Assistant Manager in the Corporate Tax Consulting business at PwC Nigeria.',
+    imageData: {
+      src: '/assets/team/moshood.jpg',
+      alt: 'A photo of Moshood Quadri, VP Corporate Finance',
+    },
+    linkedIn: 'https://www.linkedin.com/in/moshood-quadri-28b6b7b0/',
+    wikipedia: null,
+  },
+  {
+    name: 'Akintunde Marinho',
+    position: 'VP, Business Development, Marketing & Communications',
+    paragraph:
+      'Akintunde has garnered a combined 18 years of experience in diversified industries including but not confined to finance, marketing and technology. Leading the marketing and communication team at Moneda, he has perfectly crafted and packaged the story of Moneda and her non-profit sister, 1952 Africa, for the world to see and appreciate the impact on the African continent. Akintunde is passionate about the development of the youth and can be found giving talks to millennials and staff in several organizations on robust business strategy, content monetization and digital content',
+    imageData: {
+      src: '/assets/team/akin.jpg',
+      alt: 'A photo of Akintunde Marinho, VP Business Development, Marketing & Communications',
+    },
+    linkedIn: 'https://www.linkedin.com/in/akintunde-marinho-arpa-b4aa3022/',
+    wikipedia: null,
+  },
+  {
+    name: 'Eyimofe Olabaju',
+    position: 'VP, Joint Ventures',
+    paragraph:
+      'Mofe’s career spans over 15 years, starting at Linetrale Oil Supply & Trading Limited (now Linetrale Energy Trading Ltd) in Lagos, where he rose to Senior Trader in the Gasoline Department. He then became Director of Operations at Tycon Minerals Limited in Kumasi, overseeing gold and precious minerals extraction. In 2020, he joined Optima Energy Resources Limited in Lagos as Head of Trading and Operations, managing energy product trading, shipping, and field operations. Mofe holds a degree in Business Management from Kingston University and a certification in Energy Trading from CITAC UK.',
+    imageData: {
+      src: '/assets/team/mofe.jpg',
+      alt: 'A photo of Eyimofe Olabaju, VP Joint Ventures',
+    },
+    linkedIn: 'https://www.linkedin.com/in/eyimofe-olagbaju-84335943/',
     wikipedia: null,
   },
 ];

@@ -74,9 +74,9 @@ function TeamSection() {
             >
               Since our inception in 2023, Moneda has rapidly established itself
               as a global leader in the energy and commodities markets.
-              Operating at the forefront of the wholesale energy sector, we have
-              amassed unparalleled expertise across a diverse range of physical
-              and financial commodities.
+              Operating at the forefront of the energy sector, we have amassed
+              unparalleled expertise across a diverse range of physical and
+              financial commodities.
               <br />
               <br />
               This deep-rooted knowledge empowers us to deliver exceptional
