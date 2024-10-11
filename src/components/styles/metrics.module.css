@@ -1,0 +1,40 @@
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.4rem;
+}
+
+.metric {
+  display: grid;
+  row-gap: 0.3rem;
+}
+
+.metricHeading {
+  display: flex;
+  justify-content: center;
+  color: var(--color-white);
+}
+
+.metric p {
+  color: var(--color-white);
+  text-align: center;
+  font-size: var(--font-size-caption);
+}
+
+@media (max-width: 53.125em) {
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+  }
+
+  .metric p {
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 23.75em) {
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+}

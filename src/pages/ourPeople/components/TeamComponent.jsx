@@ -11,6 +11,7 @@
 import Image from 'next/image';
 
 import styles from './styles/teamcomponent.module.css';
+import { PiLinkedinLogo } from 'react-icons/pi';
 
 function TeamComponent({ title, teamArray }) {
   if (!title || !teamArray) return;
@@ -39,6 +40,18 @@ function TeamMember({ team }) {
         />
       </div>
       <div className={styles.contentBox}>
+        <div className={styles.icons}>
+          {team.linkedIn && (
+            <a href={team.linkedIn} target="blank" className={styles.icon}>
+              <PiLinkedinLogo />
+            </a>
+          )}
+          {team.wikipedia && (
+            <a href={team.wikipedia} target="blank" className={styles.icon}>
+              <ImWikipedia />
+            </a>
+          )}
+        </div>
         <p>{team.paragraph}</p>
       </div>
     </div>

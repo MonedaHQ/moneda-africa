@@ -11,18 +11,17 @@ function Trading() {
     caption: 'Ejike Egbuagu, Group Chief Executive',
   };
   const imageAndTextContent = {
-    imageUrl: '/assets/trading-africa.jpg',
-    title: 'Trading',
-    heading:
-      'A high-performing trading team leveraging cutting-edge analytics.',
+    imageUrl: '/assets/grains.jpg',
+    title: '',
+    heading: 'Trading',
     paragraph:
-      'Core to our business is global energy and commodities trading. Positioned at the intersection of production and consumption, we optimize value across the supply chain. <br/> <br/>Our team with decades of institutional knowledge, coupled with advanced analytics, enables us to excel in physical and financial trading, investing, and financing. <br/> <br/>A flat organizational structure and collaborative culture empower our teams to seize opportunities rapidly, delivering exceptional results for our clients and shareholders.',
+      '<strong>A high-performing trading team leveraging cutting-edge analytics.</strong> <br/> <br/>Moneda Africa is proud to have a highly skilled and experienced investment team at its core. Leveraging cutting-edge analytics and decades of institutional knowledge, our team is dedicated to delivering exceptional results across various sectors. <br/> <br/>We focus on identifying and capitalizing on investment opportunities, optimizing value throughout the supply chain. Our collaborative culture and flat organizational structure empower our team members to seize opportunities rapidly, ensuring that we consistently deliver superior returns for our clients and shareholders.',
     contentFirst: true,
   };
 
   const sectionTwo = {
-    imageUrl: '/assets/crypto-guy.jpg',
-    heading: 'Unparalleled Expertise in Physical and Financial Commodities',
+    imageUrl: '/assets/site.jpg',
+    heading: "Building Businesses that powers Africa's Economy",
     paragraph:
       'We are active in a wide-range of energy, commodities, and financial markets, including: <ul><li>Energy</li> <li>Metals</li> <li>Renewables</li> <li>Ags/Softs</li> <li>Securities.</li></ul>',
     contentFirst: false,
@@ -31,15 +30,16 @@ function Trading() {
   return (
     <>
       <Section>
-        <TextAndImageSection
-          imageUrl={imageAndTextContent.imageUrl}
-          heading={imageAndTextContent.heading}
-          paragraph={imageAndTextContent.paragraph}
-          contentFirst={imageAndTextContent.contentFirst}
-          title={imageAndTextContent.title}
-        />
+        <main className={styles.main}>
+          <TextAndImageSection
+            imageUrl={imageAndTextContent.imageUrl}
+            heading={imageAndTextContent.heading}
+            paragraph={imageAndTextContent.paragraph}
+            contentFirst={imageAndTextContent.contentFirst}
+            title={imageAndTextContent.title}
+          />
+        </main>
       </Section>
-      <Quote quote={quote.quote} caption={quote.caption} />
       <TextAndImageSection
         imageUrl={sectionTwo.imageUrl}
         heading={sectionTwo.heading}
@@ -48,6 +48,8 @@ function Trading() {
         brown={true}
         line={false}
       />
+      <Quote quote={quote.quote} caption={quote.caption} />
+
       <GetInTouch venture="trading activites" />
     </>
   );

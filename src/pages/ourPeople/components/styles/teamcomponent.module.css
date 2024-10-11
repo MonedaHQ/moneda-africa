@@ -51,7 +51,25 @@
 
 .contentBox {
   padding: 6rem 4rem;
+  display: grid;
+  row-gap: 3rem;
 }
+
+.icons a {
+  background-color: var(--color-white);
+  display: flex;
+  width: max-content;
+  justify-content: flex-start;
+  padding: 1rem;
+  border-radius: 50rem;
+}
+
+.icons svg {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--color-black);
+}
+
 .contentBox p {
   text-align: start;
 }

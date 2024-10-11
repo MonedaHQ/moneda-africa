@@ -1,17 +1,22 @@
-import Section from '@/components/Section';
+import { useRouter } from 'next/router';
+import { useForm } from 'react-hook-form';
+
 import { HiBuildingOffice2 } from 'react-icons/hi2';
 import { RiWhatsappFill } from 'react-icons/ri';
-import { MdEmail, MdPhone } from 'react-icons/md';
-import Button from '@/components/Button';
+import { FaCircleCheck } from 'react-icons/fa6';
+import { MdCancel, MdEmail, MdPhone } from 'react-icons/md';
 
-import styles from './styles/contactpage.module.css';
+import { useContactUs } from '@/hooks/useContact';
+
+import Section from '@/components/Section';
+import Button from '@/components/Button';
 import FormMain from '@/components/formElements/FormMain';
 import FormContainer from '@/components/formElements/FormContainer';
 import FormBody from '@/components/formElements/FormBody';
 import FormInput from '@/components/formElements/FormInput';
-import { useRouter } from 'next/router';
-import { useForm } from 'react-hook-form';
-import { useState } from 'react';
+import Loader from '@/components/Loader';
+
+import styles from './styles/contactpage.module.css';
 
 const contactInformation = [
   {
@@ -76,37 +81,91 @@ function ContactCard({ contact }) {
 }
 
 function ContactForm() {
-  return (
-    <div className={styles.formParent}>
-      <div className={styles.formHeading}>
-        <h3>Send Message</h3>
-        <p>
-          Please verify your information before sending your message. We will
-          respond to your inquiry promptly.
-        </p>
-      </div>
-      <FormFields />
-    </div>
-  );
-}
-
-function FormFields() {
-  const router = useRouter();
-  const { register, handleSubmit, formState } = useForm();
+  const { contactUs, isSubmitting } = useContactUs();
+  const { register, handleSubmit, formState, reset } = useForm();
   const { errors } = formState;
 
   const formActions = { register, errors };
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
+  const { status } = router.query;
 
-  //   const { submitForm } = useSubmitForm();
+  const renderContent = () => {
+    switch (status) {
+      case 'success':
+        return <Success />;
+      case 'error':
+        return <Failed />;
+      default:
+        return (
+          <>
+            <div className={styles.formHeading}>
+              <h3>Send Message</h3>
+              <p>
+                Please verify your information before sending your message. We
+                will respond to your inquiry promptly.
+              </p>
+            </div>
+            <FormFields
+              contactUs={contactUs}
+              isSubmitting={isSubmitting}
+              formActions={formActions}
+              handleSubmit={handleSubmit}
+            />
+          </>
+        );
+    }
+  };
+  return (
+    <div className={styles.formParent}>
+      {isSubmitting && <Loader />}
+      {!isSubmitting && <> {renderContent()}</>}
+    </div>
+  );
+}
+
+function Success() {
+  return (
+    <div className={`${styles.notificationContainer} ${styles.success}`}>
+      <FaCircleCheck />
+      <p>We'd be in touch within the next 24 hours</p>
+    </div>
+  );
+}
+
+function Failed() {
+  const router = useRouter();
+
+  function failedSubmission() {
+    router.push(
+      {
+        pathname: router.pathname,
+        query: { ...router.query, status: '' },
+      },
+      undefined,
+      { shallow: true }
+    );
+  }
+  return (
+    <div className={`${styles.notificationContainer} ${styles.failed}`}>
+      <MdCancel />
+      <p>Something went wrong, please try again</p>
+      <Button variant="secondary" onClick={() => failedSubmission()}>
+        Try again
+      </Button>
+    </div>
+  );
+}
+
+function FormFields({ contactUs, formActions, isSubmitting, handleSubmit }) {
+  const router = useRouter();
 
   function onSubmit(data) {
-    setIsSubmitting(true);
-    // submitForm(
-    //   { data, subject: 'Contact Form Submission' },
-    //   { onSuccess: () => router.push('/') }
-    // );
+    const newData = {
+      subject: 'Contact Form Submission',
+      data,
+    };
+    contactUs(newData);
   }
 
   return (

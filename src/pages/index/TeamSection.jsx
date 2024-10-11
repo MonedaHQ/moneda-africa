@@ -9,6 +9,7 @@ import { useRef } from 'react';
 import styles from './styles/teamsection.module.css';
 import CharacterAnimator from '@/components/CharacterAnimator';
 import { useCountIncrement } from '@/hooks/useCountIncrement';
+import Metrics from '@/components/Metrics';
 
 const metrics = [
   {
@@ -85,36 +86,9 @@ function TeamSection() {
           </div>
         </div>
       </Section>
-      <Section color="darkBrown" paddingTop={false}>
-        <Metrics />
-      </Section>
+
+      <Metrics />
     </>
-  );
-}
-
-function Metrics() {
-  return (
-    <div className={styles.metrics}>
-      {metrics.map((metric) => (
-        <Metric key={metric.metric} metric={metric} />
-      ))}
-    </div>
-  );
-}
-
-function Metric({ metric }) {
-  const [metricDigit, metricRef] = useCountIncrement(0, metric.metric);
-  return (
-    <div className={styles.metric} key={metric.metric}>
-      <div className={styles.metricHeading} ref={metricRef}>
-        <h2>
-          {metric.prefix}
-          {metricDigit}
-          {metric.suffix}
-        </h2>
-      </div>
-      <p>{metric.description}</p>
-    </div>
   );
 }
 

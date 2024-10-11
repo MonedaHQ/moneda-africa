@@ -3,9 +3,9 @@ import Section from './Section';
 import styles from './styles/getintouch.module.css';
 import WordAnimator from './WordAnimator';
 
-function GetInTouch({ venture }) {
+function GetInTouch({ venture, color = 'white' }) {
   return (
-    <Section color="dullOrange">
+    <Section color={color}>
       <div className={styles.container}>
         <WordAnimator
           text={`Get in touch to discover more about our ${venture}`}

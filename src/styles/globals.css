@@ -14,6 +14,9 @@
   --color-darker-brown: #140800;
   --color-brown-linear: linear-gradient(180deg, #210d00 0%, #140800 100%);
   --color-faded-orange: rgba(204, 85, 0, 0.05);
+
+  --color-green: #00cc99;
+
   --border-radius-reg: 0.8rem;
 
   --font-size-h1: 4.2rem;

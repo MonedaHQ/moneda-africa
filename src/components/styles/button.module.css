@@ -41,6 +41,7 @@
 .secondary,
 .submit {
   background-color: var(--color-orange);
+  color: var(--color-white);
 }
 
 .primary:hover,

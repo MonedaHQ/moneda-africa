@@ -7,6 +7,8 @@
 .brown {
   background-color: var(--color-dark-brown);
   color: var(--color-white);
+
+  padding: 8rem 0;
 }
 
 .contentBox {
@@ -64,7 +66,7 @@
   }
 
   .contentBox {
-    padding: 0 4rem;
+    /* padding: 0 4rem; */
   }
 }
 
@@ -73,15 +75,22 @@
     grid-template-columns: 1fr;
   }
 
+  .brown {
+    padding: 0;
+  }
+  .brown .contentBox {
+    padding: 4rem;
+  }
+
   .imageContainer img {
     height: 400px;
     transform: translateY(0px);
   }
 
   .contentBox {
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
-    padding: 8rem 4rem;
+    padding: 8rem 0rem;
   }
 }
 

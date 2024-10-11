@@ -98,3 +98,17 @@ export const slideIn = {
     transition: { duration: 0.5, type: 'tween', ease: 'easeInOut' },
   },
 };
+
+export const scaleUpSlow = {
+  initial: { scale: 0, opacity: 0 },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      delay: 0.1,
+      type: 'spring',
+      mass: 1,
+      damping: 12,
+    },
+  },
+};

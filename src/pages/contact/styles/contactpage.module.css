@@ -55,6 +55,28 @@
   grid-column: 1/-1;
 }
 
+.notificationContainer {
+  display: grid;
+  place-items: center;
+  row-gap: 2rem;
+}
+
+.notificationContainer p {
+  text-align: center;
+}
+.notificationContainer svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.success svg {
+  fill: var(--color-green);
+}
+
+.failed svg {
+  fill: var(--color-orange);
+}
+
 @media (max-width: 78.8125em) {
   .mainParent {
     grid-template-columns: 1fr;
