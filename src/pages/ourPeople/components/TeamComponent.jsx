@@ -12,6 +12,7 @@ import Image from 'next/image';
 
 import styles from './styles/teamcomponent.module.css';
 import { PiLinkedinLogo } from 'react-icons/pi';
+import { ImWikipedia } from 'react-icons/im';
 
 function TeamComponent({ title, teamArray }) {
   if (!title || !teamArray) return;

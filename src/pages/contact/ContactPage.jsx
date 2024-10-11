@@ -128,7 +128,7 @@ function Success() {
   return (
     <div className={`${styles.notificationContainer} ${styles.success}`}>
       <FaCircleCheck />
-      <p>We'd be in touch within the next 24 hours</p>
+      <p>We&lsquo;d be in touch within the next 24 hours</p>
     </div>
   );
 }
