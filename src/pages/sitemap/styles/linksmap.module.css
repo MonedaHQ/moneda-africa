@@ -68,6 +68,6 @@
 
   .coin {
     max-width: 60%;
-    justify-self: self-end;
+    justify-self: center;
   }
 }
