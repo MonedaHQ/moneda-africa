@@ -24,9 +24,12 @@ function AllLinks() {
       <CharacterAnimator text="Pages" as="h1" />
       <ul className={styles.linkList}>
         {menu.map((linkData) => (
-          <li className={linkData.path ? styles.hoverLink : styles.noHoverLink}>
+          <li
+            className={linkData.path ? styles.hoverLink : styles.noHoverLink}
+            key={linkData.label}
+          >
             <div className={styles.line} />
-            <LinkBox data={linkData} key={linkData.label} />
+            <LinkBox data={linkData} />
           </li>
         ))}
       </ul>
@@ -42,7 +45,7 @@ function LinkBox({ data }) {
         <h2>{data.label}</h2>
 
         {data.dropdown.map((link) => (
-          <Button variant="link-dark-big" href={link.path}>
+          <Button variant="link-dark-big" href={link.path} key={link.path}>
             {link.label}
           </Button>
         ))}
