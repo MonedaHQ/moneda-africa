@@ -12,7 +12,7 @@ function WhatWeDo() {
     heading: 'Global Experts in Finance and Commodities',
     paragraph:
       'Moneda has been delivering innovative solutions and maximizing client returns since 2015. <br/> With leading expertise in the wholesale energy sector and commodities, we provide exceptional value through a comprehensive range of services.',
-    imageUrl: '/assets/business-man.jpg',
+    imageUrl: '/assets/moneda-team.jpg',
   };
   return (
     <>

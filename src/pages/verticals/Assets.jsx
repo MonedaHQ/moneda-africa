@@ -15,7 +15,7 @@ function Assets() {
   };
 
   const sectionTwo = {
-    imageUrl: '/assets/power-plant.jpg',
+    imageUrl: '/assets/assets-field.jpg',
     title: '',
     heading: 'Our Assets Investment Include',
     paragraph:

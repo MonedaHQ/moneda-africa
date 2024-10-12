@@ -12,7 +12,7 @@ function Sitemap() {
     pageTitle: '',
     heading: 'Sitemap',
     paragraph: 'Explore Moneda Africa with the links below',
-    imageUrl: '/assets/sitemap.jpg',
+    imageUrl: '/assets/buildings.jpg',
   };
   return (
     <>

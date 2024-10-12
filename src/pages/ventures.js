@@ -5,11 +5,7 @@ import Navigation from '@/components/mainNav/Navigation';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
 
 const heroContent = {
-  images: [
-    '/assets/africa-grains.jpg',
-    '/assets/badger.jpg',
-    '/assets/mining.jpg',
-  ],
+  images: ['/assets/ventures-building.jpg'],
   content: {
     heading: 'Our Ventures',
     paragraph:
