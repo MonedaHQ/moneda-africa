@@ -1,5 +1,5 @@
 export const footer = [
-  { label: 'Privacy Policy', link: '/privacy-policy' },
-  { label: 'Terms of use', link: '/terms-of-use' },
-  { label: 'Sitemap', link: '/sitemap' },
+  { label: 'Privacy Policy', path: '/privacy-policy' },
+  { label: 'Terms of use', path: '/terms-of-use' },
+  { label: 'Sitemap', path: '/sitemap' },
 ];

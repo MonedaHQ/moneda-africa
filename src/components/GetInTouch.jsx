@@ -11,7 +11,9 @@ function GetInTouch({ venture, color = 'white' }) {
           text={`Get in touch to discover more about our ${venture}`}
           as="h2"
         />
-        <Button variant="link-underline">Contact us</Button>
+        <Button variant="link-underline" href="/contact">
+          Contact us
+        </Button>
       </div>
     </Section>
   );

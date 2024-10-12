@@ -9,7 +9,7 @@ function Footer() {
     <div className={styles.container}>
       <ul className={styles.linkList}>
         {footer.map((link) => (
-          <a key={link.label} href={link.link}>
+          <a key={link.label} href={link.path}>
             {link.label}
           </a>
         ))}

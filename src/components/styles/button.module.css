@@ -146,6 +146,15 @@
   text-decoration: underline;
 }
 
+.link-dark-big {
+  font-size: 2.8rem;
+  display: block;
+}
+
+.link-dark-big:hover {
+  color: var(--color-orange);
+}
+
 /*ACITVE CLASSES*/
 
 .active-primary {

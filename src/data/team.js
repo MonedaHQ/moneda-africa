@@ -96,6 +96,30 @@ export const managementTeam = [
     linkedIn: 'https://www.linkedin.com/in/eyimofe-olagbaju-84335943/',
     wikipedia: null,
   },
+  // {
+  //   name: 'Adedapo Makinde',
+  //   position: 'Head of Legal',
+  //   paragraph:
+  //     'Adedapo is a legal practitioner with over nine (9) years of experience providing legal services. Over the years, he has acquired relevant knowledge and expertise in various practice areas including Deal Origination & Structuring, Fund Formation & Administration Corporate/Business Law, Company Secretarial, Legal Advisory, Regulatory & Compliance, and Capital Markets. Prior to joining Moneda, he worked as a Senior Associate at Austen-Peters & Co. He currently heads the Legal Department at Moneda. Adedapo obtained an LL.B degree from the University of Lagos. He is also a member of the Nigerian Bar Association.',
+  //   imageData: {
+  //     src: '/assets/team/dapo.jpg',
+  //     alt: 'A photo of Adedapo Makinde, Head of Legal',
+  //   },
+  //   linkedIn: 'https://www.linkedin.com/in/adedapomakinde/',
+  //   wikipedia: null,
+  // },
+  // {
+  //   name: 'Precious Ehihamen',
+  //   position: 'Research & Intelligence Lead',
+  //   paragraph:
+  //     'Precious has a background in Petroleum Engineering and has amassed about 7 years of experience in the oil and gas industry. He started his career in TotalEnergies as a Safety Engineer where he had a brief stint at the OML 58 production facility. He went on to become a project engineer for an independent contractor where he supported contract execution during the construction of the Dangote refinery. He currently leads the Research & Intelligence team at Moneda Investment Limited where alongside his team, he tracks and monitors oil and gas market data and leverages technology to drive investment decisions.',
+  //   imageData: {
+  //     src: '/assets/team/precious.jpg',
+  //     alt: 'A photo of Precious, Head of Legal',
+  //   },
+  //   linkedIn: 'https://www.linkedin.com/in/precious-ehihamen-a5bb09137/',
+  //   wikipedia: null,
+  // },
 ];
 
 export const advisoryBoard = [

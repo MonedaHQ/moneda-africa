@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import MetaTags from '@/components/head';
 import HeroSection from '@/components/HeroSection';
 import Navigation from '@/components/mainNav/Navigation';
@@ -26,6 +27,7 @@ function ventures() {
       <Navigation />
       <MobileNavigationHeader />
       <HeroSection images={heroContent.images} content={heroContent.content} />
+      <Footer />
     </>
   );
 }
