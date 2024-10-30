@@ -4,6 +4,7 @@ import { homeMenuLinks } from '@/data/menu';
 import { footer } from '@/data/footer';
 import Button from '@/components/Button';
 import CharacterAnimator from '@/components/CharacterAnimator';
+import Image from 'next/image';
 
 const menu = [...homeMenuLinks, ...footer];
 
@@ -62,11 +63,13 @@ function LinkBox({ data }) {
 
 function RotatingImage() {
   return (
-    <img
+    <Image
       src="/assets/coin.png"
       alt="kwa afrika logo"
       className={styles.coin}
       draggable={false}
+      width={1352}
+      height={1352}
     />
   );
 }

@@ -7,8 +7,8 @@ import GetInTouch from '@/components/GetInTouch';
 function Trading() {
   const quote = {
     quote:
-      '“To see true transformation within the economy, we have to get the capital in the hands of local communities”',
-    caption: 'Ejike Egbuagu, Group Chief Executive',
+      '“Our continent holds enormous resources and potential. It is our duty to unlock this potential sustainably, creating value and ensuring shared prosperity for future generations.”',
+    caption: 'Akinwumi Adesina - President, African Development Bank',
   };
   const imageAndTextContent = {
     imageUrl: '/assets/grains.jpg',

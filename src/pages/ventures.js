@@ -3,6 +3,7 @@ import MetaTags from '@/components/head';
 import HeroSection from '@/components/HeroSection';
 import Navigation from '@/components/mainNav/Navigation';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
+import Ventures from './ventures/Ventures';
 
 const heroContent = {
   images: ['/assets/ventures-building.jpg'],
@@ -23,6 +24,7 @@ function ventures() {
       <Navigation />
       <MobileNavigationHeader />
       <HeroSection images={heroContent.images} content={heroContent.content} />
+      <Ventures />
       <Footer />
     </>
   );

@@ -5,6 +5,12 @@ import GetInTouch from '@/components/GetInTouch';
 import Quote from '@/components/Quote';
 
 function Assets() {
+  const quote = {
+    quote:
+      '“Energy is the backbone of development, and Africa must harness its resources to empower our people, grow our industries, and shape our future.”',
+    caption: 'Folorunsho Alakija - Executive Vice Chair, Famfa Oil',
+  };
+
   const sectionOne = {
     imageUrl: '/assets/power-plant.jpg',
     title: '',
@@ -42,7 +48,7 @@ function Assets() {
         brown={true}
         line={false}
       />
-      <Quote />
+      <Quote quote={quote.quote} caption={quote.caption} />
       <GetInTouch venture="Assets Investment Strategy" />
     </>
   );

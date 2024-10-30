@@ -2,8 +2,15 @@ import Section from '@/components/Section';
 import styles from './styles/risksolutions.module.css';
 import TextAndImageSection from '@/components/TextAndImageSection';
 import GetInTouch from '@/components/GetInTouch';
+import Quote from '@/components/Quote';
 
 function RiskSolutions() {
+  const quote = {
+    quote:
+      '“Investing in Africa isn’t just a financial decision; it’s about contributing to a legacy of growth and resilience.”',
+    caption: 'Strive Masiyiwa - Founder, Econet Wireless Group',
+  };
+
   const imageAndTextContent = {
     imageUrl: '/assets/mobile-trading.jpg',
     title: 'Risk Solutions',
@@ -39,7 +46,7 @@ function RiskSolutions() {
           contentFirst={sectionTwo.contentFirst}
         />
       </Section>
-
+      <Quote quote={quote.quote} caption={quote.caption} />
       <GetInTouch venture="risk solution services" />
     </>
   );

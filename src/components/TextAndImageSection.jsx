@@ -13,10 +13,13 @@ function TextAndImageSection({
   title = null,
   line = true,
   brown = false,
+  logo = null,
 }) {
   return (
     // <Section>
-    <div className={`${styles.container} ${brown ? styles.brown : ''}`}>
+    <div
+      className={`${styles.container} ${brown ? styles.brown : styles.white}`}
+    >
       {!contentFirst && (
         <>
           <ImageBox heading={heading} imageUrl={imageUrl} />
@@ -25,6 +28,8 @@ function TextAndImageSection({
             paragraph={paragraph}
             title={title}
             line={line}
+            logo={logo}
+            lineColor={brown ? 'white' : 'orange'}
           />
         </>
       )}
@@ -35,6 +40,8 @@ function TextAndImageSection({
             paragraph={paragraph}
             title={title}
             line={line}
+            logo={logo}
+            lineColor={brown ? 'white' : 'orange'}
           />
           <ImageBox heading={heading} imageUrl={imageUrl} />
         </>
@@ -58,13 +65,33 @@ function ImageBox({ imageUrl, heading }) {
   );
 }
 
-function ContentBox({ heading, paragraph, title, line }) {
+function ContentBox({
+  heading,
+  paragraph,
+  title,
+  line,
+  logo,
+  lineColor = 'orange',
+}) {
   return (
     <div className={styles.contentBox}>
       {title && <h4 className={styles.caption}>{title}</h4>}
+      {logo && (
+        <Image
+          src={logo.src}
+          alt={logo.alt}
+          width={204.82}
+          height={42}
+          className={styles.logo}
+          draggable={false}
+        />
+      )}
       <WordAnimator text={heading} as="h2" />
       <div className={styles.paragraph}>
-        <AnimatedLine visible={line} />
+        <AnimatedLine
+          visible={line}
+          // color={lineColor}
+        />
         <p dangerouslySetInnerHTML={{ __html: paragraph }} />
       </div>
     </div>

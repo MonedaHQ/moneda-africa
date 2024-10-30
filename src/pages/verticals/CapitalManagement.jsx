@@ -5,8 +5,13 @@ import GetInTouch from '@/components/GetInTouch';
 import Quote from '@/components/Quote';
 
 function CapitalManagement() {
+  const quote = {
+    quote:
+      '“African finance should serve as a bridge between our natural resources and economic development, creating sustainable wealth and uplifting our communities.”',
+    caption: 'Benedict Oramah - President, African Export-Import Bank',
+  };
   const imageAndTextContent = {
-    imageUrl: '/assets/office-setting.jpg',
+    imageUrl: '/assets/sumit-2.jpg',
     title: '',
     heading: 'Capital Management',
     paragraph:
@@ -24,7 +29,7 @@ function CapitalManagement() {
           title={imageAndTextContent.title}
         />
       </Section>
-      <Quote />
+      <Quote quote={quote.quote} caption={quote.caption} />
       <GetInTouch venture="capital management" />
     </>
   );

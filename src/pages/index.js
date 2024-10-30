@@ -16,7 +16,7 @@ function Home() {
 
   const heroContent = {
     images: [
-      '/assets/heroImages/cbc.jpg',
+      // '/assets/heroImages/cbc.jpg',
       '/assets/heroImages/link-bridge.jpg',
       '/assets/heroImages/badge.jpg',
       '/assets/heroImages/agriculture.jpg',
