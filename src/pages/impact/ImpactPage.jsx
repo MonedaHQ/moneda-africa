@@ -35,22 +35,22 @@ function ImpactPage() {
       <Section paddingTop={false}>
         <h5>
           Expanding beyond Nigeria, Moneda Africa is playing a vital role in
-          supporting the growth of SMEs in Namibia’s oil and gas industry. We
-          have trained 170 SMEs on contract execution strategies and established
-          partnerships with key stakeholders like NAMCOR and the Namibia
-          Investment Promotion and Development Board (NIPDB). Through our Joint
-          Venture with Ino Harith Capital, we are financing oil and gas
-          projects, ensuring that local businesses are equipped to participate
-          in Namibia’s burgeoning energy sector.
+          supporting the growth of SMEs in Namibia&lsquo;s oil and gas industry.
+          We have trained 170 SMEs on contract execution strategies and
+          established partnerships with key stakeholders like NAMCOR and the
+          Namibia Investment Promotion and Development Board (NIPDB). Through
+          our Joint Venture with Ino Harith Capital, we are financing oil and
+          gas projects, ensuring that local businesses are equipped to
+          participate in Namibia&lsquo;s burgeoning energy sector.
         </h5>
       </Section>
       <CSRSection />
       <Section paddingTop={false}>
         <h5>
-          Together, these initiatives reflect Moneda Africa's unwavering
+          Together, these initiatives reflect Moneda Africa&lsquo;s unwavering
           commitment to building a self-sustaining Africa, where local
-          businesses and artists are empowered to unlock the continent's vast
-          potential and lead it toward economic prosperity.
+          businesses and artists are empowered to unlock the continent&lsquo;s
+          vast potential and lead it toward economic prosperity.
         </h5>
       </Section>
     </main>
