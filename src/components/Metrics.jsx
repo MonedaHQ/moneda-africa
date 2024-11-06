@@ -3,7 +3,7 @@ import { useCountIncrement } from '@/hooks/useCountIncrement';
 import styles from './styles/metrics.module.css';
 import Section from './Section';
 
-const metrics = [
+const data = [
   {
     metric: 8,
     prefix: null,
@@ -30,7 +30,7 @@ const metrics = [
   },
 ];
 
-function Metrics({ paddingTop = false }) {
+function Metrics({ paddingTop = false, metrics = data }) {
   return (
     <Section color="darkBrown" paddingTop={paddingTop}>
       <div className={styles.metrics}>

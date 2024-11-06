@@ -15,6 +15,33 @@ const heroContent = {
   },
 };
 
+const data = [
+  {
+    metric: 150,
+    prefix: null,
+    suffix: '+',
+    description: 'jobs created',
+  },
+  {
+    metric: 200,
+    prefix: null,
+    suffix: '+',
+    description: 'farmers empowered',
+  },
+  {
+    metric: 600,
+    prefix: 'NGN',
+    suffix: 'm+',
+    description: 'capital deployed',
+  },
+  {
+    metric: 170,
+    prefix: null,
+    suffix: '+',
+    description: 'trained African CSMEs',
+  },
+];
+
 function OurImpact() {
   return (
     <>
@@ -25,7 +52,7 @@ function OurImpact() {
       <Navigation />
       <MobileNavigationHeader />
       <HeroSection images={heroContent.images} content={heroContent.content} />
-      <Metrics paddingTop={true} />
+      <Metrics paddingTop={true} metrics={data} />
       <ImpactPage />
       <Footer />
     </>
