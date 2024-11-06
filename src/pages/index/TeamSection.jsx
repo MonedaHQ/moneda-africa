@@ -53,7 +53,7 @@ function TeamSection() {
         <div className={styles.teamContainer}>
           <div className={styles.imageContainer}>
             <Image
-              src="/assets/summit.jpg"
+              src="/assets/globe.jpg"
               width={725}
               height={865}
               alt="Team Moneda at the AEW"

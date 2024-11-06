@@ -4,6 +4,7 @@ import AnimatedLine from './AnimatedLine';
 import WordAnimator from './WordAnimator';
 
 import styles from './styles/textandimagesection.module.css';
+import Button from './Button';
 
 function TextAndImageSection({
   imageUrl,
@@ -14,6 +15,7 @@ function TextAndImageSection({
   line = true,
   brown = false,
   logo = null,
+  link = null,
 }) {
   return (
     // <Section>
@@ -30,6 +32,7 @@ function TextAndImageSection({
             line={line}
             logo={logo}
             lineColor={brown ? 'white' : 'orange'}
+            link={link}
           />
         </>
       )}
@@ -42,6 +45,7 @@ function TextAndImageSection({
             line={line}
             logo={logo}
             lineColor={brown ? 'white' : 'orange'}
+            link={link}
           />
           <ImageBox heading={heading} imageUrl={imageUrl} />
         </>
@@ -72,6 +76,7 @@ function ContentBox({
   line,
   logo,
   lineColor = 'orange',
+  link,
 }) {
   return (
     <div className={styles.contentBox}>
@@ -94,6 +99,12 @@ function ContentBox({
         />
         <p dangerouslySetInnerHTML={{ __html: paragraph }} />
       </div>
+      {link?.link && (
+        <Button
+          variant="link-dark"
+          href={link.link}
+        >{`Visit ${link.label}`}</Button>
+      )}
     </div>
   );
 }

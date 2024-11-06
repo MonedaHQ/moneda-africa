@@ -5,15 +5,25 @@ import TypicalHero from '@/components/TypicalHero';
 import QueryNavigator from './verticals/QueryNavigator';
 import Footer from '@/components/Footer';
 import WhatWeDoHero from './verticals/WhatWeDoHero';
+import HeroSection from '@/components/HeroSection';
 
 function WhatWeDo() {
   const heroContent = {
-    pageTitle: 'Our verticals',
-    heading: 'Global Experts in Finance and Commodities',
-    paragraph:
-      'Moneda has been delivering innovative solutions and maximizing client returns since 2015. <br/> With leading expertise in the wholesale energy sector and commodities, we provide exceptional value through a comprehensive range of services.',
-    imageUrl: '/assets/moneda-team.jpg',
+    images: ['/assets/verticals-hero.jpg'],
+    content: {
+      heading: 'Our Verticals',
+      paragraph:
+        '<strong>Global Experts in Finance and Commodities</strong><br/><br/>Moneda has been delivering innovative solutions and maximizing client returns since 2015. <br/> With leading expertise in the wholesale energy sector and commodities, we provide exceptional value through a comprehensive range of services.',
+    },
   };
+
+  // const heroContent = {
+  //   pageTitle: 'Our verticals',
+  //   heading: 'Global Experts in Finance and Commodities',
+  //   paragraph:
+  //     'Moneda has been delivering innovative solutions and maximizing client returns since 2015. <br/> With leading expertise in the wholesale energy sector and commodities, we provide exceptional value through a comprehensive range of services.',
+  //   imageUrl: '/assets/verticals-hero.jpg',
+  // };
   return (
     <>
       <MetaTags
@@ -22,7 +32,8 @@ function WhatWeDo() {
       />
       <Navigation />
       <MobileNavigationHeader />
-      <TypicalHero content={heroContent} />
+      {/* <TypicalHero content={heroContent} /> */}
+      <HeroSection images={heroContent.images} content={heroContent.content} />
       <div style={{ position: 'relative', height: '100%' }}>
         <QueryNavigator />
         <WhatWeDoHero />

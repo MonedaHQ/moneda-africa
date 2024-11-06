@@ -19,7 +19,7 @@ function TypicalHero({
     <main className={`${styles.main} ${styles[color]}`}>
       <div className={styles.contentContainer}>
         <Section paddingBottom={false} paddingTop={false} color={color}>
-          <LineAndContent content={content} whiteText={whiteText} as={as} />
+          <LineAndContent content={content} whiteText={whiteText} as={'h5'} />
         </Section>
         <div className={styles.imageContainer}>
           <Image

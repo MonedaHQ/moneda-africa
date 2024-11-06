@@ -11,19 +11,19 @@ function Trading() {
     caption: 'Akinwumi Adesina - President, African Development Bank',
   };
   const imageAndTextContent = {
-    imageUrl: '/assets/grains.jpg',
+    imageUrl: '/assets/farmer-in-field.jpg',
     title: '',
     heading: 'Trading',
     paragraph:
-      '<strong>A high-performing trading team leveraging cutting-edge analytics.</strong> <br/> <br/>Moneda Africa is proud to have a highly skilled and experienced investment team at its core. Leveraging cutting-edge analytics and decades of institutional knowledge, our team is dedicated to delivering exceptional results across various sectors. <br/> <br/>We focus on identifying and capitalizing on investment opportunities, optimizing value throughout the supply chain. Our collaborative culture and flat organizational structure empower our team members to seize opportunities rapidly, ensuring that we consistently deliver superior returns for our clients and shareholders.',
+      "<strong>A high-performing trading team leveraging cutting-edge analytics.</strong> <br/> <br/>Moneda drives sustainable growth across African commodities and mining sectors. Through Domena Commodities, we are fostering agricultural growth, ensuring food security, providing financial support to traders and empowering small-scale farmers by providing essential farming inputs starting with our base in Pambegua Kaduna.<br/> <br/>Our involvement extends into the mining sector through DT Mining, a lithium mining venture in its exploratory phase. This project positions us at the forefront of the clean energy transition, contributing to the rising global demand for lithium, a key component in electric vehicle batteries and renewable energy storage solutions. <br/><br/>By leveraging our technical, and risk management expertise and industry relationships, Moneda provides critical support to both farmers and miners, ensuring their products reach markets efficiently. Our trading operations not only generate significant returns but also contribute to Africa's economic development by promoting local industries and export opportunities. We are committed to empowering stakeholders and supporting sustainable practices within these sectors",
     contentFirst: true,
   };
 
   const sectionTwo = {
-    imageUrl: '/assets/site.jpg',
-    heading: "Building Businesses that powers Africa's Economy",
+    imageUrl: '/assets/mining-equipment.jpg',
+    heading: '',
     paragraph:
-      'We are active in a wide-range of energy, commodities, and financial markets, including: <ul><li>Energy</li> <li>Metals</li> <li>Renewables</li> <li>Ags/Softs</li> <li>Securities.</li></ul>',
+      "By leveraging our technical, and risk management expertise and industry relationships, Moneda provides critical support to both farmers and miners, ensuring their products reach markets efficiently. Our trading operations not only generate significant returns but also contribute to Africa's economic development by promoting local industries and export opportunities. We are committed to empowering stakeholders and supporting sustainable practices within these sectors",
     contentFirst: false,
   };
 
@@ -50,7 +50,7 @@ function Trading() {
       />
       <Quote quote={quote.quote} caption={quote.caption} />
 
-      <GetInTouch venture="trading activites" />
+      <GetInTouch venture="Trading activites" />
     </>
   );
 }

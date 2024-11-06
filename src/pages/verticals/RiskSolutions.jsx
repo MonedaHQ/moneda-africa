@@ -12,21 +12,14 @@ function RiskSolutions() {
   };
 
   const imageAndTextContent = {
-    imageUrl: '/assets/mobile-trading.jpg',
-    title: 'Risk Solutions',
-    heading: 'Mastering Energy and Commodity Price Volatility.',
+    imageUrl: '/assets/risk-advisory.jpg',
+    title: '',
+    heading: 'Risk Advisory',
     paragraph:
-      'Moneda offers comprehensive risk management solutions tailored to the unique needs of our clients. By combining deep industry expertise with advanced analytics, we help businesses navigate the complexities of energy and commodity price fluctuations. <br/> <br/>From financial derivatives to physical energy solutions, our holistic approach mitigates risk and optimizes returns. Our extensive global network and deep liquidity pool enable us to deliver competitive pricing and seamless execution on a wide range of products.',
+      'At Moneda, we offer comprehensive risk advisory and negotiation services to customers. Our team has deep expertise in structuring and executing high-value oil transactions, mitigating risks associated with price volatility, supply chain disruptions, and regulatory changes. We work closely with clients to develop bespoke risk management strategies, ensuring seamless execution and long-term sustainability of their trade operations.<br/><br/>Moneda’s advisory services go beyond just risk management; we help clients navigate complex oil trading landscapes by leveraging our relationships and knowledge of market dynamics. By ensuring that deals are well-structured, and negotiations are favorable, we earn fees for our expertise while delivering significant value to our clients.',
     contentFirst: true,
   };
 
-  const sectionTwo = {
-    imageUrl: '/assets/man-night-trading.jpg',
-    heading: 'Mastering Energy and Commodity Price Volatility.',
-    paragraph:
-      '<strong>World-class trading team:</strong> Leveraging deep industry experience.<br/><br/><strong>Tailored solutions:</strong> Delivering optimal outcomes for diverse client needs.<br/> <br/><strong>Global market coverage:</strong> Spanning major energy markets and related commodities.<br/><br/><strong>Renewables leadership:</strong> Pioneering sustainable energy solutions.<br/><br/><strong>Exceptional execution:</strong> Combining competitive pricing with seamless service.',
-    contentFirst: false,
-  };
   return (
     <>
       <Section>
@@ -38,16 +31,8 @@ function RiskSolutions() {
           title={imageAndTextContent.title}
         />
       </Section>
-      <Section>
-        <TextAndImageSection
-          imageUrl={sectionTwo.imageUrl}
-          heading={sectionTwo.heading}
-          paragraph={sectionTwo.paragraph}
-          contentFirst={sectionTwo.contentFirst}
-        />
-      </Section>
       <Quote quote={quote.quote} caption={quote.caption} />
-      <GetInTouch venture="risk solution services" />
+      <GetInTouch venture="Risk Advisory services" />
     </>
   );
 }

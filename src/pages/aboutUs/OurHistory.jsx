@@ -73,6 +73,7 @@ const ourHistory = [
 function OurHistory() {
   return (
     <Section color="darkBrown" id="history">
+      <div className={styles.backgroundImage} />
       <TopLine />
       <div className={styles.parentContainer}>
         <Heading />

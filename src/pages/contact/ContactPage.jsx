@@ -100,7 +100,7 @@ function ContactForm() {
         return (
           <>
             <div className={styles.formHeading}>
-              <h3>Send Message</h3>
+              <h3>Send us a Message</h3>
               <p>
                 Please verify your information before sending your message. We
                 will respond to your inquiry promptly.

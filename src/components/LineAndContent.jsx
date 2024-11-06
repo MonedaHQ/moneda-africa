@@ -20,11 +20,11 @@ function LineAndContent({
     <div
       className={`${styles.content} ${whiteText ? styles.white : styles.dark}`}
     >
-      {pageTitle && <p className={styles.caption}>{pageTitle}</p>}
+      {pageTitle && <h1 className={styles.caption}>{pageTitle}</h1>}
       <WordAnimator text={heading} as={as} />
       <div className={styles.paragraphBlock}>
         <AnimatedLine color={textColor} />
-        <h5
+        <p
           dangerouslySetInnerHTML={{ __html: paragraph }}
           className={styles.paragraph}
         />

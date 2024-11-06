@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection';
 import Navigation from '@/components/mainNav/Navigation';
 import Metrics from '@/components/Metrics';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
+import ImpactPage from './impact/ImpactPage';
 
 const heroContent = {
   images: ['/assets/africa-map.jpg'],
@@ -25,6 +26,7 @@ function OurImpact() {
       <MobileNavigationHeader />
       <HeroSection images={heroContent.images} content={heroContent.content} />
       <Metrics paddingTop={true} />
+      <ImpactPage />
       <Footer />
     </>
   );

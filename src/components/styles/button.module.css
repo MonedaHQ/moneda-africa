@@ -151,6 +151,15 @@
   display: block;
 }
 
+.link-dark {
+  transition: all 0.3s ease-in;
+}
+
+.link-dark:hover {
+  text-decoration: underline;
+  color: var(--color-orange);
+}
+
 .link-dark-big:hover {
   color: var(--color-orange);
 }

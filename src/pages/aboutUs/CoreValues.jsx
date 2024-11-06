@@ -36,7 +36,7 @@ function CoreValues() {
     <Section>
       <div className={styles.backgroundImage}>
         <Image
-          src="/assets/backdrop-brown.jpg"
+          src="/assets/art/father-nature.jpeg"
           width={1575}
           height={1183.79}
           alt="Background Image"

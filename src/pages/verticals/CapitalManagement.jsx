@@ -11,12 +11,12 @@ function CapitalManagement() {
     caption: 'Benedict Oramah - President, African Export-Import Bank',
   };
   const imageAndTextContent = {
-    imageUrl: '/assets/sumit-2.jpg',
+    imageUrl: '/assets/capital-mamagment-image.jpg',
     title: '',
     heading: 'Capital Management',
     paragraph:
-      "Moneda Capital, a strategic investment arm of Moneda Africa, is committed to driving sustainable growth and value creation across Africa's energy and mining sectors. We provide capital and expertise to high-growth companies that are shaping the continent's energy transition and resource development.<br/><br/>With a strong focus on local content development, Moneda Africa is a proud supporter of SMEs operating within the energy and mining value chains. Our investments aim to build strong partnerships with local businesses, creating jobs and fostering economic growth. By combining our financial resources with the entrepreneurial spirit of African entrepreneurs, we are accelerating the development of a thriving and sustainable energy and mining ecosystem.",
-    contentFirst: false,
+      'Moneda Capital, our fund management arm, is at the heart of our capital management activities. With a $250 million fund in view, Moneda Capital focuses on financing small and medium enterprises (SMEs) within Africa, particularly those in the agriculture, energy, mining, and infrastructure sectors. Having secured our license in Mauritius in June 2024, we are strategically based in South Africa to capitalize on the continent’s most dynamic markets. <br/><br/>Our fund aims to drive long-term growth by deploying capital into high-potential sectors, fostering innovation, and creating jobs. Through our capital management services, we deliver attractive returns to our investors while contributing to the sustainable development of African economies. Moneda Capital is committed to ethical investing and adheres to rigorous due diligence processes, ensuring that the companies we support align with our values and growth objectives.',
+    contentFirst: true,
   };
   return (
     <>
@@ -30,7 +30,7 @@ function CapitalManagement() {
         />
       </Section>
       <Quote quote={quote.quote} caption={quote.caption} />
-      <GetInTouch venture="capital management" />
+      <GetInTouch venture="capital Management" />
     </>
   );
 }

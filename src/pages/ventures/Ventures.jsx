@@ -9,12 +9,13 @@ function Ventures() {
       {ourVentures.map((venture, index) => (
         <TextAndImageSection
           imageUrl={venture.imageSrc.src}
-          heading={venture.company}
+          heading=""
           paragraph={venture.paragraph}
           contentFirst={index % 2 ? true : false}
           brown={index % 2}
           logo={venture.logo}
           key={venture.company}
+          link={{ link: venture.link, label: venture.company }}
         />
       ))}
     </div>
