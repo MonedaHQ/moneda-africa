@@ -62,7 +62,6 @@ function MainContent() {
     <>
       {data.map((impact, index) => {
         const isEven = index % 2 ? true : false;
-        console.log(isEven);
         return (
           <>
             {!isEven && (
