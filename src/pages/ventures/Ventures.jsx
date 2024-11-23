@@ -11,7 +11,7 @@ function Ventures() {
           imageUrl={venture.imageSrc.src}
           heading=""
           paragraph={venture.paragraph}
-          contentFirst={index % 2 ? true : false}
+          contentFirst={index % 2 ? false : true}
           brown={index % 2}
           logo={venture.logo}
           key={venture.company}

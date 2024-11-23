@@ -12,7 +12,7 @@ function RiskSolutions() {
   };
 
   const imageAndTextContent = {
-    imageUrl: '/assets/risk-advisory.jpg',
+    imageUrl: '/assets/verticals/images/adviser.jpg',
     title: '',
     heading: 'Risk Advisory',
     paragraph:

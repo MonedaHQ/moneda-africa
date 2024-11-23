@@ -36,7 +36,7 @@ function CoreValues() {
     <Section>
       <div className={styles.backgroundImage}>
         <Image
-          src="/assets/art/father-nature.jpeg"
+          src="/assets/art/relief.jpg"
           width={1575}
           height={1183.79}
           alt="Background Image"
@@ -45,7 +45,7 @@ function CoreValues() {
       </div>
       <div className={styles.content}>
         <div className={styles.heading}>
-          <WordAnimator text=" A Driving Force in African Investment" as="h4" />
+          <WordAnimator text=" A Driving Force in African Investment" as="h3" />
 
           <p>
             We are a leading investment firm shaping the future of finance and

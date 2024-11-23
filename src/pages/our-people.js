@@ -7,7 +7,7 @@ import AllTeamMembers from './ourPeople/AllTeamMembers';
 
 function OurPeople() {
   const heroContent = {
-    images: ['/assets/globe.jpg'],
+    images: ['/assets/africa-wood.jpg'],
     content: {
       heading: 'Meet Our People',
       paragraph:

@@ -7,8 +7,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 import styles from './styles/teamsection.module.css';
-import CharacterAnimator from '@/components/CharacterAnimator';
-import { useCountIncrement } from '@/hooks/useCountIncrement';
+
 import Metrics from '@/components/Metrics';
 
 const metrics = [
@@ -53,7 +52,7 @@ function TeamSection() {
         <div className={styles.teamContainer}>
           <div className={styles.imageContainer}>
             <Image
-              src="/assets/globe.jpg"
+              src="/assets/clay-globe.jpg"
               width={725}
               height={865}
               alt="Team Moneda at the AEW"

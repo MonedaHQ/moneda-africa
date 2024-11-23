@@ -11,7 +11,7 @@ function Trading() {
     caption: 'Akinwumi Adesina - President, African Development Bank',
   };
   const imageAndTextContent = {
-    imageUrl: '/assets/farmer-in-field.jpg',
+    imageUrl: '/assets/verticals/images/grains.jpg',
     title: '',
     heading: 'Trading',
     paragraph:
@@ -20,7 +20,7 @@ function Trading() {
   };
 
   const sectionTwo = {
-    imageUrl: '/assets/mining-equipment.jpg',
+    imageUrl: '/assets/verticals/images/farmer.jpg',
     heading: '',
     paragraph:
       "By leveraging our technical, and risk management expertise and industry relationships, Moneda provides critical support to both farmers and miners, ensuring their products reach markets efficiently. Our trading operations not only generate significant returns but also contribute to Africa's economic development by promoting local industries and export opportunities. We are committed to empowering stakeholders and supporting sustainable practices within these sectors",

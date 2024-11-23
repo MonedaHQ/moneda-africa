@@ -5,7 +5,7 @@ export const ourVentures = [
       alt: 'Moneda Invest Logo',
     },
     imageSrc: {
-      src: '/assets/verticals/images/oil-rig.jpg',
+      src: '/assets/ventures/cityscape.jpg',
       alt: 'Domena Logo',
     },
 
@@ -20,7 +20,7 @@ export const ourVentures = [
       alt: 'Moneda Invest Logo',
     },
     imageSrc: {
-      src: '/assets/verticals/images/cap-manage.jpg',
+      src: '/assets/ventures/link-bridge.jpg',
       alt: 'Capital Management',
     },
 
@@ -57,7 +57,7 @@ export const ourVentures = [
   {
     logo: { src: '/assets/verticals/dt-mining.png', alt: 'DT Mining Logo' },
     imageSrc: {
-      src: '/assets/verticals/images/lithium.jpg',
+      src: '/assets/ventures/mining-well.jpg',
       alt: 'Domena Logo',
     },
     company: 'DT Mining Limited',
