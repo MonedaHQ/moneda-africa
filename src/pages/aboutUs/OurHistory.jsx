@@ -35,13 +35,13 @@ const ourHistory = [
   {
     year: '2019',
     paragraph:
-      'The company transitioned to a multi-client model, gaining industry flexibility and aligning fee structures with the NiPEX platform. The company also secured regulatory approvals to operate as both a financier and operator in the oil and gas sector, marking a key milestone in its growth.',
+      'The company transitioned to a multi-client model to gain industry-wide flexibilities and create optimal value. Throygh the completion of our registration on the NiPEX portal, the company secured regulatory approvals to operate as both a financier and operator in the oil and gas sector.',
     left: true,
   },
   {
     year: '2020',
     paragraph:
-      'Moneda Invest strengthened its focus on Africa by forming non-exclusive joint ventures with International Oil Companies (IOCs) to finance and execute supply contracts. Notable deals included a 30,000 metric tonne gasoil supply for Duke Oil and a one-million-barrel crude contract. The company also expanded into Mauritius to enhance capital flexibility and market reach.',
+      'Moneda Invest strengthened its focus on Africa by forming non-exclusive joint ventures with African SMEs who have secured contracts with International Oil Companies (IOCs)',
     left: false,
   },
   {
