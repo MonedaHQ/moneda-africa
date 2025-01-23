@@ -11,18 +11,18 @@ export const managementTeam = [
     linkedIn: 'https://www.linkedin.com/in/ejike-egbuagu-28410960/',
     wikipedia: null,
   },
-  {
-    name: 'Habibah Waziri',
-    position: 'Chief Operating Officer',
-    paragraph:
-      'Habibah brings over 6 years of management consulting experience across several African countries focused on selecting and buiding best-in-class teams on the continent. She served as country head of one of the largest people management firms in Africa. At Moneda, she oversees Culture, Capacity, Processes, Resources and Technology. Habibah is a fellow of the Insitute of Management Consultants (IMC)',
-    imageData: {
-      src: '/assets/team/habibah.jpg',
-      alt: 'A photo of Habibah Waziri, COO Moneda',
-    },
-    linkedIn: 'https://www.linkedin.com/in/habibah-a-w/',
-    wikipedia: null,
-  },
+  // {
+  //   name: 'Habibah Waziri',
+  //   position: 'Chief Operating Officer',
+  //   paragraph:
+  //     'Habibah brings over 6 years of management consulting experience across several African countries focused on selecting and buiding best-in-class teams on the continent. She served as country head of one of the largest people management firms in Africa. At Moneda, she oversees Culture, Capacity, Processes, Resources and Technology. Habibah is a fellow of the Insitute of Management Consultants (IMC)',
+  //   imageData: {
+  //     src: '/assets/team/habibah.jpg',
+  //     alt: 'A photo of Habibah Waziri, COO Moneda',
+  //   },
+  //   linkedIn: 'https://www.linkedin.com/in/habibah-a-w/',
+  //   wikipedia: null,
+  // },
   {
     name: 'Olajumoke Adekanmi',
     position: 'Chief Risk Officer',
