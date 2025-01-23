@@ -104,6 +104,10 @@ p strong {
   font-weight: 400;
 }
 
+figure {
+  max-width: 100%;
+}
+
 @media (max-width: 87.5em) {
   :root {
     --font-size-h1: 4rem;

@@ -1,0 +1,92 @@
+.container {
+  display: grid;
+  row-gap: 6rem;
+}
+
+.nowWatching {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.watchingContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+
+.iFrame {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.episodeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+.episodeCard {
+  width: 100%;
+  cursor: pointer;
+}
+
+.episodeCard:hover > .thumbnail {
+  filter: brightness(0.6);
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.2s ease;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.watchList {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.noEpisodesContainer {
+  display: grid;
+  place-items: center;
+}
+
+.noEpisodes {
+  padding: 2rem;
+  border-radius: 0.8rem;
+  background-color: var(--color-mid-grey);
+}
+
+@media (max-width: 52em) {
+  .watchingContainer {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .episodeGrid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+
+  .thumbnail {
+    width: 100%;
+  }
+}
+
+@media (max-width: 34em) {
+  .episodeGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .thumbnail {
+    width: 50%;
+  }
+}

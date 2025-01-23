@@ -1,0 +1,4 @@
+.reportsContainer {
+  display: grid;
+  row-gap: 3rem;
+}

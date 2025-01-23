@@ -1,0 +1,155 @@
+.postsContainer {
+  display: grid;
+  row-gap: 3rem;
+}
+
+.mainEmpty {
+  height: 100dvh;
+  background: radial-gradient(
+      71.35% 71.35% at 50% 50%,
+      rgba(255, 255, 255, 0.94) 0%,
+      rgba(209, 209, 209, 0.94) 100%
+    ),
+    url('/images/hero-images/background-img.jpg');
+
+  display: grid;
+  place-items: center;
+}
+
+.heading {
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.allPosts {
+  display: grid;
+  row-gap: 3rem;
+}
+
+.posts {
+  border-radius: 2.8rem;
+  /* padding: 4rem; */
+  background-color: var(--color-gray);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+
+.post {
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: 1.2rem;
+
+  display: grid;
+  row-gap: 1.6rem;
+
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+.postImg {
+  width: 100%;
+}
+
+.postImg img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.8rem;
+}
+
+.content {
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  row-gap: 1.6rem;
+}
+
+.content h6 {
+  font-size: 1.8rem;
+}
+
+.numComments {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.numComments svg {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--color-black);
+  opacity: 0.6;
+}
+
+.numComments p {
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 87.5em) {
+  .postImg img {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .postImg img {
+    height: 180px;
+  }
+
+  .goBack {
+    top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 68.75em) {
+  .main {
+    padding: 6rem 0;
+  }
+  .posts {
+    column-gap: 1.6rem;
+    row-gap: 1.6rem;
+    padding: 2rem;
+  }
+
+  .post {
+    padding: 1.4rem;
+  }
+
+  .content h6 {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 36.25em) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+
+  .heading {
+    font-size: 2.8rem;
+  }
+
+  .postImg img {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 18.125em) {
+  .heading {
+    font-size: 2.4rem;
+  }
+  .posts {
+    padding: 1.2rem;
+    row-gap: 1.2rem;
+  }
+}

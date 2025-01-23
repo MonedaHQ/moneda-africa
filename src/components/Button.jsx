@@ -10,25 +10,38 @@ function Button({
   onMouseLeave = null,
   type = 'button',
   active = false,
+  disabled = false,
 }) {
-  const commonProps = {
-    className: `${styles.button} ${styles[variant]} ${
-      active ? styles[`active-${variant}`] : ''
-    }`,
-    onClick,
-    onMouseEnter,
-    onMouseLeave,
-  };
+  const commonClassName = `${styles.button} ${styles[variant]} ${
+    active ? styles[`active-${variant}`] : ''
+  } ${disabled ? styles.disabled : ''}`;
 
   if (href) {
     return (
-      <Link {...commonProps} href={href}>
+      <Link
+        href={href}
+        className={commonClassName}
+        onClick={(e) => {
+          if (disabled) {
+            e.preventDefault();
+          } else if (onClick) {
+            onClick(e);
+          }
+        }}
+      >
         {children}
       </Link>
     );
   } else {
     return (
-      <button {...commonProps} type={type}>
+      <button
+        className={commonClassName}
+        type={type}
+        onClick={disabled ? undefined : onClick}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+        disabled={disabled}
+      >
         {children}
       </button>
     );

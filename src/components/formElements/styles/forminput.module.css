@@ -66,8 +66,8 @@
 
 .warning {
   font-size: 1.6rem !important;
-  font-weight: 500 !important;
-  color: var(--color-fail);
+  /* font-weight: 500 !important; */
+  color: var(--color-orange);
 }
 
 @media only screen and (max-width: 89.375em) {
