@@ -46,7 +46,10 @@ function NowWatching({ episode }) {
           allowFullScreen
           className={styles.iFrame}
         />
-        <p>{episode.caption}</p>
+        <div
+          dangerouslySetInnerHTML={{ __html: episode.caption }}
+          className={styles.caption}
+        />
       </div>
     </div>
   );

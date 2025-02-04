@@ -20,6 +20,10 @@
   aspect-ratio: 16/9;
 }
 
+.caption ul {
+  padding-left: 4rem;
+}
+
 .episodeGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
