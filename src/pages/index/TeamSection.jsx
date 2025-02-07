@@ -72,7 +72,7 @@ function TeamSection() {
               initial="initial"
               animate={inView ? 'animate' : 'initial'}
             >
-              Since our inception in 2023, Moneda has rapidly established itself
+              Since our inception in 2015, Moneda has rapidly established itself
               as a global leader in the energy and commodities markets.
               Operating at the forefront of the energy sector, we have amassed
               unparalleled expertise across a diverse range of physical and
