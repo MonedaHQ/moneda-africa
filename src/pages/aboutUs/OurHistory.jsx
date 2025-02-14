@@ -65,7 +65,7 @@ const ourHistory = [
   {
     year: '2024',
     paragraph:
-      'Moneda received its Global Business License (GBL), allowing us to operate and receive funds worldwide, marking a significant milestone in our global expansion efforts.',
+      'Moneda received its fund management license, allowing us to operate and receive funds worldwide, marking a significant milestone in our global expansion efforts.',
     left: false,
   },
 ];
