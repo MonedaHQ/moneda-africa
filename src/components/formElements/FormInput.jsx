@@ -14,6 +14,38 @@ function FormInput({
 }) {
   const { register, errors } = formActions;
 
+  const validationRules = {
+    required: required ? 'This field is required' : false,
+  };
+
+  if (type === 'tel') {
+    return (
+      <fieldset className={styles.fieldset}>
+        <label htmlFor={id} className={styles.label}>
+          {label}
+        </label>
+        <input
+          id={id}
+          type="tel"
+          placeholder={placeholder}
+          defaultValue={defaultValue}
+          onChange={onChange}
+          {...register(id, {
+            required: required ? 'This field is required' : false,
+            pattern: {
+              value: /^[+\d][\d-]*$/,
+              message: 'Please enter a valid phone number',
+            },
+          })}
+          disabled={disabled}
+          className={styles.input}
+          required={required}
+        />
+        {errors[id] && <p className={styles.warning}>{errors[id].message}</p>}
+      </fieldset>
+    );
+  }
+
   if (type === 'textarea')
     return (
       <fieldset className={styles.fieldset}>
