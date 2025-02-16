@@ -8,6 +8,14 @@ import { PiInstagramLogoFill, PiYoutubeLogoFill } from 'react-icons/pi';
 
 const data = [
   {
+    link: 'https://www.youtube.com/watch?v=OrkarwdE364&list=PLTea_v3Y6e-vZkeTMmWqwIg7HPvfQoFaj',
+    name: 'Nkechi Amangbo',
+    image: {
+      imageSrc: '/assets/iwdAssets/nk.jpg',
+      alt: 'A photo of Nkechi Amangbo',
+    },
+  },
+  {
     link: 'https://www.youtube.com/watch?v=tnltNkowUqk&list=PLTea_v3Y6e-slle8mBzs1bpQobjMKsyvc&index=2',
     name: 'Jumoke Adekanmi',
     image: {
@@ -21,22 +29,6 @@ const data = [
     image: {
       imageSrc: '/assets/iwdAssets/ebi.jpg',
       alt: 'A photo of Ebi Sese',
-    },
-  },
-  {
-    link: 'https://www.youtube.com/watch?v=OrkarwdE364&list=PLTea_v3Y6e-vZkeTMmWqwIg7HPvfQoFaj',
-    name: 'Nkechi Amangbo',
-    image: {
-      imageSrc: '/assets/iwdAssets/nk.jpg',
-      alt: 'A photo of Nkechi Amangbo',
-    },
-  },
-  {
-    link: 'https://www.youtube.com/watch?v=VLJnHwwkJkE&list=PLTea_v3Y6e-vZkeTMmWqwIg7HPvfQoFaj&index=2',
-    name: 'Rhoda Teriba',
-    image: {
-      imageSrc: '/assets/iwdAssets/rhoda.jpg',
-      alt: 'A photo of Rhoda Teriba',
     },
   },
 ];
