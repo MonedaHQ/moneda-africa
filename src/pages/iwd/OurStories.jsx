@@ -15,22 +15,22 @@ const data = [
       alt: 'A photo of Nkechi Amangbo',
     },
   },
-  {
-    link: 'https://www.youtube.com/watch?v=tnltNkowUqk&list=PLTea_v3Y6e-slle8mBzs1bpQobjMKsyvc&index=2',
-    name: 'Jumoke Adekanmi',
-    image: {
-      imageSrc: '/assets/iwdAssets/jumoke.jpg',
-      alt: 'A photo of Jumoke Adekanmi',
-    },
-  },
-  {
-    link: 'https://www.youtube.com/watch?v=50yF_CbIhiw&list=PLTea_v3Y6e-slle8mBzs1bpQobjMKsyvc&index=1',
-    name: 'Ebi Sese',
-    image: {
-      imageSrc: '/assets/iwdAssets/ebi.jpg',
-      alt: 'A photo of Ebi Sese',
-    },
-  },
+  // {
+  //   link: 'https://www.youtube.com/watch?v=tnltNkowUqk&list=PLTea_v3Y6e-slle8mBzs1bpQobjMKsyvc&index=2',
+  //   name: 'Jumoke Adekanmi',
+  //   image: {
+  //     imageSrc: '/assets/iwdAssets/jumoke.jpg',
+  //     alt: 'A photo of Jumoke Adekanmi',
+  //   },
+  // },
+  // {
+  //   link: 'https://www.youtube.com/watch?v=50yF_CbIhiw&list=PLTea_v3Y6e-slle8mBzs1bpQobjMKsyvc&index=1',
+  //   name: 'Ebi Sese',
+  //   image: {
+  //     imageSrc: '/assets/iwdAssets/ebi.jpg',
+  //     alt: 'A photo of Ebi Sese',
+  //   },
+  // },
 ];
 
 function OurStories() {
@@ -72,9 +72,9 @@ function OurStories() {
           />
           <div className={styles.content}>
             <p>
-              Leadership takes many forms. Hear from four inspiring women in
+              Leadership takes many forms. Hear from inspiring women in
               leadership as they share their experiences, challenges, and the
-              power of accelerating action in their communities.
+              power of accelerating action.
             </p>
             <div className={styles.women}>
               {data.map((item, index) => (
