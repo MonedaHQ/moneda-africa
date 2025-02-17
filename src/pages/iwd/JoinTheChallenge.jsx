@@ -8,6 +8,7 @@ import Button from '@/components/Button';
 import { IoMdCheckmarkCircle } from 'react-icons/io';
 import { MdCancel } from 'react-icons/md';
 import { useState } from 'react';
+import { useContestSubmission } from '@/hooks/useContestSubmission';
 
 const instructions = [
   {
@@ -94,9 +95,13 @@ function EntryForm() {
   const formActions = { register, errors };
 
   const [formCurremt, setFormCurrent] = useState(null);
+  const { submitForm, isSubmittingForm } = useContestSubmission();
 
   function onSubmit(data) {
-    console.log(data);
+    submitForm(data, {
+      onSuccess: () => setFormCurrent('success'),
+      onError: () => setFormCurrent('failed'),
+    });
   }
   return (
     <div className={styles.entryForm}>
@@ -116,7 +121,9 @@ function EntryForm() {
         padding={false}
       >
         {formCurremt === 'success' && <SuccessfulSubmission />}
-        {formCurremt === 'failed' && <FailedSubmission />}
+        {formCurremt === 'failed' && (
+          <FailedSubmission setFormCurrent={setFormCurrent} />
+        )}
         {!formCurremt && <FormFields formActions={formActions} />}
       </FormContainer>
     </div>
@@ -134,13 +141,16 @@ function SuccessfulSubmission() {
   );
 }
 
-function FailedSubmission() {
+function FailedSubmission({ setFormCurrent }) {
   return (
     <div className={styles.formBody}>
       <div className={styles.response}>
         <MdCancel className={styles.failed} />
         <p>
-          Oops! Something went wrong. Please <a>Try again</a>
+          Oops! Something went wrong.
+          <Button variant="link-light" onClick={() => setFormCurrent(null)}>
+            Try again
+          </Button>
         </p>
       </div>
     </div>
@@ -169,7 +179,7 @@ function FormFields({ formActions }) {
         />
         <FormInput
           type="email"
-          id="email"
+          id="email_address"
           label="Email Address"
           placeholder="jane@example.com"
           formActions={formActions}
@@ -199,7 +209,7 @@ function FormFields({ formActions }) {
         />
         <FormInput
           type="text"
-          id="instagram_link"
+          id="video_link"
           label="Link to Instagram Video"
           placeholder="https://www.instagram.com/p/xyz"
           formActions={formActions}
@@ -208,7 +218,7 @@ function FormFields({ formActions }) {
         {/* How did you hear about the challenge? */}
         <FormInput
           type="select"
-          id="referral_source"
+          id="referral"
           label="How did you hear about us?"
           formActions={formActions}
         >
