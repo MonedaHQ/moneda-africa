@@ -4,6 +4,7 @@ env:
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
   NEXT_PUBLIC_APP_API_BASE_URL: https://api.monedainvest.app
   NEXT_PUBLIC_APP_BLOG_API_URL: https://monedatreasuryblog.com/wp-json/wp/v2
+  NEXT_PUBLIC_API_IWD_SUBMISSIONS: https://prod-121.westeurope.logic.azure.com:443/workflows/fa249756ef2e4272bd9e668fcba35196/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=fvz-7VLxJSucH_5vAml5RCzsrxiOcu3yFiKcWUoUBnc
 on:
   push:
     branches:
