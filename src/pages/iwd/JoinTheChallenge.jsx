@@ -223,6 +223,7 @@ function FormFields({ formActions }) {
           formActions={formActions}
         >
           <option value="instagram">Instagram</option>
+          <option value="Facebook">Facebook</option>
           <option value="linkedin">LinkedIn</option>
           <option value="word_of_mouth">Word of Mouth</option>
           <option value="other">Other</option>

@@ -8,7 +8,7 @@ import { PiInstagramLogoFill, PiYoutubeLogoFill } from 'react-icons/pi';
 
 const data = [
   {
-    link: 'https://www.youtube.com/watch?v=OrkarwdE364&list=PLTea_v3Y6e-vZkeTMmWqwIg7HPvfQoFaj',
+    link: 'https://youtu.be/BpOpItMIkCw',
     name: 'Nkechi Amangbo',
     image: {
       imageSrc: '/assets/iwdAssets/nk.jpg',
