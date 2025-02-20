@@ -31,7 +31,7 @@ const instructions = [
 function JoinTheChallenge() {
   return (
     <Section>
-      <main className={styles.main}>
+      <main className={styles.main} id="challenge">
         <Heading />
         <MainContent />
       </main>
