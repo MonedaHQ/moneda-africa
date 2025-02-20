@@ -75,8 +75,8 @@ function Instructions() {
         );
       })}
       <p>
-        Shortlisted candidates will be invited to Moneda’s exclusive
-        #AccelerateAction event, where they’ll connect with industry leaders and
+        Shortlisted candidates will be invited to Moneda’s exclusive Accelerate
+        Action event, where they’ll connect with industry leaders and
         changemakers. One inspiring woman will walk away with{' '}
         <strong>NGN500,000</strong> to continue making a difference in her
         community!
