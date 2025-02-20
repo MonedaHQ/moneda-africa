@@ -35,7 +35,7 @@ const ourHistory = [
   {
     year: '2019',
     paragraph:
-      'The company transitioned to a multi-client model to gain industry-wide flexibilities and create optimal value. Throygh the completion of our registration on the NiPEX portal, the company secured regulatory approvals to operate as both a financier and operator in the oil and gas sector.',
+      'The company transitioned to a multi-client model to gain industry-wide flexibility and create optimal value. Through the completion of our registration on the NiPEX portal, the company secured regulatory approvals to operate as both a financier and operator in the oil and gas sector.',
     left: true,
   },
   {
