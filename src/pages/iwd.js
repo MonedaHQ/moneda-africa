@@ -25,7 +25,7 @@ function IWDHome() {
       <MobileNavigationHeader />
       <HeroSection images={heroContent.images} content={heroContent.content} />
       <JoinTheChallenge />
-      {/* <OurStories /> */}
+      <OurStories />
       <Footer />
     </>
   );
