@@ -19,7 +19,7 @@ const instructions = [
   {
     title: 'Post it on Social Media',
     paragraph:
-      '<p>You can post your video on Instagram, Facebook, LinkedIn or X (formerly known as Twitter). <br/>Make sure you:</p><ul><li>Use the hashtag <span>#LeadingHerCommunity</span></li><li>Keep your account public</li></ul>',
+      '<p>You can post your video on Instagram, Facebook, LinkedIn or X (formerly Twitter). <br/>Make sure you:</p><ul><li>Use the hashtag <span>#LeadingHerCommunity</span></li><li>Keep your account public</li></ul>',
   },
   {
     title: 'Register your entry',
@@ -202,15 +202,8 @@ function FormFields({ formActions }) {
         {/* Challenge Submission Details */}
         <FormInput
           type="text"
-          id="instagram_handle"
-          label="Instagram Handle"
-          placeholder="@yourhandle"
-          formActions={formActions}
-        />
-        <FormInput
-          type="text"
           id="video_link"
-          label="Link to Instagram Video"
+          label="Link to Video"
           placeholder="https://www.instagram.com/p/xyz"
           formActions={formActions}
         />
