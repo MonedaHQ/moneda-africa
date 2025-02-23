@@ -204,6 +204,7 @@ function FormFields({ formActions }) {
           type="text"
           id="video_link"
           label="Link to Video"
+          required={false}
           placeholder="https://www.instagram.com/p/xyz"
           formActions={formActions}
         />
