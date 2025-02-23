@@ -17,9 +17,9 @@ const instructions = [
       '<p>Record a video of yourself telling us:</p><ul><li>Who you are & what you do</li><li>What accelerating action means to you</li><li>How you’re making an impact in your community</li></ul>',
   },
   {
-    title: 'Post it on Instagram',
+    title: 'Post it on Social Media',
     paragraph:
-      '<p>Make sure you:</p><ul><li>Use the hashtag <span>#LeadingHerCommunity</span></li><li>Keep your account public</li></ul>',
+      '<p>You can post your video on Instagram, Facebook, LinkedIn or X (formerly known as Twitter). <br/>Make sure you:</p><ul><li>Use the hashtag <span>#LeadingHerCommunity</span></li><li>Keep your account public</li></ul>',
   },
   {
     title: 'Register your entry',
@@ -31,7 +31,7 @@ const instructions = [
 function JoinTheChallenge() {
   return (
     <Section>
-      <main className={styles.main} id="challenge">
+      <main className={styles.main}>
         <Heading />
         <MainContent />
       </main>
@@ -104,7 +104,7 @@ function EntryForm() {
     });
   }
   return (
-    <div className={styles.entryForm}>
+    <div className={styles.entryForm} id="challenge">
       {!formCurremt && (
         <h3
           style={{
