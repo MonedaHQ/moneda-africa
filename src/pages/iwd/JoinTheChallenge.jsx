@@ -14,7 +14,7 @@ const instructions = [
   {
     title: 'Share your story',
     paragraph:
-      '<p>Record a video of yourself telling us:</p><ul><li>Who you are & what you do</li><li>What accelerating action means to you</li><li>How you’re making an impact in your community</li></ul>',
+      '<p>Post a video sharing your story or a photo with a caption. Tell us:</p><ul><li>Who you are & what you do</li><li>What accelerating action means to you</li><li>How you’re making an impact in your community</li></ul>',
   },
   {
     title: 'Post it on Social Media',
