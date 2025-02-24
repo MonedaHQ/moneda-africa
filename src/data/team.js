@@ -37,7 +37,7 @@ export const managementTeam = [
   },
   {
     name: 'Peter Aloga',
-    position: 'Group Financial Controller',
+    position: 'Chief Audit and Compliance Officer',
     paragraph:
       'From banking, through asset management to real estate, Energy and Consulting, Peter has spent over 12 years providing world class solutions in financial reporting and management accounting. A trusted professional, chartered accountant and senior fellow of the institure of chartered accountants of Nigeria (ICAN). University of Lags (MSC Accounting)',
     imageData: {
@@ -62,7 +62,7 @@ export const managementTeam = [
   },
   {
     name: 'Moshood Quadri',
-    position: 'VP, Corporate Finance',
+    position: 'Head of Corporate Finance',
     paragraph:
       'Moshood has over 7 years experience across legal, tax, consulting, and finance. He was Formerly Assistant Manager in the Corporate Tax Consulting business at PwC Nigeria.',
     imageData: {
@@ -74,7 +74,7 @@ export const managementTeam = [
   },
   {
     name: 'Akintunde Marinho',
-    position: 'VP, Business Development, Marketing & Communications',
+    position: 'Global Head, Business Development & Special Projects',
     paragraph:
       'Akintunde has garnered a combined 18 years of experience in diversified industries including but not confined to finance, marketing and technology. Leading the marketing and communication team at Moneda, he has perfectly crafted and packaged the story of Moneda and her non-profit sister, 1952 Africa, for the world to see and appreciate the impact on the African continent. Akintunde is passionate about the development of the youth and can be found giving talks to millennials and staff in several organizations on robust business strategy, content monetization and digital content',
     imageData: {
@@ -96,18 +96,18 @@ export const managementTeam = [
     linkedIn: 'https://www.linkedin.com/in/eyimofe-olagbaju-84335943/',
     wikipedia: null,
   },
-  // {
-  //   name: 'Adedapo Makinde',
-  //   position: 'Head of Legal',
-  //   paragraph:
-  //     'Adedapo is a legal practitioner with over nine (9) years of experience providing legal services. Over the years, he has acquired relevant knowledge and expertise in various practice areas including Deal Origination & Structuring, Fund Formation & Administration Corporate/Business Law, Company Secretarial, Legal Advisory, Regulatory & Compliance, and Capital Markets. Prior to joining Moneda, he worked as a Senior Associate at Austen-Peters & Co. He currently heads the Legal Department at Moneda. Adedapo obtained an LL.B degree from the University of Lagos. He is also a member of the Nigerian Bar Association.',
-  //   imageData: {
-  //     src: '/assets/team/dapo.jpg',
-  //     alt: 'A photo of Adedapo Makinde, Head of Legal',
-  //   },
-  //   linkedIn: 'https://www.linkedin.com/in/adedapomakinde/',
-  //   wikipedia: null,
-  // },
+  {
+    name: 'Adedapo Makinde',
+    position: 'Head of Legal',
+    paragraph:
+      'Adedapo is a legal practitioner with over nine (9) years of experience providing legal services. Over the years, he has acquired relevant knowledge and expertise in various practice areas including Deal Origination & Structuring, Fund Formation & Administration Corporate/Business Law, Company Secretarial, Legal Advisory, Regulatory & Compliance, and Capital Markets. Prior to joining Moneda, he worked as a Senior Associate at Austen-Peters & Co. He currently heads the Legal Department at Moneda. Adedapo obtained an LL.B degree from the University of Lagos. He is also a member of the Nigerian Bar Association.',
+    imageData: {
+      src: '/assets/team/dapo.jpg',
+      alt: 'A photo of Adedapo Makinde, Head of Legal',
+    },
+    linkedIn: 'https://www.linkedin.com/in/adedapomakinde/',
+    wikipedia: null,
+  },
   // {
   //   name: 'Precious Ehihamen',
   //   position: 'Research & Intelligence Lead',
