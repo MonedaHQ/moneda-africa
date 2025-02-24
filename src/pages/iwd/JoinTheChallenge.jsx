@@ -203,7 +203,7 @@ function FormFields({ formActions }) {
         <FormInput
           type="text"
           id="video_link"
-          label="Link to Video"
+          label="Link to your post"
           required={false}
           placeholder="https://www.instagram.com/p/xyz"
           formActions={formActions}
