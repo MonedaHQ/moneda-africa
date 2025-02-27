@@ -15,14 +15,14 @@ const data = [
       alt: 'A photo of Nkechi Amangbo',
     },
   },
-  // {
-  //   link: 'https://www.youtube.com/watch?v=tnltNkowUqk&list=PLTea_v3Y6e-slle8mBzs1bpQobjMKsyvc&index=2',
-  //   name: 'Jumoke Adekanmi',
-  //   image: {
-  //     imageSrc: '/assets/iwdAssets/jumoke.jpg',
-  //     alt: 'A photo of Jumoke Adekanmi',
-  //   },
-  // },
+  {
+    link: 'https://youtu.be/lH0hz3-Crec?si=-Z8i9wm_UB_ChQkh',
+    name: 'Jumoke Adekanmi',
+    image: {
+      imageSrc: '/assets/iwdAssets/jumoke.jpg',
+      alt: 'A photo of Jumoke Adekanmi',
+    },
+  },
   // {
   //   link: 'https://www.youtube.com/watch?v=50yF_CbIhiw&list=PLTea_v3Y6e-slle8mBzs1bpQobjMKsyvc&index=1',
   //   name: 'Ebi Sese',
