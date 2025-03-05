@@ -2,6 +2,12 @@
 
 export const newsroomEpisodes = [
   {
+    title: 'Standards Without Consequences: Nigeria’s Biggest Problem?',
+    caption:
+      '<div>Nigeria has no shortage of standards and regulations, but enforcing them is a different story. <br/><br/>In this episode of Moneda Newsroom, Eyimofe Olabaju, Vice President of Trading Operations at Moneda Invest, exposes the hard truths behind Nigeria’s standards crisis. From the recent demolition controversies to the mining sector’s regulatory gaps, we uncover why consequences matter more than rules themselves—and what it will take to break the cycle of negligence. <br/><br/>Don’t miss this eye-opening conversation!</div>',
+    link: 'https://youtu.be/TuG2LbtJ4Xc',
+  },
+  {
     title: 'Africa Has Gas, So Why Is There No Light?',
     caption:
       '<div>The world is racing toward a renewable energy future by 2050, but in many parts of Africa, even basic electricity is still a luxury. Millions remain in the dark—not because energy sources don’t exist, but because critical infrastructure and investment are missing. <br/><br/>Africa holds vast natural gas reserves, a cleaner alternative to coal and oil, yet instead of powering industries and homes, billions of cubic meters are wasted through flaring. In 2023 alone, Africa flared 12.7 billion cubic meters of gas—enough to meet Nigeria’s entire gas demand. Meanwhile, $245 billion worth of gas projects across the continent are at risk due to underfunding, inefficiencies, and security concerns.<br/><br/>Take the Trans-Saharan Gas Pipeline, proposed in the 1970s to connect Nigeria to Algeria—55 years later, it remains unfinished. While governments push for policies to fix the problem, the real missing piece is brave capital—investment that is willing to take on the challenge of building Africa’s energy future. <br/><br/>Our latest intelligence report takes a deep dive into Africa’s gas industry and explores potential funding sources to unlock energy access.</div>',

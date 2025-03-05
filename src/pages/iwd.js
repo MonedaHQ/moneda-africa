@@ -19,7 +19,7 @@ function IWDHome() {
     <>
       <MetaTags
         title="IWD 2025 - Leading Her Community | Moneda"
-        description="Women are the backbone of thriving communities, leading in ways big and small—from markets to estates, churches to workplaces. Now, it’s time to spotlight their impact. Moneda’s #LeadingHerCommunity Challenge is a call to action for women who have stepped up as community leaders. Whether you’re organizing, advocating, or driving change, your story can inspire others to do the same."
+        description="Women are the backbone of thriving communities, leading in ways big and small—from markets to estates to workplaces. Now, it’s time to spotlight their impact. Moneda’s #LeadingHerCommunity Challenge is a call to action for women who have stepped up as community leaders. Whether you’re organizing, advocating, or driving change, your story can inspire others to do the same."
       />
       <Navigation />
       <MobileNavigationHeader />
