@@ -39,6 +39,15 @@ function JoinTheChallenge() {
   );
 }
 
+function EntriesClosed() {
+  return (
+    <div>
+      <h4>Oops!</h4>
+      <p>Sorry! We are no longer taking entries</p>
+    </div>
+  );
+}
+
 function Heading() {
   return (
     <div className={styles.heading}>

@@ -12,7 +12,7 @@ function IWDHome() {
     content: {
       heading: 'Leading Her Community',
       paragraph:
-        'Women are the backbone of thriving communities, leading in ways big and small—from markets to estates to workplaces. Now, it’s time to spotlight their impact. <br/> <br/>Moneda’s #LeadingHerCommunity Challenge is a call to action for women who have stepped up as community leaders. Whether you’re organizing, advocating, or driving change, your story can inspire others to do the same. Join the challenge, share your journey, and stand a chance to win NGN500,000!',
+        'Women are the backbone of thriving communities, leading in ways big and small—from markets to estates to workplaces. Now, it’s time to spotlight their impact. <br/> <br/>Moneda’s #LeadingHerCommunity Challenge is a call to action for women who have stepped up as community leaders. Whether you’re organizing, advocating, or driving change, your story can inspire others to do the same.',
     },
   };
   return (
@@ -24,7 +24,7 @@ function IWDHome() {
       <Navigation />
       <MobileNavigationHeader />
       <HeroSection images={heroContent.images} content={heroContent.content} />
-      <JoinTheChallenge />
+      {/* <JoinTheChallenge /> */}
       <OurStories />
       <Footer />
     </>
