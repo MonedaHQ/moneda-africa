@@ -2,6 +2,12 @@
 
 export const newsroomEpisodes = [
   {
+    title: 'Banks Have Failed Africa – Musa is the Future',
+    caption:
+      '<div>Traditional banks have left African SMEs struggling with slow, expensive payments and rigid lending structures. In this special edition of Moneda Newsroom, Ejike Egbuagu (GCEO, Moneda), Modupe Diyaolu (Co-founder, meCash), and Adebusola Adegbuyi (CTO/Co-founder, meCash) break down how Musa and meCash are building the financial infrastructure Africa actually needs.<br/><br/>From no-collateral funding to instant cross-border payments, this is the future of African finance. Watch now.</div>',
+    link: 'https://youtu.be/1MjVXAC6gnE',
+  },
+  {
     title: 'Standards Without Consequences: Nigeria’s Biggest Problem?',
     caption:
       '<div>Nigeria has no shortage of standards and regulations, but enforcing them is a different story. <br/><br/>In this episode of Moneda Newsroom, Eyimofe Olabaju, Vice President of Trading Operations at Moneda Invest, exposes the hard truths behind Nigeria’s standards crisis. From the recent demolition controversies to the mining sector’s regulatory gaps, we uncover why consequences matter more than rules themselves—and what it will take to break the cycle of negligence. <br/><br/>Don’t miss this eye-opening conversation!</div>',
