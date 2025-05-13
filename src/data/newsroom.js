@@ -2,6 +2,12 @@
 
 export const newsroomEpisodes = [
   {
+    title: 'We Grow It. So Why Import It?',
+    caption:
+      '<div>Nigeria produces enough to feed itself — from rice to maize, cassava to yams. Yet our markets are flooded with imported food. <br/><br/>This isn’t just an economic puzzle; it’s a clear case of lack of vision. In this episode, we break down why a country that grows so much still spends billions bringing food in, who benefits from the import cycle, and what it will take to truly back local producers. <br/><br/>The problem isn’t production — it’s policy, priorities, and political will.</div>',
+    link: 'https://www.youtube.com/watch?v=rweEamS6jnI',
+  },
+  {
     title: 'Why Banks Are WRONG About SME Risks!',
     caption:
       '<div>In this eye-opening episode, we dive deep into the complex world of risk assessment for African SMEs. <br/><br/>Are these small businesses the backbone of Africa’s economy, or are they simply too risky to invest in? We sit down with Jumoke Adekanmi, Moneda’s Chief Risk Officer, to uncover the truth behind why SMEs often get a bad rap and what it takes to assess their true potential. <br/><br/>From misconceptions about risk to the real challenges SMEs face in accessing finance, we explore how understanding these businesses differently could unlock Africa’s growth. <br/><br/> Watch now to find out: <ul> <li> Why banks and investors see SMEs as risky </li> <li>How the traditional risk assessment model fails Africa’s SMEs </li><li>What it really takes to unlock opportunities for growth in Africa’s economy</li></ul></div>',
