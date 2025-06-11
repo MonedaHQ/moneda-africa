@@ -2,6 +2,12 @@
 
 export const newsroomEpisodes = [
   {
+    title: "Is South Africa's Chrome 'Throne' Safe?",
+    caption:
+      '<div>What do stainless steel, fighter jets, and luxury jewellery have in common? Chrome Ore. <br/> <br/>In this episode of Moneda Newsroom, we unpack the strategic role of Chrome Ore in the $7.57 billion global market—and why Africa, particularly South Africa, holds the crown. But that dominance is under pressure.<br/> <br/> From rising electricity costs to shifting trade routes and growing competition from China and Turkey, discover the forces shaping the future of this essential mineral.<br/> <br/> </div>',
+    link: 'https://www.youtube.com/watch?v=-JdCtX2OzUY',
+  },
+  {
     title: 'We Grow It. So Why Import It?',
     caption:
       '<div>Nigeria produces enough to feed itself — from rice to maize, cassava to yams. Yet our markets are flooded with imported food. <br/><br/>This isn’t just an economic puzzle; it’s a clear case of lack of vision. In this episode, we break down why a country that grows so much still spends billions bringing food in, who benefits from the import cycle, and what it will take to truly back local producers. <br/><br/>The problem isn’t production — it’s policy, priorities, and political will.</div>',
