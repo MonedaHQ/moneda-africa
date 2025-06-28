@@ -2,6 +2,12 @@
 
 export const newsroomEpisodes = [
   {
+    title: 'Why Poultry Feed is Breaking Nigerian Farmers',
+    caption:
+      '<div>Feed accounts for 70–75% of poultry production costs in Nigeria, and farmers are being pushed out of business due to skyrocketing prices driven by the rising cost of maize, soybean, and the removal of fuel subsidies in 2023. <br/> <br/>In this episode, we sit with Obinna Nwaolikpe, Director of Sales & Operations at Domena, to unpack the crisis no one is talking about and spotlights what a real, scalable solution could look like.</div>',
+    link: 'https://youtu.be/cNCLYcl2gYw?si=uwoKGJCU6u3v3Hau',
+  },
+  {
     title: "Is South Africa's Chrome 'Throne' Safe?",
     caption:
       '<div>What do stainless steel, fighter jets, and luxury jewellery have in common? Chrome Ore. <br/> <br/>In this episode of Moneda Newsroom, we unpack the strategic role of Chrome Ore in the $7.57 billion global market—and why Africa, particularly South Africa, holds the crown. But that dominance is under pressure.<br/> <br/> From rising electricity costs to shifting trade routes and growing competition from China and Turkey, discover the forces shaping the future of this essential mineral.<br/> <br/> </div>',
