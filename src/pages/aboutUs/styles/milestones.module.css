@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  display: grid;
+  row-gap: 8rem;
+  position: relative;
+  z-index: 300;
+}
+
+.heading {
+  color: var(--color-white);
+  display: grid;
+  row-gap: 1.8rem;
+
+  max-width: 80%;
+  margin: auto;
+}
+
+.heading,
+.heading p {
+  text-align: center;
+}
+
+.backgroundImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  display: grid;
+  place-items: center;
+}
+
+.backgroundImg img {
+  width: 100%;
+  height: auto;
+  opacity: 0.02;
+  animation: spinCoin 10s linear infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes spinCoin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}

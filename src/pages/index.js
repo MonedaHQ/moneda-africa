@@ -10,22 +10,26 @@ import WWDSection from './index/WWDSection';
 import WhatWeDo from './index/OurFocusAreas';
 import Footer from '@/components/Footer';
 import OurTeam from './index/OurTeam';
+import useScrollDirection from '@/hooks/useScrollDirection';
+import TheMonedaGroup from './index/TheMonedaGroup';
+import OurVerticals from './index/OurVerticals';
+import NewsInsights from './index/NewsInsights';
 
 function Home() {
   const scrollPosition = useScrollPosition(scrollOffset);
 
   const heroContent = {
     images: [
-      // '/assets/heroImages/cbc.jpg',
+      // '/assets/heroupdate/backgroundImage.jpg',
       '/assets/heroImages/link-bridge.jpg',
       '/assets/heroImages/badge.jpg',
       '/assets/heroImages/agriculture.jpg',
       '/assets/heroImages/oil-rig-2.jpg',
     ],
     content: {
-      heading: 'We are attracted to Gaps - African Gaps',
+      heading: 'We Are Not a Bank',
       paragraph:
-        'At Moneda, we understand African finance and commodities deeply. Our sector expertise helps us identify and capitalize on emerging opportunities. Partner with us to navigate these markets confidently, maximize returns, and manage risks effectively.',
+        '<h4><strong>We are the evolution of African Credit</strong></h4><p>We support the most important SMEs (Critical SMEs) in the most important sectors for African industrial growth.</p>',
     },
   };
 
@@ -35,14 +39,16 @@ function Home() {
         title="Home - Moneda | Bridging Africa's Credit Gap"
         description="At Moneda, we've cultivated a profound understanding of African finance and commodities sectors. Our expertise across various sectors allows us to spot and seize emerging opportunities. We partner with our clients to navigate African markets confidently. By leveraging the insights we collect, you can maximise returns while mitigating risks."
       />
-      <Navigation />
+      <Navigation scrollPosition={scrollPosition} />
       <MobileNavigationHeader />
       <HeroSection images={heroContent.images} content={heroContent.content} />
       <WhyWeExist />
       <TeamSection />
-      <WWDSection />
-      <WhatWeDo />
+      <OurVerticals />
+      {/* <WWDSection /> */}
+      {/* <WhatWeDo /> */}
       <OurTeam />
+      <NewsInsights />
       <Footer />
     </>
   );

@@ -19,6 +19,9 @@
   width: 400px;
   height: 400px;
   opacity: 0.1;
+
+  animation: spinCoin 10s linear infinite;
+  transform-style: preserve-3d;
 }
 
 .quoteContainer {
@@ -32,6 +35,15 @@
 
 .quoteContainer p {
   text-align: center;
+}
+
+@keyframes spinCoin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 @media (max-width: 60em) {

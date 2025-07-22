@@ -5,8 +5,11 @@ import WordAnimator from './WordAnimator';
 
 import styles from './styles/textandimagesection.module.css';
 import Button from './Button';
+import Link from 'next/link';
+import Metadata from './Metadata';
 
 function TextAndImageSection({
+  imageData,
   imageUrl,
   heading,
   paragraph,
@@ -24,7 +27,7 @@ function TextAndImageSection({
     >
       {!contentFirst && (
         <>
-          <ImageBox heading={heading} imageUrl={imageUrl} />
+          <ImageBox heading={heading} imageData={imageData} />
           <ContentBox
             heading={heading}
             paragraph={paragraph}
@@ -47,7 +50,7 @@ function TextAndImageSection({
             lineColor={brown ? 'white' : 'orange'}
             link={link}
           />
-          <ImageBox heading={heading} imageUrl={imageUrl} />
+          <ImageBox heading={heading} imageData={imageData} />
         </>
       )}
     </div>
@@ -55,16 +58,26 @@ function TextAndImageSection({
   );
 }
 
-function ImageBox({ imageUrl, heading }) {
+function ImageBox({ imageData, heading }) {
+  const { src, art, metadata } = imageData;
+
   return (
     <div className={styles.imageContainer}>
       <Image
-        src={imageUrl}
+        src={src}
         width={764}
         height={626}
         alt={heading}
         draggable={false}
       />
+      {art && (
+        <Metadata
+          work={metadata.work}
+          workUrl={metadata.workUrl}
+          artistName={metadata.artistName}
+          artistUrl={metadata.artistUrl}
+        />
+      )}
     </div>
   );
 }

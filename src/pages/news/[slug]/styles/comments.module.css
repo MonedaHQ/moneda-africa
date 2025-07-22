@@ -55,6 +55,10 @@
   /* overflow: hidden; */
 }
 
+.commentContainer p {
+  text-align: left;
+}
+
 .commentBody {
   background-color: var(--color-white);
   max-width: 40rem;

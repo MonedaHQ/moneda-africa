@@ -1,0 +1,43 @@
+.learnMore {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  max-width: max-content;
+}
+
+.learnMoreLink {
+  border-bottom: 1px solid transparent;
+  font-size: 1.6rem;
+  margin-bottom: 7px;
+  position: relative;
+}
+
+.learnMoreLink::after {
+  content: '';
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  background-color: var(--color-orange);
+  transform-origin: center;
+  transition: all 400ms cubic-bezier(0.88, 0.34, 0.17, 1.01);
+  cursor: pointer;
+}
+
+.learnMore svg {
+  filter: brightness(0);
+}
+
+.learnMore:hover > .learnMoreLink:after {
+  width: 100%;
+}
+
+.learnMore:hover > .learnMoreLink {
+  color: var(--color-orange);
+}
+
+.learnMore:hover svg {
+  filter: brightness(1);
+}

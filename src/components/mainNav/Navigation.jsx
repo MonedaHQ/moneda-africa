@@ -7,15 +7,20 @@ import { homeMenuLinks } from '@/data/menu';
 import { useRouter } from 'next/router';
 
 import styles from './styles/navigation.module.css';
+import useScrollPosition from '@/hooks/useScrollPostion';
+import { scrollOffset } from '@/utils/config';
 
-function Navigation({ scrollPosition = 0, darkHero = false }) {
+function Navigation({ scrollDirection = 'up', darkHero = false }) {
+  const scrollPosition = useScrollPosition(scrollOffset);
   const isHero = scrollPosition > 120;
   const router = useRouter();
 
+  const isScrollingUp = scrollDirection === 'up';
+
   return (
     <AnimatePresence>
-      <HeaderInitial darkHero={darkHero} />
-      {/* {isHero ? <HeaderSecondary /> : <HeaderInitial darkHero={darkHero} />} */}
+      {/* <HeaderSecondary /> */}
+      {isHero ? <HeaderSecondary /> : <HeaderInitial darkHero={darkHero} />}
     </AnimatePresence>
   );
 }
@@ -24,13 +29,17 @@ function HeaderSecondary() {
   const router = useRouter();
 
   const headerIntro = {
-    initial: { opacity: 0, scale: 0.8 },
-    animate: { opacity: 1, scale: 1 },
-    exit: { opacity: 0, scale: 0.8 },
+    initial: { opacity: 0, y: -50 },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.1, ease: [0.67, 0.41, 0, 1] },
+    },
+    exit: { opacity: 0, y: -30 },
   };
   return (
     <motion.header
-      className={`${styles.navContainer} ${styles.navContainerSecondary}`}
+      className={`${styles.navContainerSecondary}`}
       variants={headerIntro}
       initial="initial"
       animate="animate"
@@ -40,7 +49,7 @@ function HeaderSecondary() {
         <Image
           width={600}
           height={1200}
-          src={'/assets/1x/logo.png'}
+          src={'/assets/moneda-line-white.png'}
           alt="logo"
           className={styles.logo}
           onClick={() => router.push('/')}

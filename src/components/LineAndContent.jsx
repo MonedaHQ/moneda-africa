@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import AnimatedLine from './AnimatedLine';
 import ArrowDownIcon from './lottieFiles/ArrowDownIcon';
 import styles from './styles/lineandcontent.module.css';
@@ -10,6 +11,9 @@ function LineAndContent({
   as = 'h2',
   whiteText = false,
 }) {
+  const [hasMounted, setHasMounted] = useState(false);
+  useEffect(() => setHasMounted(true), []);
+
   let { pageTitle, heading, paragraph } = content;
 
   if (!pageTitle) {
@@ -24,17 +28,13 @@ function LineAndContent({
       <WordAnimator text={heading} as={as} />
       <div className={styles.paragraphBlock}>
         <AnimatedLine color={textColor} />
-        <p
-          dangerouslySetInnerHTML={{ __html: paragraph }}
-          className={styles.paragraph}
-        />
+        {hasMounted && (
+          <p
+            dangerouslySetInnerHTML={{ __html: paragraph }}
+            className={styles.paragraph}
+          />
+        )}
       </div>
-      {/* {scrollDown && (
-        <div className={`${styles.scrollDown} ${styles[textColor]}`}>
-          <ArrowDownIcon />
-          <p>Scroll Down</p>
-        </div>
-      )} */}
     </div>
   );
 }

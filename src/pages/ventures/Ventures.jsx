@@ -8,7 +8,7 @@ function Ventures() {
     <div className={styles.container}>
       {ourVentures.map((venture, index) => (
         <TextAndImageSection
-          imageUrl={venture.imageSrc.src}
+          imageData={venture.imageData}
           heading=""
           paragraph={venture.paragraph}
           contentFirst={index % 2 ? false : true}

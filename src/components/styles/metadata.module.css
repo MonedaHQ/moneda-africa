@@ -1,0 +1,57 @@
+.metadata {
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+  padding: 2rem;
+  bottom: 0;
+  left: 0;
+  color: white;
+  z-index: 10;
+
+  display: grid;
+  place-items: center;
+
+  opacity: 0.8;
+}
+
+.metadataContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.metadataLink {
+  position: relative;
+}
+
+.metadataLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0.3px;
+  left: 0;
+  background-color: var(--color-white);
+  width: 0%;
+  height: 1px;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.metadataLink:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 75em) {
+  .metadata {
+    /* background: none; */
+    /* background-color: var(--color-black); */
+    opacity: 100%;
+  }
+}
+
+@media (max-width: 27em) {
+  .metadata {
+    padding: 1rem;
+  }
+  .metadataLink,
+  .metadataLink ~ p {
+    font-size: 1.2rem;
+  }
+}

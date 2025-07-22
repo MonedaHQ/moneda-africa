@@ -1,0 +1,19 @@
+.title {
+  text-align: center;
+
+  display: grid;
+  place-items: center;
+  row-gap: 2rem;
+}
+
+.line {
+  background-color: #000;
+  width: 70px;
+  height: 2px;
+}
+
+.title h5 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}

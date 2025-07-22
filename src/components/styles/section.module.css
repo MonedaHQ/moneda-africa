@@ -11,6 +11,10 @@
   padding-bottom: 0;
 }
 
+.transparent {
+  background-color: none;
+}
+
 .light {
   background-color: var(--color-white);
 }

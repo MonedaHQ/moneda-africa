@@ -1,0 +1,74 @@
+.heroSection {
+  position: relative;
+  /* min-height: 60vh; */
+  width: 100%;
+
+  display: grid;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  place-items: center;
+  margin-top: 10rem;
+  row-gap: 3rem;
+}
+
+.backgroundImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.backgroundImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+  opacity: 0.06;
+
+  animation: zoomInOut 20s infinite;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.philosophyTitle {
+  margin: auto;
+  display: grid;
+  place-items: center;
+  row-gap: 1.2rem;
+}
+
+.philosophyTitle h1,
+.philosophyTitle p {
+  text-align: center;
+}
+
+.monedaInPress {
+  background-color: var(--color-white);
+  padding: 4rem;
+  border-radius: 1.4rem;
+}
+
+.heading {
+  display: grid;
+  grid-auto-flow: column;
+  width: 100%;
+  gap: 2rem;
+}
+
+.pressContainer {
+  display: grid;
+  grid-auto-flow: column;
+}

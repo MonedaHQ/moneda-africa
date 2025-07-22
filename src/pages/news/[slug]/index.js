@@ -1,7 +1,4 @@
-import { useRouter } from 'next/router';
-
 import { getImage } from '@/utils/helpers';
-import { usePost } from '@/hooks/usePost';
 import { scrollOffset } from '@/utils/config';
 
 import Navigation from '@/components/mainNav/Navigation';
@@ -13,35 +10,10 @@ import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeade
 import useScrollPosition from '@/hooks/useScrollPostion';
 import Reading from './Reading';
 
-function BlogPost() {
-  const router = useRouter();
-  const { slug } = router.query;
+function BlogPost({ post }) {
   const scrollPosition = useScrollPosition(scrollOffset);
 
-  const { isLoading, post: postArray } = usePost(slug);
-
-  if (isLoading) return <Loader fullScreen={true} />;
-
-  if (postArray.length === 0) {
-    router.push('/news');
-  }
-
-  const selectedPost = postArray.at(0);
-
-  if (!selectedPost) return;
-
-  const post = {
-    id: selectedPost?.id,
-    title: selectedPost?.title.rendered,
-    body: { __html: selectedPost?.content.rendered },
-    date: selectedPost?.date,
-    modified: selectedPost?.modified,
-    excerpt: { __html: selectedPost?.excerpt.rendered },
-    imgSrc: getImage(selectedPost?.content.rendered),
-    slug: selectedPost.slug,
-  };
-
-  console.log(post);
+  if (!post) return <Loader fullScreen={true} />;
 
   return (
     <>
@@ -56,6 +28,42 @@ function BlogPost() {
       <Footer />
     </>
   );
+}
+
+export async function getServerSideProps(context) {
+  const url = process.env.NEXT_PUBLIC_APP_BLOG_API_URL;
+  const { slug } = context.params;
+
+  const res = await fetch(`${url}/posts?slug=${slug}`);
+  const data = await res.json();
+
+  if (!data || data.length === 0) {
+    return {
+      redirect: {
+        destination: '/news',
+        permanent: false,
+      },
+    };
+  }
+
+  const selectedPost = data[0];
+
+  const post = {
+    id: selectedPost?.id,
+    title: selectedPost?.title.rendered,
+    body: { __html: selectedPost?.content.rendered },
+    date: selectedPost?.date,
+    modified: selectedPost?.modified,
+    excerpt: { __html: selectedPost?.excerpt.rendered },
+    imgSrc: getImage(selectedPost?.content.rendered),
+    slug: selectedPost?.slug,
+  };
+
+  return {
+    props: {
+      post,
+    },
+  };
 }
 
 export default BlogPost;

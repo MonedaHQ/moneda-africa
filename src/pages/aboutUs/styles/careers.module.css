@@ -23,17 +23,25 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/assets/art/reflecting-ourselves.jpg');
-  background-position: center;
-  background-size: cover;
+}
+
+.backgroundImage img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   filter: brightness(0.4);
   z-index: -1;
 }
 
+.content {
+  display: grid;
+  place-items: center;
+  row-gap: 1rem;
+  margin-bottom: 3rem;
+}
+
 @media (max-width: 75em) {
-  .container h3 {
-    /* font-size: 4rem; */
-  }
 }
 
 @media (max-width: 68.75em) {
@@ -46,10 +54,6 @@
   .container {
     padding: 8rem;
   }
-
-  .container h3 {
-    /* font-size: 3.6rem; */
-  }
 }
 
 @media (max-width: 37.5em) {
@@ -57,8 +61,6 @@
     padding: 4rem;
   }
   .container h3 {
-    /* text-align: justify; */
-
     font-size: 2rem;
   }
 }
@@ -66,8 +68,5 @@
 @media (max-width: 26.875em) {
   .container {
     padding: 4rem 2rem;
-  }
-  .container h3 {
-    /* font-size: 2.4rem; */
   }
 }

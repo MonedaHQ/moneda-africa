@@ -13,7 +13,7 @@ import Button from '@/components/Button';
 import { GoArrowRight } from 'react-icons/go';
 
 function OurTeam() {
-  const teamPreview = managementTeam.slice(0, 4);
+  const teamPreview = managementTeam.slice(0, 5);
   return (
     <Section>
       <div className={styles.main}>

@@ -12,7 +12,7 @@ import Metrics from '@/components/Metrics';
 
 const metrics = [
   {
-    metric: 8,
+    metric: 10,
     prefix: null,
     suffix: '+',
     description: 'years investing in Africa',
@@ -24,7 +24,7 @@ const metrics = [
     description: 'value of funding requests',
   },
   {
-    metric: 150,
+    metric: 200,
     prefix: '$',
     suffix: 'm+',
     description: 'value of funded requests',
@@ -49,45 +49,49 @@ function TeamSection() {
   return (
     <>
       <Section paddingBottom={false} color="darkBrown">
-        <div className={styles.teamContainer}>
-          <div className={styles.imageContainer}>
-            <Image
-              src="/assets/clay-globe.jpg"
-              width={725}
-              height={865}
-              alt="Team Moneda at the AEW"
-              draggable={false}
-            />
-          </div>
-          <div className={styles.content}>
-            <WordAnimator
-              text="A global team of dedicated professionals renowned for responsible
-            innovation."
-              as="h3"
-            />
-
-            <motion.p
-              variants={paragraphVariant}
-              ref={ref}
-              initial="initial"
-              animate={inView ? 'animate' : 'initial'}
-            >
-              Since our inception in 2015, Moneda has rapidly established itself
-              as a global leader in the energy and commodities markets.
-              Operating at the forefront of the energy sector, we have amassed
-              unparalleled expertise across a diverse range of physical and
-              financial commodities.
-              <br />
-              <br />
-              This deep-rooted knowledge empowers us to deliver exceptional
-              value to our clients through a comprehensive suite of services.
-            </motion.p>
-          </div>
-        </div>
+        <Metrics />
       </Section>
-
-      <Metrics />
     </>
+  );
+}
+
+function TeamComponent() {
+  return (
+    <div className={styles.teamContainer}>
+      <div className={styles.imageContainer}>
+        <Image
+          src="/assets/clay-globe.jpg"
+          width={725}
+          height={865}
+          alt="Team Moneda at the AEW"
+          draggable={false}
+        />
+      </div>
+      <div className={styles.content}>
+        <WordAnimator
+          text="A global team of dedicated professionals renowned for responsible
+            innovation."
+          as="h3"
+        />
+
+        <motion.p
+          variants={paragraphVariant}
+          ref={ref}
+          initial="initial"
+          animate={inView ? 'animate' : 'initial'}
+        >
+          Since our inception in 2015, Moneda has rapidly established itself as
+          a global leader in the energy and commodities markets. Operating at
+          the forefront of the energy sector, we have amassed unparalleled
+          expertise across a diverse range of physical and financial
+          commodities.
+          <br />
+          <br />
+          This deep-rooted knowledge empowers us to deliver exceptional value to
+          our clients through a comprehensive suite of services.
+        </motion.p>
+      </div>
+    </div>
   );
 }
 

@@ -10,6 +10,7 @@ import Section from '@/components/Section';
 import Button from '@/components/Button';
 
 import styles from './styles/newsroom.module.css';
+import Image from 'next/image';
 
 function Newsroom() {
   const [current, setCurrent] = useState(0);
@@ -117,10 +118,12 @@ function PreviewBox({ episode, setCurrent }) {
       onClick={() => setCurrent(episode.index)}
     >
       {thumbnailUrl && (
-        <img
+        <Image
           src={thumbnailUrl}
           alt={`Thumbnail for ${episode.title}`}
           className={styles.thumbnail}
+          width={300}
+          height={300}
         />
       )}
       <h4>{getShortenedTitle(episode.title)}</h4>

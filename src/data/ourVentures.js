@@ -1,12 +1,21 @@
+const imageData = {
+  src: 'https://bumblebee-dev-files.s3.amazonaws.com/e8cmal-reflecting-ourselves.jpg',
+  artistName: 'Oluwaseun Solomon',
+  artistUrl:
+    'https://www.1952africa.art/artists/b6b315c0-464d-439a-9337-53e8ece97e91',
+  work: 'Reflecting Ourselves',
+  workUrl:
+    'https://www.1952africa.art/works/971f164e-3058-4759-8c91-1ea681cd9219',
+};
+
 export const ourVentures = [
   {
     logo: {
       src: '/assets/verticals/moneda-logo.png',
       alt: 'Moneda Invest Logo',
     },
-    imageSrc: {
+    imageData: {
       src: '/assets/ventures/cityscape.jpg',
-      alt: 'Domena Logo',
     },
 
     company: 'Moneda Investment Limited',
@@ -19,9 +28,8 @@ export const ourVentures = [
       src: '/assets/verticals/moneda-line-white.png',
       alt: 'Moneda Invest Logo',
     },
-    imageSrc: {
+    imageData: {
       src: '/assets/ventures/link-bridge.jpg',
-      alt: 'Capital Management',
     },
 
     company: 'Moneda Capital',
@@ -32,9 +40,8 @@ export const ourVentures = [
 
   {
     logo: { src: '/assets/verticals/afrisand.png', alt: 'Afrisand Logo' },
-    imageSrc: {
+    imageData: {
       src: '/assets/verticals/images/badges.jpg',
-      alt: 'Domena Logo',
     },
 
     company: 'Afrisand Logistics Limited',
@@ -44,9 +51,8 @@ export const ourVentures = [
   },
   {
     logo: { src: '/assets/verticals/domena-light.png', alt: 'Domena Logo' },
-    imageSrc: {
+    imageData: {
       src: '/assets/verticals/images/africa-grains.jpg',
-      alt: 'Domena Logo',
     },
 
     company: 'Domena Commodities Limited',
@@ -56,10 +62,10 @@ export const ourVentures = [
   },
   {
     logo: { src: '/assets/verticals/dt-mining.png', alt: 'DT Mining Logo' },
-    imageSrc: {
+    imageData: {
       src: '/assets/ventures/mining-well.jpg',
-      alt: 'Domena Logo',
     },
+
     company: 'DT Mining Limited',
     paragraph:
       "<strong>A Strategic Force in Nigerian Lithium Development</strong><br/><br/>At its core, DT Mining is a strategic venture focused on unlocking the potential of Nigeria's lithium resources. As a joint venture with Tuntishe Investment, we are committed to contributing to the nation's economic growth and development.Leveraging our expertise in mining and exploration, we are actively engaged in assessing the lithium reserves within our 253 square kilometer concession. Through meticulous analysis and cutting-edge techniques, we aim to establish substantial deposits that will solidify Nigeria's position as a key player in the global lithium market.",

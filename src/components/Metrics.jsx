@@ -5,7 +5,7 @@ import Section from './Section';
 
 const data = [
   {
-    metric: 8,
+    metric: 10,
     prefix: null,
     suffix: '+',
     description: 'years investing in Africa',
@@ -17,7 +17,7 @@ const data = [
     description: 'value of funding requests',
   },
   {
-    metric: 150,
+    metric: 200,
     prefix: '$',
     suffix: 'm+',
     description: 'value of funded requests',

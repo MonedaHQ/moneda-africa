@@ -4,6 +4,18 @@ import Image from 'next/image';
 import styles from './styles/corevalues.module.css';
 import WordAnimator from '@/components/WordAnimator';
 import AnimatedLineHorizontal from '@/components/AnimatedLineHorizontal';
+import Metadata from '@/components/Metadata';
+
+const imageData = {
+  src: 'https://bumblebee-dev-files.s3.amazonaws.com/z7l737-relief.jpg',
+  artistName: 'Adeniyi Akingbade',
+  artistUrl:
+    'https://www.1952africa.art/artists/cc2b7551-be31-4464-af35-8e119a34f7ec',
+  work: 'Relief',
+
+  workUrl:
+    'https://www.1952africa.art/works/44eee403-dee1-4e5b-b578-d94f6f83327a',
+};
 
 function CoreValues() {
   const corevalues = [
@@ -32,15 +44,22 @@ function CoreValues() {
         'Curiosity does not kill here - it elevates. We encourage curious minds and consistently strive to expand our knowledge to extraordinary lengths. We never stop learning.',
     },
   ];
+
   return (
     <Section>
       <div className={styles.backgroundImage}>
         <Image
-          src="/assets/art/relief.jpg"
+          src={imageData.src}
           width={1575}
           height={1183.79}
-          alt="Background Image"
+          alt={imageData.work}
           draggable={false}
+        />
+        <Metadata
+          work={imageData.work}
+          workUrl={imageData.workUrl}
+          artistName={imageData.artistName}
+          artistUrl={imageData.artistUrl}
         />
       </div>
       <div className={styles.content}>

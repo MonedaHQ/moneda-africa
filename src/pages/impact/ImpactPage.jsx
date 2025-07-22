@@ -6,21 +6,27 @@ import WordAnimator from '@/components/WordAnimator';
 
 const data = [
   {
-    imageUrl: '/assets/impact/maize-farmer.jpg',
+    imageData: {
+      src: '/assets/impact/maize-farmer.jpg',
+    },
     title: '',
     heading: 'Driving Sustainable Growth',
     paragraph:
       'Through Domena Commodities Limited, Moneda drives sustainable growth across African commodities sectors ensuring food security, providing financial support to traders and empowering small-scale farmers by providing essential farming inputs starting with our base in Pambegua Kaduna. <br/> <br/> By leveraging our technical, and risk management expertise and industry relationships, Moneda provides critical support to both farmers and miners, ensuring their products reach markets efficiently. With over ₦542M in transactions, Domena Commodities is revolutionizing Nigeria’s food sector. By empowering 241 farmers, distributing 60,000 kg of fertilizers, and creating 100+ direct jobs, we are driving food security and sustainability. Our investment in solar-powered warehouses, grain purchases, and backward integration is reshaping the way agriculture is practiced in Nigeria, with a focus on scalability and execution excellence.',
   },
   {
-    imageUrl: '/assets/impact/mining.jpg',
+    imageData: {
+      src: '/assets/impact/mining.jpg',
+    },
     title: '',
     heading: 'Clean Energy Transition',
     paragraph:
       'Our impact extends into the mining sector through DT Mining, a lithium mining venture in its exploratory phase. This positions us at the forefront of the clean energy transition, contributing to the rising global demand for lithium, a key component in electric vehicle batteries and renewable energy storage solutions. Africa holds 30% of the world’s mineral resources, yet accounts for less than 5% of global mining revenue due to the lack of investment and processing capacity. In Nigeria, where 90% of mining is artisanal.<br/><br/>We are committed to empowering stakeholders and supporting sustainable practices within these sectors.',
   },
   {
-    imageUrl: '/assets/impact/sand-badge.jpg',
+    imageData: {
+      src: '/assets/impact/sand-badge.jpg',
+    },
     title: '',
     heading: 'Supporting Economic Growth',
     paragraph:
@@ -67,7 +73,7 @@ function MainContent() {
             {!isEven && (
               <Section>
                 <TextAndImageSection
-                  imageUrl={impact.imageUrl}
+                  imageData={impact.imageData}
                   heading={impact.heading}
                   paragraph={impact.paragraph}
                   contentFirst={!isEven}
@@ -77,7 +83,7 @@ function MainContent() {
             )}
             {isEven && (
               <TextAndImageSection
-                imageUrl={impact.imageUrl}
+                imageData={impact.imageData}
                 heading={impact.heading}
                 paragraph={impact.paragraph}
                 contentFirst={!isEven}

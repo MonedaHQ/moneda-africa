@@ -3,6 +3,7 @@ import styles from './styles/post.module.css';
 import PostComments from './PostComments';
 
 import he from 'he';
+import { useEffect, useState } from 'react';
 
 function Post({ post }) {
   if (!post) return;
@@ -17,23 +18,28 @@ function Post({ post }) {
 
 function Title({ title, date, excerpt }) {
   const decodedTitle = he.decode(title);
-  const decodedExcerpt = he.decode(excerpt['__html']);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <header className={styles.header}>
       <p className={styles.authorDate}>
         Moneda Intelligence - {new Date(date).toDateString()}
       </p>
       <h1 className={styles.postTitle}>{decodedTitle}</h1>
-      {excerpt && (
+
+      {isClient && excerpt?.__html && (
         <p
-          dangerouslySetInnerHTML={{ __html: decodedExcerpt }}
+          dangerouslySetInnerHTML={{ __html: excerpt.__html }}
           className={styles.excerpt}
         />
       )}
     </header>
   );
 }
-
 function Body({ body }) {
   const decodedBody = he.decode(body['__html']);
   return (

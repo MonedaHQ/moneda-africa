@@ -1,6 +1,8 @@
 import Section from '@/components/Section';
 import styles from './styles/whyweexist.module.css';
-import Image from 'next/image';
+import LearnMoreButton from '@/components/LearnMoreButton';
+
+import AnimatedLineHorizontal from '@/components/AnimatedLineHorizontal';
 
 function WhyWeExist() {
   return (
@@ -18,34 +20,29 @@ function WhyWeExist() {
           />
         </div>
         <div className={styles.content}>
+          <div className={styles.smallHeading}>
+            <h6>THE MONEDA GROUP</h6>
+            <AnimatedLineHorizontal
+              opacity={0.3}
+              color="black"
+              duration={0.6}
+            />
+          </div>
           <h2>
-            Why <span>Moneda</span> Exists
+            Unlocking <span>Africa&lsquo;s</span> Resource Potential
           </h2>
           <p>
-            Most African budgets depend on selling raw materials, so commodity
-            price reductions can cause economic crisis in African markets. After
-            the crude oil crash of 2014, several SMEs with profitable contracts
-            in Nigeria went bankrupt (because of dollar scarcity, devaluations
-            and illiquidity in credit systems).
-            <br />
-            <br />
-            Moneda was born to fix such anomalies - providing alternative credit
-            and execution expertise to underserved SMEs (natural resource value
-            chains) abandoned by traditional credit.. This is why we exist.
+            Moneda Invest Africa is diversified investment firm committed to
+            capital preservation and operational excellence. By focusing on
+            natural resources, we support the value chains that matter the most
+            to Africa&lsquo;s economic growth. Our approach combines your global
+            capital with our local capabilities and innovative operational
+            model.
           </p>
-          <div className={styles.signatureContainer}>
-            <Image
-              src="/assets/signature.png"
-              width={52}
-              height={30}
-              alt="Ejike signature"
-              draggable={false}
-            />
-            <p>
-              <strong>Ejike Egbuagu</strong>
-            </p>
-            <p>Group Chief Executive</p>
-          </div>
+          <LearnMoreButton
+            buttonLabel="Explore our Impact"
+            buttonLink="/our-impact"
+          />
         </div>
       </div>
     </Section>

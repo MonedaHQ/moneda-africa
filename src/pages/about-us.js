@@ -1,18 +1,15 @@
 import MetaTags from '@/components/head';
 import Navigation from '@/components/mainNav/Navigation';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
-import Quote from '@/components/Quote';
-import TypicalHero from '@/components/TypicalHero';
 import CoreValues from './aboutUs/CoreValues';
 import Footer from '@/components/Footer';
-import TextAndImageSection from '@/components/TextAndImageSection';
-import TrackRecord from './aboutUs/TrackRecord';
-import OurFounder from './aboutUs/OurFounder';
+
 import Careers from './aboutUs/Careers';
-import OurHistory from './aboutUs/OurHistory';
 import MissionAndVsion from './verticals/MissionAndVsion';
-import Section from '@/components/Section';
-import SustainableFuture from './aboutUs/SustainableFuture';
+import TransformingAfrica from './aboutUs/TransformingAfrica';
+import Milestones from './aboutUs/Milestones';
+import ScalingAfrica from './aboutUs/ScalingAfrica';
+import AboutHero from './aboutUs/AboutHero';
 
 function WhoWeAre() {
   const heroContent = {
@@ -38,13 +35,12 @@ function WhoWeAre() {
       />
       <Navigation />
       <MobileNavigationHeader />
-      {/* <TypicalHero content={heroContent} color="darkBrown" whiteText={true} /> */}
-      {/* <Quote quote={quote.quote} caption={quote.caption} /> */}
-      <MissionAndVsion />
+      {/* <MissionAndVsion /> */}
+      <AboutHero />
       <CoreValues />
-      <SustainableFuture />
-      <TrackRecord />
-      <OurHistory />
+      <TransformingAfrica />
+      <Milestones />
+      <ScalingAfrica />
       <Careers />
       <Footer />
     </>
