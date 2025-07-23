@@ -5,7 +5,7 @@ import Section from './Section';
 
 const data = [
   {
-    metric: 10,
+    metric: 9,
     prefix: null,
     suffix: '+',
     description: 'years investing in Africa',

@@ -12,7 +12,7 @@ function Assets() {
   };
 
   const sectionOne = {
-    imageUrl: '/assets/power-plant.jpg',
+    imageData: { src: '/assets/power-plant.jpg' },
     title: '',
     heading: 'Assets',
     paragraph:
@@ -21,7 +21,7 @@ function Assets() {
   };
 
   const sectionTwo = {
-    imageUrl: '/assets/verticals/images/field.jpg',
+    imageData: { src: '/assets/verticals/images/field.jpg' },
     title: '',
     heading: 'Our Assets Investment Include',
     paragraph:
@@ -32,7 +32,7 @@ function Assets() {
     <>
       <Section>
         <TextAndImageSection
-          imageUrl={sectionOne.imageUrl}
+          imageUrl={sectionOne.imageData}
           heading={sectionOne.heading}
           paragraph={sectionOne.paragraph}
           contentFirst={sectionOne.contentFirst}
@@ -40,7 +40,7 @@ function Assets() {
         />
       </Section>
       <TextAndImageSection
-        imageUrl={sectionTwo.imageUrl}
+        imageUrl={sectionTwo.imageData}
         heading={sectionTwo.heading}
         paragraph={sectionTwo.paragraph}
         contentFirst={sectionTwo.contentFirst}

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence, animate } from 'framer-motion';
 import { PiMinusThin, PiPlusCircleLight } from 'react-icons/pi';
 import styles from './styles/accordion.module.css';
+import LearnMoreButton from './LearnMoreButton';
 
 function Accordion({ questions, color = 'black' }) {
   const [isOpen, setIsOpen] = useState(0);
@@ -54,7 +55,16 @@ function QuestionBox({ questionItem, stateControls, index }) {
             animate="animate"
             className={styles.answerBox}
           >
-            <p>{questionItem.answer}</p>
+            <div
+              dangerouslySetInnerHTML={{ __html: questionItem.answer }}
+              className={styles.answerParagraph}
+            />
+            {questionItem.button && (
+              <LearnMoreButton
+                buttonLabel={questionItem.button.label}
+                buttonLink={questionItem.button.link}
+              />
+            )}
           </motion.div>
         )}
       </div>

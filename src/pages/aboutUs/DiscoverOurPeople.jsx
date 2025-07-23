@@ -1,5 +1,5 @@
 import WordAnimator from '@/components/WordAnimator';
-import styles from './styles/careers.module.css';
+import styles from './styles/discoverourpeople.module.css';
 import Button from '@/components/Button';
 import Image from 'next/image';
 import Metadata from '@/components/Metadata';
@@ -14,7 +14,7 @@ const imageData = {
     'https://www.1952africa.art/works/971f164e-3058-4759-8c91-1ea681cd9219',
 };
 
-function Careers() {
+function DiscoverOurPeople() {
   return (
     <section className={styles.container}>
       <div className={styles.backgroundImage}>
@@ -34,7 +34,7 @@ function Careers() {
       <div className={styles.content}>
         <h3>
           We combine integrity, entrepreneurial drive, and relentless excellence
-          — with the humility and teamwork to thrive in dynamic environments.
+          to thrive in dynamic environments.
         </h3>
         <Button variant="secondary" href="/our-people">
           Discover Our People
@@ -44,4 +44,4 @@ function Careers() {
   );
 }
 
-export default Careers;
+export default DiscoverOurPeople;

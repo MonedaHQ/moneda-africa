@@ -41,6 +41,7 @@
 
 .question {
   transition: all 0.3s ease;
+  text-transform: capitalize;
 }
 
 .questionHeading:hover > .question {
@@ -76,10 +77,17 @@
   padding: 2.6rem;
   border-radius: 0.8rem;
   backdrop-filter: blur(8px);
+
+  display: grid;
+  row-gap: 1.4rem;
 }
 
 .answerBox p {
   font-size: inherit;
+}
+
+.answerBox svg {
+  filter: brightness(100);
 }
 
 .line {
@@ -88,6 +96,17 @@
   background-color: var(--color-light-grey);
   margin: auto;
   opacity: 0.1;
+}
+
+.answerParagraph {
+  display: grid;
+  row-gap: 1.8rem;
+}
+
+.answerParagraph ul {
+  padding-left: 3rem;
+  display: grid;
+  row-gap: 0.8rem;
 }
 
 @media (max-width: 54em) {

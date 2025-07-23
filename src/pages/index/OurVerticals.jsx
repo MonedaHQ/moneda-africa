@@ -1,5 +1,5 @@
 import Section from '@/components/Section';
-import { verticals } from './verticalsData';
+import { verticals } from '../../data/verticalsData';
 
 import styles from './styles/ourverticals.module.css';
 import Image from 'next/image';

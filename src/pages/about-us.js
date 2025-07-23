@@ -4,12 +4,12 @@ import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeade
 import CoreValues from './aboutUs/CoreValues';
 import Footer from '@/components/Footer';
 
-import Careers from './aboutUs/Careers';
-import MissionAndVsion from './verticals/MissionAndVsion';
 import TransformingAfrica from './aboutUs/TransformingAfrica';
 import Milestones from './aboutUs/Milestones';
 import ScalingAfrica from './aboutUs/ScalingAfrica';
 import AboutHero from './aboutUs/AboutHero';
+import DiscoverOurPeople from './aboutUs/DiscoverOurPeople';
+import DiversifiedInvestments from './aboutUs/DiversifiedInvestments';
 
 function WhoWeAre() {
   const heroContent = {
@@ -41,7 +41,8 @@ function WhoWeAre() {
       <TransformingAfrica />
       <Milestones />
       <ScalingAfrica />
-      <Careers />
+      <DiversifiedInvestments />
+      <DiscoverOurPeople />
       <Footer />
     </>
   );

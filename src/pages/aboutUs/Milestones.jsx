@@ -9,7 +9,7 @@ const milestoneData = [
   {
     question: '$150 Million in Trade Volumes and Zero Defaults',
     answer:
-      'Over the past decade, Moneda has documented over $150 million in trade volumes, financing countless across industries such as energy, agriculture, oil and gas and FMCG. More than just a number, those figures represent that trust placed in businesses in our quest to be the leading SME financing platform on the continent that offers value-added services and world-bringing this model of risk-sharing and peer evaluation has resulted in zero defaults in documented cases are testament to the credit underwriting the success of our approach.',
+      'Since 2015, Moneda has documented over $150 million in trade volumes, financing countless across industries such as energy, agriculture, oil and gas and FMCG. More than just a number, those figures represent that trust placed in businesses in our quest to be the leading SME financing platform on the continent that offers value-added services and world-bringing this model of risk-sharing and peer evaluation has resulted in zero defaults in documented cases are testament to the credit underwriting the success of our approach.',
   },
   {
     question: 'Creating Jobs, Empowering Communities',
@@ -58,9 +58,9 @@ function Milestones() {
         </div>
         <div className={styles.content}>
           <div className={styles.heading}>
-            <WordAnimator as="h1" text="10 Years of Milestones" />
+            <WordAnimator as="h1" text="9+ Years of Milestones" />
             <p>
-              For 10 years, Moneda has been at the heart of a series of
+              For 9+ years, Moneda has been at the heart of a series of
               pioneering initiatives that have empowered SMEs, created jobs, and
               contributed to Africa’s sustainable development. Our journey is
               defined by achievements that not only reflect our ability to

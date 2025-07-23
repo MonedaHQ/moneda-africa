@@ -10,33 +10,6 @@ import styles from './styles/teamsection.module.css';
 
 import Metrics from '@/components/Metrics';
 
-const metrics = [
-  {
-    metric: 10,
-    prefix: null,
-    suffix: '+',
-    description: 'years investing in Africa',
-  },
-  {
-    metric: 350,
-    prefix: '$',
-    suffix: 'm+',
-    description: 'value of funding requests',
-  },
-  {
-    metric: 200,
-    prefix: '$',
-    suffix: 'm+',
-    description: 'value of funded requests',
-  },
-  {
-    metric: 130,
-    prefix: null,
-    suffix: '+',
-    description: 'onboarded African SMEs',
-  },
-];
-
 function TeamSection() {
   const ref = useRef();
   const inView = useInView(ref, { once: true });

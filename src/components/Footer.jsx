@@ -14,7 +14,7 @@ function Footer() {
           </a>
         ))}
       </ul>
-      <p>&copy; {year} Moneda Africa</p>
+      <p>&copy; {year} Moneda Invest Africa</p>
     </div>
   );
 }
