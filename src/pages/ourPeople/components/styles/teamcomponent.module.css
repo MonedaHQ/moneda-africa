@@ -15,12 +15,13 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3rem;
   row-gap: 3rem;
+  align-items: start;
 
   border-radius: 1.8rem;
 }
 
 .cardContainer {
-  background-color: var(--color-dark-brown);
+  background-color: var(--color-white);
   color: var(--color-white);
   overflow: hidden;
   border-radius: 1.8rem;
@@ -34,9 +35,9 @@
 
 .titleBox {
   display: grid;
-  grid-template-columns: max-content 1fr;
-  column-gap: 2rem;
+  row-gap: 3rem;
   align-items: center;
+  place-items: center;
 }
 
 .titleBox p {
@@ -64,14 +65,31 @@
   border-radius: 50rem;
 }
 
-.icons svg {
-  width: 2rem;
-  height: 2rem;
+.icon svg {
+  width: 2.6rem;
+  height: 2.6rem;
   fill: var(--color-black);
 }
 
 .contentBox p {
   text-align: start;
+}
+
+.nameBox {
+  text-align: center;
+
+  display: grid;
+  place-items: center;
+}
+
+.paragraphBox {
+  display: grid;
+  row-gap: 1.8rem;
+  justify-items: start;
+}
+
+.paragraphBox p {
+  text-align: left;
 }
 
 @media (max-width: 81.25em) {
@@ -85,6 +103,9 @@
 }
 
 @media (max-width: 75em) {
+  .cardContainer .imageAndTitle {
+    padding: 2rem;
+  }
   .membersContainer {
     padding: 2rem;
     column-gap: 2rem;
@@ -108,6 +129,10 @@
 
   .titleBox p {
     text-align: center;
+  }
+
+  .paragraphBox {
+    justify-items: center;
   }
 }
 

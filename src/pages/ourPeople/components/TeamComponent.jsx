@@ -9,13 +9,15 @@
  */
 
 import Image from 'next/image';
-
 import styles from './styles/teamcomponent.module.css';
 import { PiLinkedinLogo } from 'react-icons/pi';
 import { ImWikipedia } from 'react-icons/im';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import AnimatedLineHorizontal from '@/components/AnimatedLineHorizontal';
 
 function TeamComponent({ title, teamArray }) {
-  if (!title || !teamArray) return;
+  if (!title || !teamArray) return null;
 
   return (
     <div className={styles.mainParent}>
@@ -30,52 +32,66 @@ function TeamComponent({ title, teamArray }) {
 }
 
 function TeamMember({ team }) {
+  const [hovered, setHovered] = useState(false);
+
   return (
-    <div className={styles.cardContainer}>
+    <div
+      className={styles.cardContainer}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
       <div className={styles.imageAndTitle}>
-        <MemberTitle
-          name={team.name}
-          position={team.position}
-          occupation={team.occupation}
-          imageData={team.imageData}
-        />
-      </div>
-      <div className={styles.contentBox}>
-        <div className={styles.icons}>
-          {team.linkedIn && (
-            <a href={team.linkedIn} target="blank" className={styles.icon}>
-              <PiLinkedinLogo />
-            </a>
-          )}
-          {team.wikipedia && (
-            <a href={team.wikipedia} target="blank" className={styles.icon}>
-              <ImWikipedia />
-            </a>
-          )}
-        </div>
-        <p>{team.paragraph}</p>
+        <MemberTitle team={team} hovered={hovered} />
       </div>
     </div>
   );
 }
 
-function MemberTitle({ name, position, occupation, imageData }) {
+function MemberTitle({ team, hovered }) {
   return (
     <div className={styles.titleBox}>
       <Image
-        src={imageData.src}
-        alt={imageData.alt}
+        src={team.imageData.src}
+        alt={team.imageData.alt}
         width={160}
         height={160}
         className={styles.image}
         draggable={false}
       />
 
-      <div>
-        <h4>{name}</h4>
-        <p>{position}</p>
-        {occupation && <h6>{occupation}</h6>}
-      </div>
+      <AnimatePresence mode="wait">
+        {!hovered ? (
+          <motion.div
+            key="text"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.3 }}
+            className={styles.nameBox}
+          >
+            <h4>{team.name}</h4>
+            <p>{team.position}</p>
+            {team.occupation && <h6>{team.occupation}</h6>}
+          </motion.div>
+        ) : (
+          <motion.div
+            key="bio"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.3 }}
+            className={styles.paragraphBox}
+          >
+            <AnimatedLineHorizontal />
+            <p>{team.paragraph}</p>
+            {team.linkedIn && (
+              <a href={team.linkedIn} target="blank" className={styles.icon}>
+                <PiLinkedinLogo />
+              </a>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

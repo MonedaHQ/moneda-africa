@@ -126,7 +126,7 @@ export const advisoryBoard = [
   {
     name: 'Uche Wigwe',
     position: 'Advisory Board (Chairman)',
-    occupation: 'Managing Partner, Wigwe & Partners',
+    // occupation: 'Managing Partner, Wigwe & Partners',
     paragraph:
       'Legal Practioner and Managing Partner at Wigwe & Partners with over 15 years of experience. He possesses strong expertise advising on Construction, Infrastructure Law, Energy and Natural Resources',
     imageData: {
@@ -139,7 +139,7 @@ export const advisoryBoard = [
   {
     name: 'Ekinadese Osayande',
     position: 'Advisory Board Member',
-    occupation: 'Consultant, Dese Advisory Limited',
+    // occupation: 'Consultant, Dese Advisory Limited',
     paragraph:
       'An Education Consultant with over 6 years of experience on advisory and mentorship in the education sector. She is currently putting her passion for education at work at Dese Advisory, where she focuses on advising and supporting career aspirants through their educational journey. Ekinadese holds a degree in Political Science, Economics, International Relations, African and American Studies from Stanford University, USA',
     imageData: {
@@ -165,8 +165,8 @@ export const advisoryBoard = [
   {
     name: 'Adesuwa Tope Imasekha',
     position: 'Advisory Board Member',
-    occupation:
-      'Corporate Finance and Development Economics Expert, Founder - Women Impacting Nigeria (WIN)',
+    // occupation:
+    //   'Corporate Finance and Development Economics Expert, Founder - Women Impacting Nigeria (WIN)',
     paragraph:
       'Tope Imasekha is a Corporate Finance and Development Economics Specialist. She is a highly motivated and competent corporate finance and investment professional with over 15 years experience in transaction advisory, transacion/deal structuring, corporate finance, M & A advisory, project finance, valuation, and due diligence. She is a specialist in corporate finance with a background in Economics and Accounting. She has managed various energy transactions in excess of 4 Billion USD in Nigeria and other Sub-Saharan Africa countries',
     imageData: {

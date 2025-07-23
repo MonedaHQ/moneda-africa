@@ -9,9 +9,9 @@ function OurPeople() {
   const heroContent = {
     images: ['/assets/africa-wood.jpg'],
     content: {
-      heading: 'Meet Our People',
+      heading: 'Our standard is simple',
       paragraph:
-        '<strong>A Fusion of Expertise and Passion</strong><br/><br/>At Moneda Africa, our success stems from a talented, dedicated team committed to transforming Africa’s economy. With expertise in finance, commodity trading, and sustainable development, we deliver innovative solutions while fostering strong partnerships and collaboration.',
+        '<h4><strong>Only the best make it.</strong></h4><br/>At Moneda Africa, our expert team drives economic transformation through innovative solutions and strong partnerships.',
     },
   };
   return (
