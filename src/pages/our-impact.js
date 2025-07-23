@@ -11,7 +11,7 @@ const heroContent = {
   content: {
     heading: 'Our Impact Across Africa',
     paragraph:
-      'We are committed to driving transformational change across multiple sectors in Africa empowering SMEs, providing sustainable financing, and deploying world-class solutions. Through strategic investments and partnerships, we address critical gaps in industries such as agriculture, mining,oil & gas, and the arts enabling local businesses to thrive and compete on a global scale.',
+      'We’re driving transformational change across Africa by empowering SMEs, providing sustainable financing, and delivering world-class solutions. Through strategic investments and partnerships, we bridge key gaps in sectors like agriculture, mining, oil & gas, and the arts—helping local businesses grow and compete globally.',
   },
 };
 
