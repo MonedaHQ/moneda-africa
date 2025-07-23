@@ -1,11 +1,10 @@
 import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 
 import NavLink from './NavLink';
 
-import { homeMenuLinks } from '@/data/menu';
-import { useRouter } from 'next/router';
-
+import { homeMenuLinks as baseLinks } from '@/data/menu';
 import styles from './styles/navigation.module.css';
 import useScrollPosition from '@/hooks/useScrollPostion';
 import { scrollOffset } from '@/utils/config';
@@ -13,20 +12,36 @@ import { scrollOffset } from '@/utils/config';
 function Navigation({ scrollDirection = 'up', darkHero = false }) {
   const scrollPosition = useScrollPosition(scrollOffset);
   const isHero = scrollPosition > 120;
-  const router = useRouter();
-
-  const isScrollingUp = scrollDirection === 'up';
 
   return (
     <AnimatePresence>
-      {/* <HeaderSecondary /> */}
       {isHero ? <HeaderSecondary /> : <HeaderInitial darkHero={darkHero} />}
     </AnimatePresence>
   );
 }
 
+function getModifiedLinks(currentPath) {
+  const isHome = currentPath === '/';
+
+  if (isHome) return baseLinks;
+
+  return [
+    {
+      path: '/',
+      label: 'Home',
+      action: null,
+      icon: null,
+      icon2: null,
+      dropdown: null,
+    },
+    ...baseLinks,
+  ];
+}
+
 function HeaderSecondary() {
   const router = useRouter();
+  const route = router.route;
+  const modifiedLinks = getModifiedLinks(route);
 
   const headerIntro = {
     initial: { opacity: 0, y: -50 },
@@ -37,9 +52,10 @@ function HeaderSecondary() {
     },
     exit: { opacity: 0, y: -30 },
   };
+
   return (
     <motion.header
-      className={`${styles.navContainerSecondary}`}
+      className={styles.navContainerSecondary}
       variants={headerIntro}
       initial="initial"
       animate="animate"
@@ -49,13 +65,13 @@ function HeaderSecondary() {
         <Image
           width={600}
           height={1200}
-          src={'/assets/moneda-line-white.png'}
+          src="/assets/moneda-line-white.png"
           alt="logo"
           className={styles.logo}
           onClick={() => router.push('/')}
         />
         <ul className={styles.navigationList}>
-          {homeMenuLinks.map((link) => (
+          {modifiedLinks.map((link) => (
             <NavLink key={link.label} link={link} motion={motion} />
           ))}
         </ul>
@@ -67,6 +83,7 @@ function HeaderSecondary() {
 function HeaderInitial({ darkHero }) {
   const router = useRouter();
   const route = router.route;
+  const modifiedLinks = getModifiedLinks(route);
 
   const headerIntro = {
     initial: { opacity: 0, y: -50 },
@@ -80,7 +97,7 @@ function HeaderInitial({ darkHero }) {
 
   return (
     <motion.header
-      className={`${styles.navContainer}`}
+      className={styles.navContainer}
       variants={headerIntro}
       initial="initial"
       animate="animate"
@@ -90,13 +107,13 @@ function HeaderInitial({ darkHero }) {
         <Image
           width={408.5}
           height={79}
-          src={`/assets/1x/moneda-logo.png`}
+          src="/assets/1x/moneda-logo.png"
           alt="logo"
           className={styles.logo}
           onClick={() => router.push('/')}
         />
         <ul className={styles.navigationList}>
-          {homeMenuLinks.map((link) => (
+          {modifiedLinks.map((link) => (
             <NavLink
               key={link.label}
               link={link}
