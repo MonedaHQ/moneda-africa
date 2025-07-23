@@ -39,6 +39,7 @@ function TeamMember({ team }) {
       className={styles.cardContainer}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={() => setHovered(!hovered)}
     >
       <div className={styles.imageAndTitle}>
         <MemberTitle team={team} hovered={hovered} />
