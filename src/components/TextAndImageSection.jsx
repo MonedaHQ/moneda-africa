@@ -168,10 +168,10 @@ function ContentBox({
         ''
       )}
       {link?.link && (
-        <Button
-          variant="link-dark"
-          href={link.link}
-        >{`Visit ${link.label}`}</Button>
+        <LearnMoreButton
+          buttonLabel={`Visit ${link.label}`}
+          buttonLink={link.link}
+        />
       )}
     </div>
   );

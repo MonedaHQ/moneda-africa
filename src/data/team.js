@@ -124,21 +124,8 @@ export const managementTeam = [
 
 export const advisoryBoard = [
   {
-    name: 'Uche Wigwe',
-    position: 'Advisory Board (Chairman)',
-    // occupation: 'Managing Partner, Wigwe & Partners',
-    paragraph:
-      'Legal Practioner and Managing Partner at Wigwe & Partners with over 15 years of experience. He possesses strong expertise advising on Construction, Infrastructure Law, Energy and Natural Resources',
-    imageData: {
-      src: '/assets/team/advisory/wigwe.jpg',
-      alt: 'A photo of Uche Wigwe',
-    },
-    linkedIn: 'https://www.linkedin.com/in/uche-wigwe-93377483/',
-    wikipedia: null,
-  },
-  {
     name: 'Ekinadese Osayande',
-    position: 'Advisory Board Member',
+    position: 'Board Member',
     // occupation: 'Consultant, Dese Advisory Limited',
     paragraph:
       'An Education Consultant with over 6 years of experience on advisory and mentorship in the education sector. She is currently putting her passion for education at work at Dese Advisory, where she focuses on advising and supporting career aspirants through their educational journey. Ekinadese holds a degree in Political Science, Economics, International Relations, African and American Studies from Stanford University, USA',
@@ -150,30 +137,84 @@ export const advisoryBoard = [
     wikipedia: null,
   },
   {
-    name: 'Idakwo Shuaibu',
-    position: 'Advisory Board Member',
-    occupation: null,
+    name: 'Parwez Jugoo',
+    position: 'Board Member',
+    // occupation: 'Managing Partner, Wigwe & Partners',
     paragraph:
-      "An economist and Certified Trade Finance/Treasury Specialist (London Institure of Banking and Finance) with over 14 years experience spanning across the Banking, Energy and Telecommunications industries. Subject expert in Trade Finance practice and consultancy, letters of credit executions, Standby LC's and Guarantees, settlements and remittances and cross border trade transactions, including treasury management, and corporate finance",
+      'A seasoned legal and M&A advisor with over 30 years of experience across telecommunications, corporate law, and international business structuring. He has held senior legal and executive roles at Celtel, Zain Group, and Bharti Airtel, and served as CEO of MADACOM S.A. in Madagascar. Parwez holds an LL.B. from the University of Mauritius and has completed executive training at London Business School.',
     imageData: {
-      src: '/assets/team/advisory/idakwo.jpg',
-      alt: 'A photo of Idakwo Shuaibu',
+      src: '/assets/team/advisory/parwez.png',
+      alt: 'A photo of Parwez Jugoo',
     },
     linkedIn: null,
     wikipedia: null,
   },
   {
-    name: 'Adesuwa Tope Imasekha',
-    position: 'Advisory Board Member',
-    // occupation:
-    //   'Corporate Finance and Development Economics Expert, Founder - Women Impacting Nigeria (WIN)',
+    name: 'Nousrath Begum Bugheloo',
+    position: 'Board Member',
+    // occupation: 'Managing Partner, Wigwe & Partners',
     paragraph:
-      'Tope Imasekha is a Corporate Finance and Development Economics Specialist. She is a highly motivated and competent corporate finance and investment professional with over 15 years experience in transaction advisory, transacion/deal structuring, corporate finance, M & A advisory, project finance, valuation, and due diligence. She is a specialist in corporate finance with a background in Economics and Accounting. She has managed various energy transactions in excess of 4 Billion USD in Nigeria and other Sub-Saharan Africa countries',
+      'A corporate services expert with over 30 years of experience advising multinationals, funds, and entrepreneurs on trade and investment structuring across African and Asian markets. She played a key role in ABAX’s Africa expansion, establishing offices in South Africa, Kenya, Ivory Coast, and Nigeria. An Associate Member of the Chartered Governance Institute (UK) and Executive MBA graduate from Essex Business School, she is also a member of the Mauritius Institute of Directors and an active advocate for women in business.',
     imageData: {
-      src: '/assets/team/advisory/imasheka.png',
-      alt: 'A photo of Adesuwa Tope',
+      src: '/assets/team/advisory/nousrath.jpg',
+      alt: 'A photo of Nousrath Begum Bugheloo',
     },
-    linkedIn: 'https://www.linkedin.com/in/topeimasekha/',
+    linkedIn: null,
     wikipedia: null,
   },
+
+  {
+    name: 'Uchechukwu Nwabueze Wigwe',
+    position: 'Board Member',
+    // occupation: 'Managing Partner, Wigwe & Partners',
+    paragraph:
+      'Legal Practioner and Managing Partner at Wigwe & Partners with over 15 years of experience. He possesses strong expertise advising on Construction, Infrastructure Law, Energy and Natural Resources',
+    imageData: {
+      src: '/assets/team/advisory/wigwe.jpg',
+      alt: 'A photo of Uchechukwu Nwabueze Wigwe',
+    },
+    linkedIn: 'https://www.linkedin.com/in/uche-wigwe-93377483/',
+    wikipedia: null,
+  },
+  {
+    name: 'Ngozi Ekeoma',
+    position: 'Board Member',
+    occupation: null,
+    paragraph:
+      'A lawyer and entrepreneur, and the Managing Director of Nepal Oil and Gas Services, a key player in Nigeria’s downstream petroleum sector. She has driven its growth across importation, storage, and distribution of petroleum products. A passionate philanthropist, she founded the Pa Anyaso Skills Acquisition Centre, a community development project aimed at women and youth empowerment, and supporting healthcare initiatives like the COVID-19 isolation centre in Umuahia.',
+    imageData: {
+      src: '/assets/team/advisory/ngozi.jpg',
+      alt: 'A photo of Ngozi Ekeoma',
+    },
+    linkedIn: null,
+    wikipedia: null,
+  },
+
+  // {
+  //   name: 'Idakwo Shuaibu',
+  //   position: 'Advisory Board Member',
+  //   occupation: null,
+  //   paragraph:
+  //     "An economist and Certified Trade Finance/Treasury Specialist (London Institure of Banking and Finance) with over 14 years experience spanning across the Banking, Energy and Telecommunications industries. Subject expert in Trade Finance practice and consultancy, letters of credit executions, Standby LC's and Guarantees, settlements and remittances and cross border trade transactions, including treasury management, and corporate finance",
+  //   imageData: {
+  //     src: '/assets/team/advisory/idakwo.jpg',
+  //     alt: 'A photo of Idakwo Shuaibu',
+  //   },
+  //   linkedIn: null,
+  //   wikipedia: null,
+  // },
+  // {
+  //   name: 'Adesuwa Tope Imasekha',
+  //   position: 'Advisory Board Member',
+  //   // occupation:
+  //   //   'Corporate Finance and Development Economics Expert, Founder - Women Impacting Nigeria (WIN)',
+  //   paragraph:
+  //     'Tope Imasekha is a Corporate Finance and Development Economics Specialist. She is a highly motivated and competent corporate finance and investment professional with over 15 years experience in transaction advisory, transacion/deal structuring, corporate finance, M & A advisory, project finance, valuation, and due diligence. She is a specialist in corporate finance with a background in Economics and Accounting. She has managed various energy transactions in excess of 4 Billion USD in Nigeria and other Sub-Saharan Africa countries',
+  //   imageData: {
+  //     src: '/assets/team/advisory/imasheka.png',
+  //     alt: 'A photo of Adesuwa Tope',
+  //   },
+  //   linkedIn: 'https://www.linkedin.com/in/topeimasekha/',
+  //   wikipedia: null,
+  // },
 ];

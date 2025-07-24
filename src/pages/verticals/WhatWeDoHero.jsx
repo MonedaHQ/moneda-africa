@@ -25,7 +25,7 @@ function WhatWeDoHero() {
         return <Trading />;
       case 'assets':
         return <Assets />;
-      case 'risk-advisory':
+      case 'risk-management':
         return <RiskSolutions />;
       case 'capital-management':
         return <CapitalManagement />;

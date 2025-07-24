@@ -1,6 +1,6 @@
 .mainParent {
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: 0.8fr 1fr;
   column-gap: 3rem;
   row-gap: 3rem;
   align-items: start;

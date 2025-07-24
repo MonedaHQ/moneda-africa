@@ -1,4 +1,5 @@
 import Button from './Button';
+import LearnMoreButton from './LearnMoreButton';
 import Section from './Section';
 import styles from './styles/getintouch.module.css';
 import WordAnimator from './WordAnimator';
@@ -11,9 +12,7 @@ function GetInTouch({ venture, color = 'white' }) {
           text={`Get in touch to discover more about our ${venture}`}
           as="h2"
         />
-        <Button variant="link-underline" href="/contact">
-          Contact us
-        </Button>
+        <LearnMoreButton buttonLabel="Contact us" buttonLink="/contact" />
       </div>
     </Section>
   );

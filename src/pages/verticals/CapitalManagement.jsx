@@ -11,18 +11,18 @@ function CapitalManagement() {
     caption: 'Benedict Oramah - President, African Export-Import Bank',
   };
   const imageAndTextContent = {
-    imageUrl: '/assets/capital-mamagment-image.jpg',
+    imageData: { src: '/assets/capital-mamagment-image.jpg' },
     title: '',
-    heading: 'Capital Management',
+    heading: 'Financing Africa’s Growth Through Focused Capital',
     paragraph:
-      'Moneda Capital, our fund management arm, is at the heart of our capital management activities. With a $250 million fund in view, Moneda Capital focuses on financing small and medium enterprises (SMEs) within Africa, particularly those in the agriculture, energy, mining, and infrastructure sectors. Having secured our license in Mauritius in June 2024, we are strategically based in South Africa to capitalize on the continent’s most dynamic markets. <br/><br/>Our fund aims to drive long-term growth by deploying capital into high-potential sectors, fostering innovation, and creating jobs. Through our capital management services, we deliver attractive returns to our investors while contributing to the sustainable development of African economies. Moneda Capital is committed to ethical investing and adheres to rigorous due diligence processes, ensuring that the companies we support align with our values and growth objectives.',
+      'We deploy capital with purpose—backing the enterprises and sectors driving Africa’s next chapter of growth.<br/><br/>Moneda’s capital management vertical channels institutional investment into high-impact sectors: agriculture, energy, mining, and infrastructure. Through Moneda Capital, our Mauritian licensed fund/asset management arm, we finance critical small and medium enterprises (CSMEs) in Africa with a focus on sustainable returns and transformative outcomes.<br/><br/> With its operational presence in South Africa, and a digital capital access platform—Musa—we bridge frontier opportunity with global investment discipline.<br/><br/><strong>What We Offer:</strong><ul><li>Growth capital for high-impact sectors</li><li>Structuring and fund management expertise</li><li>Ethical investing with rigorous due diligence</li><li>Digital capital access via Musa</li></ul>',
     contentFirst: true,
   };
   return (
     <>
       <Section>
         <TextAndImageSection
-          imageUrl={imageAndTextContent.imageUrl}
+          imageData={imageAndTextContent.imageData}
           heading={imageAndTextContent.heading}
           paragraph={imageAndTextContent.paragraph}
           contentFirst={imageAndTextContent.contentFirst}

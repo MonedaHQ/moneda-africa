@@ -32,9 +32,30 @@ const contactInformation = [
     icon: <MdEmail />,
   },
   {
-    title: 'Office Address',
+    title: 'Head Office',
     label: '12, Abeke Animashaun, Lekki Phase 1, Lagos',
     link: 'https://maps.app.goo.gl/xod8EyenNrV8sRYx6',
+    icon: <HiBuildingOffice2 />,
+  },
+  {
+    title: 'Mauritius Office',
+    label:
+      'C/o Nexus Global Financial Services Limited, 5th Floor The CORE Building, No.62, ICT Avenue, Cybercity, Ebene, Mauritius​',
+    link: 'https://maps.app.goo.gl/K7nggrNz4ZLUTbr77',
+    icon: <HiBuildingOffice2 />,
+  },
+  {
+    title: 'Namibia Office',
+    label:
+      'iLamo Building, Simon Bolivar Street, Klein Windhoek, Windhoek, Namibia​​​',
+    link: 'https://maps.app.goo.gl/UDTNDJdLo7AERHRm6',
+    icon: <HiBuildingOffice2 />,
+  },
+  {
+    title: 'South Africa Office',
+    label:
+      'Suite 43, Katherine & West, 114 West Street, Sandton, Johannesburg​',
+    link: 'https://maps.app.goo.gl/rwZfUs8pveaEoMUN8',
     icon: <HiBuildingOffice2 />,
   },
   {

@@ -1,8 +1,11 @@
 import Section from '@/components/Section';
-import styles from './styles/trading.module.css';
-import TextAndImageSection from '@/components/TextAndImageSection';
 import Quote from '@/components/Quote';
 import GetInTouch from '@/components/GetInTouch';
+import VenturesComponents from './venturesComponents/VenturesComponents';
+import { tradingVentures } from '@/data/ourVentures';
+import AnimatedLineHorizontal from '@/components/AnimatedLineHorizontal';
+import VenturesHeading from './venturesComponents/VenturesHeading';
+import VenturesMain from './venturesComponents/VenturesMain';
 
 function Trading() {
   const quote = {
@@ -10,46 +13,23 @@ function Trading() {
       '“Our continent holds enormous resources and potential. It is our duty to unlock this potential sustainably, creating value and ensuring shared prosperity for future generations.”',
     caption: 'Akinwumi Adesina - President, African Development Bank',
   };
-  const imageAndTextContent = {
-    imageData: { src: '/assets/verticals/images/grains.jpg' },
-    title: '',
-    heading: 'Transforming Trade into Impact ',
-    paragraph:
-      '<strong>A high-performing trading team leveraging cutting-edge analytics.</strong> <br/> <br/>Moneda drives sustainable growth across African commodities and mining sectors. Through Domena Commodities, we are fostering agricultural growth, ensuring food security, providing financial support to traders and empowering small-scale farmers by providing essential farming inputs starting with our base in Pambegua Kaduna.<br/> <br/>Our involvement extends into the mining sector through DT Mining, a lithium mining venture in its exploratory phase. This project positions us at the forefront of the clean energy transition, contributing to the rising global demand for lithium, a key component in electric vehicle batteries and renewable energy storage solutions.',
-    contentFirst: true,
-  };
 
-  const sectionTwo = {
-    imageData: { src: '/assets/verticals/images/farmer.jpg' },
-    heading: '',
+  const tradingHeader = {
+    heading: 'Transforming Trade into Impact',
     paragraph:
-      "By leveraging our technical, and risk management expertise and industry relationships, Moneda provides critical support to both farmers and miners, ensuring their products reach markets efficiently. Our trading operations not only generate significant returns but also contribute to Africa's economic development by promoting local industries and export opportunities. We are committed to empowering stakeholders and supporting sustainable practices within these sectors",
-    contentFirst: false,
+      "At Moneda, trade is a deliberate act of the continent’s building. Our ventures are designed to transform Africa’s vast agricultural and mineral wealth into structured, inclusive, and scalable value. We provide execution expertise, build efficient ecosystems, strengthen supply chains, ensuring that Africa's resources work for its people.",
   };
 
   return (
     <>
       <Section>
-        <main className={styles.main}>
-          <TextAndImageSection
-            imageData={imageAndTextContent.imageData}
-            heading={imageAndTextContent.heading}
-            paragraph={imageAndTextContent.paragraph}
-            contentFirst={imageAndTextContent.contentFirst}
-            title={imageAndTextContent.title}
-          />
-        </main>
+        <VenturesMain>
+          <VenturesHeading data={tradingHeader} />
+          <AnimatedLineHorizontal color="black" opacity={0.2} duration={1.6} />
+          <VenturesComponents dataArray={tradingVentures} />
+        </VenturesMain>
       </Section>
-      <TextAndImageSection
-        imageData={sectionTwo.imageData}
-        heading={sectionTwo.heading}
-        paragraph={sectionTwo.paragraph}
-        contentFirst={sectionTwo.contentFirst}
-        brown={true}
-        line={false}
-      />
       <Quote quote={quote.quote} caption={quote.caption} />
-
       <GetInTouch venture="Trading activites" />
     </>
   );

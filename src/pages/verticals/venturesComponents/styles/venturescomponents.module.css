@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  /* row-gap: 3rem; */
+}
+
+.headingContainer {
+  display: grid;
+  place-items: center;
+  row-gap: 2rem;
+
+  max-width: 70%;
+  margin: auto;
+}
+
+.headingContainer p {
+  text-align: center;
+}
+
+@media (max-width: 87.5em) {
+  .headingContainer {
+    place-items: start;
+    max-width: 100%;
+  }
+
+  .headingContainer p {
+    text-align: left;
+  }
+}

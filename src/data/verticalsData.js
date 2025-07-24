@@ -5,7 +5,7 @@ export const verticals = [
       '<p>We approach trading as a strategic lever for continental transformation by harnessing Africa’s natural wealth—agricultural and mineral—through sophisticated market intelligence, disciplined risk model and approach, execution expertise, and value chain integration. Our mandate extends beyond commerce; we construct resilient trade ecosystems that catalyse inclusive prosperity, elevate local producers, and strengthens Africa’s position in global value chains.</p><ul><li>Domena Commodities – Advancing agri-trade for food security and rural empowerment </li><li>Afrisand – Sustainable dredging and sand logistics for urban development</li><li>DT Mining – Exploring Africa’s minerals and advancing Nigeria as a lithium frontier</li></ul>  ',
     button: {
       label: 'Learn more',
-      link: '',
+      link: '/verticals?venture=trading',
     },
   },
   {
@@ -14,7 +14,7 @@ export const verticals = [
       '<p>At Moneda, we view assets as instruments for long-term value creation and infrastructure-led development. Our approach blends rigorous investment analysis with a commitment to sustainability, and backed by strong execution capability, we unlock strategic opportunities across natural resources, renewable energy, and critical logistics.</p><ul><li>Afrisand – Sustainable dredging and sand logistics for urban development</li><li>DT Mining – Exploring Africa’s minerals and advancing Nigeria’s lithium frontier for the energy transition </li></ul>',
     button: {
       label: 'Learn more',
-      link: '',
+      link: '/verticals?venture=assets',
     },
   },
   {
@@ -23,7 +23,7 @@ export const verticals = [
       '<p>Our Capital Management strategy is anchored to catalyze Africa’s growth through long-term, impact-driven financing. We deploy institutional capital to critical small-and-medium-enterprises (CSMEs) in agriculture, energy, mining, and minerals—sectors vital to inclusive development. With a fund licensed in Mauritius and a strategic base in South Africa, we combine frontier-market insight, ethical investment principles, and rigorous due diligence to generate returns that empower businesses and elevate economies.</p><ul><li>Moneda Capital – Deploying purposeful capital to power Africa’s growth sectors </li></ul>',
     button: {
       label: 'Learn more',
-      link: '',
+      link: '/verticals?venture=capital-management',
     },
   },
   {
@@ -32,7 +32,7 @@ export const verticals = [
       '<p>In volatile and high-stakes markets, intelligent risk is the foundation of sustainable trade. At Moneda, we offer strategic advisory and deal-structuring services that help our clients navigate complex commodity environments.</p><ul><li>Moneda Investment Limited – Capital, technical, and risk advisory support across Africa’s natural resources value chain </li></ul>',
     button: {
       label: 'Learn more',
-      link: '',
+      link: '/verticals?venture=risk-management',
     },
   },
 

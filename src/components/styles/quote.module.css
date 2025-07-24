@@ -18,7 +18,7 @@
 .kwaAfrika img {
   width: 400px;
   height: 400px;
-  opacity: 0.1;
+  opacity: 0.06;
 
   animation: spinCoin 10s linear infinite;
   transform-style: preserve-3d;

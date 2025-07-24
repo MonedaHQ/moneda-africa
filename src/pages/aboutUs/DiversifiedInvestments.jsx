@@ -16,7 +16,12 @@ function DiversifiedInvestments() {
       />
       <DIHeading />
       <div className={styles.imageContainer}>
-        <Image width={600} height={600} src="/assets/moneda-people.png" />
+        <Image
+          width={600}
+          height={600}
+          src="/assets/moneda-people.png"
+          alt="Moneda Retreat 2024"
+        />
       </div>
     </main>
   );
