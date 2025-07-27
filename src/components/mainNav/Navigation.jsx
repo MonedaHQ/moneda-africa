@@ -63,8 +63,8 @@ function HeaderSecondary() {
     >
       <nav className={styles.navigation2}>
         <Image
-          width={600}
-          height={1200}
+          width={408.5}
+          height={79}
           src="/assets/moneda-line-white.png"
           alt="logo"
           className={styles.logo}
