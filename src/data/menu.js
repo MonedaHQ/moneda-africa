@@ -14,14 +14,14 @@ export const homeMenuLinks = [
       { path: '/our-people', label: 'Our People' },
     ],
   },
-  {
-    path: '/our-impact',
-    label: 'Our Impact',
-    action: null,
-    icon: null,
-    icon2: null,
-    dropdown: null,
-  },
+  // {
+  //   path: '/our-impact',
+  //   label: 'Our Impact',
+  //   action: null,
+  //   icon: null,
+  //   icon2: null,
+  //   dropdown: null,
+  // },
   {
     path: '/verticals',
     label: 'Our Verticals',
