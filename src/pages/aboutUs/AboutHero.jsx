@@ -40,7 +40,7 @@ function RotatingPhilosophy() {
     {
       heading: 'Our Mission',
       paragraph:
-        'Our mission is to trigger unconventional growth in Natural Resource value chains in Africa using alternative credit and world-class execution',
+        'To trigger unconventional growth in Natural Resource value chains in Africa using alternative credit and world-class execution',
     },
     {
       heading: 'Our Vision',
