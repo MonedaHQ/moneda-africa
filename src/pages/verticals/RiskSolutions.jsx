@@ -17,7 +17,7 @@ function RiskSolutions() {
   };
 
   const riskManagement = {
-    heading: 'Risk. Handled with Purpose',
+    heading: 'Risk Handled with Purpose',
     paragraph:
       'In high-volatility sectors like oil, energy, and commodities, intelligent risk is the cornerstone of sustainable trade. At Moneda, we provide strategic advisory and deal structuring to help clients navigate complex markets, manage volatility, and secure long-term value. <br/><br/>We offer bespoke solutions that integrate capital, technical expertise, and advanced risk mitigation—ensuring that every transaction is both viable and value-aligned.',
   };

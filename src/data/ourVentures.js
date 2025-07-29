@@ -2,7 +2,7 @@ export const tradingVentures = [
   {
     logo: { src: '/assets/verticals/domena-brown.png', alt: 'Domena Logo' },
     imageData: {
-      src: '/assets/verticals/images/africa-grains.jpg',
+      src: '/assets/domena-minister.jpg',
     },
 
     company: 'Domena Commodities Limited',
@@ -13,7 +13,7 @@ export const tradingVentures = [
   {
     logo: { src: '/assets/verticals/afrisand.png', alt: 'Afrisand Logo' },
     imageData: {
-      src: '/assets/verticals/images/badges.jpg',
+      src: '/assets/dredger-launch.jpg',
     },
 
     company: 'Afrisand Logistics Limited',

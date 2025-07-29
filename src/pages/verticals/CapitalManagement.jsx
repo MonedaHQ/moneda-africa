@@ -11,7 +11,9 @@ function CapitalManagement() {
     caption: 'Benedict Oramah - President, African Export-Import Bank',
   };
   const imageAndTextContent = {
-    imageData: { src: '/assets/capital-mamagment-image.jpg' },
+    imageData: {
+      src: 'https://global.ariseplay.com/amg/www.thisdaylive.com/uploads/0-900.jpg',
+    },
     title: '',
     heading: 'Financing Africa’s Growth Through Focused Capital',
     paragraph:
