@@ -27,7 +27,7 @@ function Home() {
       '/assets/heroImages/oil-rig-2.jpg',
     ],
     content: {
-      heading: 'We Are Not a Bank',
+      heading: 'We Are Not A Bank',
       paragraph:
         '<h4><strong>We are the evolution of African Credit</strong></h4><p>We support the most important SMEs (Critical SMEs) in the most important sectors for African industrial growth.</p>',
     },
