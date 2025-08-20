@@ -42,6 +42,15 @@ const milestoneData = [
     answer:
       'Our strategic partnerships with leading multinational corporations have enabled us to expand our reach and impact. These partnerships have resulted in collaborative initiatives that drive innovation and create value for all stakeholders involved.',
   },
+  {
+    question: 'Empowering Africa’s Creative Future',
+    answer:
+      '<p>We see culture as a cornerstone of identity, social cohesion, and community resilience. 1952 Africa, launched in 2021, serves as our CSR initiative where we support emerging African artists through residencies, mentorship programs, global engagement and artistic expression. </p>​',
+    button: {
+      label: 'Learn more about 1952 Africa',
+      link: 'https://www.1952africa.art/',
+    },
+  },
 ];
 
 function Milestones() {

@@ -35,14 +35,4 @@ export const verticals = [
       link: '/verticals?venture=risk-management',
     },
   },
-
-  {
-    question: 'Arts & Culture ',
-    answer:
-      '<p>We see culture as a cornerstone of identity, social cohesion, and community resilience. Our Arts & Culture vertical serves as our CSR initiative, and supports African artists that elevate African voices through artistic expression, mentorship, and global engagement. </p><ul><li>1952 Africa – A cultural incubator where art meets empowerment, supporting emerging African creatives through residencies, mentorship, and market access.</li></ul>​',
-    button: {
-      label: 'Learn more about 1952 Africa',
-      link: 'https://www.1952africa.art/',
-    },
-  },
 ];
