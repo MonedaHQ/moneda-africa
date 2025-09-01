@@ -23,8 +23,7 @@ jobs:
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=production \
           --token=${{ secrets.VERCEL_TOKEN }} \
-          --org-id=${{ secrets.VERCEL_ORG_ID }} \
-          --project-id=${{ secrets.VERCEL_PROJECT_ID }}
+          --scope=monedas-projects
 
       - name: Build Project Artifacts
         run: vercel build --prod \
