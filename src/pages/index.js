@@ -37,7 +37,7 @@ function Home() {
     <>
       <MetaTags
         title="Home - Moneda | Bridging Africa's Credit Gap"
-        description="At Moneda, we've cultivated a profound understanding of African finance and commodities sectors. Our expertise across various sectors allows us to spot and seize emerging opportunities. We partner with our clients to navigate African markets confidently. By leveraging the insights we collect, you can maximise returns while mitigating risks."
+        description="Moneda Invest Africa is a pan-African alternative fund provider committed to providing bespoke capital and technical support for critical SMEs in natural resource value chains that are pivotal to Africa's economic growth. Our approach combines global capital with our local capabilities and innovative operational model."
       />
       <Navigation scrollPosition={scrollPosition} />
       <MobileNavigationHeader />
