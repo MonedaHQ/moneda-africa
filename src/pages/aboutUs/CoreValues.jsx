@@ -67,15 +67,16 @@ function CoreValues() {
           <WordAnimator text=" A Driving Force in African Investment" as="h3" />
 
           <p>
-            We are a leading investment firm shaping the future of finance and
-            commodities. Since our establishment in 2015, we have solidified our
-            position as a key player in the market, leveraging our deep
+            We are a leading investment firm shaping the future of finance,
+            trade, and commodities. Since our establishment in 2015, we have
+            built a strong position in African markets, leveraging deep
             expertise in physical and financial commodities to deliver
-            exceptional value. Our comprehensive suite of services spans across
-            various sectors, including energy, renewables, and solid minerals.
-            Through strategic investments and partnerships, we are actively
-            driving Africa&lsquo;s economic transformation and creating
-            sustainable opportunities for growth.
+            exceptional value. Our services span energy, renewables, and solid
+            minerals, with a focus on critical SMEs in natural resource value
+            chains. By aligning global capital with African credit and driving
+            innovation through African alternative credit, we fuel Africa’s
+            economic transformation, reinforce local content in Africa, and
+            create sustainable opportunities for growth.
           </p>
         </div>
         <div className={styles.coreValuesContainer}>

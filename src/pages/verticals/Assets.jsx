@@ -18,7 +18,7 @@ function Assets() {
   const assetsHeader = {
     heading: 'Asset-Driven. Impact-Led',
     paragraph:
-      'We identify, acquire, and optimize high-potential physical and operational assets across energy, mining, and commodity logistics—prioritizing long-term value, sustainability, and national development.<br/><br/>Our capabilities span the full asset cycle—from opportunity identification and risk evaluation to performance optimization and execution expertise, we align financial proficiency with real-sector insight, and deploy capital where it multiplies impact.',
+      'We identify, acquire, and optimize high-potential assets across energy, mining, and commodity logistics—prioritizing long-term value, sustainability, and national development. Our strategy strengthens SMEs in natural resource value chains, advancing inclusive growth through African credit and private credit in Africa. <br/><br/>Our capabilities span the full asset cycle—from opportunity identification and risk evaluation to performance optimization and execution expertise. By aligning financial proficiency with real-sector insight, we deploy capital where it multiplies impact and reinforces local content in Africa. ',
   };
 
   return (

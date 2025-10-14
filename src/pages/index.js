@@ -29,7 +29,7 @@ function Home() {
     content: {
       heading: 'We Are Not A Bank',
       paragraph:
-        '<h4><strong>We are the evolution of African Credit</strong></h4><p>We support the most important SMEs (Critical SMEs) in the most important sectors for African industrial growth.</p>',
+        '<p>We are the evolution of <strong>African Credit, </strong>redefining access to financing across the continent.</p><br/><p>Our mission is to support the most important enterprises—critical SMEs—operating in sectors that drive African industrial growth and strengthen local content in Africa. </p>',
     },
   };
 

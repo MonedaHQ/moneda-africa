@@ -32,12 +32,17 @@ function WhyWeExist() {
             Unlocking <span>Africa&lsquo;s</span> Resource Potential
           </h2>
           <p>
-            Moneda Invest Africa is diversified investment firm committed to
-            capital preservation and operational excellence. By focusing on
-            natural resources, we support the value chains that matter the most
-            to Africa&lsquo;s economic growth. Our approach combines your global
-            capital with our local capabilities and innovative operational
-            model.
+            Moneda Invest Africa is a pan-African alternative fund provider
+            committed to providing bespoke capital and technical support for
+            critical SMEs in natural resource value chains that are pivotal to
+            Africa&lsquo;s economic growth. Our model bridges global investors
+            with African fund managers, combining international capital with
+            local expertise, alternative credit solutions, and a strong emphasis
+            on local content in Africa. <br />
+            <br />
+            Through innovative financing and private credit in Africa, we are
+            unlocking opportunities for enterprises that power industrial
+            transformation and inclusive development.
           </p>
           <LearnMoreButton
             buttonLabel="Explore our Impact"

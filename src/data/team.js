@@ -48,18 +48,18 @@ export const managementTeam = [
       'https://www.linkedin.com/in/peter-kelvin-aloga-bsc-msc-aca-303b0217/',
     wikipedia: null,
   },
-  {
-    name: 'Nkechukwuaga Amangbo',
-    position: 'VP Liquidity, Commodities, Global Markets',
-    paragraph:
-      'She has over 10 years in Banking, with experience spanning across Customer Service, Correspondent Banking and Treasury Operations, giving her a broad range of perspectives and contributes to her ability to effectively deliver in record time. At Moneda, she supervises all aspects of our treasury operations including management of long-term and short-term funds, and money market investments. She has a degree in Economics and Development Studies and a certificate from the international Finance Corporation.',
-    imageData: {
-      src: '/assets/team/nkechi.jpg',
-      alt: 'A photo of Nkechi Amangbo, VP Liquidity, Commodities, Global Markets',
-    },
-    linkedIn: 'https://www.linkedin.com/in/nkechukwuaga-amangbo-a2427a53/',
-    wikipedia: null,
-  },
+  // {
+  //   name: 'Nkechukwuaga Amangbo',
+  //   position: 'VP Liquidity, Commodities, Global Markets',
+  //   paragraph:
+  //     'She has over 10 years in Banking, with experience spanning across Customer Service, Correspondent Banking and Treasury Operations, giving her a broad range of perspectives and contributes to her ability to effectively deliver in record time. At Moneda, she supervises all aspects of our treasury operations including management of long-term and short-term funds, and money market investments. She has a degree in Economics and Development Studies and a certificate from the international Finance Corporation.',
+  //   imageData: {
+  //     src: '/assets/team/nkechi.jpg',
+  //     alt: 'A photo of Nkechi Amangbo, VP Liquidity, Commodities, Global Markets',
+  //   },
+  //   linkedIn: 'https://www.linkedin.com/in/nkechukwuaga-amangbo-a2427a53/',
+  //   wikipedia: null,
+  // },
   {
     name: 'Moshood Quadri',
     position: 'Head of Corporate Finance',

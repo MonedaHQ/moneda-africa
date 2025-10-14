@@ -69,12 +69,13 @@ function Milestones() {
           <div className={styles.heading}>
             <WordAnimator as="h1" text="9+ Years of Milestones" />
             <p>
-              For 9+ years, Moneda has been at the heart of a series of
-              pioneering initiatives that have empowered SMEs, created jobs, and
-              contributed to Africa’s sustainable development. Our journey is
-              defined by achievements that not only reflect our ability to
-              innovate but also demonstrate the tangible impact we have had on
-              the continent.{' '}
+              Our journey is only beginning. As we expand access to African
+              credit and scale private credit in Africa, we are unlocking new
+              opportunities for critical SMEs in natural resource value chains.
+              We invite investors, partners, and stakeholders to join us in this
+              mission. Together, we can build a future where Africa’s resources
+              are fully harnessed, its communities are empowered, and its
+              enterprises drive sustainable, inclusive prosperity.
             </p>
           </div>
           <AnimatedLineHorizontal width={100} color="white" opacity={0.4} />

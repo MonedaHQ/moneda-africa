@@ -16,7 +16,7 @@ const doubleSectionData = [
     },
     heading: 'Transforming Africa’s Future',
     paragraph:
-      'Over the years, Moneda has been at the forefront of reshaping Africa’s credit landscape, providing alternative financing solutions to SMEs operating in critical sectors across the continent. What began as a simple yet powerful mission to provide alternative credit and execution expertise to critical SMEs has evolved into a dynamic force for economic change, empowerment, and sustainable growth. Our journey has been nothing short of transformative, not only for the businesses we support but for the African economy at large. ',
+      'Moneda has been at the forefront of reshaping <strong>Africa’s credit landscape</strong>, pioneering <strong>alternative credit</strong> solutions for <strong>critical SMEs</strong> across agriculture, energy, mining, and infrastructure. What began as a mission to close financing gaps with <strong>African alternative credit</strong> and execution expertise</strong> has evolved into a dynamic force for empowerment, sustainable growth, and continental transformation. Our journey has been transformative not only for the businesses we support but also for the wider African economy.',
     contentFirst: false,
   },
   {
@@ -34,7 +34,7 @@ const doubleSectionData = [
     },
     heading: 'A Vision Born from Necessity',
     paragraph:
-      'In 2014, Africa’s economy was rocked by the sharp decline in global commodity prices. The crash exposed a systemic issue: while Africa sat on vast natural resources, its local contractors were left unable to access the capital they needed to execute major contracts. Faced with liquidity crises, many African SMEs, despite having profitable contracts, found themselves unable to fulfill their potential. <br/><br/>Moneda was born to solve this very problem. We set out with a singular purpose: to provide alternative credit solutions and execution expertise to Africa’s critical value chains, ensuring that local contractors could access the capital they needed to scale and thrive. By addressing these financing gaps, we began the process of transforming Africa’s natural resources into wealth that remains in the hands of Africans.   ',
+      'In 2014, Africa’s economy was shaken by the sharp decline in global commodity prices. The crash exposed a systemic issue: while Africa was rich in natural resources, <strong>SMEs in natural resource value chains</strong> struggled to access the capital required to execute profitable contracts. Liquidity shortages left local contractors unable to fulfill their potential, stalling growth and wealth creation. <br/><br/>Moneda was created to solve this challenge. From the start, our purpose has been clear: to provide <strong>private credit in Africa</strong> and technical expertise',
     contentFirst: true,
   },
 ];
