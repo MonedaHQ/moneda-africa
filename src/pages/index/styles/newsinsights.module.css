@@ -101,6 +101,11 @@
   row-gap: 1.2rem;
 }
 
+.caption ul {
+  padding-top: 1rem;
+  padding-left: 2.4rem;
+}
+
 @media (max-width: 95em) {
   .reports {
     grid-template-columns: repeat(2, 1fr);
