@@ -8,40 +8,43 @@
   text-align: center;
 }
 
-.formBody {
+.topList {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.formBody input {
-  min-width: 800px !important;
+.formBody {
+  display: grid;
+  row-gap: 1rem;
+}
+.btnContainer {
+  display: grid;
+  place-items: center;
 }
 
 @media (max-width: 72em) {
   .formBody input {
-    min-width: 500px !important;
+    width: 100%;
   }
 }
 
 @media (max-width: 47em) {
-  .formBody input {
-    min-width: 300px !important;
+  .topList fieldset {
+    width: 100%;
+  }
+
+  .formBody {
+    width: 100%;
   }
 }
 
 @media (max-width: 30em) {
-  .formBody {
+  .topList {
     flex-direction: column;
-    width: 100%;
-  }
-  .formBody input {
-    min-width: 300px !important;
+    gap: 0.6rem;
   }
 }
 
 @media (max-width: 23em) {
-  .formBody input {
-    min-width: auto !important;
-  }
 }
