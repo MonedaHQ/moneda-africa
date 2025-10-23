@@ -20,7 +20,7 @@ const data = [
     metric: 200,
     prefix: '$',
     suffix: 'm+',
-    description: 'value of funded requests',
+    description: 'deployed to SMES',
   },
   {
     metric: 130,
