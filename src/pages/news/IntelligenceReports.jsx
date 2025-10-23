@@ -12,7 +12,7 @@ function IntelligenceReports() {
   return (
     <Section>
       <div className={styles.reportsContainer}>
-        <h3>Intelligence Reports</h3>
+        <h3>Reports & Press</h3>
         {posts.length === 0 ? (
           <NoPosts />
         ) : (

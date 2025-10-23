@@ -52,7 +52,7 @@ function NewsroomComponent() {
 function IntelligenceReports() {
   return (
     <div className={styles.container}>
-      <TitleComponent heading="Intelligence Reports" color="brown" />
+      <TitleComponent heading="Reports & Press" color="brown" />
       <Reports />
     </div>
   );
