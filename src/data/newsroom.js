@@ -2,6 +2,13 @@
 
 export const newsroomEpisodes = [
   {
+    title:
+      'Who’s stealing Africa’s Food? What you need to know about Post-Harvest Loss',
+    caption:
+      '<div>Every year, Sub-Saharan Africa loses over 37% of the food it produces, not to thieves, but to a different kind of loss. <br/>Tomatoes rot in trucks. Yams bruise and spoil in storage. Grains decay before they’re milled. It’s POST-HARVEST LOSS, the culprit draining billions from Africa’s economy and leaving millions of its people hungry.<br/><br/> In this episode of Moneda Newsroom, we uncover what’s really “stealing” Africa’s food: <ul><li>⁠Why 96% of food losses in Sub-Saharan Africa happen after harvest</li><li>⁠The ₦3.5 trillion challenge crippling Nigeria’s agriculture</li><li>⁠The $279 billion investment opportunity in cold storage and logistics</li><li>⁠What governments, investors, and farmers can do to turn losses into growth</li></ul></div>',
+    link: 'https://youtu.be/_I-o3Asi4e0',
+  },
+  {
     title: 'Why Poultry Feed is Breaking Nigerian Farmers',
     caption:
       '<div>Feed accounts for 70–75% of poultry production costs in Nigeria, and farmers are being pushed out of business due to skyrocketing prices driven by the rising cost of maize, soybean, and the removal of fuel subsidies in 2023. <br/> <br/>In this episode, we sit with Obinna Nwaolikpe, Director of Sales & Operations at Domena, to unpack the crisis no one is talking about and spotlights what a real, scalable solution could look like.</div>',
