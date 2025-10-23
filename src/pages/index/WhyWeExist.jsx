@@ -44,10 +44,10 @@ function WhyWeExist() {
             unlocking opportunities for enterprises that power industrial
             transformation and inclusive development.
           </p>
-          <LearnMoreButton
+          {/* <LearnMoreButton
             buttonLabel="Explore our Impact"
             buttonLink="/our-impact"
-          />
+          /> */}
         </div>
       </div>
     </Section>
