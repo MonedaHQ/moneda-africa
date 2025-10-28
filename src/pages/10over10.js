@@ -29,7 +29,7 @@ function TenOverTen() {
   return (
     <>
       <MetaTags
-        title="Moneda 10 over 10 | A Decade of Building Boldly"
+        title="Moneda 10 over 10 | A Decade of Building Bold"
         description="Ten years ago, we set out to prove that Africans CAN finance Africa’s future. After building roots across 7 African countries, safely deploying capital where ‘smart’ people said was impossible - we return to where it all started. "
       />
       <Navigation scrollPosition={scrollPosition} />
