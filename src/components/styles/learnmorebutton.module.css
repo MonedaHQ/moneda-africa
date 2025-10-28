@@ -41,3 +41,20 @@
 .learnMore:hover svg {
   filter: brightness(1);
 }
+
+.dark {
+  color: var(--color-white);
+}
+
+.dark svg,
+.dark:hover svg {
+  filter: brightness(100);
+}
+
+.dark:hover > .learnMoreLink {
+  color: var(--color-white);
+}
+
+.dark .learnMoreLink::after {
+  background-color: var(--color-white);
+}

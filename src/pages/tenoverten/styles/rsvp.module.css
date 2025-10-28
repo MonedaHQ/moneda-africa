@@ -1,0 +1,33 @@
+.rsvpContainer {
+  padding: 4rem;
+}
+
+.formBody {
+  padding: 4rem;
+
+  display: grid;
+  place-items: center;
+  row-gap: 1.8rem;
+}
+
+.fieldset {
+  border: none;
+
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 2rem;
+}
+
+@media (max-width: 50.625em) {
+  .rsvpContainer {
+    padding: 2rem;
+  }
+
+  .formBody {
+    padding: 2rem;
+  }
+
+  .fieldset {
+    grid-auto-flow: row;
+  }
+}

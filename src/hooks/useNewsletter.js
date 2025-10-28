@@ -1,19 +1,21 @@
 import { newsletterApi } from '@/services/apiNewsletter';
 import { useMutation } from '@tanstack/react-query';
-import { useRouter } from 'next/router';
 import toast from 'react-hot-toast';
 
 export function useNewsletter() {
-  const router = useRouter();
   const { mutate: newsletterSignup, isLoading: isSigningUp } = useMutation({
-    mutationFn: (data) => {
-      newsletterApi(data);
-    },
+    mutationFn: (data) => newsletterApi(data), // returns the promise
     onSuccess: () => {
       toast.success('Success!');
     },
     onError: (err) => {
-      toast.error('Failed to submit', err.message);
+      // ensure we derive a string message (err might be Error, string, or object)
+      const msg =
+        err?.message ||
+        (typeof err === 'string'
+          ? err
+          : JSON.stringify(err || 'Failed to submit'));
+      toast.error(msg);
     },
   });
 

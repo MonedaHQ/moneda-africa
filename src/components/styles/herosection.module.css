@@ -44,6 +44,7 @@
   align-content: center;
   grid-auto-rows: max-content;
   padding: 0 10rem;
+  row-gap: 2rem;
 }
 
 .lottieIcon {

@@ -74,3 +74,14 @@ export const getImage = (content) => {
 
   return imgSrc;
 };
+
+export function splitFullName(fullName = '') {
+  const cleaned = (fullName || '').trim().replace(/\s+/g, ' ');
+  if (!cleaned) return { firstName: '', lastName: '' };
+
+  const parts = cleaned.split(' ');
+  const firstName = parts[0];
+  const lastName = parts.length > 1 ? parts.slice(1).join(' ') : '';
+
+  return { firstName, lastName };
+}

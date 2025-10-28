@@ -7,8 +7,9 @@ import ImageSlider from '@/components/ImageSlider';
 import WordAnimator from '@/components/WordAnimator';
 import ScrollDownIcon from '@/components/lottieFiles/ScrollDownIcon';
 import LineAndContent from '@/components/LineAndContent';
+import LearnMoreButton from './LearnMoreButton';
 
-function HeroSection({ images, content }) {
+function HeroSection({ images, content, button = null }) {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -28,6 +29,14 @@ function HeroSection({ images, content }) {
             as="h1"
             whiteText={true}
           />
+          {button && (
+            <LearnMoreButton
+              buttonLabel={button.label}
+              buttonLink={button.link}
+              newTab={button.newTab}
+              dark={button.dark}
+            />
+          )}
         </div>
       </div>
     </main>
