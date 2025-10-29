@@ -1,0 +1,29 @@
+.heading {
+  display: grid;
+  place-items: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 4rem;
+  margin: 2rem;
+}
+
+.heading span {
+  color: var(--color-orange);
+}
+
+.buttonContainer {
+  margin-top: 2rem;
+}
+
+@media (max-width: 75em) {
+  .heading {
+    margin-bottom: 0;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 27em) {
+  .heading {
+    padding: 2rem;
+  }
+}

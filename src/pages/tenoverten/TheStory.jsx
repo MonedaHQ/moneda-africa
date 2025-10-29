@@ -122,6 +122,7 @@ function CountryFlag() {
             width={48}
             height={48}
             alt={`${country.name} Flag`}
+            draggable={false}
           />
         </motion.div>
       ))}

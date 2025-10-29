@@ -1,10 +1,64 @@
+/* place in the stylesheet where .eventInfo lives */
 .eventInfo {
-  position: fixed;
-  right: 3rem;
-  top: 50%;
-  z-index: 1000;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+  padding: 2.6rem;
 
-  background-color: var(--color-white);
-  padding: 4rem;
-  border: 1px solid var(--color-orange);
+  max-width: 60%;
+  margin: auto;
+  margin-top: 3rem;
+
+  margin-bottom: 8rem;
+
+  background-color: var(--color-brown);
+  color: var(--color-white);
+
+  border-radius: 0.8rem;
+}
+
+.eventDetail {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+
+  grid-template-rows: max-content;
+}
+
+.icon svg {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.value {
+  /* font-weight: 500; */
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+@media (max-width: 78em) {
+  .eventInfo {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 57em) {
+  .eventInfo {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 60%;
+    row-gap: 6rem;
+  }
+}
+
+@media (max-width: 45em) {
+  .eventInfo {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 28em) {
+  .eventInfo {
+    max-width: 90%;
+  }
 }

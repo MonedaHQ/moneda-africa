@@ -1,0 +1,40 @@
+.countdownTimer {
+  display: flex;
+  gap: 6rem;
+  font-size: 1.5rem;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 4rem;
+  padding-top: 0;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.timeUnit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 5rem;
+  color: var(--color-orange);
+}
+.label {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 30em) {
+  .countdownTimer {
+    gap: 3rem;
+    padding: 2rem;
+  }
+
+  .value {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,194 @@
+.transformerAwards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  background-color: var(--color-dark-brown);
+}
+
+.backgroundImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  mix-blend-mode: overlay;
+  background: radial-gradient(
+    circle,
+    rgba(204, 85, 0, 1) 0%,
+    rgba(204, 85, 0, 0) 100%
+  );
+}
+
+.backgroundImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(2) brightness(0.7);
+
+  opacity: 0.1;
+
+  animation: zoomInOut 40s infinite;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.coin {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.coin img {
+  width: 50%;
+  height: auto;
+  margin: auto;
+
+  opacity: 0.5;
+
+  mix-blend-mode: overlay;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.heading {
+  display: grid;
+  place-items: center;
+  text-align: center;
+
+  color: var(--color-white);
+
+  margin-bottom: 2rem;
+}
+
+.heading p {
+  background-color: var(--color-orange);
+  padding: 0.6rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.paragraph {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+
+  color: var(--color-white);
+}
+
+.content {
+  position: relative;
+  padding-top: 8rem;
+}
+
+.transformerImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* ensure scaled/moved image doesn't push other layout */
+  overflow: hidden;
+}
+
+.transformerImage img {
+  width: 50%;
+  height: auto;
+
+  opacity: 0.95;
+  mix-blend-mode: normal;
+
+  will-change: transform;
+  backface-visibility: hidden;
+  transform-origin: center center;
+  /* subtle horizontal oscillation that reverses smoothly (no jump) */
+  animation: transformerFloat 10s ease-in-out infinite alternate;
+}
+
+/* simple two-point keyframes — alternate makes it seamless */
+@keyframes transformerFloat {
+  from {
+    transform: translateX(-20px) translateZ(0);
+  }
+  to {
+    transform: translateX(20px) translateZ(0);
+  }
+}
+
+@media (max-width: 50em) {
+  .coin img {
+    width: 100%;
+  }
+
+  .heading p {
+    font-size: 1.4rem;
+  }
+
+  .paragraph {
+    width: 80%;
+  }
+}
+
+@media (max-width: 42em) {
+  .transformerImage img {
+    width: 80%;
+  }
+
+  .content {
+    padding: 6rem 2.4rem;
+    padding-bottom: 0;
+  }
+
+  @keyframes transformerFloat {
+    from {
+      transform: translateX(-10px) translateZ(0);
+    }
+    to {
+      transform: translateX(10px) translateZ(0);
+    }
+  }
+}
+
+@media (max-width: 42em) {
+  .heading p {
+    font-size: 1rem;
+    margin-bottom: 1.4rem;
+  }
+  .transformerImage img {
+    width: 100%;
+  }
+  .paragraph {
+    width: 90%;
+  }
+
+  .content {
+    padding: 4rem 1.2rem;
+    padding-bottom: 0;
+  }
+}

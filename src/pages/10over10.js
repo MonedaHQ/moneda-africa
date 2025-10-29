@@ -8,6 +8,9 @@ import RSVP from './tenoverten/RSVP';
 import Footer from '@/components/Footer';
 import TheStory from './tenoverten/TheStory';
 import EventInfo from './tenoverten/EventInfo';
+import TransformerAwards from './tenoverten/TransformerAwards';
+import CelebrateADecade from './tenoverten/CelebrateADecade';
+import CountdownTimer from '@/components/CountdownTimer';
 
 const heroContent = {
   images: ['/assets/tenoverten/hero.jpg'],
@@ -23,6 +26,9 @@ const heroContent = {
     dark: true,
   },
 };
+
+const EVENT_DATE = new Date(2025, 11, 14, 18).toISOString(); // Dec 14, 2025 at 6:00 PM
+console.log(EVENT_DATE);
 
 function TenOverTen() {
   const scrollPosition = useScrollPosition(scrollOffset);
@@ -40,8 +46,11 @@ function TenOverTen() {
         button={heroContent.button}
       />
       <RSVP />
+      <CountdownTimer eventDate={EVENT_DATE} />
+      <EventInfo />
       <TheStory />
-      {/* <EventInfo /> */}
+      <TransformerAwards />
+      <CelebrateADecade />
       <Footer />
     </>
   );

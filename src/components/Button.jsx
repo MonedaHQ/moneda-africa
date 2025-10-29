@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './styles/button.module.css';
+import { useSmoothScroll } from '@/hooks/useSmoothScroll';
 
 function Button({
   children,
@@ -11,12 +12,17 @@ function Button({
   type = 'button',
   active = false,
   disabled = false,
+  scrollOffset, // <-- added: optional per-call offset in px
 }) {
+  const scrollTo = useSmoothScroll(); // hook for hash links
+
   const commonClassName = `${styles.button} ${styles[variant]} ${
     active ? styles[`active-${variant}`] : ''
   } ${disabled ? styles.disabled : ''}`;
 
   if (href) {
+    const isHashLink = typeof href === 'string' && href.startsWith('#');
+
     return (
       <Link
         href={href}
@@ -24,9 +30,20 @@ function Button({
         onClick={(e) => {
           if (disabled) {
             e.preventDefault();
-          } else if (onClick) {
-            onClick(e);
+            return;
           }
+
+          // If it's an internal hash link, prevent default navigation and smooth scroll
+          if (isHashLink) {
+            e.preventDefault();
+            if (onClick) onClick(e);
+            // pass optional per-call offset (explicit 0 respected)
+            scrollTo(href, scrollOffset);
+            return;
+          }
+
+          // otherwise preserve any onClick behavior and allow normal navigation
+          if (onClick) onClick(e);
         }}
       >
         {children}

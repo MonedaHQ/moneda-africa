@@ -144,7 +144,7 @@ figure {
     --font-size-h4: 1.8rem;
   }
 }
-@media (max-width: 27.375em) {
+@media (max-width: 28.44em) {
   :root {
     --font-size-h1: 2.8rem;
     --font-size-h2: 2rem;

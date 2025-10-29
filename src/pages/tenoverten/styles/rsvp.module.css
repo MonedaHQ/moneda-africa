@@ -4,6 +4,7 @@
 
 .formBody {
   padding: 4rem;
+  padding-bottom: 0;
 
   display: grid;
   place-items: center;
