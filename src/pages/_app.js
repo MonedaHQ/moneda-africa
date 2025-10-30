@@ -1,3 +1,4 @@
+import ResponsiveToaster from '@/components/ResponsiveToaster';
 import { MenuTogglerProvider } from '@/context/MenuToggleContext';
 import { SmoothScrollProvider } from '@/context/SmoothScrollContext';
 import '@/styles/globals.css';
@@ -11,22 +12,7 @@ export default function App({ Component, pageProps }) {
       <SmoothScrollProvider>
         <MenuTogglerProvider>
           <Component {...pageProps} />
-          <Toaster
-            position="top-right"
-            gutter={12}
-            containerStyle={{ margin: '8px' }}
-            toastOptions={{
-              success: { duration: 3000 },
-              error: { duration: 5000 },
-              style: {
-                fontSize: '14px',
-                maxWidth: '500px',
-                padding: '14px 22px',
-                backgroundColor: '#FFF',
-                color: '#210d00',
-              },
-            }}
-          />
+          <ResponsiveToaster mobileBreakpoint={1200} />
         </MenuTogglerProvider>
       </SmoothScrollProvider>
     </QueryClientProvider>
