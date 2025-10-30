@@ -7,23 +7,34 @@ import Button from '@/components/Button';
 import { splitFullName } from '@/utils/helpers';
 
 function RSVP() {
-  const { register, formState, handleSubmit, reset } = useForm();
+  const { register, formState, handleSubmit, reset, watch } = useForm();
   const { errors } = formState;
   const formActions = { register, errors };
 
   const { newsletterSignup, isSigningUp } = useNewsletter();
 
+  // watch the TAGS select to know whether to show the PLUS_ONE input
+  const tagsValue = watch('TAGS');
+  const hasPlusOne = tagsValue === 'yes';
+
   function onSubmit(data) {
     const { firstName, lastName } = splitFullName(data.FULL_NAME || '');
+    const attributes = {
+      // FULL_NAME: data.FULL_NAME,
+      FIRSTNAME: firstName,
+      LASTNAME: lastName,
+      TAGS: data.TAGS,
+    };
+
+    // include PLUS_ONE only when provided/selected
+    if (hasPlusOne && data.PLUS_ONE) {
+      attributes.FULL_NAME = data.PLUS_ONE;
+    }
+
     const newData = {
       email: data.email,
       listId: 50,
-      attributes: {
-        FULL_NAME: data.FULL_NAME,
-        FIRSTNAME: firstName,
-        LASTNAME: lastName,
-        // WHATSAPP: data.WHATSAPP,
-      },
+      attributes,
     };
 
     newsletterSignup(newData, { onSettled: () => reset() });
@@ -45,13 +56,22 @@ function RSVP() {
             placeholder="Email address"
             formActions={formActions}
           />
-          {/* <FormInput
-            type="number"
-            id="WHATSAPP"
-            placeholder="Whatsapp number"
-            formActions={formActions}
-          /> */}
+          <FormInput type="select" id="TAGS" formActions={formActions}>
+            <option value="">Bringing a +1?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </FormInput>
+
+          {hasPlusOne && (
+            <FormInput
+              type="text"
+              id="PLUS_ONE"
+              placeholder="Full name of your +1"
+              formActions={formActions}
+            />
+          )}
         </fieldset>
+
         <Button type="submit" disabled={isSigningUp} variant="secondary">
           {isSigningUp ? 'Submitting...' : 'Submit'}
         </Button>
