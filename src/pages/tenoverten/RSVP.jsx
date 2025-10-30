@@ -15,9 +15,10 @@ function RSVP() {
 
   const { newsletterSignup, isSigningUp } = useNewsletter();
 
-  // watch the TAGS select to know whether to show the PLUS_ONE input
+  // watch the "Coming alone?" select to know whether to show the guest input
   const tagsValue = watch('TAGS');
-  const hasPlusOne = tagsValue === 'yes';
+  // if TAGS === 'no' they are NOT coming alone -> they are bringing a guest
+  const isBringingGuest = tagsValue === 'PLUS 1';
 
   async function onSubmit(data) {
     const { firstName, lastName } = splitFullName(data.FULL_NAME || '');
@@ -27,8 +28,9 @@ function RSVP() {
       TAGS: data.TAGS,
     };
 
-    if (hasPlusOne && data.PLUS_ONE) {
-      attributes.PLUS_ONE = data.PLUS_ONE;
+    // include PLUS_ONE only when the attendee indicated they are bringing a guest
+    if (isBringingGuest && data.PLUS_ONE) {
+      attributes.FULL_NAME = data.PLUS_ONE;
     }
 
     const newData = {
@@ -43,10 +45,7 @@ function RSVP() {
       toast.success('RSVP received.');
       reset();
     } catch (err) {
-      // concise, professional message
       toast.error('Attendee already registered.');
-      // optionally log or inspect err for debugging
-      // console.error(err);
     }
   }
   return (
@@ -67,17 +66,28 @@ function RSVP() {
             formActions={formActions}
           />
           <FormInput type="select" id="TAGS" formActions={formActions}>
-            <option value="">Bringing a +1?</option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="">Coming alone?</option>
+            <option value="ALONE">Yes</option>
+            <option value="PLUS 1">No</option>
           </FormInput>
 
-          {hasPlusOne && (
+          {isBringingGuest && (
             <FormInput
               type="text"
               id="PLUS_ONE"
-              placeholder="Full name of your +1"
+              placeholder="Your guest's name"
               formActions={formActions}
+              // require full name: at least two words (first + last)
+              validation={{
+                validate: (val) => {
+                  if (!val) return "Please provide your guest's full name";
+                  const cleaned = val.trim().replace(/\s+/g, ' ');
+                  return (
+                    cleaned.split(' ').length >= 2 ||
+                    "Please provide your guest's full name"
+                  );
+                },
+              }}
             />
           )}
         </fieldset>

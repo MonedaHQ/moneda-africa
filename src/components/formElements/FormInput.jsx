@@ -11,12 +11,13 @@ function FormInput({
   onChange = null,
   required = true,
   disabled = false,
+  validation = {}, // <-- new: custom react-hook-form validation rules
 }) {
   const { register, errors } = formActions;
 
-  const validationRules = {
-    required: required ? 'This field is required' : false,
-  };
+  // build rules once and reuse across input types
+  const baseRule = required ? { required: 'This field is required' } : {};
+  const rules = { ...baseRule, ...validation };
 
   if (type === 'tel') {
     return (
@@ -31,7 +32,7 @@ function FormInput({
           defaultValue={defaultValue}
           onChange={onChange}
           {...register(id, {
-            required: required ? 'This field is required' : false,
+            ...rules,
             pattern: {
               value: /^[+\d][\d-]*$/,
               message: 'Please enter a valid phone number',
@@ -57,9 +58,7 @@ function FormInput({
           placeholder={placeholder}
           defaultValue={defaultValue}
           onChange={onChange}
-          {...register(id, {
-            required: required ? 'This field is required' : false,
-          })}
+          {...register(id, rules)}
           disabled={disabled}
           className={styles.textarea}
           required={required}
@@ -82,7 +81,6 @@ function FormInput({
       } else {
         selectProps = {
           defaultValue,
-
           disabled,
           className: styles.select,
         };
@@ -95,12 +93,7 @@ function FormInput({
           </label>
           {onChange && <select {...selectProps}>{children}</select>}
           {!onChange && (
-            <select
-              {...selectProps}
-              {...register(id, {
-                required: required ? 'This field is required' : false,
-              })}
-            >
+            <select {...selectProps} {...register(id, rules)}>
               {children}
             </select>
           )}
@@ -121,9 +114,7 @@ function FormInput({
           type={type}
           defaultValue={defaultValue}
           onChange={onChange}
-          {...register(id, {
-            required: required ? 'This field is required' : false,
-          })}
+          {...register(id, rules)}
           disabled={disabled}
           required={required}
         />
@@ -144,7 +135,7 @@ function FormInput({
           defaultValue={defaultValue}
           onChange={onChange}
           {...register(id, {
-            required: required ? 'This field is required' : false,
+            ...rules,
             pattern: {
               value: /\S+@\S+\.\S+/,
               message: 'Please specify a valid email',
@@ -170,9 +161,7 @@ function FormInput({
         placeholder={placeholder}
         defaultValue={defaultValue}
         onChange={onChange}
-        {...register(id, {
-          required: required ? 'This field is required' : false,
-        })}
+        {...register(id, rules)}
         disabled={disabled}
         className={styles.input}
         required={required}
