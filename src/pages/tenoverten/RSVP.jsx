@@ -5,6 +5,8 @@ import FormInput from '@/components/formElements/FormInput';
 import Image from 'next/image';
 import Button from '@/components/Button';
 import { splitFullName } from '@/utils/helpers';
+import { newsletterApi } from '@/services/apiNewsletter';
+import toast from 'react-hot-toast';
 
 function RSVP() {
   const { register, formState, handleSubmit, reset, watch } = useForm();
@@ -17,18 +19,16 @@ function RSVP() {
   const tagsValue = watch('TAGS');
   const hasPlusOne = tagsValue === 'yes';
 
-  function onSubmit(data) {
+  async function onSubmit(data) {
     const { firstName, lastName } = splitFullName(data.FULL_NAME || '');
     const attributes = {
-      // FULL_NAME: data.FULL_NAME,
       FIRSTNAME: firstName,
       LASTNAME: lastName,
       TAGS: data.TAGS,
     };
 
-    // include PLUS_ONE only when provided/selected
     if (hasPlusOne && data.PLUS_ONE) {
-      attributes.FULL_NAME = data.PLUS_ONE;
+      attributes.PLUS_ONE = data.PLUS_ONE;
     }
 
     const newData = {
@@ -37,7 +37,17 @@ function RSVP() {
       attributes,
     };
 
-    newsletterSignup(newData, { onSettled: () => reset() });
+    // Use direct API call so we can handle errors locally (no hook onError)
+    try {
+      await newsletterApi(newData);
+      toast.success('RSVP received.');
+      reset();
+    } catch (err) {
+      // concise, professional message
+      toast.error('Attendee already registered.');
+      // optionally log or inspect err for debugging
+      // console.error(err);
+    }
   }
   return (
     <div className={styles.rsvpContainer} id="rsvp">
