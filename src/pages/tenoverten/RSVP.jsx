@@ -1,6 +1,5 @@
 import { useForm } from 'react-hook-form';
 import styles from './styles/rsvp.module.css';
-import { useNewsletter } from '@/hooks/useNewsletter';
 import FormInput from '@/components/formElements/FormInput';
 import Image from 'next/image';
 import Button from '@/components/Button';
@@ -12,8 +11,6 @@ function RSVP() {
   const { register, formState, handleSubmit, reset, watch } = useForm();
   const { errors } = formState;
   const formActions = { register, errors };
-
-  const { newsletterSignup, isSigningUp } = useNewsletter();
 
   // watch the "Coming alone?" select to know whether to show the guest input
   const tagsValue = watch('TAGS');
@@ -58,6 +55,15 @@ function RSVP() {
             id="FULL_NAME"
             placeholder="Full name"
             formActions={formActions}
+            validation={{
+              validate: (value) => {
+                const cleaned = (value || '').trim().replace(/\s+/g, ' ');
+                return (
+                  cleaned.split(' ').length >= 2 ||
+                  'Please provide your full name (first and last).'
+                );
+              },
+            }}
           />
           <FormInput
             type="email"
@@ -92,8 +98,8 @@ function RSVP() {
           )}
         </fieldset>
 
-        <Button type="submit" disabled={isSigningUp} variant="secondary">
-          {isSigningUp ? 'Submitting...' : 'Submit'}
+        <Button type="submit" variant="secondary">
+          Submit
         </Button>
       </form>
     </div>
