@@ -12,7 +12,7 @@ function Contact() {
     content: {
       heading: 'Contact Us',
       paragraph:
-        'Have a question or need assistance? Our team is ready to support you. Reach out using the details below, and we’ll get back to you as soon as possible.',
+        'Have a question or need assistance or a transaction to discuss? Our team is ready to support you. Reach out using the details below, and we’ll get back to you as soon as possible.',
     },
   };
   return (

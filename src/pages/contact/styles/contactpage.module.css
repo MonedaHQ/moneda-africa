@@ -79,7 +79,9 @@
 
 @media (max-width: 78.8125em) {
   .mainParent {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
   }
   .contactInfoParent {
     grid-template-columns: repeat(2, 1fr);

@@ -31,6 +31,12 @@ function Home() {
       paragraph:
         '<p>We are the evolution of <strong>African Credit, </strong>redefining access to financing across the continent.</p><br/><p>Our mission is to support the most important enterprises—critical SMEs—operating in sectors that drive African industrial growth and strengthen local content in Africa. </p>',
     },
+    button: {
+      label: 'Partner with Us',
+      link: '/contact',
+      // newTab: true,
+      variant: 'secondary',
+    },
   };
 
   return (
@@ -41,7 +47,11 @@ function Home() {
       />
       <Navigation scrollPosition={scrollPosition} />
       <MobileNavigationHeader />
-      <HeroSection images={heroContent.images} content={heroContent.content} />
+      <HeroSection
+        images={heroContent.images}
+        content={heroContent.content}
+        button={heroContent.button}
+      />
       <WhyWeExist />
       <TeamSection />
       <OurVerticals />

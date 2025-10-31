@@ -14,10 +14,6 @@
   row-gap: 0.8rem;
 }
 
-.label {
-  /* font-weight: 400; */
-}
-
 .select,
 .input,
 .textarea {

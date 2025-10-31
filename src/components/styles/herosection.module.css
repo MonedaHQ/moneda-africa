@@ -41,6 +41,7 @@
   background-color: rgba(33, 13, 0, 0.6);
 
   display: grid;
+  justify-items: start;
   align-content: center;
   grid-auto-rows: max-content;
   padding: 0 10rem;

@@ -8,6 +8,7 @@ import WordAnimator from '@/components/WordAnimator';
 import ScrollDownIcon from '@/components/lottieFiles/ScrollDownIcon';
 import LineAndContent from '@/components/LineAndContent';
 import LearnMoreButton from './LearnMoreButton';
+import Button from './Button';
 
 function HeroSection({ images, content, button = null }) {
   const [isClient, setIsClient] = useState(false);
@@ -29,14 +30,19 @@ function HeroSection({ images, content, button = null }) {
             as="h1"
             whiteText={true}
           />
-          {button && (
-            <LearnMoreButton
-              buttonLabel={button.label}
-              buttonLink={button.link}
-              newTab={button.newTab}
-              dark={button.dark}
-            />
-          )}
+          {button &&
+            (button.variant ? (
+              <Button href={button.link} variant={button.variant}>
+                {button.label}
+              </Button>
+            ) : (
+              <LearnMoreButton
+                buttonLabel={button.label}
+                buttonLink={button.link}
+                newTab={button.newTab}
+                dark={button.dark}
+              />
+            ))}
         </div>
       </div>
     </main>

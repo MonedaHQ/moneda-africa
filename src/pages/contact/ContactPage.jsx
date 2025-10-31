@@ -40,7 +40,7 @@ const contactInformation = [
   {
     title: 'Mauritius Office',
     label:
-      'C/o Nexus Global Financial Services Limited, 5th Floor The CORE Building, No.62, ICT Avenue, Cybercity, Ebene, Mauritius​',
+      'C/o Nexus Global Financial Services Limited, Lot 02, Floor 1, CentrePoint, Trianon, Mauritius​',
     link: 'https://maps.app.goo.gl/K7nggrNz4ZLUTbr77',
     icon: <HiBuildingOffice2 />,
   },
