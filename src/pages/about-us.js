@@ -39,7 +39,7 @@ function WhoWeAre() {
       <AboutHero />
       <CoreValues />
       <TransformingAfrica />
-      <Milestones />
+      {/* <Milestones /> */}
       <ScalingAfrica />
       <DiversifiedInvestments />
       <DiscoverOurPeople />
