@@ -103,7 +103,8 @@
   row-gap: 1.8rem;
 }
 
-.answerParagraph ul {
+.answerParagraph ul,
+.answerParagraph ol {
   padding-left: 3rem;
   display: grid;
   row-gap: 0.8rem;
