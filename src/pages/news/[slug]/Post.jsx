@@ -7,16 +7,22 @@ import { useEffect, useState } from 'react';
 
 function Post({ post }) {
   if (!post) return;
+  console.log(post);
   return (
     <main className={styles.main}>
-      <Title title={post.title} date={post.date} excerpt={post.excerpt} />
+      <Title
+        title={post.title}
+        date={post.date}
+        excerpt={post.excerpt}
+        category={post.categories[0]?.name}
+      />
       <Body body={post.body} />
       <PostComments slug={post.slug} id={post.id} />
     </main>
   );
 }
 
-function Title({ title, date, excerpt }) {
+function Title({ title, date, excerpt, category = 'News' }) {
   const decodedTitle = he.decode(title);
   const [isClient, setIsClient] = useState(false);
 
@@ -27,7 +33,7 @@ function Title({ title, date, excerpt }) {
   return (
     <header className={styles.header}>
       <p className={styles.authorDate}>
-        Moneda Intelligence - {new Date(date).toDateString()}
+        Moneda {category} - {new Date(date).toDateString()}
       </p>
       <h1 className={styles.postTitle}>{decodedTitle}</h1>
 

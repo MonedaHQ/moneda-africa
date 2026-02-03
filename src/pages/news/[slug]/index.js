@@ -34,7 +34,7 @@ export async function getServerSideProps(context) {
   const url = process.env.NEXT_PUBLIC_APP_BLOG_API_URL;
   const { slug } = context.params;
 
-  const res = await fetch(`${url}/posts?slug=${slug}`);
+  const res = await fetch(`${url}/posts?slug=${slug}&_embed`);
   const data = await res.json();
 
   if (!data || data.length === 0) {
@@ -48,6 +48,11 @@ export async function getServerSideProps(context) {
 
   const selectedPost = data[0];
 
+  const categories =
+    selectedPost._embedded?.['wp:term']
+      ?.flat()
+      .filter((term) => term.taxonomy === 'category') || [];
+
   const post = {
     id: selectedPost?.id,
     title: selectedPost?.title.rendered,
@@ -57,6 +62,7 @@ export async function getServerSideProps(context) {
     excerpt: { __html: selectedPost?.excerpt.rendered },
     imgSrc: getImage(selectedPost?.content.rendered),
     slug: selectedPost?.slug,
+    categories,
   };
 
   return {
