@@ -19,17 +19,23 @@
 
   --border-radius-reg: 0.8rem;
 
-  --font-size-h1: 4.2rem;
-  --font-size-h2: 3.6rem;
-  --font-size-h3: 3.4rem;
+  --font-size-h1: 4.8rem;
+  --font-size-h2: 4rem;
+  --font-size-h3: 3.2rem;
   --font-size-h4: 2.4rem;
   --font-size-h5: 2rem;
   --font-size-h6: 1.8rem;
 
   --font-size-paragraph-big: 2rem;
-  --font-size-paragraph-regular: 1.8rem;
-  --font-size-paragraph-small: 1.6rem;
-  --font-size-caption: 1.4rem;
+  --font-size-paragraph-regular: 1.6rem;
+  --font-size-paragraph-small: 1.4rem;
+  --font-size-caption: 1.2rem;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 300;
+  --font-weight-medium: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 600;
 }
 
 ::selection {
@@ -52,7 +58,7 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   font-size: var(--font-size-paragraph-regular);
-  font-weight: 200;
+  font-weight: var(--font-weight-regular);
 
   min-height: 100vh;
   color: var(--color-black);
@@ -64,6 +70,8 @@ a {
 }
 
 p {
+  font-size: var(--font-size-paragraph-regular);
+  font-weight: var(--font-weight-regular);
   text-align: justify;
 }
 
@@ -73,36 +81,42 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 300;
+  font-weight: var(--font-weight-semibold);
 }
 
 h1 {
   font-size: var(--font-size-h1);
+  line-height: 1.2;
   /* line-height: 4.6rem; */
 }
 
 h2 {
   font-size: var(--font-size-h2);
+  line-height: 1.25;
 }
 
 h3 {
   font-size: var(--font-size-h3);
+  line-height: 1.3;
 }
 
 h4 {
   font-size: var(--font-size-h4);
+  line-height: 1.35;
 }
 
 h5 {
   font-size: var(--font-size-h5);
+  line-height: 1.35;
 }
 
-p {
-  font-weight: 200;
+h6 {
+  font-size: var(--font-size-h6);
+  line-height: 1.35;
 }
 
 p strong {
-  font-weight: 400;
+  font-weight: var(--font-weight-semibold);
 }
 
 figure {
@@ -111,43 +125,43 @@ figure {
 
 @media (max-width: 87.5em) {
   :root {
-    --font-size-h1: 4rem;
-    --font-size-h2: 3.4rem;
+    --font-size-h1: 4.4rem;
+    --font-size-h2: 3.6rem;
     --font-size-h3: 3rem;
     --font-size-h4: 2.2rem;
     --font-size-h5: 1.8rem;
     --font-size-h6: 1.6rem;
 
     --font-size-paragraph-big: 1.8rem;
-    --font-size-paragraph-regular: 1.6rem;
-    --font-size-paragraph-small: 1.4rem;
-    --font-size-caption: 1.2rem;
+    --font-size-paragraph-regular: 1.5rem;
+    --font-size-paragraph-small: 1.3rem;
+    --font-size-caption: 1.1rem;
   }
 }
 
 @media (max-width: 48.75em) {
   :root {
-    --font-size-h1: 3.8rem;
-    --font-size-h2: 3.2rem;
-    --font-size-h3: 2.8rem;
+    --font-size-h1: 3.6rem;
+    --font-size-h2: 3rem;
+    --font-size-h3: 2.6rem;
     --font-size-h4: 2rem;
-    --font-size-h5: 1.8rem;
-    --font-size-h6: 1.6rem;
+    --font-size-h5: 1.6rem;
+    --font-size-h6: 1.4rem;
   }
 }
 
 @media (max-width: 31.25em) {
   :root {
-    --font-size-h1: 3.6rem;
-    --font-size-h2: 3rem;
-    --font-size-h3: 2.6rem;
+    --font-size-h1: 3.2rem;
+    --font-size-h2: 2.6rem;
+    --font-size-h3: 2.2rem;
     --font-size-h4: 1.8rem;
   }
 }
 @media (max-width: 28.44em) {
   :root {
     --font-size-h1: 2.8rem;
-    --font-size-h2: 2rem;
-    --font-size-h3: 1.8rem;
+    --font-size-h2: 2.4rem;
+    --font-size-h3: 2rem;
   }
 }
