@@ -11,7 +11,7 @@ function IntelligenceReports() {
   const { isLoading, posts, totalPosts, error } = usePosts();
   return (
     <Section>
-      <div className={styles.reportsContainer}>
+      <div className={styles.reportsContainer} id="reports">
         <h3>Reports & Press</h3>
         {posts.length === 0 ? (
           <NoPosts />
