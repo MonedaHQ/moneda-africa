@@ -22,17 +22,17 @@ export const tradingVentures = [
     link: null,
   },
 
-  {
-    logo: { src: '/assets/verticals/dt-mining.png', alt: 'DT Mining Logo' },
-    imageData: {
-      src: '/assets/ventures/mining-well.jpg',
-    },
+  // {
+  //   logo: { src: '/assets/verticals/dt-mining.png', alt: 'DT Mining Logo' },
+  //   imageData: {
+  //     src: '/assets/ventures/mining-well.jpg',
+  //   },
 
-    company: 'DT Mining Limited',
-    paragraph:
-      '<strong>Exploring Africa’s minerals and unlocking Nigeria’s lithium potential for the global energy future.</strong> <br/><br/>DT Mining is a joint venture with Tuntise Investments Limited focused on exploring Africa’s minerals and developing lithium reserves across a 253 square kilometers concession. Through advanced geological analysis, responsible exploration, and technical execution expertise, we position Nigeria as a key player in the global lithium supply chain—fueling the clean energy transition and advancing industrial growth.',
-    link: null,
-  },
+  //   company: 'DT Mining Limited',
+  //   paragraph:
+  //     '<strong>Exploring Africa’s minerals and unlocking Nigeria’s lithium potential for the global energy future.</strong> <br/><br/>DT Mining is a joint venture with Tuntise Investments Limited focused on exploring Africa’s minerals and developing lithium reserves across a 253 square kilometers concession. Through advanced geological analysis, responsible exploration, and technical execution expertise, we position Nigeria as a key player in the global lithium supply chain—fueling the clean energy transition and advancing industrial growth.',
+  //   link: null,
+  // },
 ];
 
 export const assetsVentures = [
@@ -48,17 +48,17 @@ export const assetsVentures = [
     link: null,
   },
 
-  {
-    logo: { src: '/assets/verticals/dt-mining.png', alt: 'DT Mining Logo' },
-    imageData: {
-      src: '/assets/ventures/mining-well.jpg',
-    },
+  // {
+  //   logo: { src: '/assets/verticals/dt-mining.png', alt: 'DT Mining Logo' },
+  //   imageData: {
+  //     src: '/assets/ventures/mining-well.jpg',
+  //   },
 
-    company: 'DT Mining Limited',
-    paragraph:
-      'DT Mining represents a high-potential mineral asset focused on exploring Africa’s minerals and metals and unlocking Nigeria’s lithium reserves—an essential input for the global energy transition. With a 253 sq. km concession under exploration, this asset positions us at the forefront of industrial innovation, mineral independence, and strategic exports. <br/><br/>It reflects Moneda’s asset strategy: securing and developing core natural resources that not only promise strong returns, but also reinforce Africa’s role in future-facing global value chains.',
-    link: null,
-  },
+  //   company: 'DT Mining Limited',
+  //   paragraph:
+  //     'DT Mining represents a high-potential mineral asset focused on exploring Africa’s minerals and metals and unlocking Nigeria’s lithium reserves—an essential input for the global energy transition. With a 253 sq. km concession under exploration, this asset positions us at the forefront of industrial innovation, mineral independence, and strategic exports. <br/><br/>It reflects Moneda’s asset strategy: securing and developing core natural resources that not only promise strong returns, but also reinforce Africa’s role in future-facing global value chains.',
+  //   link: null,
+  // },
 ];
 
 export const riskVentures = [
