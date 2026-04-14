@@ -3,7 +3,7 @@ export const managementTeam = [
     name: 'Ejike Egbuagu',
     position: 'Group CEO',
     paragraph:
-      'A lawyer turned banker with over 10 years experience in complex deal structuring and risk-management across multiple sectors including Oil and Gas, Logistics and International Trade. Prior to co-founding Moneda, Ejike worked with Access Bank Plc, International Air Transport Association and Riverlake Group. He is an alumnus of Harvard Business School (PLD), Geneva Business School (MBA), Kent Law School, UK (Law and Business). He is a parton of the African Arts and believer in the African Project.',
+      'A lawyer turned banker with over 20 years experience in complex deal structuring and risk-management across multiple sectors including Oil and Gas, Logistics and International Trade. Prior to co-founding Moneda, Ejike worked with Access Bank Plc, International Air Transport Association and Riverlake Group. He is an alumnus of Harvard Business School (PLD), Geneva Business School (MBA), Kent Law School, UK (Law and Business). He is a parton of the African Arts and believer in the African Project.',
     imageData: {
       src: '/assets/team/ejike.jpg',
       alt: 'A photo of Ejike Egbuagu, GCEO Moneda',
@@ -98,12 +98,12 @@ export const managementTeam = [
   },
   {
     name: 'Ebisindou Sese',
-    position: 'Director, Resources',
+    position: 'Director of Resources',
     paragraph:
       'Ebi Sese is the Director of Resources at Moneda Invest, with over 15 years of experience across investment banking, fintech, and oil & gas, leading people strategy, operations, and technology enablement. She oversees human capital, office management, facilities, and IT operations, aligning talent, infrastructure, and systems to drive business performance. At Moneda, she focuses on performance management, productivity optimisation, and the integration of AI into operations, with a strong emphasis on increasing output through disciplined execution and smart technology adoption.',
     imageData: {
       src: '/assets/team/ebi.jpg',
-      alt: 'A photo of Ebisindou Sese, Director, Resources',
+      alt: 'A photo of Ebisindou Sese, Director of Resources',
     },
     linkedIn: 'https://www.linkedin.com/in/stephanie-s-7919b712/',
     wikipedia: null,
@@ -120,19 +120,18 @@ export const managementTeam = [
     linkedIn: 'https://www.linkedin.com/in/adedapomakinde/',
     wikipedia: null,
   },
-
-  // {
-  //   name: 'Precious Ehihamen',
-  //   position: 'Research & Intelligence Lead',
-  //   paragraph:
-  //     'Precious has a background in Petroleum Engineering and has amassed about 7 years of experience in the oil and gas industry. He started his career in TotalEnergies as a Safety Engineer where he had a brief stint at the OML 58 production facility. He went on to become a project engineer for an independent contractor where he supported contract execution during the construction of the Dangote refinery. He currently leads the Research & Intelligence team at Moneda Investment Limited where alongside his team, he tracks and monitors oil and gas market data and leverages technology to drive investment decisions.',
-  //   imageData: {
-  //     src: '/assets/team/precious.jpg',
-  //     alt: 'A photo of Precious, Head of Legal',
-  //   },
-  //   linkedIn: 'https://www.linkedin.com/in/precious-ehihamen-a5bb09137/',
-  //   wikipedia: null,
-  // },
+  {
+    name: 'Gideon Haruna',
+    position: 'Group Head, Marketing & Communications',
+    paragraph:
+      "Senior communications leader with 8+ years shaping strategic marketing and stakeholder engagement for capital-intensive businesses across Africa's energy, mining,infrastructure, banking and agro-commodities sectors. Experienced in translating complex energy investment narratives into communications that build institutional credibility, attract capital, and sustain stakeholder trust. Deep expertise in ESG and sustainability storytelling, executive and investor relations, and high-impact brand strategy, with a proven record of execution at scale across digital, event, and media channels.",
+    imageData: {
+      src: '/assets/team/gideon.jpg',
+      alt: 'A photo of Gideon Haruna, Group Head, Marketing & Communications',
+    },
+    linkedIn: 'https://www.linkedin.com/in/gideon-haruna/',
+    wikipedia: null,
+  },
 ];
 
 export const advisoryBoard = [
