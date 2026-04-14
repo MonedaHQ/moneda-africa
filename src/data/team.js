@@ -36,6 +36,18 @@ export const managementTeam = [
     wikipedia: null,
   },
   {
+    name: 'Rahul Sawlani',
+    position: 'Chief Commercial Officer',
+    paragraph:
+      'Rahul Sawlani is a commercial and finance leader with over a decade of experience in driving revenue growth, capital raising, and operational efficiency across diverse markets. He currently serves as Chief Commercial Officer at Moneda Invest Africa, where he leads commercial strategy across commodities trading, logistics, and trade finance.',
+    imageData: {
+      src: '/assets/team/rahul.jpg',
+      alt: 'A photo of Rahul Sawlani, Chief Commercial Officer',
+    },
+    linkedIn: 'https://www.linkedin.com/in/rahul-sawlani-40bb4353/',
+    wikipedia: null,
+  },
+  {
     name: 'Peter Aloga',
     position: 'Chief Audit and Compliance Officer',
     paragraph:
@@ -61,18 +73,6 @@ export const managementTeam = [
   //   wikipedia: null,
   // },
   {
-    name: 'Moshood Quadri',
-    position: 'Head of Corporate Finance',
-    paragraph:
-      'Moshood has over 7 years experience across legal, tax, consulting, and finance. He was Formerly Assistant Manager in the Corporate Tax Consulting business at PwC Nigeria.',
-    imageData: {
-      src: '/assets/team/moshood.jpg',
-      alt: 'A photo of Moshood Quadri, VP Corporate Finance',
-    },
-    linkedIn: 'https://www.linkedin.com/in/moshood-quadri-28b6b7b0/',
-    wikipedia: null,
-  },
-  {
     name: 'Akintunde Marinho',
     position: 'Global Head, Business Development & Special Projects',
     paragraph:
@@ -91,9 +91,21 @@ export const managementTeam = [
       'Mofe’s career spans over 15 years, starting at Linetrale Oil Supply & Trading Limited (now Linetrale Energy Trading Ltd) in Lagos, where he rose to Senior Trader in the Gasoline Department. He then became Director of Operations at Tycon Minerals Limited in Kumasi, overseeing gold and precious minerals extraction. In 2020, he joined Optima Energy Resources Limited in Lagos as Head of Trading and Operations, managing energy product trading, shipping, and field operations. Mofe holds a degree in Business Management from Kingston University and a certification in Energy Trading from CITAC UK.',
     imageData: {
       src: '/assets/team/mofe.jpg',
-      alt: 'A photo of Eyimofe Olabaju, VP Joint Ventures',
+      alt: 'A photo of Eyimofe Olabaju, Director, Trading & Operations',
     },
     linkedIn: 'https://www.linkedin.com/in/eyimofe-olagbaju-84335943/',
+    wikipedia: null,
+  },
+  {
+    name: 'Ebisindou Sese',
+    position: 'Director, Resources',
+    paragraph:
+      'Ebi Sese is the Director of Resources at Moneda Invest, with over 15 years of experience across investment banking, fintech, and oil & gas, leading people strategy, operations, and technology enablement. She oversees human capital, office management, facilities, and IT operations, aligning talent, infrastructure, and systems to drive business performance. At Moneda, she focuses on performance management, productivity optimisation, and the integration of AI into operations, with a strong emphasis on increasing output through disciplined execution and smart technology adoption.',
+    imageData: {
+      src: '/assets/team/ebi.jpg',
+      alt: 'A photo of Ebisindou Sese, Director, Resources',
+    },
+    linkedIn: 'https://www.linkedin.com/in/stephanie-s-7919b712/',
     wikipedia: null,
   },
   {
@@ -108,6 +120,7 @@ export const managementTeam = [
     linkedIn: 'https://www.linkedin.com/in/adedapomakinde/',
     wikipedia: null,
   },
+
   // {
   //   name: 'Precious Ehihamen',
   //   position: 'Research & Intelligence Lead',
