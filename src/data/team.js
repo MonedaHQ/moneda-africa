@@ -60,18 +60,19 @@ export const managementTeam = [
       'https://www.linkedin.com/in/peter-kelvin-aloga-bsc-msc-aca-303b0217/',
     wikipedia: null,
   },
-  // {
-  //   name: 'Nkechukwuaga Amangbo',
-  //   position: 'VP Liquidity, Commodities, Global Markets',
-  //   paragraph:
-  //     'She has over 10 years in Banking, with experience spanning across Customer Service, Correspondent Banking and Treasury Operations, giving her a broad range of perspectives and contributes to her ability to effectively deliver in record time. At Moneda, she supervises all aspects of our treasury operations including management of long-term and short-term funds, and money market investments. She has a degree in Economics and Development Studies and a certificate from the international Finance Corporation.',
-  //   imageData: {
-  //     src: '/assets/team/nkechi.jpg',
-  //     alt: 'A photo of Nkechi Amangbo, VP Liquidity, Commodities, Global Markets',
-  //   },
-  //   linkedIn: 'https://www.linkedin.com/in/nkechukwuaga-amangbo-a2427a53/',
-  //   wikipedia: null,
-  // },
+  {
+    name: 'Chukwuemeka Anazodo',
+    position: 'Chief Financial Officer',
+    paragraph:
+      'Emeka is a senior finance executive with over a decade of financial services sector working experience in preparing and analysing financial statements, audit, tax and regulatory management, strategy and investor relations, treasury and cash flow management, business process automation, budget preparation and analysis, corporate rating management and finance team training and development. ',
+    imageData: {
+      src: '/assets/team/emeka.jpeg',
+      alt: 'A photo of Chukwuemeka Anazodo, CFO Moneda',
+    },
+    linkedIn:
+      'https://www.linkedin.com/in/chukwuemeka-anazodo-fcma-cgma-aca-b5369953/',
+    wikipedia: null,
+  },
   {
     name: 'Akintunde Marinho',
     position: 'Global Head, Business Development & Special Projects',

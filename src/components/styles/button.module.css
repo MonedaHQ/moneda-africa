@@ -33,8 +33,12 @@
   align-items: center;
   gap: 1rem;
 
-  background-size: 100% 2px, 0 2px;
-  background-position: 100% 100%, 0 100%;
+  background-size:
+    100% 2px,
+    0 2px;
+  background-position:
+    100% 100%,
+    0 100%;
   background-repeat: no-repeat;
 }
 
@@ -95,7 +99,8 @@
   transform-origin: center;
 }
 
-.link-light {
+.link-light,
+.link-dark-white {
   display: flex;
   align-items: center;
   gap: 1.8rem;
@@ -103,24 +108,39 @@
   padding-bottom: 1.2rem;
 }
 
-.link-light svg {
+.link-light {
+  color: inherit;
+}
+
+.link-dark-white {
+  color: var(--color-white);
+  padding-bottom: 0.2rem;
+  min-height: 4.8rem;
+}
+
+.link-light svg,
+.link-dark-white svg {
   fill: var(--color-orange);
 }
 
-.link-light:hover {
+.link-light:hover,
+.link-dark-white:hover {
   color: var(--color-orange);
 }
 
-.link-light:hover::after {
+.link-light:hover::after,
+.link-dark-white:hover::after {
   opacity: 1;
   transform: scaleX(1) scaleY(1);
 }
 
-.link-light::after {
+.link-light::after,
+.link-dark-white::after {
   background-color: var(--color-orange);
 }
 
-.link-light::after {
+.link-light::after,
+.link-dark-white::after {
   position: absolute;
   content: '';
   width: 100%;
@@ -133,6 +153,10 @@
   transform: scaleX(0) scaleY(0);
   transition: all 0.35s cubic-bezier(0.25, 0.65, 0.76, 0.96);
   transform-origin: center;
+}
+
+.link-dark-white::after {
+  bottom: 0.4rem;
 }
 
 .link-underline {
@@ -171,14 +195,20 @@
   align-items: center;
   gap: 1rem;
 
-  background-size: 100% 2px, 0 2px;
-  background-position: 100% 100%, 0 100%;
+  background-size:
+    100% 2px,
+    0 2px;
+  background-position:
+    100% 100%,
+    0 100%;
   background-repeat: no-repeat;
   transition: all 400ms;
 }
 
 .link-light-small:hover {
-  background-size: 0 2px, 100% 2px;
+  background-size:
+    0 2px,
+    100% 2px;
 }
 
 .link-light-small:hover {
