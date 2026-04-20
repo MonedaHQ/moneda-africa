@@ -1,10 +1,12 @@
+import type { AppProps } from 'next/app';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Poppins } from 'next/font/google';
+
 import ResponsiveToaster from '@/components/ResponsiveToaster';
 import { MenuTogglerProvider } from '@/context/MenuToggleContext';
 import { SmoothScrollProvider } from '@/context/SmoothScrollContext';
+
 import '@/styles/globals.css';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { Poppins } from 'next/font/google';
-import { Toaster } from 'react-hot-toast';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -13,8 +15,9 @@ const poppins = Poppins({
   display: 'swap',
 });
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
   const queryClient = new QueryClient();
+
   return (
     <>
       <style jsx global>{`

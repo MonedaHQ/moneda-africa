@@ -9,7 +9,7 @@ function InvestmentTermsheet() {
     <>
       <MetaTags
         title="Investment Termsheet - Moneda | Bridging Africa's Credit Gap"
-        description="Register your interest in Moneda’s cost-plus investment program through a premium online termsheet and investor declaration form."
+        description="Register your interest in Moneda's cost-plus investment program through a premium online termsheet and investor declaration form."
       />
       <Navigation />
       <MobileNavigationHeader />

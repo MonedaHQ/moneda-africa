@@ -3,7 +3,6 @@ import Navigation from '@/components/mainNav/Navigation';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
 import CoreValues from './aboutUs/CoreValues';
 import Footer from '@/components/Footer';
-
 import TransformingAfrica from './aboutUs/TransformingAfrica';
 import Milestones from './aboutUs/Milestones';
 import ScalingAfrica from './aboutUs/ScalingAfrica';
@@ -12,21 +11,6 @@ import DiscoverOurPeople from './aboutUs/DiscoverOurPeople';
 import DiversifiedInvestments from './aboutUs/DiversifiedInvestments';
 
 function WhoWeAre() {
-  const heroContent = {
-    pageTitle: 'About us',
-    heading:
-      'Our mission is to trigger unconventional growth in Natural Resource value chains in Africa using alternative credit and world-class execution',
-    paragraph:
-      'Built on a foundation of integrity, Moneda is a global energy and commodities firm with a far-reaching presence across asset classes. <br/> <br/> We leverage a network of 5 global offices and a team of  traders with over  extensive industry experience  across 20 diverse business lines. <br/> <br/>This collective expertise empowers us to deliver unparalleled insights and solutions to enterprise, multinational, and government clients worldwide.',
-    imageUrl: '/assets/site.jpg',
-  };
-
-  const quote = {
-    quote:
-      '“To see true transformation within the economy, we have to get the capital in the hands of local communities”',
-    caption: 'Ejike Egbuagu, Group Chief Executive',
-  };
-
   return (
     <>
       <MetaTags
@@ -35,7 +19,6 @@ function WhoWeAre() {
       />
       <Navigation />
       <MobileNavigationHeader />
-      {/* <MissionAndVsion /> */}
       <AboutHero />
       <CoreValues />
       <TransformingAfrica />

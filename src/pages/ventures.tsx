@@ -14,7 +14,7 @@ const heroContent = {
   },
 };
 
-function ventures() {
+function VenturesPage() {
   return (
     <>
       <MetaTags
@@ -30,4 +30,4 @@ function ventures() {
   );
 }
 
-export default ventures;
+export default VenturesPage;

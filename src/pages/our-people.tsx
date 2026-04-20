@@ -5,15 +5,16 @@ import Navigation from '@/components/mainNav/Navigation';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
 import AllTeamMembers from './ourPeople/AllTeamMembers';
 
+const heroContent = {
+  images: ['/assets/africa-wood.jpg'],
+  content: {
+    heading: 'Our standard is simple',
+    paragraph:
+      '<h4><strong>Only the best make it.</strong></h4><br/>At Moneda Africa, our expert team drives economic transformation through innovative solutions and strong partnerships.',
+  },
+};
+
 function OurPeople() {
-  const heroContent = {
-    images: ['/assets/africa-wood.jpg'],
-    content: {
-      heading: 'Our standard is simple',
-      paragraph:
-        '<h4><strong>Only the best make it.</strong></h4><br/>At Moneda Africa, our expert team drives economic transformation through innovative solutions and strong partnerships.',
-    },
-  };
   return (
     <>
       <MetaTags

@@ -6,20 +6,21 @@ import ContactPage from './contact/ContactPage';
 import Footer from '@/components/Footer';
 import MapSection from './contact/MapSection';
 
+const heroContent = {
+  images: ['/assets/phone-user.jpg'],
+  content: {
+    heading: 'Contact Us',
+    paragraph:
+      'Have a question or need assistance or a transaction to discuss? Our team is ready to support you. Reach out using the details below, and we\'ll get back to you as soon as possible.',
+  },
+};
+
 function Contact() {
-  const heroContent = {
-    images: ['/assets/phone-user.jpg'],
-    content: {
-      heading: 'Contact Us',
-      paragraph:
-        'Have a question or need assistance or a transaction to discuss? Our team is ready to support you. Reach out using the details below, and we’ll get back to you as soon as possible.',
-    },
-  };
   return (
     <>
       <MetaTags
         title="Contact us - Moneda | Bridging Africa's Credit Gap"
-        description="Have a question or need assistance? Our team is ready to support you. Reach out using the details below, and we’ll get back to you as soon as possible."
+        description="Have a question or need assistance? Our team is ready to support you. Reach out using the details below, and we'll get back to you as soon as possible."
       />
       <Navigation />
       <MobileNavigationHeader />

@@ -1,7 +1,6 @@
 import MetaTags from '@/components/head';
 import Navigation from '@/components/mainNav/Navigation';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
-
 import HeroSection from '@/components/HeroSection';
 import Newsletter from './news/Newsletter';
 import Newsroom from './news/Newsroom';
@@ -13,7 +12,7 @@ const heroContent = {
   content: {
     heading: 'Newsroom',
     paragraph:
-      'Your hub for updates, expert insights, and research on Africa’s natural resource value chain, energy trends, and policies shaping economic transformation',
+      'Your hub for updates, expert insights, and research on Africa\'s natural resource value chain, energy trends, and policies shaping economic transformation',
   },
 };
 

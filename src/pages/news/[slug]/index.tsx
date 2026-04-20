@@ -1,16 +1,20 @@
+import type { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next';
+
 import { getImage } from '@/utils/helpers';
 import { scrollOffset } from '@/utils/config';
 
 import Navigation from '@/components/mainNav/Navigation';
 import Loader from '@/components/Loader';
 import MetaTags from '@/components/head';
-import Post from './Post';
 import Footer from '@/components/Footer';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
 import useScrollPosition from '@/hooks/useScrollPostion';
+import Post from './Post';
 import Reading from './Reading';
 
-function BlogPost({ post }) {
+type BlogPostProps = InferGetServerSidePropsType<typeof getServerSideProps>;
+
+function BlogPost({ post }: BlogPostProps) {
   const scrollPosition = useScrollPosition(scrollOffset);
 
   if (!post) return <Loader fullScreen={true} />;
@@ -30,9 +34,9 @@ function BlogPost({ post }) {
   );
 }
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps(context: GetServerSidePropsContext) {
   const url = process.env.NEXT_PUBLIC_APP_BLOG_API_URL;
-  const { slug } = context.params;
+  const { slug } = context.params as { slug: string };
 
   const res = await fetch(`${url}/posts?slug=${slug}&_embed`);
   const data = await res.json();
@@ -48,20 +52,20 @@ export async function getServerSideProps(context) {
 
   const selectedPost = data[0];
 
-  const categories =
+  const categories: unknown[] =
     selectedPost._embedded?.['wp:term']
       ?.flat()
-      .filter((term) => term.taxonomy === 'category') || [];
+      .filter((term: { taxonomy: string }) => term.taxonomy === 'category') || [];
 
   const post = {
-    id: selectedPost?.id,
-    title: selectedPost?.title.rendered,
-    body: { __html: selectedPost?.content.rendered },
-    date: selectedPost?.date,
-    modified: selectedPost?.modified,
-    excerpt: { __html: selectedPost?.excerpt.rendered },
-    imgSrc: getImage(selectedPost?.content.rendered),
-    slug: selectedPost?.slug,
+    id: selectedPost?.id as number,
+    title: selectedPost?.title.rendered as string,
+    body: { __html: selectedPost?.content.rendered as string },
+    date: selectedPost?.date as string,
+    modified: selectedPost?.modified as string,
+    excerpt: { __html: selectedPost?.excerpt.rendered as string },
+    imgSrc: getImage(selectedPost?.content.rendered) as string | null,
+    slug: selectedPost?.slug as string,
     categories,
   };
 

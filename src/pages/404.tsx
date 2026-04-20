@@ -1,7 +1,7 @@
 import NotFoundIcon from '@/components/lottieFiles/NotFoundIcon';
-import styles from './404/styles/custom404.module.css';
 import Button from '@/components/Button';
-import Section from '@/components/Section';
+
+import styles from './404/styles/custom404.module.css';
 
 export default function Custom404() {
   return (

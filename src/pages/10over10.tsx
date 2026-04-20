@@ -2,8 +2,6 @@ import MetaTags from '@/components/head';
 import HeroSection from '@/components/HeroSection';
 import Navigation from '@/components/mainNav/Navigation';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
-import useScrollPosition from '@/hooks/useScrollPostion';
-import { scrollOffset } from '@/utils/config';
 import RSVP from './tenoverten/RSVP';
 import Footer from '@/components/Footer';
 import TheStory from './tenoverten/TheStory';
@@ -22,23 +20,20 @@ const heroContent = {
   button: {
     label: 'Confirm Your Attendance',
     link: '#rsvp',
-    // newTab: true,
     dark: true,
   },
 };
 
-const EVENT_DATE = new Date(2025, 11, 14, 18).toISOString(); // Dec 14, 2025 at 6:00 PM
-console.log(EVENT_DATE);
+const EVENT_DATE = new Date(2025, 11, 14, 18).toISOString();
 
 function TenOverTen() {
-  const scrollPosition = useScrollPosition(scrollOffset);
   return (
     <>
       <MetaTags
         title="Moneda 10 over 10 | A Decade of Building Bold"
-        description="Ten years ago, we set out to prove that Africans CAN finance Africa’s future. After building roots across 7 African countries, safely deploying capital where ‘smart’ people said was impossible - we return to where it all started. "
+        description="Ten years ago, we set out to prove that Africans CAN finance Africa's future. After building roots across 7 African countries, safely deploying capital where 'smart' people said was impossible - we return to where it all started."
       />
-      <Navigation scrollPosition={scrollPosition} />
+      <Navigation />
       <MobileNavigationHeader />
       <HeroSection
         images={heroContent.images}

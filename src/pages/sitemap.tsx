@@ -3,17 +3,16 @@ import MetaTags from '@/components/head';
 import Navigation from '@/components/mainNav/Navigation';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
 import TypicalHero from '@/components/TypicalHero';
-import { footer } from '@/data/footer';
-import { homeMenuLinks } from '@/data/menu';
 import LinksMap from './sitemap/LinksMap';
 
+const heroContent = {
+  pageTitle: '',
+  heading: 'Sitemap',
+  paragraph: 'Explore Moneda Africa with the links below',
+  imageUrl: '/assets/buildings.jpg',
+};
+
 function Sitemap() {
-  const heroContent = {
-    pageTitle: '',
-    heading: 'Sitemap',
-    paragraph: 'Explore Moneda Africa with the links below',
-    imageUrl: '/assets/buildings.jpg',
-  };
   return (
     <>
       <MetaTags
