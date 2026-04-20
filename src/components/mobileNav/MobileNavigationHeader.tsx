@@ -17,7 +17,7 @@ function MobileNavigationHeader() {
       height: '100%',
       top: '-25px',
       right: '-25px',
-      transition: { duration: 0.75, type: 'tween', ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 0.75, type: 'tween', ease: [0.76, 0, 0.24, 1] as [number, number, number, number] },
     },
     closed: {
       width: '100px',
@@ -28,7 +28,7 @@ function MobileNavigationHeader() {
         duration: 0.75,
         delay: 0.35,
         type: 'tween',
-        ease: [0.76, 0, 0.24, 1],
+        ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
       },
     },
   } as const;

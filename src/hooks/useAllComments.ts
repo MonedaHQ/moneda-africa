@@ -1,7 +1,12 @@
 import { getComments } from '@/services/apiPosts';
 import { useQuery } from '@tanstack/react-query';
 
-type Comment = Record<string, unknown>;
+type Comment = {
+  author_name: string;
+  date: string;
+  content: { rendered: string };
+  [key: string]: unknown;
+};
 
 export function useAllComments(slug?: string) {
   const { isLoading, data, error } = useQuery({

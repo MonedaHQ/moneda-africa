@@ -2,7 +2,16 @@ import { getAllPosts } from '@/services/apiPosts';
 import { useQuery } from '@tanstack/react-query';
 import { useRouter } from 'next/router';
 
-type Post = Record<string, unknown>;
+type Post = {
+  title: { rendered: string };
+  slug: string;
+  excerpt: { rendered: string };
+  date: string;
+  content: { rendered: string };
+  categories?: number[];
+  featured_media?: number;
+  [key: string]: unknown;
+};
 
 export function usePosts() {
   const router = useRouter();
@@ -17,7 +26,7 @@ export function usePosts() {
     gcTime: 0,
   });
 
-  const { totalPosts, posts } = data || { totalPosts: 0, posts: [] as Post[] };
+  const { totalPosts, posts } = (data as { totalPosts: number; posts: Post[] }) || { totalPosts: 0, posts: [] as Post[] };
 
   return { isLoading, posts, totalPosts, error };
 }

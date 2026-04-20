@@ -92,7 +92,6 @@ function HeaderSecondary() {
             <NavLink
               key={link.label}
               link={link}
-              motion={motion}
               darkHero={false}
               isActive={route === link.path}
             />
@@ -143,7 +142,6 @@ function HeaderInitial({ darkHero }: { darkHero: boolean }) {
             <NavLink
               key={link.label}
               link={link}
-              motion={motion}
               darkHero={darkHero}
               isActive={route === link.path}
             />

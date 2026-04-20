@@ -16,6 +16,7 @@ type ButtonProps = {
   active?: boolean;
   disabled?: boolean;
   scrollOffset?: number;
+  className?: string;
 };
 
 function Button({
@@ -29,12 +30,13 @@ function Button({
   active = false,
   disabled = false,
   scrollOffset,
+  className,
 }: ButtonProps) {
   const scrollTo = useSmoothScroll();
 
   const commonClassName = `${styles.button} ${styles[variant]} ${
     active ? styles[`active-${variant}`] : ''
-  } ${disabled ? styles.disabled : ''}`;
+  } ${disabled ? styles.disabled : ''} ${className || ''}`;
 
   if (href) {
     const isHashLink = href.startsWith('#');
