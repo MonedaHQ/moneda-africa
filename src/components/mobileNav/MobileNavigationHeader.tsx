@@ -1,16 +1,14 @@
 import { AnimatePresence, motion } from 'framer-motion';
 
-import styles from './styles/navigationheader.module.css';
-import { useState } from 'react';
 import { useMenuToggler } from '@/context/MenuToggleContext';
-import MobileNavigation from './MobileNavigation';
-import SpecialMenuButton from './SpecialMenuButton';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 
-function MobileNavigationHeader() {
-  const [isActive, setIsActive] = useState(false);
-  const { isMenuOpen, toggleMenu, closeMenu } = useMenuToggler();
+import MobileNavigation from './MobileNavigation';
+import SpecialMenuButton from './SpecialMenuButton';
+import styles from './styles/navigationheader.module.css';
 
+function MobileNavigationHeader() {
+  const { isMenuOpen, closeMenu } = useMenuToggler();
   const ref = useOutsideClick(closeMenu);
 
   const menu = {
@@ -33,7 +31,7 @@ function MobileNavigationHeader() {
         ease: [0.76, 0, 0.24, 1],
       },
     },
-  };
+  } as const;
 
   return (
     <div className={styles.header} ref={ref}>
@@ -45,7 +43,7 @@ function MobileNavigationHeader() {
       >
         <AnimatePresence>{isMenuOpen && <MobileNavigation />}</AnimatePresence>
       </motion.div>
-      <SpecialMenuButton isActive={isMenuOpen} toggleMenu={toggleMenu} />
+      <SpecialMenuButton isActive={isMenuOpen} />
     </div>
   );
 }

@@ -1,15 +1,29 @@
 import Image from 'next/image';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, Variants } from 'framer-motion';
 import { useRouter } from 'next/router';
 
-import NavLink from './NavLink';
-
 import { homeMenuLinks as baseLinks } from '@/data/menu';
-import styles from './styles/navigation.module.css';
 import useScrollPosition from '@/hooks/useScrollPostion';
 import { scrollOffset } from '@/utils/config';
 
-function Navigation({ scrollDirection = 'up', darkHero = false }) {
+import NavLink from './NavLink';
+import styles from './styles/navigation.module.css';
+
+type MenuLink = {
+  path: string;
+  label: string;
+  action?: string | null;
+  icon?: string | null;
+  icon2?: string | null;
+  dropdown?: unknown;
+};
+
+type NavigationProps = {
+  scrollDirection?: 'up' | 'down';
+  darkHero?: boolean;
+};
+
+function Navigation({ scrollDirection = 'up', darkHero = false }: NavigationProps) {
   const scrollPosition = useScrollPosition(scrollOffset);
   const isHero = scrollPosition > 120;
 
@@ -20,10 +34,10 @@ function Navigation({ scrollDirection = 'up', darkHero = false }) {
   );
 }
 
-function getModifiedLinks(currentPath) {
+function getModifiedLinks(currentPath: string): MenuLink[] {
   const isHome = currentPath === '/';
 
-  if (isHome) return baseLinks;
+  if (isHome) return baseLinks as MenuLink[];
 
   return [
     {
@@ -34,7 +48,7 @@ function getModifiedLinks(currentPath) {
       icon2: null,
       dropdown: null,
     },
-    ...baseLinks,
+    ...(baseLinks as MenuLink[]),
   ];
 }
 
@@ -43,12 +57,15 @@ function HeaderSecondary() {
   const route = router.route;
   const modifiedLinks = getModifiedLinks(route);
 
-  const headerIntro = {
+  const headerIntro: Variants = {
     initial: { opacity: 0, y: -50 },
     animate: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.1, ease: [0.67, 0.41, 0, 1] },
+      transition: {
+        duration: 0.1,
+        ease: [0.67, 0.41, 0, 1] as [number, number, number, number],
+      },
     },
     exit: { opacity: 0, y: -30 },
   };
@@ -72,7 +89,13 @@ function HeaderSecondary() {
         />
         <ul className={styles.navigationList}>
           {modifiedLinks.map((link) => (
-            <NavLink key={link.label} link={link} motion={motion} />
+            <NavLink
+              key={link.label}
+              link={link}
+              motion={motion}
+              darkHero={false}
+              isActive={route === link.path}
+            />
           ))}
         </ul>
       </nav>
@@ -80,17 +103,20 @@ function HeaderSecondary() {
   );
 }
 
-function HeaderInitial({ darkHero }) {
+function HeaderInitial({ darkHero }: { darkHero: boolean }) {
   const router = useRouter();
   const route = router.route;
   const modifiedLinks = getModifiedLinks(route);
 
-  const headerIntro = {
+  const headerIntro: Variants = {
     initial: { opacity: 0, y: -50 },
     animate: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.1, ease: [0.67, 0.41, 0, 1] },
+      transition: {
+        duration: 0.1,
+        ease: [0.67, 0.41, 0, 1] as [number, number, number, number],
+      },
     },
     exit: { opacity: 0, y: -30 },
   };

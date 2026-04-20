@@ -1,9 +1,16 @@
 import { useCountIncrement } from '@/hooks/useCountIncrement';
 
-import styles from './styles/metrics.module.css';
 import Section from './Section';
+import styles from './styles/metrics.module.css';
 
-const data = [
+type MetricItem = {
+  metric: number;
+  prefix: string | null;
+  suffix: string;
+  description: string;
+};
+
+const data: MetricItem[] = [
   {
     metric: 10,
     prefix: null,
@@ -30,7 +37,12 @@ const data = [
   },
 ];
 
-function Metrics({ paddingTop = false, metrics = data }) {
+type MetricsProps = {
+  paddingTop?: boolean;
+  metrics?: MetricItem[];
+};
+
+function Metrics({ paddingTop = false, metrics = data }: MetricsProps) {
   return (
     <Section color="darkBrown" paddingTop={paddingTop}>
       <div className={styles.metrics}>
@@ -42,10 +54,11 @@ function Metrics({ paddingTop = false, metrics = data }) {
   );
 }
 
-function Metric({ metric }) {
+function Metric({ metric }: { metric: MetricItem }) {
   const [metricDigit, metricRef] = useCountIncrement(0, metric.metric);
+
   return (
-    <div className={styles.metric} key={metric.metric}>
+    <div className={styles.metric}>
       <div className={styles.metricHeading} ref={metricRef}>
         <h2>
           {metric.prefix}

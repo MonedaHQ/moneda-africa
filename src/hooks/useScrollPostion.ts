@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-function useScrollPosition(position = 200) {
+function useScrollPosition(position = 200): number {
   const [scrollY, setScrollY] = useState(0);
   const [isTracking, setIsTracking] = useState(true);
 
@@ -10,12 +10,10 @@ function useScrollPosition(position = 200) {
         setScrollY(window.scrollY);
       }
 
-      // Check if scrollY reaches 200 and stop tracking
       if (window.scrollY >= position && isTracking) {
         setIsTracking(false);
       }
 
-      // Check if scrollY returns to 0 and resume tracking
       if (window.scrollY <= position && !isTracking) {
         setIsTracking(true);
       }

@@ -1,23 +1,17 @@
 import { useCallback } from 'react';
 
-/**
- * Custom hook for smooth scrolling to a section by its ID.
- * Usage:
- * const scrollTo = useSmoothScroll();
- * scrollTo("about"); // scrolls to element with id="about"
- */
+type ScrollTarget = string | HTMLElement | null | undefined;
+
 export function useSmoothScroll(defaultOffset = 0) {
   const scrollTo = useCallback(
-    (idOrElement, offset = defaultOffset) => {
+    (idOrElement: ScrollTarget, offset = defaultOffset) => {
       if (!idOrElement) return;
 
-      let el = null;
+      let el: Element | null = null;
 
-      // If a DOM element is passed directly
       if (idOrElement instanceof HTMLElement) {
         el = idOrElement;
       } else {
-        // Normalize string - allow '#id' or 'id'
         const id =
           typeof idOrElement === 'string' && idOrElement.startsWith('#')
             ? idOrElement.substring(1)

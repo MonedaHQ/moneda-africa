@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-function useScrollDirection() {
-  const [direction, setDirection] = useState('down');
-  const [lastY, setLastY] = useState(0); // Initialize to 0 safely
+type ScrollDirection = 'up' | 'down';
+
+function useScrollDirection(): ScrollDirection {
+  const [direction, setDirection] = useState<ScrollDirection>('down');
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -20,7 +21,6 @@ function useScrollDirection() {
 
       setDirection(currentY > previousY ? 'down' : 'up');
       previousY = currentY;
-      setLastY(currentY);
       ticking = false;
     };
 

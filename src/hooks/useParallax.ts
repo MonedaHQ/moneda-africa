@@ -1,11 +1,10 @@
-const { useScroll, useTransform } = require('framer-motion');
-const { useRef } = require('react');
+import { useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 
 export function useParallax(endScroll = '130vh') {
-  const parallaxRef = useRef();
+  const parallaxRef = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: parallaxRef,
-
     offset: ['start start', 'end start'],
   });
 
