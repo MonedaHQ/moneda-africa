@@ -3,12 +3,21 @@ import { useMutation } from '@tanstack/react-query';
 import { useRouter } from 'next/router';
 import toast from 'react-hot-toast';
 
+type FormPayload = Record<string, unknown>;
+
+function getErrorMessage(err: unknown): string {
+  if (err instanceof Error) {
+    return err.message;
+  }
+
+  return 'Failed to submit';
+}
+
 export function useContactUs() {
   const router = useRouter();
-  const { mutate: contactUs, isLoading: isSubmitting } = useMutation({
-    mutationFn: (data) => {
-      return contactApi(data);
-    },
+
+  const { mutate: contactUs, isPending: isSubmitting } = useMutation({
+    mutationFn: (data: FormPayload) => contactApi(data),
     onSuccess: () => {
       toast.success('Success!');
       router.push(
@@ -17,8 +26,8 @@ export function useContactUs() {
         { scroll: false }
       );
     },
-    onError: (err) => {
-      toast.error('Failed to submit', err.message);
+    onError: (err: unknown) => {
+      toast.error(getErrorMessage(err));
       router.push(
         { pathname: router.pathname, query: { status: 'error' } },
         undefined,

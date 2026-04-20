@@ -3,6 +3,14 @@ import { useMutation } from '@tanstack/react-query';
 import { useRouter } from 'next/router';
 import toast from 'react-hot-toast';
 
+function getErrorMessage(err: unknown): string {
+  if (err instanceof Error) {
+    return err.message;
+  }
+
+  return 'Failed to submit termsheet';
+}
+
 export function useTermsheetSubmission() {
   const router = useRouter();
 
@@ -16,18 +24,18 @@ export function useTermsheetSubmission() {
           query: { status: 'success' },
         },
         undefined,
-        { scroll: false },
+        { scroll: false }
       );
     },
-    onError: (err) => {
-      toast.error(err?.message || 'Failed to submit termsheet');
+    onError: (err: unknown) => {
+      toast.error(getErrorMessage(err));
       router.push(
         {
           pathname: router.pathname,
           query: { status: 'error' },
         },
         undefined,
-        { scroll: false },
+        { scroll: false }
       );
     },
   });

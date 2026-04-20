@@ -1,9 +1,14 @@
-export async function postResponse(data) {
-  try {
-    const apiUrl = process.env.NEXT_PUBLIC_API_IWD_SUBMISSIONS;
-    console.log('API URL:', apiUrl);
+const contestApiUrl = process.env.NEXT_PUBLIC_API_IWD_SUBMISSIONS;
 
-    const response = await fetch(apiUrl, {
+if (!contestApiUrl) {
+  throw new Error('NEXT_PUBLIC_API_IWD_SUBMISSIONS is not defined');
+}
+
+type ContestPayload = Record<string, unknown>;
+
+export async function postResponse(data: ContestPayload): Promise<void> {
+  try {
+    const response = await fetch(contestApiUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

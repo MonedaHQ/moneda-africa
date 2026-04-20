@@ -1,6 +1,17 @@
-const url = `${process.env.NEXT_PUBLIC_API}/general/brevo/contacts`;
+const apiBaseUrl = process.env.NEXT_PUBLIC_API;
 
-export async function newsletterApi(data) {
+if (!apiBaseUrl) {
+  throw new Error('NEXT_PUBLIC_API is not defined');
+}
+
+const url = `${apiBaseUrl}/general/brevo/contacts`;
+
+type NewsletterPayload = Record<string, unknown>;
+type NewsletterResponse = Record<string, unknown>;
+
+export async function newsletterApi(
+  data: NewsletterPayload
+): Promise<NewsletterResponse> {
   const res = await fetch(url, {
     method: 'POST',
     headers: {
@@ -10,24 +21,24 @@ export async function newsletterApi(data) {
   });
 
   if (!res.ok) {
-    // parse body (await!) and build a useful message
     let message = `Fetch failed: ${res.status} ${res.statusText}`;
+
     try {
       const text = await res.text();
       if (text) {
         try {
-          const json = JSON.parse(text);
+          const json = JSON.parse(text) as { message?: string };
           message = json?.message || JSON.stringify(json);
         } catch {
           message = text;
         }
       }
-    } catch (e) {
-      // ignore parse errors and keep fallback message
+    } catch {
+      // Keep fallback message if body parsing fails.
     }
+
     throw new Error(message);
   }
 
-  // success: await the json and return it
   return await res.json();
 }

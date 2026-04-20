@@ -2,19 +2,22 @@ import { getAllPosts } from '@/services/apiPosts';
 import { useQuery } from '@tanstack/react-query';
 import { useRouter } from 'next/router';
 
+type Post = Record<string, unknown>;
+
 export function usePosts() {
   const router = useRouter();
 
-  const page = !router.query.page ? 1 : +router.query.page;
+  const pageParam = router.query.page;
+  const page = typeof pageParam === 'string' ? Number(pageParam) || 1 : 1;
 
   const { isLoading, data, error } = useQuery({
     queryKey: ['posts', page],
     queryFn: () => getAllPosts({ page }),
     staleTime: 0,
-    cacheTime: 0,
+    gcTime: 0,
   });
 
-  const { totalPosts, posts } = data || { totalPosts: 0, posts: [] };
+  const { totalPosts, posts } = data || { totalPosts: 0, posts: [] as Post[] };
 
   return { isLoading, posts, totalPosts, error };
 }
