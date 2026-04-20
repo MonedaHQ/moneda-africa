@@ -7,7 +7,7 @@ export function useContactUs() {
   const router = useRouter();
   const { mutate: contactUs, isLoading: isSubmitting } = useMutation({
     mutationFn: (data) => {
-      contactApi(data);
+      return contactApi(data);
     },
     onSuccess: () => {
       toast.success('Success!');
