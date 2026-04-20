@@ -62,7 +62,7 @@ export const managementTeam = [
   },
   {
     name: 'Chukwuemeka Anazodo',
-    position: 'Chief Financial Officer',
+    position: 'Chief Financial Oficer',
     paragraph:
       'Emeka is a senior finance executive with over a decade of financial services sector working experience in preparing and analysing financial statements, audit, tax and regulatory management, strategy and investor relations, treasury and cash flow management, business process automation, budget preparation and analysis, corporate rating management and finance team training and development. ',
     imageData: {
