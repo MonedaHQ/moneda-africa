@@ -12,13 +12,10 @@
   row-gap: 3rem;
   flex-direction: column;
   width: 400px;
-
   list-style: none;
-}
 
-.mainNavLinks li {
   perspective: 120px;
-  perspective-origin: bottom;
+  perspective-origin: bottom center;
 }
 
 .nav .body a {

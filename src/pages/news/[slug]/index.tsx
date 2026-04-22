@@ -1,4 +1,5 @@
 import type { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next';
+import { useEffect } from 'react';
 
 import { getImage } from '@/utils/helpers';
 import { scrollOffset } from '@/utils/config';
@@ -16,6 +17,12 @@ type BlogPostProps = InferGetServerSidePropsType<typeof getServerSideProps>;
 
 function BlogPost({ post }: BlogPostProps) {
   const scrollPosition = useScrollPosition(scrollOffset);
+
+  useEffect(() => {
+    if (!post || typeof window === 'undefined' || !window.clarity) return;
+    window.clarity('set', 'page_type', 'news_article');
+    window.clarity('set', 'article_slug', post.slug);
+  }, [post]);
 
   if (!post) return <Loader fullScreen={true} />;
 

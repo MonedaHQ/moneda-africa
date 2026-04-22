@@ -1,0 +1,63 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.8rem;
+  border-radius: 10rem;
+  border: 1px solid rgba(204, 85, 0, 0.45);
+  background-color: rgba(33, 13, 0, 0.55);
+  width: fit-content;
+}
+
+.dot {
+  display: block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: var(--color-orange);
+  flex-shrink: 0;
+  animation: blink 1.6s ease-in-out infinite;
+}
+
+.text {
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: rgba(204, 85, 0, 0.9);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  min-height: 1.4rem;
+}
+
+.cursor {
+  display: inline-block;
+  width: 1px;
+  height: 1.1em;
+  background-color: rgba(204, 85, 0, 0.7);
+  margin-left: 1px;
+  vertical-align: middle;
+  animation: cursorBlink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.15;
+  }
+}
+
+@keyframes cursorBlink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

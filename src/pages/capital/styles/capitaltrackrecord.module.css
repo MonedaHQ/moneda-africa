@@ -1,0 +1,227 @@
+.section {
+  background-color: #0f0d0b;
+  padding: 10rem 0;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  padding: 0 10rem;
+  max-width: 160rem;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* ── LEFT ──────────────────────────────────────────── */
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.labelHeadingGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.label {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-orange);
+}
+
+.heading {
+  font-family: var(--font-capital-heading);
+  font-size: 4.8rem;
+  font-weight: 300;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--color-white);
+  max-width: 52rem;
+}
+
+.auditBadge {
+  text-align: right;
+  flex-shrink: 0;
+  padding-top: 0.4rem;
+}
+
+.auditLabel {
+  font-size: var(--font-size-paragraph-small);
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 0.4rem;
+}
+
+.auditValue {
+  font-size: var(--font-size-paragraph-regular);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+}
+
+/* ── QUOTE ─────────────────────────────────────────── */
+
+.quote {
+  display: flex;
+  gap: 2.4rem;
+  margin: 0;
+}
+
+.quoteBorder {
+  display: block;
+  width: 2px;
+  flex-shrink: 0;
+  background-color: var(--color-orange);
+  border-radius: 2px;
+}
+
+.quoteInner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.quoteText {
+  font-family: var(--font-capital-heading);
+  font-size: 2.4rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--color-white);
+}
+
+.quoteAttribution {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ── COMPLIANCE CARD ───────────────────────────────── */
+
+.complianceCard {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.complianceHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.complianceIcon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-orange);
+  flex-shrink: 0;
+}
+
+.complianceLabel {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.complianceBody {
+  font-size: var(--font-size-paragraph-small);
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ── IMAGE ─────────────────────────────────────────── */
+
+.imageWrapper {
+  position: relative;
+  height: 62rem;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ── RESPONSIVE ────────────────────────────────────── */
+
+@media only screen and (max-width: 93.75em) {
+  .inner {
+    padding: 0 8rem;
+  }
+
+  .heading {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .inner {
+    padding: 0 4rem;
+    gap: 4rem;
+  }
+
+  .heading {
+    font-size: 3.4rem;
+  }
+
+  .imageWrapper {
+    height: 50rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .imageWrapper {
+    height: 40rem;
+  }
+
+  .topRow {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .auditBadge {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 46.25em) {
+  .section {
+    padding: 7rem 0;
+  }
+
+  .inner {
+    padding: 0 3rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .quoteText {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,121 @@
+/* ── BASE ───────────────────────────────────────────── */
+
+.btn {
+  font-family: inherit;
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.4rem 2.8rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    opacity 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+/* SVG icon children animate on hover */
+.btn svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover:not(.disabled) svg {
+  transform: translateX(3px);
+}
+
+/* ── SOLID ──────────────────────────────────────────── */
+
+.solid {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border: 1px solid var(--color-orange);
+}
+
+.solid:hover:not(.disabled) {
+  opacity: 0.85;
+}
+
+/* ── GHOST ──────────────────────────────────────────── */
+
+.ghost {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ghost:hover:not(.disabled) {
+  border-color: rgba(255, 255, 255, 0.65);
+}
+
+/* ── TOGGLE ─────────────────────────────────────────── */
+
+.toggle {
+  font-size: 1.4rem;
+  font-weight: var(--font-weight-regular);
+  text-transform: none;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1rem 2rem;
+  border-radius: 0;
+}
+
+.toggle:hover:not(.disabled):not(.toggleActive) {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+}
+
+.toggleActive {
+  border-color: var(--color-orange);
+  background-color: rgba(204, 85, 0, 0.12);
+  color: var(--color-white);
+}
+
+/* ── FULL WIDTH ─────────────────────────────────────── */
+
+.fullWidth {
+  width: 100%;
+  border-radius: 0;
+  padding: 2rem 3.2rem;
+}
+
+/* ── DISABLED ───────────────────────────────────────── */
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── NAV LINK ───────────────────────────────────────── */
+
+.nav {
+  /* override .btn defaults so context controls font size */
+  font-size: inherit;
+  font-weight: var(--font-weight-regular);
+  text-transform: none;
+  letter-spacing: 0;
+  justify-content: flex-start;
+  color: var(--color-white);
+  background-color: transparent;
+  border: none;
+  border-radius: var(--border-radius-reg, 0.4rem);
+  padding: 1rem 1.4rem;
+}
+
+.nav:hover:not(.disabled) {
+  color: var(--color-orange);
+  /* prevent .solid hover opacity from leaking */
+  opacity: 1;
+}

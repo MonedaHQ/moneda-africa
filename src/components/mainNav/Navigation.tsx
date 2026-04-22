@@ -23,7 +23,10 @@ type NavigationProps = {
   darkHero?: boolean;
 };
 
-function Navigation({ scrollDirection = 'up', darkHero = false }: NavigationProps) {
+function Navigation({
+  scrollDirection = 'up',
+  darkHero = false,
+}: NavigationProps) {
   const scrollPosition = useScrollPosition(scrollOffset);
   const isHero = scrollPosition > 120;
 
@@ -58,16 +61,15 @@ function HeaderSecondary() {
   const modifiedLinks = getModifiedLinks(route);
 
   const headerIntro: Variants = {
-    initial: { opacity: 0, y: -50 },
+    initial: { opacity: 0 },
     animate: {
       opacity: 1,
-      y: 0,
       transition: {
-        duration: 0.1,
-        ease: [0.67, 0.41, 0, 1] as [number, number, number, number],
+        duration: 0.3,
+        ease: 'easeOut',
       },
     },
-    exit: { opacity: 0, y: -30 },
+    exit: { opacity: 0, transition: { duration: 0.15 } },
   };
 
   return (
@@ -108,16 +110,15 @@ function HeaderInitial({ darkHero }: { darkHero: boolean }) {
   const modifiedLinks = getModifiedLinks(route);
 
   const headerIntro: Variants = {
-    initial: { opacity: 0, y: -50 },
+    initial: { opacity: 0 },
     animate: {
       opacity: 1,
-      y: 0,
       transition: {
-        duration: 0.1,
-        ease: [0.67, 0.41, 0, 1] as [number, number, number, number],
+        duration: 0.3,
+        ease: 'easeOut',
       },
     },
-    exit: { opacity: 0, y: -30 },
+    exit: { opacity: 0, transition: { duration: 0.15 } },
   };
 
   return (

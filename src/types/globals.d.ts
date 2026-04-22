@@ -22,3 +22,8 @@ declare module '*.svg' {
   const src: string;
   export default src;
 }
+
+// Microsoft Clarity custom tagging API
+interface Window {
+  clarity?: (method: string, ...args: string[]) => void;
+}
