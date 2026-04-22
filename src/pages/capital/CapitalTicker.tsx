@@ -1,24 +1,22 @@
 import styles from './styles/capitalticker.module.css';
 
 const companies = [
-  'Vitol',
-  'Trafigura',
-  'Eni',
-  'Shell',
+  'Sahara Energy',
+  'Shell Nigeria',
   'Chevron',
   'TotalEnergies',
-  'Glencore',
-  'Gunvor',
-  'Mercuria',
-  'Vitol',
-  'Trafigura',
-  'Eni',
-  'Shell',
+  'NLNG',
+  'Seplat Energy',
+  'VodaCom DRC',
+  'NPDC',
+  'Sahara Energy',
+  'Shell Nigeria',
   'Chevron',
   'TotalEnergies',
-  'Glencore',
-  'Gunvor',
-  'Mercuria',
+  'NLNG',
+  'Seplat Energy',
+  'VodaCom DRC',
+  'NPDC',
 ];
 
 function CapitalTicker() {

@@ -1,4 +1,7 @@
-import type { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next';
+import type {
+  GetServerSidePropsContext,
+  InferGetServerSidePropsType,
+} from 'next';
 import { useEffect } from 'react';
 
 import { getImage } from '@/utils/helpers';
@@ -62,7 +65,8 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
   const categories: unknown[] =
     selectedPost._embedded?.['wp:term']
       ?.flat()
-      .filter((term: { taxonomy: string }) => term.taxonomy === 'category') || [];
+      .filter((term: { taxonomy: string }) => term.taxonomy === 'category') ||
+    [];
 
   const post = {
     id: selectedPost?.id as number,

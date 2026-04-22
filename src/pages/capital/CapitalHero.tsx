@@ -87,11 +87,10 @@ function CapitalHero() {
           transition={{ duration: 0.8, ease: EASE }}
         >
           <h1 className={styles.heading}>
-            Africa&apos;s real economy.
+            Africa doesn&apos;t <br />
+            need believers.
             <br />
-            Your capital.
-            <br />
-            <span className={styles.headingAccent}>Working.</span>
+            It needs <span className={styles.headingAccent}>Investors.</span>
           </h1>
           <p className={styles.paragraph}>
             Moneda Capital deploys private credit into Africa's most bankable
@@ -113,9 +112,6 @@ function CapitalHero() {
         >
           <CapitalButton variant="solid" href="#register-interest">
             Register Interest
-          </CapitalButton>
-          <CapitalButton variant="ghost" href="#fund-terms">
-            See Fund Terms
           </CapitalButton>
         </motion.div>
 

@@ -14,7 +14,7 @@ function Capital() {
       <CapitalOpportunity />
       <CapitalSectors />
       <CapitalHowItWorks />
-      <CapitalTrackRecord />
+      {/* <CapitalTrackRecord /> */}
       <CapitalSpeakWithUs />
       <CapitalRegisterInterest />
     </div>

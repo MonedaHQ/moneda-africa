@@ -159,7 +159,7 @@ function CapitalRegisterInterest() {
           <span className={styles.headingAccent}>your interest.</span>
         </motion.h2>
         <motion.p className={styles.subtitle} {...fadeUp(0.16)}>
-          Complete the form below. We will be in touch within 48 hours with full
+          Complete the form below. We will be in touch within 24 hours with full
           documentation and next steps. This is not a commitment &mdash; it is
           the beginning of the conversation.
         </motion.p>
@@ -390,7 +390,7 @@ function CapitalRegisterInterest() {
           >
             {isSubmitting
               ? 'Submitting…'
-              : 'Submit — We Will Be in Touch Within 48 Hours →'}
+              : 'Submit — We Will Be in Touch Within 24 Hours →'}
           </CapitalButton>
 
           <p className={styles.formLegal}>

@@ -70,7 +70,7 @@ function CapitalSpeakWithUs() {
         {/* ── RIGHT ────────────────────────────────────── */}
         <motion.div className={styles.right} {...fadeUp(0.12)}>
           <div className={styles.card}>
-            <p className={styles.cardEyebrow}>We respond within 48 hours</p>
+            <p className={styles.cardEyebrow}>We respond within 24 hours</p>
 
             <blockquote className={styles.quote}>
               <span className={styles.quoteMark}>&ldquo;</span>
