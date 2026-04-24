@@ -14,7 +14,7 @@ const metrics = [
     desc: 'NPL maintained across 10 consecutive years and multiple economic cycles',
   },
   {
-    value: '75 days',
+    value: '90-120 days',
     desc: 'Average capital cycle — fast, rotating, productive deployment',
   },
   {
