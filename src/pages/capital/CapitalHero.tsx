@@ -90,7 +90,8 @@ function CapitalHero() {
             Africa doesn&apos;t <br />
             need believers.
             <br />
-            It needs <span className={styles.headingAccent}>Investors.</span>
+            It needs{' '}
+            <span className={styles.headingAccent}>African Investors.</span>
           </h1>
           <p className={styles.paragraph}>
             Moneda Capital deploys private credit into Africa's most bankable
