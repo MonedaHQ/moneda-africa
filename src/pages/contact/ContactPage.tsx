@@ -10,7 +10,6 @@ import { useContactUs } from '@/hooks/useContact';
 
 import Section from '@/components/Section';
 import Button from '@/components/Button';
-import FormMain from '@/components/formElements/FormMain';
 import FormContainer from '@/components/formElements/FormContainer';
 import FormBody from '@/components/formElements/FormBody';
 import FormInput from '@/components/formElements/FormInput';
@@ -103,7 +102,7 @@ function ContactCard({ contact }) {
 
 function ContactForm() {
   const { contactUs, isSubmitting } = useContactUs();
-  const { register, handleSubmit, formState, reset } = useForm();
+  const { register, handleSubmit, formState } = useForm();
   const { errors } = formState;
 
   const formActions = { register, errors };
@@ -179,14 +178,13 @@ function Failed() {
 }
 
 function FormFields({ contactUs, formActions, isSubmitting, handleSubmit }) {
-  const router = useRouter();
-
   function onSubmit(data) {
-    const newData = {
-      subject: 'Contact Form Submission',
-      data,
-    };
-    contactUs(newData);
+    contactUs({
+      firstName: data.first_name,
+      lastName: data.last_name,
+      email: data.email,
+      message: data.description,
+    });
   }
 
   return (
@@ -196,7 +194,12 @@ function FormFields({ contactUs, formActions, isSubmitting, handleSubmit }) {
       onSubmit={onSubmit}
       padding={false}
     >
-      <FormBody disabled={isSubmitting}>
+      <FormBody
+        disabled={isSubmitting}
+        className={styles.contactFormBody}
+        fieldsClassName={styles.contactFormFields}
+        buttonContainerClassName={styles.contactButtonContainer}
+      >
         <FormInput
           type="text"
           id="first_name"
@@ -217,24 +220,16 @@ function FormFields({ contactUs, formActions, isSubmitting, handleSubmit }) {
           label="Email"
           placeholder="j.doe@example.com"
           formActions={formActions}
+          className={styles.fullWidthField}
         />
         <FormInput
-          type="number"
-          id="phone_number"
-          label="Phone number (optional)"
-          placeholder="080123456789"
+          type="textarea"
+          id="description"
+          label="Message"
+          placeholder="Your message goes here"
           formActions={formActions}
-          required={false}
+          className={styles.fullWidthField}
         />
-        <div className={styles.textarea}>
-          <FormInput
-            type="textarea"
-            id="description"
-            label="Message"
-            placeholder="Your message goes here"
-            formActions={formActions}
-          />
-        </div>
       </FormBody>
     </FormContainer>
     // </FormMain>

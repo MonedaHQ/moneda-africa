@@ -1,12 +1,6 @@
 import { getApiErrorMessage } from './apiError';
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_API_BASE_URL;
-
-if (!baseUrl) {
-  throw new Error('NEXT_PUBLIC_APP_API_BASE_URL is not defined');
-}
-
-const url = `${baseUrl}/form/moneda`;
+const url = '/api/contact';
 
 type ContactPayload = Record<string, unknown>;
 type ContactApiResponse = Record<string, unknown>;

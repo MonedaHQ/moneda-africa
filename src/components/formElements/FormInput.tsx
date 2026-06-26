@@ -12,6 +12,7 @@ function FormInput({
   required = true,
   disabled = false,
   validation = {}, // <-- new: custom react-hook-form validation rules
+  className = '',
 }) {
   const { register, errors } = formActions;
 
@@ -21,7 +22,7 @@ function FormInput({
 
   if (type === 'tel') {
     return (
-      <fieldset className={styles.fieldset}>
+      <fieldset className={`${styles.fieldset} ${className}`}>
         <label htmlFor={id} className={styles.label}>
           {label}
         </label>
@@ -49,7 +50,7 @@ function FormInput({
 
   if (type === 'textarea')
     return (
-      <fieldset className={styles.fieldset}>
+      <fieldset className={`${styles.fieldset} ${className}`}>
         <label htmlFor={id} className={styles.label}>
           {label}
         </label>
@@ -87,7 +88,7 @@ function FormInput({
       }
 
       return (
-        <fieldset className={styles.fieldset}>
+        <fieldset className={`${styles.fieldset} ${className}`}>
           <label htmlFor={id} className={styles.label}>
             {label}
           </label>
@@ -105,7 +106,7 @@ function FormInput({
 
   if (type === 'date')
     return (
-      <fieldset className={styles.fieldset}>
+      <fieldset className={`${styles.fieldset} ${className}`}>
         <label htmlFor="date" className={styles.label}>
           {label}
         </label>
@@ -124,7 +125,7 @@ function FormInput({
 
   if (type === 'email') {
     return (
-      <fieldset className={styles.fieldset}>
+      <fieldset className={`${styles.fieldset} ${className}`}>
         <label htmlFor={id} className={styles.label}>
           {label}
         </label>
@@ -151,7 +152,7 @@ function FormInput({
   }
 
   return (
-    <fieldset className={styles.fieldset}>
+    <fieldset className={`${styles.fieldset} ${className}`}>
       <label htmlFor={id} className={styles.label}>
         {label}
       </label>
