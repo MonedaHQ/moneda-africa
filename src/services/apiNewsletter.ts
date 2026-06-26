@@ -1,3 +1,5 @@
+import { getApiErrorMessage } from './apiError';
+
 const apiBaseUrl = process.env.NEXT_PUBLIC_API;
 
 if (!apiBaseUrl) {
@@ -21,23 +23,7 @@ export async function newsletterApi(
   });
 
   if (!res.ok) {
-    let message = `Fetch failed: ${res.status} ${res.statusText}`;
-
-    try {
-      const text = await res.text();
-      if (text) {
-        try {
-          const json = JSON.parse(text) as { message?: string };
-          message = json?.message || JSON.stringify(json);
-        } catch {
-          message = text;
-        }
-      }
-    } catch {
-      // Keep fallback message if body parsing fails.
-    }
-
-    throw new Error(message);
+    throw new Error(await getApiErrorMessage(res));
   }
 
   return await res.json();

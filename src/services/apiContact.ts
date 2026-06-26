@@ -1,3 +1,5 @@
+import { getApiErrorMessage } from './apiError';
+
 const baseUrl = process.env.NEXT_PUBLIC_APP_API_BASE_URL;
 
 if (!baseUrl) {
@@ -9,7 +11,9 @@ const url = `${baseUrl}/form/moneda`;
 type ContactPayload = Record<string, unknown>;
 type ContactApiResponse = Record<string, unknown>;
 
-export async function contactApi(data: ContactPayload): Promise<ContactApiResponse> {
+export async function contactApi(
+  data: ContactPayload,
+): Promise<ContactApiResponse> {
   const res = await fetch(url, {
     method: 'POST',
     headers: {
@@ -19,7 +23,7 @@ export async function contactApi(data: ContactPayload): Promise<ContactApiRespon
   });
 
   if (!res.ok) {
-    throw new Error(`${res.status}: ${res.statusText}`);
+    throw new Error(await getApiErrorMessage(res));
   }
 
   return await res.json();

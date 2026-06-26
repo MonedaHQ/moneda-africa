@@ -1,3 +1,5 @@
+import { getApiErrorMessage } from './apiError';
+
 const baseUrl = process.env.NEXT_PUBLIC_APP_API_BASE_URL;
 
 if (!baseUrl) {
@@ -21,7 +23,7 @@ export async function submitTermsheetApi(
   });
 
   if (!res.ok) {
-    throw new Error(`${res.status}: ${res.statusText}`);
+    throw new Error(await getApiErrorMessage(res));
   }
 
   return await res.json();
