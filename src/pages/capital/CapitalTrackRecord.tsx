@@ -92,3 +92,9 @@ function CapitalTrackRecord() {
 }
 
 export default CapitalTrackRecord;
+
+export async function getServerSideProps() {
+  return {
+    notFound: true,
+  };
+}

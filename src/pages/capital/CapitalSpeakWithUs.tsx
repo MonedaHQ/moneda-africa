@@ -97,3 +97,9 @@ function CapitalSpeakWithUs() {
 }
 
 export default CapitalSpeakWithUs;
+
+export async function getServerSideProps() {
+  return {
+    notFound: true,
+  };
+}

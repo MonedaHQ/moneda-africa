@@ -88,3 +88,9 @@ function CapitalButton({
 }
 
 export default CapitalButton;
+
+export async function getServerSideProps() {
+  return {
+    notFound: true,
+  };
+}

@@ -16,7 +16,7 @@ const doubleSectionData = [
     },
     heading: 'The Path Forward – Scaling for Impact',
     paragraph:
-      'As we look to the next decade, Moneda is more committed than ever to scaling its operations and impact. <strong>We are raising $250 million through our Moneda Capital Credit Fund, which will continue to support SMEs in Africa’s most critical sectors.</strong> With the FNB MoU, the Moneda-Ino merger, and our focus on sustainable projects, we are poised to expand our footprint and continue empowering African SMEs to execute projects that benefit their communities and contribute to economic growth.',
+      'As we look to the next decade, Moneda is more committed than ever to scaling its operations and impact. <strong>Through MCML, Moneda’s Mauritian fund-management entity licensed by the Financial Services Commission (FSC) of the Republic of Mauritius, our capital-management capability supports SMEs in Africa’s most critical sectors.</strong> With the FNB MoU, the Moneda-Ino merger, and our focus on sustainable projects, we are poised to expand our footprint and continue empowering African SMEs to execute projects that benefit their communities and contribute to economic growth.',
     contentFirst: true,
   },
   {
@@ -34,7 +34,7 @@ const doubleSectionData = [
     },
     heading: 'Join Us in Shaping Africa’s Future',
     paragraph:
-      'The journey we’ve embarked on is just the beginning. As we continue to unlock new opportunities for African businesses, we invite investors, partners, and stakeholders to join us in this mission. Together, we can build a future where Africa’s natural resources are fully harnessed, its communities are empowered, and its SMEs are the driving force behind a sustainable, prosperous continent. ',
+      'The journey we’ve embarked on is just the beginning. As we continue to unlock new opportunities for African businesses, we welcome partners and stakeholders who share this mission. Together, we can build a future where Africa’s natural resources are fully harnessed, its communities are empowered, and its SMEs are the driving force behind a sustainable, prosperous continent. ',
     contentFirst: false,
     button: true,
     buttonData: { label: 'Partner with us', link: '/contact' },

@@ -34,3 +34,9 @@ function CapitalTicker() {
 }
 
 export default CapitalTicker;
+
+export async function getServerSideProps() {
+  return {
+    notFound: true,
+  };
+}

@@ -143,3 +143,9 @@ function CapitalHowItWorks() {
 }
 
 export default CapitalHowItWorks;
+
+export async function getServerSideProps() {
+  return {
+    notFound: true,
+  };
+}

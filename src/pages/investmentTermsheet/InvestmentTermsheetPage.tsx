@@ -771,3 +771,9 @@ function FadeIn({ children, className = '', delay = 0 }) {
 }
 
 export default InvestmentTermsheetPage;
+
+export async function getServerSideProps() {
+  return {
+    notFound: true,
+  };
+}

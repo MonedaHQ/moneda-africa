@@ -105,3 +105,9 @@ function CapitalSectors() {
 }
 
 export default CapitalSectors;
+
+export async function getServerSideProps() {
+  return {
+    notFound: true,
+  };
+}

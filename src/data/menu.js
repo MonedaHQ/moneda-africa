@@ -23,13 +23,6 @@ export const homeMenuLinks = [
   //   dropdown: null,
   // },
   {
-    path: '/capital',
-    label: 'Capital',
-    icon: null,
-    icon2: null,
-    dropdown: null,
-  },
-  {
     path: '/verticals',
     label: 'Our Verticals',
     action: null,

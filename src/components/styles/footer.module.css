@@ -23,6 +23,14 @@
   color: var(--color-orange);
 }
 
+.disclaimer {
+  max-width: 88rem;
+  color: var(--color-dark-grey);
+  font-size: 1.3rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
 @media (max-width: 72.5em) {
   .container {
     padding: 4rem;
@@ -56,5 +64,9 @@
   .linkList a {
     padding: 0 2rem;
     text-align: start;
+  }
+
+  .disclaimer {
+    text-align: left;
   }
 }

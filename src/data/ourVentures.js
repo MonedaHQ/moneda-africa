@@ -141,7 +141,7 @@ const oldContent = [
 
     company: 'Moneda Capital',
     paragraph:
-      "<strong>Connecting capital with opportunity</strong><br/><br/>Moneda Capital is a leading global financial services firm specializing in the complex and dynamic energy and commodities markets. With a strong foundation built on decades of industry experience, Moneda offers a comprehensive suite of trading, investment, and advisory services.The company's deep market expertise, coupled with a robust risk management framework, enables it to navigate complex market conditions and identify profitable opportunities. Moneda Invest is committed to delivering exceptional value to clients through tailored solutions and superior execution.",
+      "<strong>Connecting capital with opportunity</strong><br/><br/>Moneda Capital specializes in the complex and dynamic energy and commodities markets. Fund-management activity is conducted through Moneda Capital Management Limited (MCML), the Mauritian entity licensed by the Financial Services Commission (FSC) of the Republic of Mauritius. Moneda's market expertise and risk-management framework support disciplined trading, structuring, and advisory execution for clients and partners.",
     link: null,
   },
 ];

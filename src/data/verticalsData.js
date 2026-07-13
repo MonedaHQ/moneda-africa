@@ -20,7 +20,7 @@ export const verticals = [
   {
     question: 'Capital Management',
     answer:
-      '<p>Our Capital Management strategy is anchored to catalyze Africa’s growth through long-term, impact-driven financing. We deploy institutional and private credit in Africa to critical SMEs in agriculture, energy, mining, and minerals—sectors vital to inclusive development. With a fund licensed in Mauritius and a strategic base in South Africa, we combine frontier-market insight, ethical investment principles, and rigorous due diligence to generate returns that empower businesses and strengthen SMEs in natural resource value chains.</p><ul><li>Moneda Capital – Deploying purposeful capital to power Africa’s growth sectors </li></ul>',
+      '<p>Our Capital Management strategy is anchored to catalyze Africa’s growth through long-term, impact-driven financing. We deploy institutional and private credit in Africa to critical SMEs in agriculture, energy, mining, and minerals—sectors vital to inclusive development. Fund-management activities are conducted through Moneda Capital Management Limited (MCML), the Mauritian entity licensed by the Financial Services Commission (FSC) of the Republic of Mauritius. With a strategic base in South Africa, we combine frontier-market insight, ethical investment principles, and rigorous due diligence to empower businesses and strengthen SMEs in natural resource value chains.</p><ul><li>Moneda Capital – Deploying purposeful capital to power Africa’s growth sectors </li></ul><p><em>This information is not a public offer, solicitation, or invitation to invest.</em></p>',
     button: {
       label: 'Learn more',
       link: '/verticals?venture=capital-management',

@@ -14,6 +14,13 @@ function Footer() {
           </a>
         ))}
       </ul>
+      <p className={styles.disclaimer}>
+        Any fund management activity or securities offering referenced by
+        Moneda is conducted only through Moneda Capital Management Limited
+        (MCML), Moneda&apos;s Mauritian entity licensed by the Financial
+        Services Commission (FSC) of the Republic of Mauritius. Nothing on this
+        website is a public offer, solicitation, or invitation to invest.
+      </p>
       <p>&copy; {year} Moneda Invest Africa</p>
     </div>
   );

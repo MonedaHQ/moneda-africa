@@ -22,3 +22,9 @@ function Capital() {
 }
 
 export default Capital;
+
+export async function getServerSideProps() {
+  return {
+    notFound: true,
+  };
+}

@@ -11,7 +11,7 @@ const heroContent = {
   content: {
     heading: 'Our Verticals',
     paragraph:
-      '<strong>We are global experts in Finance and Commodities</strong><br/><br/>Since inception, Moneda has been delivering innovative solutions and maximizing client returns. With leading expertise in the wholesale energy sector and commodities, we provide exceptional value through a comprehensive range of services.',
+      '<strong>We are global experts in Finance and Commodities</strong><br/><br/>Since inception, Moneda has been delivering innovative solutions for clients and partners. With leading expertise in the wholesale energy sector and commodities, we provide exceptional value through a comprehensive range of services.',
   },
 };
 
@@ -20,7 +20,7 @@ function WhatWeDo() {
     <>
       <MetaTags
         title="Our Verticals - Moneda | Bridging Africa's Credit Gap"
-        description="At Moneda, we leverage our deep-rooted expertise in the finance and commodities markets to identify and capitalize on emerging opportunities. We empower our clients to enter new markets confidently by navigating complexities and maximizing returns while minimizing risk."
+        description="At Moneda, we leverage our deep-rooted expertise in the finance and commodities markets to identify opportunities. We empower our clients to enter new markets confidently by navigating complexities and managing risk."
       />
       <Navigation />
       <MobileNavigationHeader />

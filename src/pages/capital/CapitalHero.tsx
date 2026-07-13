@@ -155,3 +155,9 @@ function CapitalHero() {
 }
 
 export default CapitalHero;
+
+export async function getServerSideProps() {
+  return {
+    notFound: true,
+  };
+}

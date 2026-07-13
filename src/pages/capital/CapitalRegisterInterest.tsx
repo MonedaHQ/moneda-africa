@@ -405,3 +405,9 @@ function CapitalRegisterInterest() {
 }
 
 export default CapitalRegisterInterest;
+
+export async function getServerSideProps() {
+  return {
+    notFound: true,
+  };
+}
