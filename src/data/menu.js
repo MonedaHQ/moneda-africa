@@ -1,27 +1,20 @@
-import { HiMiniChevronDown, HiMiniChevronUp } from 'react-icons/hi2';
-
 export const homeMenuLinks = [
   {
-    path: null,
-    label: 'Who We Are',
-    action: 'onMouseEnter',
-    icon: <HiMiniChevronDown />,
-    icon2: <HiMiniChevronUp />,
-    dropdown: [
-      { path: '/about-us', label: 'About us' },
-      // { path: '/about-us#history', label: "Moneda's History" },
-      // { path: '/our-impact', label: 'Our Impact' },
-      { path: '/our-people', label: 'Our People' },
-    ],
+    path: '/',
+    label: 'Home',
+    action: null,
+    icon: null,
+    icon2: null,
+    dropdown: null,
   },
-  // {
-  //   path: '/our-impact',
-  //   label: 'Our Impact',
-  //   action: null,
-  //   icon: null,
-  //   icon2: null,
-  //   dropdown: null,
-  // },
+  {
+    path: '/about-us',
+    label: 'Who We Are',
+    action: null,
+    icon: null,
+    icon2: null,
+    dropdown: null,
+  },
   {
     path: '/verticals',
     label: 'Our Verticals',
@@ -46,5 +39,3 @@ export const homeMenuLinks = [
     dropdown: null,
   },
 ];
-
-export const capitalMenuLinks = [{ path: '#contact', label: 'Speak with us' }];

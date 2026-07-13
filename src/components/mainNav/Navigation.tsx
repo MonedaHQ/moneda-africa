@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { AnimatePresence, motion, Variants } from 'framer-motion';
 import { useRouter } from 'next/router';
 
-import { homeMenuLinks as baseLinks } from '@/data/menu';
+import { homeMenuLinks } from '@/data/menu';
 import useScrollPosition from '@/hooks/useScrollPostion';
 import { scrollOffset } from '@/utils/config';
 
@@ -37,28 +37,9 @@ function Navigation({
   );
 }
 
-function getModifiedLinks(currentPath: string): MenuLink[] {
-  const isHome = currentPath === '/';
-
-  if (isHome) return baseLinks as MenuLink[];
-
-  return [
-    {
-      path: '/',
-      label: 'Home',
-      action: null,
-      icon: null,
-      icon2: null,
-      dropdown: null,
-    },
-    ...(baseLinks as MenuLink[]),
-  ];
-}
-
 function HeaderSecondary() {
   const router = useRouter();
   const route = router.route;
-  const modifiedLinks = getModifiedLinks(route);
 
   const headerIntro: Variants = {
     initial: { opacity: 0 },
@@ -90,7 +71,7 @@ function HeaderSecondary() {
           onClick={() => router.push('/')}
         />
         <ul className={styles.navigationList}>
-          {modifiedLinks.map((link) => (
+          {(homeMenuLinks as MenuLink[]).map((link) => (
             <NavLink
               key={link.label}
               link={link}
@@ -107,7 +88,6 @@ function HeaderSecondary() {
 function HeaderInitial({ darkHero }: { darkHero: boolean }) {
   const router = useRouter();
   const route = router.route;
-  const modifiedLinks = getModifiedLinks(route);
 
   const headerIntro: Variants = {
     initial: { opacity: 0 },
@@ -139,7 +119,7 @@ function HeaderInitial({ darkHero }: { darkHero: boolean }) {
           onClick={() => router.push('/')}
         />
         <ul className={styles.navigationList}>
-          {modifiedLinks.map((link) => (
+          {(homeMenuLinks as MenuLink[]).map((link) => (
             <NavLink
               key={link.label}
               link={link}

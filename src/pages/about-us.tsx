@@ -15,7 +15,7 @@ function WhoWeAre() {
     <>
       <MetaTags
         title="What We Do - Moneda | Bridging Africa's Credit Gap"
-        description="We are dedicated to driving positive change through our diversified investment portfolio. We believe that by investing across multiple sectors, including energy, mining, construction, and commodities, we can contribute to a more sustainable and prosperous future."
+        description="We are dedicated to driving positive change across the sectors we support. By working across energy, mining, construction, and commodities, we help critical SMEs contribute to a more sustainable and prosperous future."
       />
       <Navigation />
       <MobileNavigationHeader />

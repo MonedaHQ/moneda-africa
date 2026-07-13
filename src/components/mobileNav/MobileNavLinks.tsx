@@ -40,7 +40,7 @@ function MobileNavLinks({ data, isOpen, onDropdownToggle }) {
       custom={index}
     >
       <Link
-        href={nav.label}
+        href={nav.path || '#'}
         className={styles.navLink}
         onClick={(e) => handleClick(e, nav.path, nav.label)}
       >

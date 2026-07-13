@@ -33,7 +33,7 @@ function Home() {
     <>
       <MetaTags
         title="Home - Moneda | Bridging Africa's Credit Gap"
-        description="Moneda Invest Africa is a pan-African alternative fund provider committed to providing bespoke capital and technical support for critical SMEs in natural resource value chains that are pivotal to Africa's economic growth. Our approach combines global capital with our local capabilities and innovative operational model."
+        description="Moneda Invest Africa is a pan-African alternative credit and execution platform providing bespoke capital and technical support for critical SMEs in natural resource value chains pivotal to Africa's economic growth. Our model combines institutional capital partnerships with local execution capability."
       />
       <Navigation />
       <MobileNavigationHeader />
