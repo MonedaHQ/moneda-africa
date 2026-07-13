@@ -8,7 +8,7 @@ const steps = [
   {
     number: '01',
     title: 'Fund-management structure',
-    body: 'Fund-management activity is conducted through Moneda Capital Management Limited (MCML), regulated by the Financial Services Commission (FSC) of the Republic of Mauritius and administered by APEX Group, Mauritius.',
+    body: 'Fund-management activity is conducted through MCCF, managed by Moneda Capital Management Limited (MCML), regulated by the Financial Services Commission (FSC) of the Republic of Mauritius, audited by EY, and administered by APEX Group, Mauritius.',
   },
   {
     number: '02',
@@ -29,6 +29,12 @@ const steps = [
 
 const fundTerms = [
   { label: 'Structure', value: 'Senior secured · Asset-backed', badge: null },
+  { label: 'Fund', value: 'MCCF', badge: null },
+  {
+    label: 'Management company',
+    value: 'Moneda Capital Management Limited (MCML)',
+    badge: null,
+  },
   { label: 'Instrument', value: 'Convertible Note', badge: 'OPEN' },
   { label: 'Target return', value: 'Disclosed on application', badge: null },
   { label: 'Investment term', value: '12 months', badge: null },
@@ -43,6 +49,7 @@ const fundTerms = [
     value: 'Financial Services Commission (FSC), Republic of Mauritius',
     badge: null,
   },
+  { label: 'Auditor', value: 'EY', badge: null },
   { label: 'Fund administrator', value: 'APEX Group, Mauritius', badge: null },
 ];
 

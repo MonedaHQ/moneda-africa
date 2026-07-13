@@ -10,7 +10,7 @@ function CapitalPage() {
     <>
       <MetaTags
         title="Fund Management - Moneda | Bridging Africa's Credit Gap"
-        description="Moneda fund management connects institutional capital partnerships with African real-economy execution through Moneda Capital Management Limited, regulated by the Financial Services Commission of the Republic of Mauritius."
+        description="Moneda fund management connects institutional capital partnerships with African real-economy execution through MCCF, managed by Moneda Capital Management Limited, regulated by the Financial Services Commission of the Republic of Mauritius, and audited by EY."
       />
       <CapitalNavigation />
       <CapitalMobileNavigationHeader />

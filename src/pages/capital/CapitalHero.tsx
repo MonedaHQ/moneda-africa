@@ -92,12 +92,13 @@ function CapitalHero() {
             It needs <span className={styles.headingAccent}>Investors.</span>
           </h1>
           <p className={styles.paragraph}>
-            Moneda&apos;s fund-management activity is conducted through Moneda
-            Capital Management Limited (MCML), regulated by the Financial
-            Services Commission (FSC) of the Republic of Mauritius. The platform
-            supports private-credit exposure to Africa&apos;s real economy through
-            confirmed contracts across energy, agriculture, infrastructure, and
-            minerals. Senior secured. Asset-backed. Operationally co-executed.
+            Moneda&apos;s fund-management activity is conducted through MCCF,
+            managed by Moneda Capital Management Limited (MCML), regulated by
+            the Financial Services Commission (FSC) of the Republic of
+            Mauritius, and audited by EY. The platform supports private-credit
+            exposure to Africa&apos;s real economy through confirmed contracts
+            across energy, agriculture, infrastructure, and minerals. Senior
+            secured. Asset-backed. Operationally co-executed.
           </p>
         </motion.div>
 
