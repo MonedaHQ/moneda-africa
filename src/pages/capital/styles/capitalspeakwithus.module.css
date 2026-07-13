@@ -1,0 +1,205 @@
+.section {
+  background-color: #ffffff;
+  padding: 10rem 0 12rem;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  padding: 0 10rem;
+  max-width: 160rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* ── LEFT ──────────────────────────────────────────── */
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.label {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-orange);
+}
+
+.heading {
+  font-family: var(--font-capital-heading);
+  font-size: 5.6rem;
+  font-weight: 300;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--color-black);
+}
+
+.headingAccent {
+  color: var(--color-orange);
+  font-style: italic;
+}
+
+.body {
+  font-size: var(--font-size-paragraph-regular);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.75;
+  color: #6b6760;
+  max-width: 50rem;
+}
+
+/* ── CONTACT ────────────────────────────────────────── */
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 0.8rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.iconWrap {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid rgba(204, 85, 0, 0.2);
+  background-color: rgba(204, 85, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 0.4rem;
+}
+
+.icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: var(--color-orange);
+}
+
+.contactLabel {
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #9b9690;
+  margin-bottom: 0.4rem;
+}
+
+.contactValue {
+  font-size: var(--font-size-paragraph-regular);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.contactValue:hover {
+  color: var(--color-orange);
+}
+
+/* ── RIGHT / CARD ───────────────────────────────────── */
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  border: 1px solid #ddd9d4;
+  background-color: #faf9f7;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+.cardEyebrow {
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-orange);
+}
+
+.quote {
+  font-family: var(--font-capital-heading);
+  font-size: 2.4rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--color-black);
+  border-left: 2px solid var(--color-orange);
+  padding-left: 2.4rem;
+  margin: 0;
+}
+
+.quoteMark {
+  color: var(--color-orange);
+}
+
+.cardBody {
+  font-size: var(--font-size-paragraph-regular);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.75;
+  color: #6b6760;
+}
+
+/* ── RESPONSIVE ────────────────────────────────────── */
+
+@media only screen and (max-width: 93.75em) {
+  .inner {
+    padding: 0 8rem;
+    gap: 6rem;
+  }
+
+  .heading {
+    font-size: 4.8rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .inner {
+    padding: 0 4rem;
+    gap: 4rem;
+  }
+
+  .heading {
+    font-size: 4.2rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 6rem;
+  }
+
+  .heading {
+    font-size: 3.8rem;
+  }
+}
+
+@media only screen and (max-width: 46.25em) {
+  .section {
+    padding: 7rem 0 9rem;
+  }
+
+  .inner {
+    padding: 0 3rem;
+  }
+
+  .heading {
+    font-size: 3.2rem;
+  }
+
+  .card {
+    padding: 3.2rem 2.4rem;
+  }
+}

@@ -29,7 +29,7 @@ export const verticals = [
   {
     question: 'Risk Management',
     answer:
-      '<p>In volatile and high-stakes markets, intelligent risk is the foundation of sustainable trade. At Moneda, we provide capital solutions, technical expertise, and risk advisory services that help clients navigate SMEs in natural resource value chains, commodity trading, and investment across Africa. By aligning African credit with disciplined structures, we ensure resilience, sustainability, and growth.</p><ul><li>Moneda Investment Limited – Capital, technical, and risk advisory support across Africa’s natural resources value chain </li></ul>',
+      '<p>In volatile and high-stakes markets, intelligent risk is the foundation of sustainable trade. At Moneda, we provide capital solutions, technical expertise, and risk analysis services that help clients navigate SMEs in natural resource value chains, commodity trading, and investment across Africa. By aligning African credit with disciplined structures, we ensure resilience, sustainability, and growth.</p><ul><li>Moneda Investment Limited – Capital, technical, and risk analysis support across Africa’s natural resources value chain </li></ul>',
     button: {
       label: 'Learn more',
       link: '/verticals?venture=risk-management',

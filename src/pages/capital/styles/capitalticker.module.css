@@ -1,0 +1,33 @@
+.ticker {
+  width: 100%;
+  background-color: var(--color-light-grey);
+  border-bottom: 1px solid #ddd9d4;
+  overflow: hidden;
+  padding: 2.4rem 0;
+}
+
+.track {
+  display: flex;
+  gap: 8rem;
+  width: max-content;
+  animation: scroll 32s linear infinite;
+}
+
+.item {
+  font-size: 1.3rem;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #9e9b97;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

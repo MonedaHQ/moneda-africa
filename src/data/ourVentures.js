@@ -73,7 +73,7 @@ export const riskVentures = [
 
     company: 'Moneda Investment Limited',
     paragraph:
-      'Moneda Investment Limited provides technical expertise, and risk advisory to contractors operating across Africa’s energy, mining, minerals and agriculture sectors. We support project execution—from procurement to maintenance—by reducing exposure, stabilizing delivery timelines, and enhance operational efficiency. Our approach ensures that real-sector projects are not just viable—but resilient, bankable, and growth-driven.',
+      'Moneda Investment Limited provides technical expertise, and risk analysis to contractors operating across Africa’s energy, mining, minerals and agriculture sectors. We support project execution—from procurement to maintenance—by reducing exposure, stabilizing delivery timelines, and enhance operational efficiency. Our approach ensures that real-sector projects are not just viable—but resilient, bankable, and growth-driven.',
     link: null,
   },
 ];

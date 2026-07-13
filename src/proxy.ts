@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-const goneRoutes = new Set(['/investment-termsheet', '/capital']);
+const goneRoutes = new Set(['/investment-termsheet']);
 
 export function proxy(request: NextRequest) {
   if (goneRoutes.has(request.nextUrl.pathname)) {
@@ -12,5 +12,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/investment-termsheet', '/capital'],
+  matcher: ['/investment-termsheet'],
 };

@@ -1,0 +1,158 @@
+.section {
+  background-color: var(--color-light-grey);
+  padding: 10rem 10rem 12rem;
+}
+
+.header {
+  max-width: 160rem;
+  margin: 0 auto 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.label {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-orange);
+}
+
+.sectionHeading {
+  font-family: var(--font-capital-heading);
+  font-size: 5.6rem;
+  font-weight: 300;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--color-black);
+}
+
+.headingAccent {
+  color: var(--color-orange);
+  font-style: italic;
+}
+
+.intro {
+  font-size: var(--font-size-paragraph-regular);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.75;
+  color: #6b6760;
+  max-width: 56rem;
+}
+
+/* ── Grid ── */
+
+.gridWrapper {
+  max-width: 160rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid #ddd9d4;
+}
+
+.card {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+/* vertical divider — right border on odd (left column) cards */
+.card:nth-child(odd) {
+  border-right: 1px solid #ddd9d4;
+}
+
+/* horizontal divider — bottom border on first two cards */
+.card:nth-child(-n + 2) {
+  border-bottom: 1px solid #ddd9d4;
+}
+
+.badge {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.35rem 0.9rem;
+  background-color: rgba(204, 85, 0, 0.1);
+  color: var(--color-orange);
+  font-size: 1rem;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-radius: 10rem;
+  margin-bottom: 2.8rem;
+}
+
+.emoji {
+  font-size: 3.2rem;
+  line-height: 1;
+  margin-bottom: 2.8rem;
+}
+
+.cardHeading {
+  font-family: var(--font-capital-heading);
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--color-black);
+  margin-bottom: 1.4rem;
+}
+
+.body {
+  font-size: var(--font-size-paragraph-regular);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.7;
+  color: #6b6760;
+}
+
+@media only screen and (max-width: 93.75em) {
+  .section {
+    padding: 10rem 8rem 10rem;
+  }
+
+  .sectionHeading {
+    font-size: 4.8rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .section {
+    padding: 8rem 4rem 10rem;
+  }
+
+  .sectionHeading {
+    font-size: 4.2rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .gridWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* single column — every card gets a bottom border except the last */
+  .card:nth-child(odd) {
+    border-right: none;
+  }
+
+  .card:nth-child(-n + 2) {
+    border-bottom: none;
+  }
+
+  .card:not(:last-child) {
+    border-bottom: 1px solid #ddd9d4;
+  }
+}
+
+@media only screen and (max-width: 46.25em) {
+  .section {
+    padding: 7rem 3rem 9rem;
+  }
+
+  .sectionHeading {
+    font-size: 3.4rem;
+  }
+
+  .card {
+    padding: 3.2rem 2.4rem;
+  }
+}

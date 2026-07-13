@@ -24,6 +24,14 @@ export const homeMenuLinks = [
     dropdown: null,
   },
   {
+    path: '/capital',
+    label: 'Fund Management',
+    action: null,
+    icon: null,
+    icon2: null,
+    dropdown: null,
+  },
+  {
     path: '/news',
     label: 'News',
     icon: null,
@@ -39,3 +47,5 @@ export const homeMenuLinks = [
     dropdown: null,
   },
 ];
+
+export const capitalMenuLinks = [{ path: '#contact', label: 'Speak with us' }];

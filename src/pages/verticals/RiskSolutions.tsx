@@ -32,7 +32,7 @@ function RiskSolutions() {
         </VenturesMain>
       </Section>
       <Quote quote={quote.quote} caption={quote.caption} />
-      <GetInTouch venture="Risk Advisory services" />
+      <GetInTouch venture="Risk Analysis services" />
     </>
   );
 }

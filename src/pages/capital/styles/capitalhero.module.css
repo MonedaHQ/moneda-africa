@@ -1,0 +1,198 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #0a0a0a;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.6) 45%,
+    rgba(0, 0, 0, 0.25) 75%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+.backgroundImage {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.bgImg {
+  object-fit: cover;
+  object-position: center right;
+  filter: brightness(0.72);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 0 0 0 calc(5vw + 18rem);
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  max-width: 90rem;
+  color: var(--color-white);
+}
+
+.mobileLogo {
+  display: none;
+}
+
+.headingBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.paragraph {
+  font-size: var(--font-size-paragraph-regular);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: left;
+  max-width: 58rem;
+}
+
+.heading {
+  font-family: var(--font-capital-heading);
+  font-size: 7.6rem;
+  font-weight: 300;
+  color: var(--color-white);
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+
+.headingAccent {
+  color: var(--color-orange);
+  font-style: italic;
+}
+
+.ctas {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform-origin: left;
+}
+
+.stats {
+  display: flex;
+  gap: 6rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.statLine {
+  display: block;
+  width: 2.4rem;
+  height: 2px;
+  background-color: var(--color-orange);
+}
+
+.statLabel {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.statValue {
+  font-family: var(--font-capital-heading);
+  font-size: 3.6rem;
+  font-weight: 300;
+  color: var(--color-white);
+  line-height: 1.1;
+}
+
+@media only screen and (max-width: 93.75em) {
+  .content {
+    padding: 0 0 0 8rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .content {
+    width: 100%;
+    padding: 0 4rem;
+  }
+
+  .heading {
+    font-size: 6rem;
+  }
+
+  .mobileLogo {
+    display: block;
+    width: 120px;
+    height: auto;
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 46.25em) {
+  .content {
+    padding: 0 3rem;
+  }
+
+  .heading {
+    font-size: 4.4rem;
+  }
+
+  .ctas {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+
+  .ctas a,
+  .ctas button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .stats {
+    gap: 4rem;
+  }
+
+  .statValue {
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .content {
+    padding: 0 2.4rem;
+  }
+
+  .heading {
+    font-size: 3.6rem;
+  }
+
+  .stats {
+    gap: 3rem;
+  }
+
+  .statValue {
+    font-size: 2.2rem;
+  }
+}

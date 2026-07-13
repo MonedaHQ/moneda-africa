@@ -1,0 +1,235 @@
+.section {
+  background-color: #ffffff;
+  padding: 10rem 0 12rem;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  padding: 0 10rem;
+  max-width: 160rem;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* ── LEFT ──────────────────────────────────────────── */
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.labelHeadingGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.label {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-orange);
+}
+
+.heading {
+  font-family: var(--font-capital-heading);
+  font-size: 5.6rem;
+  font-weight: 300;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--color-black);
+}
+
+.headingAccent {
+  color: var(--color-orange);
+  font-style: italic;
+}
+
+/* ── STEPS ─────────────────────────────────────────── */
+
+.steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: 2.4rem;
+  padding: 2.8rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.step:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.stepNumber {
+  font-family: var(--font-capital-heading);
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--color-orange);
+  padding-top: 0.2rem;
+  opacity: 0.75;
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.stepTitle {
+  font-size: var(--font-size-paragraph-regular);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black);
+  line-height: 1.4;
+}
+
+.stepBody {
+  font-size: var(--font-size-paragraph-regular);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.75;
+  color: #6b6760;
+}
+
+/* ── CARD ──────────────────────────────────────────── */
+
+.card {
+  border: 1px solid #ddd9d4;
+  background-color: #faf9f7;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: sticky;
+  top: 10rem;
+}
+
+.cardTitle {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-orange);
+  padding: 2.4rem 3.2rem;
+  border-bottom: 1px solid #ddd9d4;
+}
+
+.termsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.termRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 3.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  gap: 2rem;
+}
+
+.termRow:last-child {
+  border-bottom: none;
+}
+
+.termLabel {
+  font-size: 1.4rem;
+  font-weight: var(--font-weight-regular);
+  color: #9b9690;
+  flex-shrink: 0;
+}
+
+.termValue {
+  font-size: 1.4rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black);
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.8rem;
+  border: 1px solid var(--color-orange);
+  color: var(--color-orange);
+  font-size: 1rem;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+}
+
+/* Card CTA — border-top only; all other styles come from CapitalButton */
+.cta {
+  border-top: 1px solid var(--color-orange);
+}
+
+.cta:hover {
+  opacity: 0.88;
+}
+
+/* ── RESPONSIVE ────────────────────────────────────── */
+
+@media only screen and (max-width: 93.75em) {
+  .inner {
+    padding: 0 8rem;
+    gap: 6rem;
+  }
+
+  .heading {
+    font-size: 4.8rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .inner {
+    padding: 0 4rem;
+    gap: 4rem;
+  }
+
+  .heading {
+    font-size: 4.2rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 6rem;
+  }
+
+  .card {
+    position: static;
+  }
+
+  .heading {
+    font-size: 3.8rem;
+  }
+}
+
+@media only screen and (max-width: 46.25em) {
+  .section {
+    padding: 7rem 0 9rem;
+  }
+
+  .inner {
+    padding: 0 3rem;
+  }
+
+  .heading {
+    font-size: 3.2rem;
+  }
+
+  .step {
+    gap: 1.6rem;
+  }
+}
