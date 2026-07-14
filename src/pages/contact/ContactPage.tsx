@@ -26,8 +26,8 @@ const contactInformation = [
   },
   {
     title: 'Email',
-    label: 'info@monedaafrica.com',
-    link: 'mailto:info@monedaafrica.com',
+    label: 'info@moneda.africa',
+    link: 'mailto:info@moneda.africa',
     icon: <MdEmail />,
   },
   {
