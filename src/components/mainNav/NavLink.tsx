@@ -4,11 +4,9 @@ import Button from '@/components/Button';
 import DropDown from './DropDown';
 
 import styles from './styles/navlink.module.css';
-import { useRouter } from 'next/router';
 
 function NavLink({ link, darkHero, isActive }) {
   const [isHovered, setIsHovered] = useState(false);
-  const router = useRouter();
 
   let icon = null;
   if (link.icon) {
@@ -20,9 +18,9 @@ function NavLink({ link, darkHero, isActive }) {
       <div className={styles.navLink}>
         <Button
           variant={`${darkHero ? 'primary-dark' : 'primary'}`}
+          href={link.path || null}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          onClick={() => (link.path ? router.push(link.path) : '')}
           active={isActive}
         >
           {link.label} {icon}

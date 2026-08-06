@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { AnimatePresence, motion, Variants } from 'framer-motion';
 import { useRouter } from 'next/router';
 
@@ -62,14 +63,15 @@ function HeaderSecondary() {
       exit="exit"
     >
       <nav className={styles.navigation2}>
-        <Image
-          width={408.5}
-          height={79}
-          src="/assets/moneda-line-white.png"
-          alt="logo"
-          className={styles.logo}
-          onClick={() => router.push('/')}
-        />
+        <Link href="/" aria-label="Moneda Invest Africa home">
+          <Image
+            width={408.5}
+            height={79}
+            src="/assets/moneda-line-white.png"
+            alt="Moneda Invest Africa"
+            className={styles.logo}
+          />
+        </Link>
         <ul className={styles.navigationList}>
           {(homeMenuLinks as MenuLink[]).map((link) => (
             <NavLink
@@ -110,14 +112,15 @@ function HeaderInitial({ darkHero }: { darkHero: boolean }) {
       exit="exit"
     >
       <nav className={styles.navigation}>
-        <Image
-          width={408.5}
-          height={79}
-          src="/assets/1x/moneda-logo.png"
-          alt="logo"
-          className={styles.logo}
-          onClick={() => router.push('/')}
-        />
+        <Link href="/" aria-label="Moneda Invest Africa home">
+          <Image
+            width={408.5}
+            height={79}
+            src="/assets/1x/moneda-logo.png"
+            alt="Moneda Invest Africa"
+            className={styles.logo}
+          />
+        </Link>
         <ul className={styles.navigationList}>
           {(homeMenuLinks as MenuLink[]).map((link) => (
             <NavLink

@@ -1,90 +1,141 @@
 import type {
-  GetServerSidePropsContext,
-  InferGetServerSidePropsType,
+  GetStaticPaths,
+  GetStaticProps,
+  InferGetStaticPropsType,
 } from 'next';
 import { useEffect } from 'react';
 
-import { getImage } from '@/utils/helpers';
-import { scrollOffset } from '@/utils/config';
-
 import Navigation from '@/components/mainNav/Navigation';
-import Loader from '@/components/Loader';
 import MetaTags from '@/components/head';
 import Footer from '@/components/Footer';
 import MobileNavigationHeader from '@/components/mobileNav/MobileNavigationHeader';
-import useScrollPosition from '@/hooks/useScrollPostion';
-import Post from './Post';
-import Reading from './Reading';
+import { getRelatedPosts, getSinglePost } from '@/services/apiPosts';
+import { mapPostArticle, mapPostSummary } from '@/utils/posts';
+import { absoluteUrl, SITE_NAME, SITE_URL } from '@/utils/site';
+import type { PostArticle, PostSummary } from '@/types/posts';
 
-type BlogPostProps = InferGetServerSidePropsType<typeof getServerSideProps>;
+import Article from '@/components/news/Article';
 
-function BlogPost({ post }: BlogPostProps) {
-  const scrollPosition = useScrollPosition(scrollOffset);
+type BlogPostProps = {
+  post: PostArticle;
+  relatedPosts: PostSummary[];
+};
 
+function BlogPost({
+  post,
+  relatedPosts,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   useEffect(() => {
     if (!post || typeof window === 'undefined' || !window.clarity) return;
     window.clarity('set', 'page_type', 'news_article');
     window.clarity('set', 'article_slug', post.slug);
   }, [post]);
 
-  if (!post) return <Loader fullScreen={true} />;
+  const canonicalPath = `/news/${post.slug}`;
+  const canonicalUrl = absoluteUrl(canonicalPath);
+  const title = `${post.title} | Moneda Africa`;
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        '@id': `${canonicalUrl}#article`,
+        headline: post.title,
+        description: post.excerpt,
+        image: [absoluteUrl(post.imgSrc)],
+        datePublished: post.date,
+        dateModified: post.modified,
+        author: {
+          '@type': 'Organization',
+          name: post.author,
+          url: post.authorUrl || SITE_URL,
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: SITE_NAME,
+          url: SITE_URL,
+          logo: {
+            '@type': 'ImageObject',
+            url: absoluteUrl('/apple-touch-icon.png'),
+          },
+        },
+        mainEntityOfPage: canonicalUrl,
+        articleSection: post.category,
+        inLanguage: 'en',
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: SITE_URL,
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Insights',
+            item: absoluteUrl('/news'),
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: post.title,
+            item: canonicalUrl,
+          },
+        ],
+      },
+    ],
+  };
 
   return (
     <>
       <MetaTags
-        title={`${post.title} - Moneda Investment Limited`}
-        description={`${post.excerpt.__html}`}
+        title={title}
+        description={post.excerpt}
+        canonical={canonicalPath}
+        image={post.imgSrc}
+        imageAlt={post.imgAlt}
+        type="article"
+        article={{
+          publishedTime: post.date,
+          modifiedTime: post.modified,
+          section: post.category,
+        }}
+        jsonLd={structuredData}
       />
       <Navigation darkHero={false} />
       <MobileNavigationHeader />
-      <Reading title={post.title} scrollPosition={scrollPosition} />
-      <Post post={post} />
+      <Article post={post} relatedPosts={relatedPosts} />
       <Footer />
     </>
   );
 }
 
-export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const url = process.env.NEXT_PUBLIC_APP_BLOG_API_URL;
-  const { slug } = context.params as { slug: string };
+export const getStaticPaths: GetStaticPaths = async () => ({
+  paths: [],
+  fallback: 'blocking',
+});
 
-  const res = await fetch(`${url}/posts?slug=${slug}&_embed`);
-  const data = await res.json();
+export const getStaticProps: GetStaticProps<BlogPostProps> = async ({ params }) => {
+  const slug = String(params?.slug || '');
+  const posts = await getSinglePost(slug);
 
-  if (!data || data.length === 0) {
-    return {
-      redirect: {
-        destination: '/news',
-        permanent: false,
-      },
-    };
+  if (!posts.length) {
+    return { notFound: true, revalidate: 60 };
   }
 
-  const selectedPost = data[0];
-
-  const categories: unknown[] =
-    selectedPost._embedded?.['wp:term']
-      ?.flat()
-      .filter((term: { taxonomy: string }) => term.taxonomy === 'category') ||
-    [];
-
-  const post = {
-    id: selectedPost?.id as number,
-    title: selectedPost?.title.rendered as string,
-    body: { __html: selectedPost?.content.rendered as string },
-    date: selectedPost?.date as string,
-    modified: selectedPost?.modified as string,
-    excerpt: { __html: selectedPost?.excerpt.rendered as string },
-    imgSrc: getImage(selectedPost?.content.rendered) as string | null,
-    slug: selectedPost?.slug as string,
-    categories,
-  };
+  const post = mapPostArticle(posts[0]);
+  const related = await getRelatedPosts(post.id, 3);
 
   return {
     props: {
       post,
+      relatedPosts: related.map(mapPostSummary),
     },
+    revalidate: 900,
   };
-}
+};
 
 export default BlogPost;

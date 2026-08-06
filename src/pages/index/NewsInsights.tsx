@@ -4,23 +4,21 @@ import { newsroomEpisodes } from '@/data/newsroom';
 
 import styles from './styles/newsinsights.module.css';
 import AnimatedLineHorizontal from '@/components/AnimatedLineHorizontal';
-import { getEmbedLink, getImage, truncateString } from '@/utils/helpers';
+import { getEmbedLink } from '@/utils/helpers';
 import LearnMoreButton from '@/components/LearnMoreButton';
 import { useEffect, useState } from 'react';
-import { usePosts } from '@/hooks/usePosts';
-import { PiChatCircleDotsFill } from 'react-icons/pi';
 import Button from '@/components/Button';
 import Image from 'next/image';
-import Loader from '@/components/Loader';
+import type { PostSummary } from '@/types/posts';
 
-function NewsInsights() {
+function NewsInsights({ posts = [] }: { posts?: PostSummary[] }) {
   return (
     <Section paddingTop={false}>
       <main className={styles.main}>
         <h3>Latest News/Insights</h3>
         <div className={styles.container}>
           <NewsroomComponent />
-          <IntelligenceReports />
+          <IntelligenceReports posts={posts} />
         </div>
       </main>
     </Section>
@@ -49,32 +47,16 @@ function NewsroomComponent() {
   );
 }
 
-function IntelligenceReports() {
+function IntelligenceReports({ posts = [] }: { posts?: PostSummary[] }) {
   return (
     <div className={styles.container}>
       <TitleComponent heading="Reports & Press" color="brown" />
-      <Reports />
+      <Reports posts={posts} />
     </div>
   );
 }
 
-function Reports() {
-  const { isLoading, posts: truncatedPosts } = usePosts();
-
-  if (isLoading) return <Loader />;
-
-  const splicedPosts = truncatedPosts.slice(0, 4);
-
-  const posts = splicedPosts.map((post) => {
-    return {
-      title: post.title.rendered,
-      slug: post.slug,
-      excerpt: { __html: post.excerpt.rendered },
-      date: post.date,
-      imgSrc: getImage(post.content.rendered),
-    };
-  });
-
+function Reports({ posts = [] }: { posts?: PostSummary[] }) {
   return (
     <div className={styles.reportsContainer}>
       {!posts.length && (
@@ -100,21 +82,20 @@ function Reports() {
   );
 }
 
-function Post({ post, index }) {
-  const title = truncateString(post.title, 4);
+function Post({ post, index }: { post: PostSummary; index: number }) {
   return (
     <div className={styles.post}>
       <div className={styles.postImg}>
         <Image
           width={475}
           height={270}
-          alt={post.title}
+          alt={post.imgAlt}
           src={post.imgSrc}
           draggable={false}
         />
       </div>
       <div className={styles.content}>
-        <h5 dangerouslySetInnerHTML={{ __html: title }} />
+        <h5>{post.title}</h5>
         <div className={styles.readmore}>
           <AnimatedLineHorizontal
             index={index}

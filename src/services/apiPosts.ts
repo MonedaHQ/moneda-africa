@@ -22,7 +22,7 @@ export async function getPosts(): Promise<{ posts: Post[] }> {
   let totalPages = 1;
 
   while (page <= totalPages) {
-    const query = `${blogApiUrl}/posts?_page=${page}&_embed`;
+    const query = `${blogApiUrl}/posts?page=${page}&per_page=100&_embed&status=publish`;
     const response = await fetch(query);
 
     if (!response.ok) {
@@ -67,7 +67,7 @@ export async function getAllPosts({ page }: { page?: number }): Promise<{
 }
 
 export async function getThreePosts(): Promise<Post[]> {
-  const query = `${blogApiUrl}/posts?per_page=3&_orderby=date&status=publish`;
+  const query = `${blogApiUrl}/posts?per_page=3&orderby=date&_embed&status=publish`;
   const res = await fetch(query);
 
   if (!res.ok) {
@@ -78,11 +78,25 @@ export async function getThreePosts(): Promise<Post[]> {
 }
 
 export async function getSinglePost(slug: string): Promise<Post[]> {
-  const query = `${blogApiUrl}/posts?slug=${slug}`;
+  const query = `${blogApiUrl}/posts?slug=${encodeURIComponent(slug)}&_embed&status=publish`;
   const res = await fetch(query);
 
   if (!res.ok) {
     throw new Error(`Failed to fetch post. Status: ${res.status}`);
+  }
+
+  return (await res.json()) as Post[];
+}
+
+export async function getRelatedPosts(
+  postId: number,
+  limit = 3
+): Promise<Post[]> {
+  const query = `${blogApiUrl}/posts?per_page=${limit}&exclude=${postId}&orderby=date&_embed&status=publish`;
+  const res = await fetch(query);
+
+  if (!res.ok) {
+    throw new Error(`Failed to fetch related posts. Status: ${res.status}`);
   }
 
   return (await res.json()) as Post[];

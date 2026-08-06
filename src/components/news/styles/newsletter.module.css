@@ -1,0 +1,86 @@
+.section {
+  padding: 9rem 7vw;
+  color: var(--color-dark-brown);
+  background: #e8ded3;
+}
+
+.inner {
+  width: min(144rem, 100%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(50rem, 1.2fr);
+  gap: clamp(5rem, 9vw, 13rem);
+  align-items: end;
+}
+
+.eyebrow {
+  color: var(--color-orange);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 1.4rem;
+}
+
+.copy h2 {
+  max-width: 13ch;
+  font-family: inherit;
+  font-size: clamp(3.2rem, 3.5vw, 4.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  font-weight: 500;
+}
+
+.copy > p:last-child {
+  max-width: 50rem;
+  margin-top: 2rem;
+  color: rgba(33, 13, 0, 0.6);
+  line-height: 1.7;
+  text-align: left;
+}
+
+.formBody {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+.formBody fieldset:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
+.formBody input {
+  width: 100%;
+  min-height: 5.4rem;
+  border: 1px solid rgba(33, 13, 0, 0.18);
+  border-radius: var(--border-radius-reg);
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.formBody button {
+  min-height: 5.4rem;
+  justify-self: start;
+  border-radius: var(--border-radius-reg);
+  padding-inline: 2.4rem;
+}
+
+@media (max-width: 62em) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 38em) {
+  .section {
+    padding: 7rem 7vw;
+  }
+
+  .formBody {
+    grid-template-columns: 1fr;
+  }
+
+  .formBody fieldset:nth-child(3) {
+    grid-column: auto;
+  }
+}

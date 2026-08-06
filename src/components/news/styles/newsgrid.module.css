@@ -1,0 +1,30 @@
+.section {
+  padding: 9rem 7vw 11rem;
+  background: #f4f0eb;
+}
+
+.inner {
+  width: min(144rem, 100%);
+  margin: auto;
+}
+
+.empty {
+  min-height: 30rem;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 2rem;
+  border: 1px solid rgba(33, 13, 0, 0.16);
+  border-radius: 1.4rem;
+}
+
+.empty a {
+  color: var(--color-orange);
+  border-bottom: 1px solid currentColor;
+}
+
+@media (max-width: 55em) {
+  .section {
+    padding: 7rem 7vw 8rem;
+  }
+}

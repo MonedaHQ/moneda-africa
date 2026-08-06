@@ -1,0 +1,235 @@
+.section {
+  padding: 11rem 7vw;
+  color: var(--color-white);
+  background: var(--color-dark-brown);
+}
+
+.inner {
+  width: min(144rem, 100%);
+  margin: auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 8rem;
+  align-items: end;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.eyebrow,
+.watchingCopy > span {
+  color: #ff9b66;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.header h2 {
+  max-width: 13ch;
+  margin-top: 1.4rem;
+  font-family: inherit;
+  font-size: clamp(3.2rem, 3.5vw, 4.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  font-weight: 500;
+}
+
+.header > p {
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.7;
+  text-align: left;
+}
+
+.nowWatching {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(30rem, 0.55fr);
+  gap: clamp(4rem, 7vw, 10rem);
+  align-items: center;
+  padding: 7rem 0;
+}
+
+.videoFrame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #120700;
+  box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.28);
+  border-radius: 1.4rem;
+}
+
+.videoFrame iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.watchingCopy h3 {
+  margin: 1.8rem 0 2.4rem;
+  font-family: inherit;
+  font-size: clamp(2.7rem, 3vw, 4rem);
+  line-height: 1.14;
+  letter-spacing: -0.025em;
+  font-weight: 500;
+}
+
+.caption {
+  max-height: 24rem;
+  padding-right: 1rem;
+  overflow: auto;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.caption p {
+  color: inherit;
+  font-size: inherit;
+  text-align: left;
+}
+
+.caption ul {
+  padding: 1.2rem 0 0 2rem;
+}
+
+.watchList {
+  padding-top: 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.watchListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.8rem;
+}
+
+.watchListHeader h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+}
+
+.pagination {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.pagination button {
+  width: 4.4rem;
+  height: 4.4rem;
+  color: var(--color-white);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--border-radius-reg);
+  cursor: pointer;
+  transition: border-color 180ms ease, color 180ms ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  color: #ff9b66;
+  border-color: #ff9b66;
+}
+
+.pagination button:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.episodeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+}
+
+.episodeCard {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 1.5rem;
+  padding: 0 0 2rem;
+  color: var(--color-white);
+  text-align: left;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  cursor: pointer;
+}
+
+.thumbnail {
+  grid-column: 1 / -1;
+  display: block;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 1.2rem;
+}
+
+.thumbnail img {
+  object-fit: cover;
+  opacity: 0.7;
+  transition: opacity 250ms ease, transform 400ms ease;
+}
+
+.play {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  padding-left: 0.2rem;
+  color: var(--color-dark-brown);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.episodeCard:hover .thumbnail img,
+.active .thumbnail img {
+  opacity: 1;
+  transform: scale(1.025);
+}
+
+.episodeNumber {
+  color: #ff9b66;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+}
+
+.episodeCard strong {
+  font-family: inherit;
+  font-size: 1.7rem;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+@media (max-width: 60em) {
+  .header,
+  .nowWatching {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .header > p {
+    max-width: 60rem;
+  }
+
+  .watchingCopy {
+    max-width: 68rem;
+  }
+}
+
+@media (max-width: 45em) {
+  .section {
+    padding: 7rem 7vw;
+  }
+
+  .episodeGrid {
+    grid-template-columns: 1fr;
+  }
+}

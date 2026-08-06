@@ -1,72 +1,64 @@
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
-import styles from './styles/pagination.module.css';
-import { useState } from 'react';
 import { PAGE_SIZE } from '@/utils/config';
+import styles from './styles/pagination.module.css';
 
-function Pagination({ count }) {
-  const router = useRouter();
-  const [isNavigating, setIsNavigating] = useState(false);
-  const currentPage = !router.query.page ? 1 : +router.query.page;
+type PaginationProps = {
+  count: number;
+  currentPage: number;
+};
+
+function pageHref(page: number) {
+  return page === 1 ? '/news' : `/news?page=${page}`;
+}
+
+function Pagination({ count, currentPage }: PaginationProps) {
   const pageCount = Math.ceil(count / PAGE_SIZE);
-
-  const updatePageQuery = (page) => {
-    const currentQuery = router.query;
-    router.push(
-      {
-        pathname: router.pathname,
-        query: { ...currentQuery, page: String(page) },
-      },
-      undefined,
-      { shallow: true }
-    );
-  };
-
-  function nextPage() {
-    const next = currentPage === pageCount ? currentPage : currentPage + 1;
-    updatePageQuery(next);
-  }
-
-  function previousPage() {
-    const prev = currentPage === 1 ? currentPage : currentPage - 1;
-    updatePageQuery(prev);
-  }
 
   if (pageCount <= 1) return null;
 
   return (
-    <div className={styles.pagContainer}>
+    <nav className={styles.pagContainer} aria-label="Article pagination">
       <p>
-        Showing <span>{(currentPage - 1) * PAGE_SIZE + 1}</span> to{' '}
-        <span>
+        Showing <strong>{(currentPage - 1) * PAGE_SIZE + 1}</strong>–
+        <strong>
           {currentPage === pageCount ? count : currentPage * PAGE_SIZE}
-        </span>{' '}
-        of <span>{count}</span> results
+        </strong>{' '}
+        of {count}
       </p>
       <div className={styles.btnWrapper}>
-        <button
-          onClick={previousPage}
-          disabled={currentPage === 1}
-          className={`${styles.button} ${
-            currentPage === 1 ? styles.inactive : styles.active
-          }`}
-        >
-          <HiChevronLeft />
-          <span>Previous</span>
-        </button>
-        <button
-          onClick={nextPage}
-          disabled={currentPage === pageCount}
-          className={`${styles.button} ${
-            currentPage === pageCount ? styles.inactive : styles.active
-          } transition-all`}
-        >
-          <span>Next</span>
-          <HiChevronRight />
-        </button>
+        {currentPage === 1 ? (
+          <span className={`${styles.button} ${styles.inactive}`}>
+            <HiChevronLeft /> Previous
+          </span>
+        ) : (
+          <Link
+            rel="prev"
+            href={pageHref(currentPage - 1)}
+            className={`${styles.button} ${styles.active}`}
+          >
+            <HiChevronLeft /> Previous
+          </Link>
+        )}
+        <span className={styles.pageNumber}>
+          {currentPage} / {pageCount}
+        </span>
+        {currentPage === pageCount ? (
+          <span className={`${styles.button} ${styles.inactive}`}>
+            Next <HiChevronRight />
+          </span>
+        ) : (
+          <Link
+            rel="next"
+            href={pageHref(currentPage + 1)}
+            className={`${styles.button} ${styles.active}`}
+          >
+            Next <HiChevronRight />
+          </Link>
+        )}
       </div>
-    </div>
+    </nav>
   );
 }
 

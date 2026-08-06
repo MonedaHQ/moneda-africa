@@ -8,8 +8,16 @@ import Footer from '@/components/Footer';
 import OurTeam from './index/OurTeam';
 import OurVerticals from './index/OurVerticals';
 import NewsInsights from './index/NewsInsights';
+import type { GetStaticProps, InferGetStaticPropsType } from 'next';
+import type { PostSummary } from '@/types/posts';
+import { getAllPosts } from '@/services/apiPosts';
+import { mapPostSummary } from '@/utils/posts';
 
-function Home() {
+type HomeProps = {
+  latestPosts: PostSummary[];
+};
+
+function Home({ latestPosts }: InferGetStaticPropsType<typeof getStaticProps>) {
   const heroContent = {
     images: [
       '/assets/heroImages/link-bridge.jpg',
@@ -46,10 +54,21 @@ function Home() {
       <TeamSection />
       <OurVerticals />
       <OurTeam />
-      <NewsInsights />
+      <NewsInsights posts={latestPosts} />
       <Footer />
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+  const { posts } = await getAllPosts({ page: 1 });
+
+  return {
+    props: {
+      latestPosts: posts.slice(0, 4).map(mapPostSummary),
+    },
+    revalidate: 900,
+  };
+};
 
 export default Home;

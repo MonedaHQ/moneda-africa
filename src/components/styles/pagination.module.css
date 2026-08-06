@@ -1,58 +1,71 @@
 .pagContainer {
+  padding-top: 3rem;
+  border-top: 1px solid rgba(33, 13, 0, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3rem;
 }
-.pagContainer p span {
-  font-weight: 600;
+
+.pagContainer p {
+  color: rgba(33, 13, 0, 0.58);
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.pagContainer strong {
+  color: var(--color-dark-brown);
+  font-weight: 500;
 }
 
 .btnWrapper {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
 .button {
-  padding: 0.8rem 2rem;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  border-radius: 5rem;
-
-  display: flex;
+  min-height: 4.4rem;
+  padding: 0 1.8rem;
+  display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  font: inherit;
-}
-
-.active {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  transition: all 0.3s;
+  gap: 0.6rem;
+  border: 1px solid rgba(33, 13, 0, 0.2);
+  border-radius: var(--border-radius-reg);
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
 }
 
 .active:hover {
-  background-color: var(--color-orange);
+  color: var(--color-white);
+  background: var(--color-orange);
+  border-color: var(--color-orange);
 }
 
 .inactive {
-  background-color: var(--color-light-gray);
+  color: rgba(33, 13, 0, 0.3);
 }
 
-.button:disabled {
-  cursor: not-allowed;
+.pageNumber {
+  min-width: 6rem;
+  text-align: center;
+  color: rgba(33, 13, 0, 0.58);
+  font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 47.5em) {
-  .button {
-    font-size: 1.6rem;
-    padding: 0.6rem 1rem;
-  }
-}
-@media only screen and (max-width: 32.5em) {
+@media (max-width: 39em) {
   .pagContainer {
-    display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    gap: 2rem;
+  }
+
+  .btnWrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .button {
+    padding: 0 1.2rem;
   }
 }
