@@ -121,18 +121,18 @@ export const managementTeam = [
     linkedIn: 'https://www.linkedin.com/in/adedapomakinde/',
     wikipedia: null,
   },
-  {
-    name: 'Gideon Haruna',
-    position: 'Group Head, Marketing & Communications',
-    paragraph:
-      "Senior communications leader with 8+ years shaping strategic marketing and stakeholder engagement for capital-intensive businesses across Africa's energy, mining,infrastructure, banking and agro-commodities sectors. Experienced in translating complex energy investment narratives into communications that build institutional credibility, attract capital, and sustain stakeholder trust. Deep expertise in ESG and sustainability storytelling, executive and investor relations, and high-impact brand strategy, with a proven record of execution at scale across digital, event, and media channels.",
-    imageData: {
-      src: '/assets/team/gideon.jpg',
-      alt: 'A photo of Gideon Haruna, Group Head, Marketing & Communications',
-    },
-    linkedIn: 'https://www.linkedin.com/in/gideon-haruna/',
-    wikipedia: null,
-  },
+  // {
+  //   name: 'Gideon Haruna',
+  //   position: 'Group Head, Marketing & Communications',
+  //   paragraph:
+  //     "Senior communications leader with 8+ years shaping strategic marketing and stakeholder engagement for capital-intensive businesses across Africa's energy, mining,infrastructure, banking and agro-commodities sectors. Experienced in translating complex energy investment narratives into communications that build institutional credibility, attract capital, and sustain stakeholder trust. Deep expertise in ESG and sustainability storytelling, executive and investor relations, and high-impact brand strategy, with a proven record of execution at scale across digital, event, and media channels.",
+  //   imageData: {
+  //     src: '/assets/team/gideon.jpg',
+  //     alt: 'A photo of Gideon Haruna, Group Head, Marketing & Communications',
+  //   },
+  //   linkedIn: 'https://www.linkedin.com/in/gideon-haruna/',
+  //   wikipedia: null,
+  // },
 ];
 
 export const advisoryBoard = [
